@@ -1,7 +1,12 @@
-import NavBar from "./components/navbar/NavBarContainer";
+import NavBar from './components/navbar/NavBarContainer'
+
 
 const App = () => {
-  return <NavBar/>;
-};
+  return (
+    <>
+      <NavBar />
+    </>
+  )
+}
 
-export default App;
+export default App

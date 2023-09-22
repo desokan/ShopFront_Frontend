@@ -1,7 +1,6 @@
 import classes from "./NavBarTop.module.css";
-
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-
+import React from 'react';
+import {useNavigate} from "react-router-dom"
 import ArrowDown from "../svgs/ArrowDown";
 
 const NavBarTop = () => {
