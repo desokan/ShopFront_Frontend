@@ -1,11 +1,13 @@
+import NavBarTop from "./NavBarTop";
+
 const NavBar = () => {
   return (
-    <div>
-      {/* <NavBarTop />
-      <NavBarMid />
+    <nav>
+      <NavBarTop />
+      {/* <NavBarMid />
       <NavBarBottom /> */}
       <h1>Hello</h1>
-    </div>
+    </nav>
   );
 };
 
