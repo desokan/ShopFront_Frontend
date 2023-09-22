@@ -1,12 +1,12 @@
 import NavBarTop from "./NavBarTop";
+import NavBarMid from './NavBarMid'
 
 const NavBar = () => {
   return (
     <nav>
       <NavBarTop />
-      {/* <NavBarMid />
-      <NavBarBottom /> */}
-      <h1>Hello</h1>
+      <NavBarMid />
+      {/* <NavBarBottom /> */}
     </nav>
   );
 };
