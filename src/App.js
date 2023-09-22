@@ -1,5 +1,7 @@
+import NavBar from "./components/navbar/NavBarContainer";
+
 const App = () => {
-  return <h1>HELLO TEAM</h1>;
+  return <NavBar/>;
 };
 
 export default App;
