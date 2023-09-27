@@ -2,16 +2,15 @@
 
 .topNav {
   background-color: #222222;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   padding: 0 200px 0 200px;
-
 }
 
-.wrapper{
+.wrapper {
   max-width: 1280px;
-  margin: 0 auto ;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -20,19 +19,25 @@
   justify-content: left;
   display: grid;
   grid-template-columns: 100px 100px;
-
   align-content: end;
 }
+
+.lefty > p,
+.righty > p {
+  color: #8a8a8a;
+}
+
 .righty {
   justify-content: right;
   display: grid;
   grid-template-columns: 100px 100px;
+  grid-gap: 25px;
 }
 
 .arrow {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .dropdown {
-    margin-right: 10px;
+  margin-right: 10px;
 }
