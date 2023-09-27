@@ -10,13 +10,17 @@ const NavBarMid = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <LogoSvg />
-        <div className={classes.icons}>
-            <SearchIcon />
-            <HeartIcon />
-            <UserIcon />
-            <BagIcon />
+        <div className={classes.searchBar}>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <div className={classes.searchBar}></div>
+        <div className={classes.icons}>
+          <SearchIcon />
+          <HeartIcon />
+          <UserIcon />
+          <BagIcon />
+        </div>
       </div>
     </div>
   );
