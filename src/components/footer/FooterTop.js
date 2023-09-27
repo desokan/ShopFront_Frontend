@@ -29,11 +29,11 @@ const FooterTop = () => {
           </div>
         </div>
         <div className={classes.badges}>
-          <div className={classes.delivery}>
+          <div className={`${classes.delivery} ${classes.svgRighty}`}>
             <Shield />
           </div>
 
-          <div className={classes.badgeTitle}>
+          <div className={`${classes.badgeTitle} ${classes.righty}`}>
             <h5>MONEY BACK GUARANTEE</h5>
             <p>We return money within 30 days</p>
           </div>
