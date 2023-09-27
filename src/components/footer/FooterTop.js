@@ -1,5 +1,8 @@
 import classes from "./FooterTop.module.css";
 import Delivery from "../svgs/Delivery";
+import Headphones from "../svgs/Headphones";
+
+import Shield from "../svgs/Shield";
 
 const FooterTop = () => {
   return (
@@ -15,11 +18,25 @@ const FooterTop = () => {
             <p>Free delivery for all orders over $140</p>
           </div>
         </div>
-        <div>
-          <p>hello</p>
+        <div className={classes.badges}>
+          <div className={classes.delivery}>
+            <Headphones />
+          </div>
+
+          <div className={classes.badgeTitle}>
+            <h5>24/7 CUSTOMER SUPPORT</h5>
+            <p>Friendly 24/7 customer support</p>
+          </div>
         </div>
-        <div>
-          <p>hello</p>
+        <div className={classes.badges}>
+          <div className={classes.delivery}>
+            <Shield />
+          </div>
+
+          <div className={classes.badgeTitle}>
+            <h5>MONEY BACK GUARANTEE</h5>
+            <p>We return money within 30 days</p>
+          </div>
         </div>
       </section>
     </>
