@@ -3,3 +3,19 @@
     border: 1px solid black;
     height: 100px;
 }
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0;
+  }
+
+  .icons{
+    display: flex;
+    gap: 25px;
+    justify-content: right;
+    padding-right: 15px;
+    
+  }
