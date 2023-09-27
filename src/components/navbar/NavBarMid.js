@@ -3,7 +3,7 @@ import LogoSvg from "../svgs/LogoSvg";
 const NavBarMid = () =>{
     return(
         <div className={classes.container}>
-           <LogoSvg/>
+           <LogoSvg fontColor={'#222222'}/>
            <div className={classes.searchBar}>
             
            </div>

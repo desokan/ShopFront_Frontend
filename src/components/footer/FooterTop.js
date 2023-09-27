@@ -7,7 +7,7 @@ import Shield from "../svgs/Shield";
 const FooterTop = () => {
   return (
     <>
-      <section className={classes.words}>
+      <section className={classes.footerTopContainer}>
         <div className={classes.badges}>
           <div className={classes.delivery}>
             <Delivery />

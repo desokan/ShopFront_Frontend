@@ -1,0 +1,22 @@
+.footerMidContainer {
+    display: grid;
+    padding: 98px 0px 88px;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    border-top: 1px #ffffff10 solid;
+    border-bottom: 1px #FFFFFF10 solid;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.footerMidContainer > h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.socialIconContainer {
+    display: grid;
+    grid-auto-flow: column;
+    max-width: 64%;
+    padding-top: 47px;
+}
