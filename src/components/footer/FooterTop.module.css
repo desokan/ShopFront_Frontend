@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Sen:wght@500&display=swap");
+
+.footerTopContainer {
+  padding: 48px 0px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+}
+
+.badgeTitle > p,
+.badgeTitle > h5 {
+  margin: 5px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+  color: white;
+}
+
+.badgeTitle > h5 {
+  font-size: 16px;
+}
+.badgeTitle > p {
+  font-size: 14px;
+}
+
+.delivery {
+    display: grid;
+    place-self: center;
+}
+
+.badgesRight  {
+    justify-self: end;
+}
+.badgesCenter {
+    justify-self: center;
+}
