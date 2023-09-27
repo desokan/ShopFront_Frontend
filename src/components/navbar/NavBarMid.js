@@ -9,7 +9,7 @@ const NavBarMid = () => {
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        <LogoSvg />
+        <LogoSvg fontColor={'#222222'}/>
         <div className={classes.searchBar}>
           <div>
             <SearchIcon />
