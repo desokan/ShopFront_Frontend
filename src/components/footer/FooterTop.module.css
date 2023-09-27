@@ -34,12 +34,9 @@
     place-self: center;
 }
 
-.righty {
-   display: grid;
-   justify-content: right;
+.badgesRight  {
+    justify-self: end;
 }
-
-.svgRighty {
-    display: grid;
-    justify-content: right;
+.badgesCenter {
+    justify-self: center;
 }

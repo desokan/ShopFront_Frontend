@@ -18,7 +18,7 @@ const FooterTop = () => {
             <p>Free delivery for all orders over $140</p>
           </div>
         </div>
-        <div className={classes.badges}>
+        <div className={`${classes.badges} ${classes.badgesCenter}`}>
           <div className={classes.delivery}>
             <Headphones />
           </div>
@@ -28,7 +28,7 @@ const FooterTop = () => {
             <p>Friendly 24/7 customer support</p>
           </div>
         </div>
-        <div className={classes.badges}>
+        <div className={`${classes.badges} ${classes.badgesRight}`}>
           <div className={`${classes.delivery} ${classes.svgRighty}`}>
             <Shield />
           </div>
