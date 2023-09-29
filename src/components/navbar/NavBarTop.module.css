@@ -5,12 +5,11 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
-  padding: 0 200px 0 200px;
+  padding: 0 255px 0 255px;
 }
 
 .wrapper {
   max-width: 1280px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
