@@ -6,7 +6,7 @@
 .heroBannerContainer {
   display: flex;
   align-items: center;
-  padding-left: 255px;
+  padding: 0 255px 0 255px;
 }
 .heroBannerTextContainerH1 {
   color: #222;
