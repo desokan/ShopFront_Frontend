@@ -21,6 +21,7 @@
   max-width: 64%;
   padding-top: 47px;
   font-family: "Prompt", sans-serif;
+  align-items: center;
 }
 
 .titles > h4 {
