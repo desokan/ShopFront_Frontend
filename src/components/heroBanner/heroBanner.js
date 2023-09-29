@@ -1,57 +1,20 @@
 import React from 'react'
-import './style.css'
-import HeroSlider, { Slide } from 'hero-slider'
-import image from './images/cosmetic.png'
-const bckImg = 'https://i.imgur.com/Gu5Cznz.jpg'
+import classes from "./HeroBanner.module.css";
+import ArrowLeft from './svgs/ArrowLeft';
+import ArrowRight from './svgs/ArrowRight';
+
 
 const MainSlider = () => {
 	return (
-		<div className="div">
-			<HeroSlider
-				slidingAnimation="left_to_right"
-				orientation="horizontal"
-				initialSlide={1}
-				onBeforeChange={(previousSlide, nextSlide) =>
-					console.log('onBeforeChange', previousSlide, nextSlide)
-				}
-				onChange={(nextSlide) => console.log('onChange', nextSlide)}
-				onAfterChange={(nextSlide) => console.log('onAfterChange', nextSlide)}
-				style={{
-					backgroundColor: 'rgba(0, 0, 0, 0.33)',
-				}}
-				settings={{
-					slidingDuration: 250,
-					slidingDelay: 100,
-					shouldAutoplay: true,
-					shouldDisplayButtons: true,
-					autoplayDuration: 5000,
-				}}
-				height={'800px'}
-			>
-				<div>
-					<h1>Hello</h1>
-				</div>
-				<Slide
-					background={{
-						backgroundImage: `url(${bckImg})`,
-						backgroundAttachment: 'fixed',
-						backgroundRepeat: 'no-repeat',
-					}}
-				/>
-				{/* <Slide
-					background={{
-						backgroundImage: bckImg,
-						backgroundAttachment: 'fixed',
-					}}
-				/> */}
-				<Slide
-					background={{
-						backgroundImage: bckImg,
-						backgroundAttachment: 'fixed',
-					}}
-				/>
-			</HeroSlider>
-		</div>
+		<div className={classes.heroBannerContainer}>
+      <div className={classes.heroBannerTextContainer}>
+       <h2 className={classes.heroBannerTextContainerH1}>NATURAL GLOW</h2>
+       <p className={classes.heroBannerTextContainerP}>Beaux products protect, moisturize, and lubricate your skin. It smartly nourish your skin with lotions, day creams, night creams, tinted moisturizers, and more.</p>
+      <button className={classes.heroBannerTextContainerButton}>VIEW MORE</button>
+      </div>
+      <div className={classes.heroBannerArrowLeft}><ArrowLeft/></div>
+      <div className={classes.heroBannerArrowRight}><ArrowRight/></div>
+    </div>
 	)
 }
 
