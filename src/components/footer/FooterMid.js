@@ -65,6 +65,22 @@ const FooterMid = () => {
         </div>
         <div className={classes.titles}>
           <h4>SUBSCRIBE</h4>
+          <div className={classes.subscribe}>
+            <p>
+              Be the first to get the latest news about trends, promotions, and
+              much more!
+            </p>
+            <form>
+              <div  className={classes.subscribeContainer}>
+                <input
+                  className={classes.subscribeInput}
+                  type="text"
+                  placeholder="Your email address"
+                />
+                <button className={classes.subscribeButton}>JOIN</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </>
