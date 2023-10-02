@@ -1,5 +1,6 @@
 .heroBannerContainer {
   background-image: url('./images/heroBannerImage.png');
+  background-size: fill;
   height: 757px;
   flex-shrink: 0;
 }
