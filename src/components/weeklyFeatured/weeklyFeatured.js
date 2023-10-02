@@ -1,6 +1,7 @@
 import classes from './WeeklyFeatured.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
 import SingleCard from './SingleCard'
+import ArrowRight from '../heroBanner/svgs/ArrowRight'
 
 const WeeklyFeatured = () => {
   return (
@@ -21,6 +22,9 @@ const WeeklyFeatured = () => {
         <SingleCard/>
         <SingleCard/>
         <SingleCard/>
+      </div>
+      <div className={classes.WeeklyFeaturedArrowRight}>
+        <ArrowRight width='80px' height='80px' fill='none' />
       </div>
     </div>
   )
