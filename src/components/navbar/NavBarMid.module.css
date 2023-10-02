@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   display: grid;
   grid-template-columns: 200px 1fr 200px;
   padding: 25px 0;
