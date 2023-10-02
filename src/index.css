@@ -22,4 +22,7 @@ code {
   display: grid;
 }
 
-
+:root {
+  --min-gap: 30px; /* Minimum gap size */
+  --max-gap: 1fr;  /* Maximum gap size (1fr means it takes available space) */
+}
