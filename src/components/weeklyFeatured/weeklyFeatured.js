@@ -1,9 +1,5 @@
 import classes from './WeeklyFeatured.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
-import ArrowRight from '../heroBanner/svgs/ArrowRight'
-import BagIcon from '../svgs/BagIcon'
-import Image4 from './images/image4.png'
-import React, { useState } from 'react';
 import SingleCard from './SingleCard'
 
 const WeeklyFeatured = () => {
