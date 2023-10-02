@@ -14,6 +14,10 @@
   word-wrap: break-word;
   font-family: "Prompt", sans-serif;
 }
+.logoDiv {
+  width: 112px;
+  height: 28px;
+}
 
 .socialIconContainer {
   display: grid;

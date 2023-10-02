@@ -7,7 +7,7 @@ const Shield = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="shield" clip-path="url(#clip0_202_7070)">
+      <g id="shield" clipPath="url(#clip0_202_7070)">
         <g id="surface1">
           <path
             id="Vector"

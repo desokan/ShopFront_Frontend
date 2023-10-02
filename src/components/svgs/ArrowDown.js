@@ -7,7 +7,7 @@ const ArrowDown = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="upload 1" clip-path="url(#clip0_202_7494)">
+      <g id="upload 1" clipPath="url(#clip0_202_7494)">
         <g id="Group">
           <path
             id="Expand Less"
