@@ -1,6 +1,7 @@
 import classes from "./NavBarTop.module.css";
 import React from "react";
 import ArrowDown from "../svgs/ArrowDown";
+import DropDownSelect from "../dropDowns/dropDownSelect";
 
 const NavBarTop = () => {
   return (
@@ -17,6 +18,7 @@ const NavBarTop = () => {
               <span className={classes.arrow}>
                 <ArrowDown />
               </span>
+              <DropDownSelect name="language" value1='English' value2='French' value3='Italian'/>
             </p>
             <p>
               CURRENCY
