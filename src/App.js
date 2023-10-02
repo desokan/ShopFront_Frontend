@@ -3,6 +3,7 @@ import NavBar from './components/navbar/NavBarContainer'
 import MainSlider from './components/heroBanner/HeroBanner'
 import Footer from './components/footer/FooterContainer'
 import WeeklyFeatured from './components/weeklyFeatured/weeklyFeatured'
+import MostPreferred from './components/mostPreferred/mostPreferred'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <NavBar />
       <MainSlider />
       <WeeklyFeatured />
+      <MostPreferred/>
       <Footer/>
     </>
   )
