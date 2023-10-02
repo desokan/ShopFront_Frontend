@@ -1,18 +1,12 @@
-import NavBar from './components/navbar/NavBarContainer'
-// import { Routes, Route } from "react-router-dom";
-import MainSlider from './components/heroBanner/HeroBanner'
-import Footer from './components/footer/FooterContainer'
-import WeeklyFeatured from './components/weeklyFeatured/weeklyFeatured'
-import MostPreferred from './components/mostPreferred/mostPreferred'
+import { Routes, Route} from "react-router-dom"
+import HomePage from './pages/HomePage'
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <MainSlider />
-      <WeeklyFeatured />
-      <MostPreferred/>
-      <Footer/>
+      <Routes>
+        <Route path={'/'} element={<HomePage/>} />
+      </Routes>
     </>
   )
 }
