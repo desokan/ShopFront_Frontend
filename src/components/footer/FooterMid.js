@@ -78,9 +78,9 @@ const FooterMid = () => {
           <div>
             <ul className={classes.company}>
               <li>About Us </li>
+              <li>FAQ</li>
               <li>Careers</li>
-              <li>Affiliates</li>
-              <li>Blog</li>
+              <li>Delivery & Shipping</li>
               <li>Contact Us</li>
             </ul>
           </div>
@@ -103,14 +103,13 @@ const FooterMid = () => {
             <ul className={`${classes.company} ${classes.removeAnchorStyle}`}>
               <li>Customer Service</li>
               <li>My Account</li>
-              <li>Find a Store</li>
-
+              <li>Track Order</li>
+              <li>Return Portal</li>
               <li>
                 <a href="/privacy" target="_blank">
                   Legal & Privacy
                 </a>
               </li>
-              <li>Contact</li>
               <li>Gift Card</li>
             </ul>
           </div>
