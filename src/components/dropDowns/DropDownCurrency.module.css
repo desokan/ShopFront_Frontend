@@ -1,0 +1,11 @@
+.dropDownSelect{
+    background-color: #222222;
+    color: #8a8a8a;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.dropDownSelect:focus{
+    outline: none;
+}
