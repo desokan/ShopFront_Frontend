@@ -1,6 +1,6 @@
 import NavBar from "../components/navbar/NavBarContainer";
-import MainSlider from "../components/heroBanner/heroBanner";
-import WeeklyFeatured from "../components/weeklyFeatured/weeklyFeatured";
+import MainSlider from "../components/heroBanner/HeroBanner";
+import WeeklyFeatured from "../components/weeklyFeatured/WeeklyFeatured";
 import Footer from "../components/footer/FooterContainer";
 
 const HomePage = () => {

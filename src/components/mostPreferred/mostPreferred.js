@@ -1,5 +1,5 @@
-import classes from './mostPreferred.module.css'
-import SingleCardMostPreferres from './singleCardMostPreferred'
+import classes from './MostPreferred.module.css'
+import SingleCardMostPreferres from './SingleCardMostPreferred'
 const MostPreferred = () =>{
     return (
         <div className={classes.MostPreferredContainer}>
