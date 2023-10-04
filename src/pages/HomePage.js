@@ -12,7 +12,7 @@ const HomePage = () => {
 			<MainSlider />
 			<WeeklyFeatured />
 			<MostPreferred />
-            <RecentlyViewed />
+      <RecentlyViewed />
 			<Footer />
 		</>
 	)

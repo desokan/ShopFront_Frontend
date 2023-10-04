@@ -1,7 +1,9 @@
 import classes from "./NavBarTop.module.css";
 import React from "react";
-import ArrowDown from "../svgs/ArrowDown";
-import DropDownSelect from "../dropDowns/dropDownSelect";
+// import ArrowDown from "../svgs/ArrowDown";
+// import DropDownSelect from "../dropDowns/DropDownSelect";
+import DropDownLanguage from "../dropDowns/DropDownLanguage";
+import DropDownCurrency from "../dropDowns/DropDownCurrency";
 
 const NavBarTop = () => {
   return (
@@ -13,19 +15,8 @@ const NavBarTop = () => {
             <p>CONTACT</p>
           </div>
           <div className={classes.righty}>
-            <p className={classes.dropdown}>
-              LANGUAGE
-              <span className={classes.arrow}>
-                <ArrowDown />
-              </span>
-              <DropDownSelect name="language" value1='English' value2='French' value3='Italian'/>
-            </p>
-            <p>
-              CURRENCY
-              <span className={classes.arrow}>
-                <ArrowDown />
-              </span>
-            </p>
+            <DropDownLanguage />
+            <DropDownCurrency />
           </div>
         </div>
       </div>
