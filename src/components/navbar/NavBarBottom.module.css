@@ -4,6 +4,7 @@
   display: flex;
   gap: 32px;
   justify-content: center;
+
 }
 
 .wrapper > a {
@@ -13,4 +14,38 @@
   font-size: 14px;
   line-height: 24px;
   padding: 20px 0;
+  
 }
+
+.dropDownHover {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropDownHover {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+ /* Show the dropdown menu on hover */
+ .dropDownHover:hover .dropDownContent {display: block;}
+  
+ /* Change the background color of the dropdown button when the dropdown content is shown */
+ .dropDownHover:hover .dropbtn {background-color: #3e8e41;}
