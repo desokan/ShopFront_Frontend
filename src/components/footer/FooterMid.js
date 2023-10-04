@@ -7,30 +7,40 @@ import {
   Youtube,
   Instagram,
 } from "../svgs/social-icons";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const FooterMid = () => {
-    const handleClick = () => {
-        window.location.reload()
-        window.scrollTo(0, 0);
-    }
+  const handleClick = () => {
+    window.location.reload();
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <section className={classes.footerMidContainer}>
         <div>
-            <div className={classes.logoDiv} onClick={handleClick}>
-                <LogoSvg fontColor={"#FFFFFF"} />
-            </div>
+          <div className={classes.logoDiv} onClick={handleClick}>
+            <LogoSvg fontColor={"#FFFFFF"} />
+          </div>
           <p>
             1418 River Drive, Suite 35 Cottonhall, CA 9622 <br /> United States{" "}
             <br /> <br /> sale@uomo.com <br /> +1 246-345-0695
           </p>
           <div className={classes.socialIconContainer}>
-            <Link to={'https://www.facebook.com'} target="_blank"><Facebook /></Link>
-            <Link to={'https://www.twitter.com'} target="_blank"><Twitter /></Link>
-            <Link to={'https://www.instagram.com'} target="_blank"><Instagram /></Link>
-            <Link to={'https://www.youtube.com'} target="_blank"><Youtube /></Link>
-            <Link to={'https://www.pinterest.com'} target="_blank"><Pinterest /></Link>
+            <Link to={"https://www.facebook.com"} target="_blank">
+              <Facebook />
+            </Link>
+            <Link to={"https://www.twitter.com"} target="_blank">
+              <Twitter />
+            </Link>
+            <Link to={"https://www.instagram.com"} target="_blank">
+              <Instagram />
+            </Link>
+            <Link to={"https://www.youtube.com"} target="_blank">
+              <Youtube />
+            </Link>
+            <Link to={"https://www.pinterest.com"} target="_blank">
+              <Pinterest />
+            </Link>
           </div>
         </div>
         <div className={classes.titles}>
@@ -60,11 +70,14 @@ const FooterMid = () => {
         <div className={classes.titles}>
           <h4>HELP</h4>
           <div>
-            <ul className={classes.company}>
+            <ul className={`${classes.company} ${classes.removeAnchorStyle}`}>
               <li>Customer Service</li>
               <li>My Account</li>
               <li>Find a Store</li>
-              <li>Legal & Privacy</li>
+
+              <li>
+                <a href="/privacy" target="_blank">Legal & Privacy</a>
+              </li>
               <li>Contact</li>
               <li>Gift Card</li>
             </ul>
@@ -78,7 +91,7 @@ const FooterMid = () => {
               much more!
             </p>
             <form>
-              <div  className={classes.subscribeContainer}>
+              <div className={classes.subscribeContainer}>
                 <input
                   className={classes.subscribeInput}
                   type="text"
