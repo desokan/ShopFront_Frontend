@@ -1,7 +1,7 @@
 import classes from "./NavBarTop.module.css";
 import React from "react";
 import ArrowDown from "../svgs/ArrowDown";
-import DropDownSelect from "../dropDowns/dropDownSelect";
+import DropDownSelect from "../dropDowns/DropDownSelect";
 
 const NavBarTop = () => {
   return (
