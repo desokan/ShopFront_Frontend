@@ -3,3 +3,14 @@
     background-color: rgb(34, 34, 34);
     align-self: end;
 }
+
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+
+}
+
+a:hover {
+    color: #eba37a;
+}
