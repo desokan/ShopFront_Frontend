@@ -1,0 +1,9 @@
+{
+  "subscribers": [
+    {
+      "id": 1,
+      "email": "test-user@email.com"
+    }
+
+  ]
+}

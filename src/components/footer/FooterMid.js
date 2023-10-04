@@ -1,5 +1,6 @@
 import classes from "./FooterMid.module.css";
 import LogoSvg from "../svgs/LogoSvg.js";
+import { useState } from "react";
 import {
   Twitter,
   Facebook,
@@ -10,10 +11,39 @@ import {
 import { Link } from "react-router-dom";
 
 const FooterMid = () => {
+  const [subscriber, setSubscriber] = useState();
+
+  const baseUrl = 'http://localhost:4000'
+
   const handleClick = () => {
     window.location.reload();
     window.scrollTo(0, 0);
   };
+
+  const postSubscriber = (e) => {
+    e.preventDefault();
+    const newSubscriber = {
+      subscriber,
+    };
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newSubscriber),
+    };
+
+    fetch(`${baseUrl}/subscribers`, options).then((res) =>
+      res.json()
+    );
+    setSubscriber("");
+
+  };
+
+  const handleSubscriber = (e) => {
+    setSubscriber(e.target.value);
+  };
+
   return (
     <>
       <section className={classes.footerMidContainer}>
@@ -76,7 +106,9 @@ const FooterMid = () => {
               <li>Find a Store</li>
 
               <li>
-                <a href="/privacy" target="_blank">Legal & Privacy</a>
+                <a href="/privacy" target="_blank">
+                  Legal & Privacy
+                </a>
               </li>
               <li>Contact</li>
               <li>Gift Card</li>
@@ -90,11 +122,13 @@ const FooterMid = () => {
               Be the first to get the latest news about trends, promotions, and
               much more!
             </p>
-            <form>
+            <form onSubmit={postSubscriber}>
               <div className={classes.subscribeContainer}>
                 <input
+                  value={subscriber}
+                  onChange={handleSubscriber}
                   className={classes.subscribeInput}
-                  type="text"
+                  type="email"
                   placeholder="Your email address"
                 />
                 <button className={classes.subscribeButton}>JOIN</button>
