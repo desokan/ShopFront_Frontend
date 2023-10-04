@@ -1,15 +1,15 @@
-.WeeklyFeaturedContainer {
+.RecentlyViewedContainer {
   padding: 50px 255px 0 255px;
 
   max-width: 100%;
 }
 
-.WeeklyFeaturedTitle {
+.RecentlyViewedTitle {
   /* display:flex; */
   text-align: center;
 }
 
-.WeeklyFeaturedTitleH3 {
+.RecentlyViewedTitleH3 {
   color: #222222;
   font-size: 25px;
   font-family: Avenir;
@@ -19,7 +19,7 @@
   padding: 10px;
 }
 
-.WeeklyFeaturedTitleP {
+.RecentlyViewedTitleP {
   color: #5a5a5a;
   font-size: 15px;
   font-family: Avenir;
@@ -29,37 +29,39 @@
   padding-bottom: 20px;
 }
 
-.WeeklyFeaturedCards {
+.RecentlyViewedCards {
   display: grid;
   grid-template-columns: repeat(4, minmax(330px, 330px));
   gap: var(--min-gap);
   /* Initial gap size */
   padding-top: 20px;
 }
+
 @media (min-width: 768px) {
-  .MostPreferredCards {
+  .RecentlyViewedCards {
     grid-gap: calc((100% - 4 * 330px) / 3);
   }
 }
 
 @media (min-width: 1920px) {
-  .MostPreferredCards {
+  .RecentlyViewedCards {
     grid-gap: 1fr;
     /* Maximum gap size */
   }
 }
 
-.WeeklyFeaturedSingleCard {
-  padding-bottom: 50px;
+.RecentlyViewedSingleCard {
+ 
   display: flex;
-  flex-direction: column;
-  justify-self: center;
-
-  width: 330px;
-  height: 330px;
+    flex-direction: column;
+    justify-self: center;
+  
+    width: 330px;
+    height: 330px; 
+    padding-bottom: 50px;
 }
 
-.WeeklyFeaturedImageContainer {
+.RecentlyViewedImageContainer {
   width: 330px;
   height: 400px;
   background: #f9f9f9;
@@ -67,18 +69,18 @@
   align-items: center;
 }
 
-.WeeklyFeaturedImage {
+.RecentlyViewedImage {
   width: 330px;
   height: 330px;
 }
 
-.WeeklyFeaturedProductInfo {
+.RecentlyViewedProductInfo {
   width: 330px;
   display: grid;
   justify-items: center;
 }
 
-.WeeklyFeaturedMakeup {
+.RecentlyViewedMakeup {
   color: #5a5a5a;
   font-size: 15px;
   font-family: Avenir;
@@ -87,7 +89,7 @@
   margin: 6px;
 }
 
-.WeeklyFeaturedText {
+.RecentlyViewedText {
   color: #222222;
   font-size: 16px;
   font-family: Avenir;
@@ -97,27 +99,27 @@
   margin: 6px;
 }
 
-.WeeklyFeaturedStars {
+.RecentlyViewedStars {
   color: orange;
   width: 12px;
   height: 14px;
 }
 
-.WeeklyFeaturedArrowLeft {
+.RecentlyViewedArrowLeft {
   position: relative;
   left: -90px;
   bottom: -350px;
   width: 50px;
 }
 
-.WeeklyFeaturedArrowRight {
+.RecentlyViewedArrowRight {
   width: 50px;
   position: relative;
   right: -1450px;
   bottom: 450px;
 }
 
-.WeeklyFeaturedSingleCard .WeeklyFeaturedAddToCartButton {
+.RecentlyViewedSingleCard .RecentlyViewedAddToCartButton {
   position: relative;
   width: 330px;
   height: 50px;
@@ -133,7 +135,7 @@
   line-height: 24px;
 }
 
-.WeeklyFeaturedSingleCard:hover .WeeklyFeaturedAddToCartButton {
+.RecentlyViewedSingleCard:hover .RecentlyViewedAddToCartButton {
   opacity: 1;
 }
 
