@@ -1,8 +1,10 @@
 import classes from "./DropDownCurrency.module.css"
 
-const DropDownCurrency = () => {
+const DropDownCurrency = ({className}) => {
+  console.log(className)
+
   return (
-    <select className={classes.dropDownSelect} name="Currency">
+    <select className={(className === 'footer' ? classes.footerDropDown : classes.dropDownSelect)} name="Currency">
       <option value="Pound">GBP £</option>
       <option value="Euros">EURO €</option>
       <option value="Dollars">USD $</option>

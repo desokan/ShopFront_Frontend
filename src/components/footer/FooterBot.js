@@ -1,5 +1,6 @@
 import classes from "./FooterBot.module.css";
-import ArrowUp from "../svgs/ArrowUp";
+import DropDownCurrency from "../dropDowns/DropDownCurrency";
+import DropDownLanguage from "../dropDowns/DropDownLanguage";
 
 const FooterBot = () => {
   return (
@@ -8,20 +9,10 @@ const FooterBot = () => {
         <p>©2023 Uomo</p>
       </div>
       <div className={classes.optionsContainer}>
-        <p>Language</p>
-        <p>
-          United Kingdom | English
-          <span className={classes.arrowUp}>
-            <ArrowUp />
-          </span>
-        </p>
-        <p>Currency</p>
-        <p>
-          $ USD
-          <span className={classes.arrowUp}>
-            <ArrowUp />
-          </span>
-        </p>
+        <p>LANGUAGE</p>
+        <DropDownLanguage className="footer" />
+        <p>CURRENCY</p>
+        <DropDownCurrency className="footer" />
       </div>
     </section>
   );
