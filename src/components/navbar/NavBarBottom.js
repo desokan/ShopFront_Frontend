@@ -8,16 +8,38 @@ const NavBarBottom = () => {
       <div className={classes.wrapper}>
         <div className={classes.dropDownHover}>
           <Link className={classes.dropbtn} to="/">
-            HOME
+            WOMEN
+          </Link>
+          <div className={classes.dropDownContent}>
+            <Link to="/">Sara</Link>
+            <Link to="/">Rasheed</Link>
+            <Link to="/">Norik</Link>
+          </div>
+        </div>
+        <div className={classes.dropDownHover}>
+          <Link className={classes.dropbtn} to="/">
+            MEN
           </Link>
           <DropDownHover />
         </div>
-    
-        <Link to="/">SHOP</Link>
-        <Link to="/">COLLECTION</Link>
-        <Link to="/">JOURNAL</Link>
-        <Link to="/">LOOKBOOK</Link>
-        <Link to="/">PAGES</Link>
+        <div className={classes.dropDownHover}>
+          <Link className={classes.dropbtn} to="/">
+            GIRLS
+          </Link>
+          <DropDownHover />
+        </div>
+        <div className={classes.dropDownHover}>
+          <Link className={classes.dropbtn} to="/">
+            BOYS
+          </Link>
+          <DropDownHover />
+        </div>
+        <div className={classes.dropDownHover}>
+          <Link className={classes.dropbtn} to="/">
+            SALE
+          </Link>
+          <DropDownHover />
+        </div>
       </div>
     </>
   );
