@@ -1,48 +1,39 @@
 import classes from "./NavBarBottom.module.css";
-import { Link } from "react-router-dom";
 import DropDownHover from "../dropDowns/DropDownHover";
+
+const productMenus = [
+  {
+    category: "WOMEN",
+    subCategory: ["Trousers", "Blouses", "Skirts"],
+  },
+  {
+    category: "MEN",
+    subCategory: ["Trousers", "Shirts", "Tops"],
+  },
+  {
+    category: "GIRLS",
+    subCategory: ["Trousers", "Blouses", "Skirts"],
+  },
+  {
+    category: "BOYS",
+    subCategory: ["Trousers", "Shirts", "Tops"],
+  },
+  {
+    category: "SALE",
+    subCategory: ["Trousers", "Blouses", "Skirts", "Shirts", "Tops"],
+  },
+];
 
 const NavBarBottom = () => {
   return (
-    <>
       <div className={classes.wrapper}>
-        <div className={classes.dropDownHover}>
-          <Link className={classes.dropbtn} to="/">
-            WOMEN
-          </Link>
-          <div className={classes.dropDownContent}>
-            <Link to="/">Sara</Link>
-            <Link to="/">Rasheed</Link>
-            <Link to="/">Norik</Link>
-          </div>
-        </div>
-        <div className={classes.dropDownHover}>
-          <Link className={classes.dropbtn} to="/">
-            MEN
-          </Link>
-          <DropDownHover />
-        </div>
-        <div className={classes.dropDownHover}>
-          <Link className={classes.dropbtn} to="/">
-            GIRLS
-          </Link>
-          <DropDownHover />
-        </div>
-        <div className={classes.dropDownHover}>
-          <Link className={classes.dropbtn} to="/">
-            BOYS
-          </Link>
-          <DropDownHover />
-        </div>
-        <div className={classes.dropDownHover}>
-          <Link className={classes.dropbtn} to="/">
-            SALE
-          </Link>
-          <DropDownHover />
-        </div>
+      {productMenus.map((productMenu) => (
+          <DropDownHover to="/" key={productMenu.category}
+           category={productMenu.category}
+           subCategories={productMenu.subCategory} />
+       ) )}
       </div>
-    </>
-  );
+  )
 };
 
 export default NavBarBottom;
