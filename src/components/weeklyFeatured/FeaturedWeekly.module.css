@@ -1,0 +1,157 @@
+.WeeklyFeaturedContainer {
+    padding: 50px 255px 0 255px;
+  
+    max-width: 100%;
+  }
+  
+  .WeeklyFeaturedTitle {
+    /* display:flex; */
+    text-align: center;
+  }
+  
+  .WeeklyFeaturedTitleH3 {
+    color: #222222;
+    font-size: 25px;
+    font-family: Avenir;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .WeeklyFeaturedTitleP {
+    color: #5a5a5a;
+    font-size: 15px;
+    font-family: Avenir;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
+  .WeeklyFeaturedCards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(330px, 330px));
+    gap: var(--min-gap);
+    /* Initial gap size */
+    padding-top: 20px;
+  }
+  @media (min-width: 768px) {
+    .MostPreferredCards {
+      grid-gap: calc((100% - 4 * 330px) / 3);
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .MostPreferredCards {
+      grid-gap: 1fr;
+      /* Maximum gap size */
+    }
+  }
+  
+  .WeeklyFeaturedSingleCard {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  
+    width: 330px;
+    height: 330px;
+  }
+  
+  .WeeklyFeaturedImageContainer {
+    width: 330px;
+    height: 400px;
+    background: #f9f9f9;
+    display: grid;
+    align-items: center;
+  }
+  
+  .WeeklyFeaturedImage {
+    width: 330px;
+    height: 330px;
+  }
+  
+  .WeeklyFeaturedProductInfo {
+    width: 330px;
+    display: grid;
+    justify-items: center;
+  }
+  
+  .WeeklyFeaturedMakeup {
+    color: #5a5a5a;
+    font-size: 15px;
+    font-family: Avenir;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 6px;
+  }
+  
+  .WeeklyFeaturedText {
+    color: #222222;
+    font-size: 16px;
+    font-family: Avenir;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    margin: 6px;
+  }
+  
+  .WeeklyFeaturedStars {
+    color: orange;
+    width: 12px;
+    height: 14px;
+  }
+  
+  .WeeklyFeaturedArrowLeft {
+    position: relative;
+    left: -90px;
+    bottom: -350px;
+    width: 50px;
+  }
+  
+  .WeeklyFeaturedArrowRight {
+    width: 50px;
+    position: relative;
+    right: -1450px;
+    bottom: 450px;
+  }
+  
+  .WeeklyFeaturedSingleCard .WeeklyFeaturedAddToCartButton {
+    position: relative;
+    width: 330px;
+    height: 50px;
+    bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #222;
+    color: #fff;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  
+  .WeeklyFeaturedSingleCard:hover .WeeklyFeaturedAddToCartButton {
+    opacity: 1;
+  }
+  
+  .ProductRatingStar {
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: gray;
+  }
+  
+  .ProductRatingStarFilled {
+    color: #eba37a;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

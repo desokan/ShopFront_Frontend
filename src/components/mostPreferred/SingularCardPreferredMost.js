@@ -1,6 +1,7 @@
-import classes from './MostPreferred.module.css'
+import classes from './PreferredMost.module.css'
 import image from './images/image4.png'
-const SingleCardMostPreferres = ()=>{
+
+const SingularCardPreferredMost = ()=>{
     return (
         <div className={classes.MostPreferredSingleCard}>
             <img className={classes.MostPreferredSingleCardImage} src={image} alt='lipstick'/>
@@ -8,4 +9,5 @@ const SingleCardMostPreferres = ()=>{
         </div>
     )
 }
-export default SingleCardMostPreferres
+
+export default SingularCardPreferredMost

@@ -1,7 +1,7 @@
-import classes from './MostPreferred.module.css'
-import SingleCardMostPreferred from './SingleCardMostPreferred'
+import classes from './PreferredMost.module.css'
+import SingularCardPreferredMost from './SingularCardPreferredMost'
 
-const MostPreferred = () => {
+const PreferredMost = () => {
 	return (
 		<div className={classes.MostPreferredContainer}>
 			<div className={classes.MostPreferredTitleContainer}>
@@ -16,12 +16,12 @@ const MostPreferred = () => {
 				</div>
 			</div>
 			<div className={classes.MostPreferredCards}>
-				<SingleCardMostPreferred />
-				<SingleCardMostPreferred />
-				<SingleCardMostPreferred />
-				<SingleCardMostPreferred />
+				<SingularCardPreferredMost />
+				<SingularCardPreferredMost />
+				<SingularCardPreferredMost />
+				<SingularCardPreferredMost />
 			</div>
 		</div>
 	)
 }
-export default MostPreferred
+export default PreferredMost

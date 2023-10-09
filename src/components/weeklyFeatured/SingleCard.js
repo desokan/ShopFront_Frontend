@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classes from './WeeklyFeatured.module.css'
+import classes from './FeaturedWeekly.module.css'
 import Image4 from './images/image4.png'
 import BagIcon from '../svgs/BagIcon'
 

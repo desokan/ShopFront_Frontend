@@ -1,9 +1,9 @@
-import classes from './WeeklyFeatured.module.css'
+import classes from './FeaturedWeekly.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
 import SingleCard from './SingleCard'
 import ArrowRight from '../heroBanner/svgs/ArrowRight'
 
-const WeeklyFeatured = () => {
+const FeaturedWeekly = () => {
   return (
     <div className={classes.WeeklyFeaturedContainer}>
       <div className={classes.WeeklyFeaturedArrowLeft}>
@@ -31,4 +31,4 @@ const WeeklyFeatured = () => {
 }
 
 
-export default WeeklyFeatured
+export default FeaturedWeekly
