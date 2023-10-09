@@ -6,7 +6,7 @@ const FooterBot = () => {
   return (
     <section className={classes.footerBotContainer}>
       <div>
-        <p>©2023 Uomo</p>
+        <p>©{new Date().getFullYear()} Uomo</p>
       </div>
       <div className={classes.optionsContainer}>
         <p>LANGUAGE</p>

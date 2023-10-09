@@ -26,14 +26,17 @@ const productMenus = [
 
 const NavBarBottom = () => {
   return (
-      <div className={classes.wrapper}>
+    <div className={classes.wrapper}>
       {productMenus.map((productMenu) => (
-          <DropDownHover to="/" key={productMenu.category}
-           category={productMenu.category}
-           subCategories={productMenu.subCategory} />
-       ) )}
-      </div>
-  )
+        <DropDownHover
+          to="/"
+          key={productMenu.category}
+          category={productMenu.category}
+          subCategories={productMenu.subCategory}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default NavBarBottom;

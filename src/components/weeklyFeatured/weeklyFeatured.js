@@ -1,13 +1,13 @@
-import classes from './WeeklyFeatured.module.css'
-import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
-import SingleCard from './SingleCard'
-import ArrowRight from '../heroBanner/svgs/ArrowRight'
+import classes from "./WeeklyFeatured.module.css";
+import ArrowLeft from "../heroBanner/svgs/ArrowLeft";
+import SingleCard from "./SingleCard";
+import ArrowRight from "../heroBanner/svgs/ArrowRight";
 
 const WeeklyFeatured = () => {
   return (
     <div className={classes.WeeklyFeaturedContainer}>
       <div className={classes.WeeklyFeaturedArrowLeft}>
-        <ArrowLeft width='80px' height='80px' fill='none' />
+        <ArrowLeft width="80px" height="80px" fill="none" />
       </div>
       <div className={classes.WeeklyFeaturedTitle}>
         <h3 className={classes.WeeklyFeaturedTitleH3}>
@@ -18,17 +18,16 @@ const WeeklyFeatured = () => {
         </p>
       </div>
       <div className={classes.WeeklyFeaturedCards}>
-        <SingleCard/>
-        <SingleCard/>
-        <SingleCard/>
-        <SingleCard/>
+        <SingleCard />
+        <SingleCard />
+        <SingleCard />
+        <SingleCard />
       </div>
       <div className={classes.WeeklyFeaturedArrowRight}>
-        <ArrowRight width='80px' height='80px' fill='none' />
+        <ArrowRight width="80px" height="80px" fill="none" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-
-export default WeeklyFeatured
+export default WeeklyFeatured;
