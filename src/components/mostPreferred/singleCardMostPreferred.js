@@ -1,4 +1,4 @@
-import classes from './mostPreferred.module.css'
+import classes from './MostPreferred.module.css'
 import image from './images/image4.png'
 const SingleCardMostPreferres = ()=>{
     return (
