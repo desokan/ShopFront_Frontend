@@ -14,8 +14,6 @@ const NavBarMid = () => {
           <div>
             <SearchIcon />
           </div>
-          <div></div>
-          <div></div>
         </div>
         <div className={classes.icons}>
           <HeartIcon />

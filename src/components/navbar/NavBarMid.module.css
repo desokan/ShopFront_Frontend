@@ -1,6 +1,7 @@
 .container {
   padding: 0 255px 0 255px;
   height: 100px;
+  /* margin-bottom: 15px; */
 }
 
 .wrapper {
