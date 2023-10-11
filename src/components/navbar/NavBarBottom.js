@@ -4,23 +4,88 @@ import DropDownHover from "../dropDowns/DropDownHover";
 const productMenus = [
   {
     category: "WOMEN",
-    subCategory: ["Trousers", "Blouses", "Skirts"],
+    subCategory: [
+      {
+        name: "Trousers",
+        link: "https://www.google.co.uk/",
+      },
+      {
+        name: "Blouses",
+        link: "/blouses",
+      },
+      {
+        name: "Skirts",
+        link: "/skirts",
+      },
+    ],
   },
   {
     category: "MEN",
-    subCategory: ["Trousers", "Shirts", "Tops"],
+    subCategory: [
+      {
+        name: "Trousers",
+        link: "/trousers",
+      },
+      {
+        name: "Shirts",
+        link: "/shirts",
+      },
+      {
+        name: "Blazers",
+        link: "/blazers",
+      },
+    ],
   },
   {
     category: "GIRLS",
-    subCategory: ["Trousers", "Blouses", "Skirts"],
+    subCategory: [
+      {
+        name: "Trousers",
+        link: "/trousers",
+      },
+      {
+        name: "Tops",
+        link: "/girls-tops",
+      },
+      {
+        name: "Bottoms",
+        link: "/girls-bottoms",
+      },
+    ],
   },
   {
     category: "BOYS",
-    subCategory: ["Trousers", "Shirts", "Tops"],
+    subCategory: [
+      {
+        name: "Trousers",
+        link: "/boys-trousers",
+      },
+      {
+        name: "Shirts",
+        link: "/boys-shirts",
+      },
+      {
+        name: "Suits",
+        link: "/boys-suits",
+      },
+    ],
   },
   {
     category: "SALE",
-    subCategory: ["Trousers", "Blouses", "Skirts", "Shirts", "Tops"],
+    subCategory: [
+      {
+        name: "Trousers",
+        link: "/sale-trousers",
+      },
+      {
+        name: "Shirts",
+        link: "/sale-shirts",
+      },
+      {
+        name: "Suits",
+        link: "/sale-suits",
+      },
+    ],
   },
 ];
 
