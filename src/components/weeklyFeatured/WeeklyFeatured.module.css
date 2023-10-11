@@ -2,10 +2,11 @@
   padding: 0px 255px 0 255px;
   max-height: 737px;
   max-width: 1280px;
+  min-width: 900px;
 }
 
 .WeeklyFeaturedTitle {
-  display:flex;
+  display: flex;
   flex-direction: column;
   height: 100px;
   text-align: center;
@@ -92,18 +93,17 @@
 }
 
 .WeeklyFeaturedArrowLeft {
- position: relative;
-    left: -101px;
-    bottom: -325px;
-    width: 50px;
+  position: relative;
+  left: -10%;
+  bottom: -325px;
+  width: 50px;
 }
 
 .WeeklyFeaturedArrowRight {
   width: 50px;
   position: relative;
-  right: -960px;
-  bottom: 326px;
- 
+  right: -101.3%;
+  bottom: 327px;
 }
 
 .WeeklyFeaturedSingleCard .WeeklyFeaturedAddToCartButton {

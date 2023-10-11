@@ -5,7 +5,7 @@
 }
 
 .RecentlyViewedTitle {
-  display:flex;
+  display: flex;
   flex-direction: column;
   height: 100px;
   text-align: center;
@@ -94,7 +94,7 @@
 
 .RecentlyViewedArrowLeft {
   position: relative;
-  left: -95px;
+  left: -10%;
   bottom: -321px;
   width: 50px;
 }
@@ -102,9 +102,10 @@
 .RecentlyViewedArrowRight {
   width: 50px;
   position: relative;
-  right: -960px;
-  bottom: 326px;
+  right: -101.3%;
+  bottom: 327px;
 }
+
 
 .RecentlyViewedSingleCard .RecentlyViewedAddToCartButton {
   position: relative;
