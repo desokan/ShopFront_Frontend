@@ -1,5 +1,6 @@
 .MostPreferredContainer {
     padding: 50px 255px 0 255px;
+    max-width: 1280px;
   }
   
   .MostPreferredTitleH2 {
@@ -28,24 +29,12 @@
   
   .MostPreferredCards {
     display: grid;
-    grid-template-columns: repeat(4, minmax(330px, 330px));
-  grid-gap: var(--min-gap);
-    /* Initial gap size */
+    grid-template-columns: repeat(4, minmax(210px, 1fr));
     padding-top: 20px;
+    grid-gap: 20px;
   }
   
-  @media (min-width: 768px) {
-    .MostPreferredCards {
-      grid-gap: calc((100% - 4 * 330px) / 3);
-    }
-  }
-  
-  @media (min-width: 1920px) {
-    .MostPreferredCards {
-      grid-gap: 1fr;
-      /* Maximum gap size */
-    }
-  }
+
   
   .MostPreferredSingleCardP {
     color: var(--color-head, #222);
@@ -60,15 +49,14 @@
   }
   
   .MostPreferredSingleCardImage {
-    width: 330px;
-    height: 400px;
+    width: 210px;
+    height: 350px;
   }
   
   .MostPreferredSingleCard {
     display: flex;
     flex-direction: column;
     justify-self: center;
-  
-    width: 330px;
-    height: 452px;
+    width: 210px;
+    height: 350px;
   }
