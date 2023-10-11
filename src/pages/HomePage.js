@@ -6,16 +6,16 @@ import RecentlyViewed from '../components/recentlyViewed/RecentlyViewed'
 import MostPreferred from '../components/mostPreferred/MostPreferred'
 
 const HomePage = () => {
-	return (
-		<>
-			<NavBar />
-			<MainSlider />
-			<WeeklyFeatured />
-			<MostPreferred/>
+  return (
+    <>
+      <NavBar />
+      <MainSlider />
+      <WeeklyFeatured />
+      <MostPreferred />
       <RecentlyViewed />
-			<Footer />
-		</>
-	)
+      <Footer />
+    </>
+  )
 }
 
 export default HomePage
