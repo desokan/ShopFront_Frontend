@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import classes from './RecentlyViewed.module.css'
 import Image4 from './images/image4.png'
 import BagIcon from '../svgs/BagIcon'
+import { useTranslation } from 'react-i18next'
 
 const SingleCardRecentViewed = () => {
+	const { t } = useTranslation();
 	const [productRating, setProductRating] = useState(0)
 
 	const handleStarClick = (starIndex) => {
@@ -40,12 +42,12 @@ const SingleCardRecentViewed = () => {
 			<div className={classes.RecentlyViewedAddToCartButtonContainer}>
 				<button className={classes.RecentlyViewedAddToCartButton}>
 					<BagIcon fill="white" />
-					ADD TO CART
+					{t("recentsSingleCard.add")}
 				</button>
 			</div>
 			<div className={classes.RecentlyViewedProductInfo}>
-				<p className={classes.RecentlyViewedMakeup}>Makeup</p>
-				<p className={classes.RecentlyViewedText}>RADIANT LIFT FOUNDATION</p>
+				<p className={classes.RecentlyViewedMakeup}>{t("recentsSingleCard.makeup")}</p>
+				<p className={classes.RecentlyViewedText}>{t("recentsSingleCard.detail")}</p>
 				<p className={classes.RecentlyViewedText}>$29</p>
 				<div className={classes.RecentlyViewedStarsContainer}>
 					{renderStars()}

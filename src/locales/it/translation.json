@@ -1,0 +1,142 @@
+{
+    "footer": {
+        "Company": {
+            "Company": "Azienda",
+            "About": "Chi siamo",
+            "Home": "Home",
+            "Careers": "Carriere",
+            "Shipping": "Spedizione",
+            "Contact": "Contattaci"
+        }
+    },
+    "navbar": {
+        "top": {
+            "Shipping": "SPEDIZIONE",
+            "Contact": "CONTATTO"
+        },
+        "bottom": {
+            "productMenus": [
+                {
+                    "category": "DONNE",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "https://www.google.co.uk/"
+                        },
+                        {
+                            "name": "Bluse",
+                            "link": "/bluse"
+                        },
+                        {
+                            "name": "Gonne",
+                            "link": "/gonne"
+                        }
+                    ]
+                },
+                {
+                    "category": "UOMINI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie"
+                        },
+                        {
+                            "name": "Blazer",
+                            "link": "/blazer"
+                        }
+                    ]
+                },
+                {
+                    "category": "RAGAZZE",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-ragazze"
+                        },
+                        {
+                            "name": "Top",
+                            "link": "/top-ragazze"
+                        },
+                        {
+                            "name": "Fondi",
+                            "link": "/fondi-ragazze"
+                        }
+                    ]
+                },
+                {
+                    "category": "RAGAZZI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-ragazzi"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie-ragazzi"
+                        },
+                        {
+                            "name": "Abiti",
+                            "link": "/abiti-ragazzi"
+                        }
+                    ]
+                },
+                {
+                    "category": "SALDI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-saldi"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie-saldi"
+                        },
+                        {
+                            "name": "Abiti",
+                            "link": "/abiti-saldi"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "heroBanner": {
+        "glow": "LUMINOSITÀ NATURALE",
+        "bannerText": "I prodotti Beaux proteggono, idratano e lubrificano la tua pelle. Nutrono intelligentemente la tua pelle con creme, creme da giorno, creme da notte, idratanti colorati e altro.",
+        "more": "VEDI DI PIÙ"
+    },
+    "weeklyFeatured": {
+        "products": "PRODOTTI IN PRIMO PIANO SETTIMANALI",
+        "premiumTitle": "I Marchi Premium del Mondo in una Sola Destinazione."
+    },
+    "weeklySingleCard": {
+        "add": "AGGIUNGI AL CARRELLO",
+        "makeup": "Trucco",
+        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    },
+    "recentsSingleCard": {
+        "add": "AGGIUNGI AL CARRELLO",
+        "makeup": "Trucco",
+        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    },
+    "preferredSingleCard": {
+        "lipstick": "rossetto"
+    },
+    "mostPreferred": {
+        "categories": "CATEGORIE PIÙ PREFERITE",
+        "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
+    },
+    "recentlyViewed": {
+        "recentlyViewed": "VISTI DI RECENTE",
+        "stillInterested": "Sei ancora interessato a questi prodotti?"
+    },
+    "dropdown": {
+        "en": "INGLESE",
+        "fr": "FRANCESE",
+        "it": "ITALIANO"
+    }
+}

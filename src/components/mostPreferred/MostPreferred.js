@@ -1,17 +1,19 @@
 import classes from './MostPreferred.module.css'
 import SingleCardMostPreferred from './SingleCardMostPreferred'
+import { useTranslation } from 'react-i18next'
 
 const MostPreferred = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={classes.MostPreferredContainer}>
 			<div className={classes.MostPreferredTitleContainer}>
 				<div className={classes.MostPreferredTitle}>
 					<h2 className={classes.MostPreferredTitleH2}>
 						{' '}
-						MOST PREFERRED CATEGORIES
+						{t("mostPreferred.categories")}
 					</h2>
 					<p className={classes.MostPreferredTitleP}>
-						The World's Premium Brands In One Destination.
+						{t("mostPreferred.premium")}
 					</p>
 				</div>
 			</div>
