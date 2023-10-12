@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import classes from './WeeklyFeatured.module.css'
 import Image4 from './images/image4.png'
 import BagIcon from '../svgs/BagIcon'
+import { useTranslation } from 'react-i18next'
 
 const SingleCard = () => {
+  const { t } = useTranslation();
   const [productRating, setProductRating] = useState(0);
 
   const handleStarClick = (starIndex) => {
@@ -38,13 +40,13 @@ const SingleCard = () => {
           <div className={classes.WeeklyFeaturedAddToCartButtonContainer}>
             <button className={classes.WeeklyFeaturedAddToCartButton}>
               <BagIcon fill="white" />
-              ADD TO CART
+              {t("weeklySingleCard.add")}
             </button>
           </div>
           <div className={classes.WeeklyFeaturedProductInfo}>
-            <p className={classes.WeeklyFeaturedMakeup}>Makeup</p>
+            <p className={classes.WeeklyFeaturedMakeup}>{t("weeklySingleCard.makeup")}</p>
             <p className={classes.WeeklyFeaturedText}>
-              RADIANT LIFT FOUNDATION
+              {t("weeklySingleCard.detail")}
             </p>
             <p className={classes.WeeklyFeaturedText}>$29</p>
             <div className={classes.WeeklyFeaturedStarsContainer}>

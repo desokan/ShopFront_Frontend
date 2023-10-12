@@ -1,12 +1,12 @@
 import classes from "./DropDownLanguage.module.css"
-import { useState } from "react";
-import i18n from "../../i18n";
 import { useTranslation } from 'react-i18next'
+import { useContext } from "react";
+import { Context } from "../../pages/HomePage";
+import i18n from "../../i18n";
 
 const DropDownLanguage = ({className}) => {
-
+  const [selectedLanguage, setSelectedLanguage] = useContext(Context);
   const { t } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
 
   const chooseLanguage = (e) => {
     e.preventDefault();
@@ -15,7 +15,7 @@ const DropDownLanguage = ({className}) => {
   }
 
   return (
-    <select defaultValue={selectedLanguage} onChange={chooseLanguage} className={(className === 'footer' ? classes.footerDropDown : classes.dropDownSelect)} name="Language">
+    <select value={selectedLanguage} onChange={chooseLanguage} className={(className === 'footer' ? classes.footerDropDown : classes.dropDownSelect)} name="Language">
       <option value="en">{t("dropdown.en")}</option>
       <option value="fr">{t("dropdown.fr")}</option>
       <option value="it">{t("dropdown.it")}</option>

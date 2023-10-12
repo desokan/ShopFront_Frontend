@@ -104,6 +104,36 @@
             ]
         }
     },
+    "heroBanner": {
+        "glow": "NATURAL GLOW",
+        "bannerText": "Beaux products protect, moisturize, and lubricate your skin. It smartly nourish your skin with lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE"
+    },
+    "weeklyFeatured": {
+        "products": "WEEKLY FEATURED PRODUCTS",
+        "premiumTitle": "The World's Premium Brands In One Destination."
+    },
+    "weeklySingleCard": {
+        "add": "ADD TO CART",
+        "makeup": "Makeup",
+        "detail": "RADIANT LIFT FOUNDATION"
+    },
+    "preferredSingleCard": {
+        "lipstick": "lipstick"
+    },
+    "recentsSingleCard": {
+        "add": "ADD TO CART",
+        "makeup": "Makeup",
+        "detail": "RADIANT LIFT FOUNDATION"
+    },
+    "mostPreferred": {
+        "categories": "MOST PREFERRED CATEGORIES",
+        "premium": "The World's Premium Brands In One Destination."
+    },
+    "recentlyViewed": {
+        "recentlyViewed": "RECENTLY VIEWED",
+        "stillInterested": "Are you still interested in these products?"
+    },
     "dropdown": {
         "en": "ENGLISH",
         "fr": "FRENCH",

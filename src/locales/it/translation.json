@@ -104,6 +104,36 @@
             ]
         }
     },
+    "heroBanner": {
+        "glow": "LUMINOSITÀ NATURALE",
+        "bannerText": "I prodotti Beaux proteggono, idratano e lubrificano la tua pelle. Nutrono intelligentemente la tua pelle con creme, creme da giorno, creme da notte, idratanti colorati e altro.",
+        "more": "VEDI DI PIÙ"
+    },
+    "weeklyFeatured": {
+        "products": "PRODOTTI IN PRIMO PIANO SETTIMANALI",
+        "premiumTitle": "I Marchi Premium del Mondo in una Sola Destinazione."
+    },
+    "weeklySingleCard": {
+        "add": "AGGIUNGI AL CARRELLO",
+        "makeup": "Trucco",
+        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    },
+    "recentsSingleCard": {
+        "add": "AGGIUNGI AL CARRELLO",
+        "makeup": "Trucco",
+        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    },
+    "preferredSingleCard": {
+        "lipstick": "rossetto"
+    },
+    "mostPreferred": {
+        "categories": "CATEGORIE PIÙ PREFERITE",
+        "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
+    },
+    "recentlyViewed": {
+        "recentlyViewed": "VISTI DI RECENTE",
+        "stillInterested": "Sei ancora interessato a questi prodotti?"
+    },
     "dropdown": {
         "en": "INGLESE",
         "fr": "FRANCESE",

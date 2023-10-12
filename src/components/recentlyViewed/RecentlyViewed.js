@@ -2,8 +2,10 @@ import classes from './RecentlyViewed.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
 import SingleCardRecentlyViewed from './SingleCardRecentlyViewed'
 import ArrowRight from '../heroBanner/svgs/ArrowRight'
+import { useTranslation } from 'react-i18next'
 
 const RecentlyViewed = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={classes.RecentlyViewedContainer}>
 			<div className={classes.RecentlyViewedArrowLeft}>
@@ -11,10 +13,10 @@ const RecentlyViewed = () => {
 			</div>
 			<div className={classes.RecentlyViewedTitle}>
 				<h3 className={classes.RecentlyViewedTitleH3}>
-					RECENTLY VIEWED 
+					{t("recentlyViewed.recentlyViewed")} 
 				</h3>
 				<p className={classes.RecentlyViewedTitleP}>
-					Are you still interested in these products?
+					{t("recentlyViewed.stillInterested")}
 				</p>
 			</div>
 			<div className={classes.RecentlyViewedCards}> 
