@@ -1,5 +1,13 @@
 {
     "footer": {
+      "Top": {
+        "DeliveryTitle": "LIVRAISON RAPIDE ET GRATUITE",
+        "DeliveryInfo": "Livraison gratuite pour toutes les commandes de plus de 140 $",
+        "SupportTitle": "SUPPORT CLIENT 24/7",
+        "SupportInfo": "Support client amical 24/7",
+        "ReturnTitle": "GARANTIE DE REMBOURSEMENT",
+        "ReturnInfo": "Nous remboursons dans les 30 jours"
+      },
           "Company": {
             "Company": "ENTERPRISE",
             "About": "À propos de nous",
@@ -7,6 +15,35 @@
             "Careers": "Carrières",
             "Shipping": "Livraison et Expédition",
             "Contact": "Nous Contacter"
+        },
+        "Shop": {
+          "Shop": "MAGASIN",
+          "Arrivals": "Nouveautés",
+          "Accessories": "Accessoires",
+          "Men": "Hommes",
+          "Women": "Femmes",
+          "ShopAll": "Tout Voir"
+        },
+        "Help": {
+          "Help": "AIDE",
+          "CustomerService": "Service Client",
+          "Account": "Mon Compte",
+          "TrackOrder": "Suivre la Commande",
+          "Return": "Portail de Retours",
+          "Legal&Privacy": "Légal et Confidentialité",
+          "GiftCard": "Carte Cadeau"
+        },
+        "Subscribe": {
+          "Subscribe": "S'ABONNER",
+          "CallToAction": "Soyez le premier à recevoir les dernières nouvelles sur les tendances, les promotions et bien plus encore !",
+          "Email": "Votre adresse e-mail",
+          "Join": "REJOINDRE"
+        },
+        "Bottom": {
+          "Language": "LANGUE",
+          "Currency": "DEVISE",
+          "LanguageTranslation": "FRANÇAISE"
+
         }
       },
       "navbar": {

@@ -1,14 +1,51 @@
 {
     "footer": {
+
+          "Top": {
+            "DeliveryTitle": "FAST AND FREE DELIVERY",
+            "DeliveryInfo": "Free delivery for all orders over $140",
+            "SupportTitle": "24/7 CUSTOMER SUPPORT",
+            "SupportInfo": "Friendly 24/7 customer support",
+            "ReturnTitle": "MONEY BACK GUARANTEE",
+            "ReturnInfo": "We return money within 30 days"
+          },
           "Company": {
-            "Company" : "COMPANY",
+            "Company": "COMPANY",
             "About": "About Us",
             "Home": "Home",
             "Careers": "Careers",
             "Shipping": "Delivery & Shipping",
             "Contact": "Contact Us"
-        }
-      },
+          },
+          "Shop": {
+            "Shop": "SHOP",
+            "Arrivals": "New Arrivals",
+            "Accessories": "Accessories",
+            "Men": "Men",
+            "Women": "Women",
+            "ShopAll": "Shop All"
+          },
+          "Help": {
+            "Help": "HELP",
+            "CustomerService": "Customer Service",
+            "Account": "My Account",
+            "TrackOrder": "Track Order",
+            "Return": "Return Portal",
+            "Legal&Privacy": "Legal & Privacy",
+            "GiftCard": "Gift Card"
+          },
+          "Subscribe": {
+            "Subscribe": "SUBSCRIBE",
+            "CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
+            "Email": "Your email address",
+            "Join": "JOIN"
+          },
+          "Bottom": {
+      "Language": "LANGUAGE",
+      "Currency": "CURRENCY",
+      "LanguageTranslation": "English"
+          }
+        },
     "navbar": {
         "top": {
             "Shipping": "SHIPPING",
@@ -140,4 +177,7 @@
         "it": "ITALIAN"
     }
     
-  }
+    
+  
+  
+}
