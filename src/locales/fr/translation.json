@@ -8,5 +8,105 @@
             "Shipping": "Livraison et Expédition",
             "Contact": "Nous Contacter"
         }
-      }
+      },
+      "navbar": {
+        "top": {
+            "Shipping": "LIVRAISON",
+            "Contact": "CONTACT"
+        },
+        "bottom": {
+            "productMenus": [
+                {
+                    "category": "FEMMES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "https://www.google.co.uk/"
+                        },
+                        {
+                            "name": "Chemisiers",
+                            "link": "/chemisiers"
+                        },
+                        {
+                            "name": "Jupes",
+                            "link": "/jupes"
+                        }
+                    ]
+                },
+                {
+                    "category": "HOMMES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons"
+                        },
+                        {
+                            "name": "Chemises",
+                            "link": "/chemises"
+                        },
+                        {
+                            "name": "Blazers",
+                            "link": "/blazers"
+                        }
+                    ]
+                },
+                {
+                    "category": "FILLES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons-filles"
+                        },
+                        {
+                            "name": "Hauts",
+                            "link": "/hauts-filles"
+                        },
+                        {
+                            "name": "Bas",
+                            "link": "/bas-filles"
+                        }
+                    ]
+                },
+                {
+                    "category": "GARÇONS",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons-garcons"
+                        },
+                        {
+                            "name": "Chemises",
+                            "link": "/chemises-garcons"
+                        },
+                        {
+                            "name": "Costumes",
+                            "link": "/costumes-garcons"
+                        }
+                    ]
+                },
+                {
+                    "category": "SOLDES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons-soldes"
+                        },
+                        {
+                            "name": "Chemises",
+                            "link": "/chemises-soldes"
+                        },
+                        {
+                            "name": "Costumes",
+                            "link": "/costumes-soldes"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "dropdown": {
+        "en": "ANGLAIS",
+        "fr": "FRANÇAIS",
+        "it": "ITALIEN"
+    }
   }

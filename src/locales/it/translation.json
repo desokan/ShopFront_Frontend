@@ -1,5 +1,5 @@
 {
-  "footer": {
+    "footer": {
         "Company": {
             "Company": "Azienda",
             "About": "Chi siamo",
@@ -8,5 +8,105 @@
             "Shipping": "Spedizione",
             "Contact": "Contattaci"
         }
+    },
+    "navbar": {
+        "top": {
+            "Shipping": "SPEDIZIONE",
+            "Contact": "CONTATTO"
+        },
+        "bottom": {
+            "productMenus": [
+                {
+                    "category": "DONNE",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "https://www.google.co.uk/"
+                        },
+                        {
+                            "name": "Bluse",
+                            "link": "/bluse"
+                        },
+                        {
+                            "name": "Gonne",
+                            "link": "/gonne"
+                        }
+                    ]
+                },
+                {
+                    "category": "UOMINI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie"
+                        },
+                        {
+                            "name": "Blazer",
+                            "link": "/blazer"
+                        }
+                    ]
+                },
+                {
+                    "category": "RAGAZZE",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-ragazze"
+                        },
+                        {
+                            "name": "Top",
+                            "link": "/top-ragazze"
+                        },
+                        {
+                            "name": "Fondi",
+                            "link": "/fondi-ragazze"
+                        }
+                    ]
+                },
+                {
+                    "category": "RAGAZZI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-ragazzi"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie-ragazzi"
+                        },
+                        {
+                            "name": "Abiti",
+                            "link": "/abiti-ragazzi"
+                        }
+                    ]
+                },
+                {
+                    "category": "SALDI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-saldi"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie-saldi"
+                        },
+                        {
+                            "name": "Abiti",
+                            "link": "/abiti-saldi"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "dropdown": {
+        "en": "INGLESE",
+        "fr": "FRANCESE",
+        "it": "ITALIANO"
     }
 }
