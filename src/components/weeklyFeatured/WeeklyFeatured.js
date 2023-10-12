@@ -2,8 +2,11 @@ import classes from './WeeklyFeatured.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
 import SingleCard from './SingleCard'
 import ArrowRight from '../heroBanner/svgs/ArrowRight'
+import { useTranslation } from 'react-i18next'
+
 
 const WeeklyFeaturedd = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={classes.WeeklyFeaturedContainer}>
 			<div className={classes.WeeklyFeaturedArrowLeft}>
@@ -11,10 +14,10 @@ const WeeklyFeaturedd = () => {
 			</div>
 			<div className={classes.WeeklyFeaturedTitle}>
 				<h3 className={classes.WeeklyFeaturedTitleH3}>
-					WEEKLY FEATURED PRODUCTS
+					{t("weeklyFeatured.products")}
 				</h3>
 				<p className={classes.WeeklyFeaturedTitleP}>
-					The World's Premium Brands In One Destination.
+				{t("weeklyFeatured.premiumTitle")}
 				</p>
 			</div>
 			<div className={classes.WeeklyFeaturedCards}>

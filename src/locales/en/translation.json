@@ -1,48 +1,183 @@
 {
-  "footer": {
-    "Top": {
-      "DeliveryTitle": "FAST AND FREE DELIVERY",
-      "DeliveryInfo": "Free delivery for all orders over $140",
-      "SupportTitle": "24/7 CUSTOMER SUPPORT",
-      "SupportInfo": "Friendly 24/7 customer support",
-      "ReturnTitle": "MONEY BACK GUARANTEE",
-      "ReturnInfo": "We return money within 30 days"
+    "footer": {
+
+          "Top": {
+            "DeliveryTitle": "FAST AND FREE DELIVERY",
+            "DeliveryInfo": "Free delivery for all orders over $140",
+            "SupportTitle": "24/7 CUSTOMER SUPPORT",
+            "SupportInfo": "Friendly 24/7 customer support",
+            "ReturnTitle": "MONEY BACK GUARANTEE",
+            "ReturnInfo": "We return money within 30 days"
+          },
+          "Company": {
+            "Company": "COMPANY",
+            "About": "About Us",
+            "Home": "Home",
+            "Careers": "Careers",
+            "Shipping": "Delivery & Shipping",
+            "Contact": "Contact Us"
+          },
+          "Shop": {
+            "Shop": "SHOP",
+            "Arrivals": "New Arrivals",
+            "Accessories": "Accessories",
+            "Men": "Men",
+            "Women": "Women",
+            "ShopAll": "Shop All"
+          },
+          "Help": {
+            "Help": "HELP",
+            "CustomerService": "Customer Service",
+            "Account": "My Account",
+            "TrackOrder": "Track Order",
+            "Return": "Return Portal",
+            "Legal&Privacy": "Legal & Privacy",
+            "GiftCard": "Gift Card"
+          },
+          "Subscribe": {
+            "Subscribe": "SUBSCRIBE",
+            "CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
+            "Email": "Your email address",
+            "Join": "JOIN"
+          },
+          "Bottom": {
+      "Language": "LANGUAGE",
+      "Currency": "CURRENCY",
+      "LanguageTranslation": "English"
+          }
+        },
+    "navbar": {
+        "top": {
+            "Shipping": "SHIPPING",
+            "Contact": "CONTACT"
+        },
+        "bottom": {
+            "productMenus": [
+                {
+                  "category": "WOMEN",
+                  "subCategory": [
+                    {
+                      "name": "Trousers",
+                      "link": "https://www.google.co.uk/"
+                    },
+                    {
+                      "name": "Blouses",
+                      "link": "/blouses"
+                    },
+                    {
+                      "name": "Skirts",
+                      "link": "/skirts"
+                    }
+                  ]
+                },
+                {
+                  "category": "MEN",
+                  "subCategory": [
+                    {
+                      "name": "Trousers",
+                      "link": "/trousers"
+                    },
+                    {
+                      "name": "Shirts",
+                      "link": "/shirts"
+                    },
+                    {
+                      "name": "Blazers",
+                      "link": "/blazers"
+                    }
+                  ]
+                },
+                {
+                  "category": "GIRLS",
+                  "subCategory": [
+                    {
+                      "name": "Trousers",
+                      "link": "/trousers"
+                    },
+                    {
+                      "name": "Tops",
+                      "link": "/girls-tops"
+                    },
+                    {
+                      "name": "Bottoms",
+                      "link": "/girls-bottoms"
+                    }
+                  ]
+                },
+                {
+                  "category": "BOYS",
+                  "subCategory": [
+                    {
+                      "name": "Trousers",
+                      "link": "/boys-trousers"
+                    },
+                    {
+                      "name": "Shirts",
+                      "link": "/boys-shirts"
+                    },
+                    {
+                      "name": "Suits",
+                      "link": "/boys-suits"
+                    }
+                  ]
+                },
+                {
+                  "category": "SALE",
+                  "subCategory": [
+                    {
+                      "name": "Trousers",
+                      "link": "/sale-trousers"
+                    },
+                    {
+                      "name": "Shirts",
+                      "link": "/sale-shirts"
+                    },
+                    {
+                      "name": "Suits",
+                      "link": "/sale-suits"
+                    }
+                  ]
+                }
+            ]
+        }
     },
-    "Company": {
-      "Company": "COMPANY",
-      "About": "About Us",
-      "Home": "Home",
-      "Careers": "Careers",
-      "Shipping": "Delivery & Shipping",
-      "Contact": "Contact Us"
+    "heroBanner": {
+        "glow": "NATURAL GLOW",
+        "bannerText": "Beaux products protect, moisturize, and lubricate your skin. It smartly nourish your skin with lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE"
     },
-    "Shop": {
-      "Shop": "SHOP",
-      "Arrivals": "New Arrivals",
-      "Accessories": "Accessories",
-      "Men": "Men",
-      "Women": "Women",
-      "ShopAll": "Shop All"
+    "weeklyFeatured": {
+        "products": "WEEKLY FEATURED PRODUCTS",
+        "premiumTitle": "The World's Premium Brands In One Destination."
     },
-    "Help": {
-      "Help": "HELP",
-      "CustomerService": "Customer Service",
-      "Account": "My Account",
-      "TrackOrder": "Track Order",
-      "Return": "Return Portal",
-      "Legal&Privacy": "Legal & Privacy",
-      "GiftCard": "Gift Card"
+    "weeklySingleCard": {
+        "add": "ADD TO CART",
+        "makeup": "Makeup",
+        "detail": "RADIANT LIFT FOUNDATION"
     },
-    "Subscribe": {
-      "Subscribe": "SUBSCRIBE",
-      "CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
-      "Email": "Your email address",
-      "Join": "JOIN"
+    "preferredSingleCard": {
+        "lipstick": "lipstick"
     },
-    "Bottom": {
-"Language": "LANGUAGE",
-"Currency": "CURRENCY",
-"LanguageTranslation": "English"
+    "recentsSingleCard": {
+        "add": "ADD TO CART",
+        "makeup": "Makeup",
+        "detail": "RADIANT LIFT FOUNDATION"
+    },
+    "mostPreferred": {
+        "categories": "MOST PREFERRED CATEGORIES",
+        "premium": "The World's Premium Brands In One Destination."
+    },
+    "recentlyViewed": {
+        "recentlyViewed": "RECENTLY VIEWED",
+        "stillInterested": "Are you still interested in these products?"
+    },
+    "dropdown": {
+        "en": "ENGLISH",
+        "fr": "FRENCH",
+        "it": "ITALIAN"
     }
-  }
+    
+    
+  
+  
 }

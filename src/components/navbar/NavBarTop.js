@@ -5,14 +5,14 @@ import React from "react";
 import DropDownLanguage from "../dropDowns/DropDownLanguage";
 import DropDownCurrency from "../dropDowns/DropDownCurrency";
 
-const NavBarTop = () => {
+const NavBarTop = ({t}) => {
   return (
     <>
       <div className={classes.topNav}>
         <div className={classes.wrapper}>
           <div className={classes.lefty}>
-            <p>SHIPPING</p>
-            <p>CONTACT</p>
+            <p>{t("navbar.top.Shipping")}</p>
+            <p>{t("navbar.top.Contact")}</p>
           </div>
           <div className={classes.righty}>
             <DropDownLanguage />

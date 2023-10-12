@@ -45,5 +45,135 @@
           "LanguageTranslation": "FRANÇAISE"
 
         }
-      }
+      },
+      "navbar": {
+        "top": {
+            "Shipping": "LIVRAISON",
+            "Contact": "CONTACT"
+        },
+        "bottom": {
+            "productMenus": [
+                {
+                    "category": "FEMMES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "https://www.google.co.uk/"
+                        },
+                        {
+                            "name": "Chemisiers",
+                            "link": "/chemisiers"
+                        },
+                        {
+                            "name": "Jupes",
+                            "link": "/jupes"
+                        }
+                    ]
+                },
+                {
+                    "category": "HOMMES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons"
+                        },
+                        {
+                            "name": "Chemises",
+                            "link": "/chemises"
+                        },
+                        {
+                            "name": "Blazers",
+                            "link": "/blazers"
+                        }
+                    ]
+                },
+                {
+                    "category": "FILLES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons-filles"
+                        },
+                        {
+                            "name": "Hauts",
+                            "link": "/hauts-filles"
+                        },
+                        {
+                            "name": "Bas",
+                            "link": "/bas-filles"
+                        }
+                    ]
+                },
+                {
+                    "category": "GARÇONS",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons-garcons"
+                        },
+                        {
+                            "name": "Chemises",
+                            "link": "/chemises-garcons"
+                        },
+                        {
+                            "name": "Costumes",
+                            "link": "/costumes-garcons"
+                        }
+                    ]
+                },
+                {
+                    "category": "SOLDES",
+                    "subCategory": [
+                        {
+                            "name": "Pantalons",
+                            "link": "/pantalons-soldes"
+                        },
+                        {
+                            "name": "Chemises",
+                            "link": "/chemises-soldes"
+                        },
+                        {
+                            "name": "Costumes",
+                            "link": "/costumes-soldes"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "heroBanner": {
+        "glow": "LUMIÈRE NATURELLE",
+        "bannerText": "Les produits Beaux protègent, hydratent et lubrifient votre peau. Ils nourrissent intelligemment votre peau avec des lotions, des crèmes de jour, des crèmes de nuit, des hydratants teintés, et plus encore.",
+        "more": "VOIR PLUS"
+    },
+    "weeklyFeatured": {
+        "products": "PRODUITS MIS EN AVANT DE LA SEMAINE",
+        "premiumTitle": "Les Marques Premium du Monde en une Seule Destination."
+    },
+    "weeklySingleCard": {
+        "add": "AJOUTER AU PANIER",
+        "makeup": "Maquillage",
+        "detail": "FOND DE TEINT LUMINEUX"
+    },
+    "recentsSingleCard": {
+        "add": "AJOUTER AU PANIER",
+        "makeup": "Maquillage",
+        "detail": "FOND DE TEINT LUMINEUX"
+    },
+    "preferredSingleCard": {
+        "lipstick": "rouge à lèvres"
+    },
+    "mostPreferred": {
+        "categories": "CATÉGORIES LES PLUS APPRÉCIÉES",
+        "premium": "Les Marques Premium du Monde en une Seule Destination."
+    },
+    "recentlyViewed": {
+        "recentlyViewed": "CONSULTÉ RÉCEMMENT",
+        "stillInterested": "Êtes-vous toujours intéressé par ces produits ?"
+    },
+    "dropdown": {
+        "en": "ANGLAIS",
+        "fr": "FRANÇAIS",
+        "it": "ITALIEN"
+    }
   }
