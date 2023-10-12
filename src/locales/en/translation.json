@@ -1,0 +1,12 @@
+{
+    "footer": {
+          "Company": {
+            "Company" : "COMPANY",
+            "About": "About Us",
+            "Home": "Home",
+            "Careers": "Careers",
+            "Shipping": "Delivery & Shipping",
+            "Contact": "Contact Us"
+        }
+      }
+  }

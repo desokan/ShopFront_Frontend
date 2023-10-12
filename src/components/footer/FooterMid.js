@@ -9,8 +9,10 @@ import {
   Instagram,
 } from "../svgs/social-icons";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next'
 
 const FooterMid = () => {
+  const { t } = useTranslation();
   const [subscriber, setSubscriber] = useState();
 
   const baseUrl = 'http://localhost:4000'
@@ -74,14 +76,14 @@ const FooterMid = () => {
           </div>
         </div>
         <div className={classes.titles}>
-          <h4>COMPANY</h4>
+          <h4>{t("footer.Company.Company")}</h4>
           <div>
             <ul className={classes.company}>
-              <li>About Us </li>
+              <li>{t("About")}</li>
               <li>FAQ</li>
-              <li>Careers</li>
-              <li>Delivery & Shipping</li>
-              <li>Contact Us</li>
+              <li>{t("Careers")}</li>
+              <li>{t("Shipping")}</li>
+              <li>{t("Contact")}</li>
             </ul>
           </div>
         </div>
