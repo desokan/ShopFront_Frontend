@@ -1,5 +1,13 @@
 {
   "footer": {
+    "Top": {
+        "DeliveryTitle": "CONSEGNA VELOCE E GRATUITA",
+        "DeliveryInfo": "Consegna gratuita per tutti gli ordini superiori a $140",
+        "SupportTitle": "SUPPORTO CLIENTI 24/7",
+        "SupportInfo": "Supporto clienti cordiale 24/7",
+        "ReturnTitle": "GARANZIA SODDISFATTI O RIMBORSATI",
+        "ReturnInfo": "Rimborsiamo i soldi entro 30 giorni"
+      },
         "Company": {
             "Company": "Azienda",
             "About": "Chi siamo",
@@ -7,6 +15,34 @@
             "Careers": "Carriere",
             "Shipping": "Spedizione",
             "Contact": "Contattaci"
-        }
+        },
+        "Shop": {
+            "Shop": "NEGOZIO",
+            "Arrivals": "Nuovi Arrivi",
+            "Accessories": "Accessori",
+            "Men": "Uomini",
+            "Women": "Donne",
+            "ShopAll": "Tutti i Prodotti"
+        },
+        "Help": {
+            "Help": "AIUTO",
+            "CustomerService": "Servizio Clienti",
+            "Account": "Il Mio Account",
+            "TrackOrder": "Traccia Ordine",
+            "Return": "Portale Resi",
+            "Legal&Privacy": "Legale e Privacy",
+            "GiftCard": "Carta Regalo"
+          },
+          "Subscribe": {
+            "Subscribe": "ISCRIVITI",
+            "CallToAction": "Sii il primo a ricevere le ultime notizie su tendenze, promozioni e tanto altro!",
+            "Email": "Il tuo indirizzo email",
+            "Join": "UNISCITI"
+          },
+          "Bottom": {
+            "Language": "LINGUA",
+            "Currency": "VALUTA",
+            "LanguageTranslation": "ITALIENNE"
+          }
     }
 }
