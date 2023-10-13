@@ -1,11 +1,15 @@
 import classes from "./NavBarTop.module.css";
-import React from "react";
+// import React,{ useContext } from "react";
 // import ArrowDown from "../svgs/ArrowDown";
 // import DropDownSelect from "../dropDowns/DropDownSelect";
 import DropDownLanguage from "../dropDowns/DropDownLanguage";
 import DropDownCurrency from "../dropDowns/DropDownCurrency";
+// import { CurrencyContext } from './CurrencyContext';
 
-const NavBarTop = ({t}) => {
+
+const NavBarTop = ({ t }) => {
+  // const { selectedCurrency, setSelectedCurrency, exchangeRates } = useContext(CurrencyContext);
+
   return (
     <>
       <div className={classes.topNav}>
