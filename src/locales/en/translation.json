@@ -1,245 +1,292 @@
 {
-  "footer": {
-    "Top": {
-      "DeliveryTitle": "FAST AND FREE DELIVERY",
-      "DeliveryInfo": "Free delivery for all orders over $140",
-      "SupportTitle": "24/7 CUSTOMER SUPPORT",
-      "SupportInfo": "Friendly 24/7 customer support",
-      "ReturnTitle": "MONEY BACK GUARANTEE",
-      "ReturnInfo": "We return money within 30 days"
-    },
-    "Company": {
-      "Company": "COMPANY",
-      "About": "About Us",
-      "Home": "Home",
-      "Careers": "Careers",
-      "Shipping": "Delivery & Shipping",
-      "Contact": "Contact Us"
-    },
-    "Shop": {
-      "Shop": "SHOP",
-      "Arrivals": "New Arrivals",
-      "Accessories": "Accessories",
-      "Men": "Men",
-      "Women": "Women",
-      "ShopAll": "Shop All"
-    },
-    "Help": {
-      "Help": "HELP",
-      "CustomerService": "Customer Service",
-      "Account": "My Account",
-      "TrackOrder": "Track Order",
-      "Return": "Return Portal",
-      "Legal&Privacy": "Legal & Privacy",
-      "GiftCard": "Gift Card"
-    },
-    "Subscribe": {
-      "Subscribe": "SUBSCRIBE",
-      "CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
-      "Email": "Your email address",
-      "Join": "JOIN"
-    },
-    "Bottom": {
-      "Language": "LANGUAGE",
-      "Currency": "CURRENCY",
-      "LanguageTranslation": "English"
-    }
-  },
-  "navbar": {
-    "top": {
-      "Shipping": "SHIPPING",
-      "Contact": "CONTACT"
-    },
-    "bottom": {
-      "productMenus": [
-        {
-          "category": "WOMEN",
-          "subCategory": [
-            {
-              "name": "Trousers",
-              "link": "https://www.google.co.uk/"
-            },
-            {
-              "name": "Blouses",
-              "link": "/blouses"
-            },
-            {
-              "name": "Skirts",
-              "link": "/skirts"
-            }
-          ]
-        },
-        {
-          "category": "MEN",
-          "subCategory": [
-            {
-              "name": "Trousers",
-              "link": "/trousers"
-            },
-            {
-              "name": "Shirts",
-              "link": "/shirts"
-            },
-            {
-              "name": "Blazers",
-              "link": "/blazers"
-            }
-          ]
-        },
-        {
-          "category": "GIRLS",
-          "subCategory": [
-            {
-              "name": "Trousers",
-              "link": "/trousers"
-            },
-            {
-              "name": "Tops",
-              "link": "/girls-tops"
-            },
-            {
-              "name": "Bottoms",
-              "link": "/girls-bottoms"
-            }
-          ]
-        },
-        {
-          "category": "BOYS",
-          "subCategory": [
-            {
-              "name": "Trousers",
-              "link": "/boys-trousers"
-            },
-            {
-              "name": "Shirts",
-              "link": "/boys-shirts"
-            },
-            {
-              "name": "Suits",
-              "link": "/boys-suits"
-            }
-          ]
-        },
-        {
-          "category": "SALE",
-          "subCategory": [
-            {
-              "name": "Trousers",
-              "link": "/sale-trousers"
-            },
-            {
-              "name": "Shirts",
-              "link": "/sale-shirts"
-            },
-            {
-              "name": "Suits",
-              "link": "/sale-suits"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "heroBanner": {
-    "banners": [
-      {
-        "glow": "NATURAL",
-        "bannerText": "Beaux products protect and nourish your skin with a range of lotions, day creams, night creams, tinted moisturizers, and more.",
-        "more": "VIEW MORE",
-        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
-      },
-      {
-        "glow": "GLOWING SKIN",
-        "bannerText": "Discover the power of Beaux products to moisturize and revitalize your skin. Our range includes lotions, day creams, night creams, tinted moisturizers, and more.",
-        "more": "VIEW MORE",
-        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
-      },
-      {
-        "glow": "NATURAL GLOW",
-        "bannerText": "Experience the magic of Beaux products in moisturizing and rejuvenating your skin. Explore our selection of lotions, day creams, night creams, tinted moisturizers, and more.",
-        "more": "VIEW MORE",
-        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
-      }
-    ]
-  }
-  ,
-  "weeklyFeatured": {
-    "products": "WEEKLY FEATURED PRODUCTS",
-    "premiumTitle": "The World's Premium Brands In One Destination."
-  },
-  "weeklySingleCard": {
-    "add": "ADD TO CART",
-    "makeup": "Makeup",
-    "detail": "RADIANT LIFT FOUNDATION"
-  },
-  "preferredSingleCard": {
-    "category": "makeup",
-    "subCategory": [
-      {
-        "name": "Lipstick",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
-      },
-      {
-        "name": "Foundation",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
-      },
-      {
-        "name": "Mascara",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
-      },
-      {
-        "name": "Skincare",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
-      }
-    ]
-  },
-  "recentsSingleCard": {
-    "add": "ADD TO CART",
-    "makeup": "Makeup",
-    "detail": "RADIANT LIFT FOUNDATION"
-  },
-  "mostPreferred": {
-    "categories": "MOST PREFERRED CATEGORIES",
-    "premium": "The World's Premium Brands In One Destination."
-  },
-  "recentlyViewed": {
-    "recentlyViewed": "RECENTLY VIEWED",
-    "stillInterested": "Are you still interested in these products?",
+	"footer": {
+		"Top": {
+			"DeliveryTitle": "FAST AND FREE DELIVERY",
+			"DeliveryInfo": "Free delivery for all orders over $140",
+			"SupportTitle": "24/7 CUSTOMER SUPPORT",
+			"SupportInfo": "Friendly 24/7 customer support",
+			"ReturnTitle": "MONEY BACK GUARANTEE",
+			"ReturnInfo": "We return money within 30 days"
+		},
+		"Company": {
+			"Company": "COMPANY",
+			"About": "About Us",
+			"Home": "Home",
+			"Careers": "Careers",
+			"Shipping": "Delivery & Shipping",
+			"Contact": "Contact Us"
+		},
+		"Shop": {
+			"Shop": "SHOP",
+			"Arrivals": "New Arrivals",
+			"Accessories": "Accessories",
+			"Men": "Men",
+			"Women": "Women",
+			"ShopAll": "Shop All"
+		},
+		"Help": {
+			"Help": "HELP",
+			"CustomerService": "Customer Service",
+			"Account": "My Account",
+			"TrackOrder": "Track Order",
+			"Return": "Return Portal",
+			"Legal&Privacy": "Legal & Privacy",
+			"GiftCard": "Gift Card"
+		},
+		"Subscribe": {
+			"Subscribe": "SUBSCRIBE",
+			"CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
+			"Email": "Your email address",
+			"Join": "JOIN"
+		},
+		"Bottom": {
+			"Language": "LANGUAGE",
+			"Currency": "CURRENCY",
+			"LanguageTranslation": "English"
+		}
+	},
+	"navbar": {
+		"top": {
+			"Shipping": "SHIPPING",
+			"Contact": "CONTACT"
+		},
+		"bottom": {
+			"productMenus": [
+				{
+					"category": "WOMEN",
+					"subCategory": [
+						{
+							"name": "Trousers",
+							"link": "https://www.google.co.uk/"
+						},
+						{
+							"name": "Blouses",
+							"link": "/blouses"
+						},
+						{
+							"name": "Skirts",
+							"link": "/skirts"
+						}
+					]
+				},
+				{
+					"category": "MEN",
+					"subCategory": [
+						{
+							"name": "Trousers",
+							"link": "/trousers"
+						},
+						{
+							"name": "Shirts",
+							"link": "/shirts"
+						},
+						{
+							"name": "Blazers",
+							"link": "/blazers"
+						}
+					]
+				},
+				{
+					"category": "GIRLS",
+					"subCategory": [
+						{
+							"name": "Trousers",
+							"link": "/trousers"
+						},
+						{
+							"name": "Tops",
+							"link": "/girls-tops"
+						},
+						{
+							"name": "Bottoms",
+							"link": "/girls-bottoms"
+						}
+					]
+				},
+				{
+					"category": "BOYS",
+					"subCategory": [
+						{
+							"name": "Trousers",
+							"link": "/boys-trousers"
+						},
+						{
+							"name": "Shirts",
+							"link": "/boys-shirts"
+						},
+						{
+							"name": "Suits",
+							"link": "/boys-suits"
+						}
+					]
+				},
+				{
+					"category": "SALE",
+					"subCategory": [
+						{
+							"name": "Trousers",
+							"link": "/sale-trousers"
+						},
+						{
+							"name": "Shirts",
+							"link": "/sale-shirts"
+						},
+						{
+							"name": "Suits",
+							"link": "/sale-suits"
+						}
+					]
+				}
+			]
+		}
+	},
+	"heroBanner": {
+		"banners": [
+			{
+				"glow": "NATURAL",
+				"bannerText": "Beaux products protect and nourish your skin with a range of lotions, day creams, night creams, tinted moisturizers, and more.",
+				"more": "VIEW MORE",
+				"imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
+			},
+			{
+				"glow": "GLOWING SKIN",
+				"bannerText": "Discover the power of Beaux products to moisturize and revitalize your skin. Our range includes lotions, day creams, night creams, tinted moisturizers, and more.",
+				"more": "VIEW MORE",
+				"imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
+			},
+			{
+				"glow": "NATURAL GLOW",
+				"bannerText": "Experience the magic of Beaux products in moisturizing and rejuvenating your skin. Explore our selection of lotions, day creams, night creams, tinted moisturizers, and more.",
+				"more": "VIEW MORE",
+				"imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
+			}
+		]
+	},
+	"weeklyFeatured": {
+		"products": "WEEKLY FEATURED PRODUCTS",
+		"premiumTitle": "The World's Premium Brands In One Destination."
+	},
+	"weeklySingleCard": {
+		"add": "ADD TO CART",
+		"makeup": "Makeup",
+		"detail": "RADIANT LIFT FOUNDATION"
+	},
+	"preferredSingleCard": {
+		"category": "makeup",
+		"subCategory": [
+			{
+				"name": "Lipstick",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
+			},
+			{
+				"name": "Foundation",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
+			},
+			{
+				"name": "Mascara",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
+			},
+			{
+				"name": "Skincare",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
+			}
+		]
+	},
+	"recentsSingleCard": {
+		"add": "ADD TO CART",
+		"makeup": "Makeup",
+		"detail": "RADIANT LIFT FOUNDATION"
+	},
+	"mostPreferred": {
+		"categories": "MOST PREFERRED CATEGORIES",
+		"premium": "The World's Premium Brands In One Destination."
+	},
+	"recentlyViewed": {
+		"recentlyViewed": "RECENTLY VIEWED",
+		"stillInterested": "Are you still interested in these products?",
 
-    "products": [
-      {
-        "name": "RADIANT LIFT FOUNDATION",
-        "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
-        "category": "Makeup",
-        "price": 29,
-        "rating": 4
-      },
-      {
-        "name": "MOISTURIZING SKIN CREAM",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-        "category": "Skincare",
-        "price": 35,
-        "rating": 5
-      },
-      {
-        "name": "EYE ENHANCING MASCARA",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
-        "category": "Makeup",
-        "price": 15,
-        "rating": 3
-      },
-      {
-        "name": "HYDRATING FACIAL CLEANSER",
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
-        "category": "Skincare",
-        "price": 20,
-        "rating": 4
-      }
-    ]
-  },
-  "dropdown": {
-    "en": "ENGLISH",
-    "fr": "FRENCH",
-    "it": "ITALIAN"
-  }
+		"products": [
+			{
+				"name": "RADIANT LIFT FOUNDATION",
+				"imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+				"category": "Makeup",
+				"price": 29,
+				"rating": 4
+			},
+			{
+				"name": "MOISTURIZING SKIN CREAM",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+				"category": "Skincare",
+				"price": 35,
+				"rating": 5
+			},
+			{
+				"name": "EYE ENHANCING MASCARA",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+				"category": "Makeup",
+				"price": 15,
+				"rating": 3
+			},
+			{
+				"name": "HYDRATING FACIAL CLEANSER",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+				"category": "Skincare",
+				"price": 20,
+				"rating": 4
+			}
+		]
+	},
+	"mostPopular": {
+		"title": "MOST POPULAR",
+		"subTitle": "The World's Premium Brands In One Destination.",
+		"tabs": [
+			{
+				"tabName": "ALL"
+			},
+			{
+				"tabName": "FACE"
+			},
+			{
+				"tabName": "EYES"
+			},
+			{
+				"tabName": "LIPS"
+			}
+		],
+		"products": [
+			{
+				"name": "RADIANT LIFT FOUNDATION",
+				"imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+				"category": "Makeup",
+				"price": 29,
+				"rating": 4
+			},
+			{
+				"name": "MOISTURIZING SKIN CREAM",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+				"category": "Skincare",
+				"price": 35,
+				"rating": 5
+			},
+			{
+				"name": "EYE ENHANCING MASCARA",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+				"category": "Makeup",
+				"price": 15,
+				"rating": 3
+			},
+			{
+				"name": "HYDRATING FACIAL CLEANSER",
+				"imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+				"category": "Skincare",
+				"price": 20,
+				"rating": 4
+			}
+		]
+	},
+	"dropdown": {
+		"en": "ENGLISH",
+		"fr": "FRENCH",
+		"it": "ITALIAN"
+	}
 }

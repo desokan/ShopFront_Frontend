@@ -1,0 +1,93 @@
+.MostPopularContainer {
+  padding: 0px 255px 0 255px;
+  max-width: 1280px;
+  background-color: red;
+  height: 800px;
+}
+
+.MostPopularTitleH2 {
+  color: var(--color-head, #222);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  padding: 10px;
+}
+
+.MostPopularTitleP {
+  color: #5a5a5a;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.MostPopularCards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 1fr));
+  padding-top: 20px;
+  grid-gap: 20px;
+}
+
+
+.MostPopularSingleCardP {
+  color: var(--color-head, #222);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.MostPopularSingleCardImage {
+  width: 210px;
+  height: 350px;
+}
+
+.MostPopularSingleCardImage:hover {
+  transform: scale(1.1);
+}
+
+.MostPopularSingleCard {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 210px;
+  height: 350px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 0;
+}
+
+.tab {
+  color: var(--color-second, #767676);
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.tab:hover {
+  color: var(--color-head, #222);
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  text-decoration: underline 2.5px solid;
+  text-underline-offset: 0.5em;
+}
