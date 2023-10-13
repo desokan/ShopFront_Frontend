@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import classes from './MostPopular.module.css';
-import SingleCardMostPopular from './SingleCardMostPopular';
 import Carousel from './Carousel';
 import { useTranslation } from 'react-i18next';
 import i18n from "i18next";
 
 const MostPopular = () => {
 	const { t } = useTranslation();
-	console.log("language", i18n.language);
   
 	const [selectedTab, setSelectedTab] = useState('');
   
 	useEffect(() => {
-	  console.log("language: " + i18n.language);
 	  if (i18n.language === 'it') {
 		setSelectedTab("TUTTI");
 	  } else if (i18n.language === "fr") {
@@ -20,7 +17,7 @@ const MostPopular = () => {
 	  } else {
 		setSelectedTab("ALL");
 	  }
-	}, [i18n.language]);
+	}, []);
   
 	const productCategories = t('mostPopular.tabs', {
 	  returnObjects: true,
