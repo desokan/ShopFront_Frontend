@@ -4,7 +4,7 @@ import Headphones from "../svgs/Headphones";
 
 import Shield from "../svgs/Shield";
 
-const FooterTop = () => {
+const FooterTop = ({t}) => {
   return (
     <>
       <section className={classes.footerTopContainer}>
@@ -14,8 +14,8 @@ const FooterTop = () => {
           </div>
 
           <div className={classes.badgeTitle}>
-            <h5>FAST AND FREE DELIVERY</h5>
-            <p>Free delivery for all orders over $140</p>
+            <h5>{t("footer.Top.DeliveryTitle")}</h5>
+            <p>{t("footer.Top.DeliveryInfo")}</p>
           </div>
         </div>
         <div className={`${classes.badges} ${classes.badgesCenter}`}>
@@ -24,8 +24,8 @@ const FooterTop = () => {
           </div>
 
           <div className={classes.badgeTitle}>
-            <h5>24/7 CUSTOMER SUPPORT</h5>
-            <p>Friendly 24/7 customer support</p>
+            <h5>{t("footer.Top.SupportTitle")}</h5>
+            <p>{t("footer.Top.SupportInfo")}</p>
           </div>
         </div>
         <div className={`${classes.badges} ${classes.badgesRight}`}>
@@ -34,8 +34,8 @@ const FooterTop = () => {
           </div>
 
           <div className={`${classes.badgeTitle} ${classes.righty}`}>
-            <h5>MONEY BACK GUARANTEE</h5>
-            <p>We return money within 30 days</p>
+            <h5>{t("footer.Top.ReturnTitle")}</h5>
+            <p>{t("footer.Top.ReturnInfo")}</p>
           </div>
         </div>
       </section>

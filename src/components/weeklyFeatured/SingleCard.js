@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './WeeklyFeatured.module.css';
 import BagIcon from '../svgs/BagIcon';
-import Image4 from './images/image4.png'
+
 
 const SingleCard = ({ product }) => {
   const { name, category, price, rating, image } = product;

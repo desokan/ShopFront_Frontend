@@ -1,0 +1,178 @@
+{
+    "footer": {
+    "Top": {
+        "DeliveryTitle": "CONSEGNA VELOCE E GRATUITA",
+        "DeliveryInfo": "Consegna gratuita per tutti gli ordini superiori a $140",
+        "SupportTitle": "SUPPORTO CLIENTI 24/7",
+        "SupportInfo": "Supporto clienti cordiale 24/7",
+        "ReturnTitle": "GARANZIA SODDISFATTI O RIMBORSATI",
+        "ReturnInfo": "Rimborsiamo i soldi entro 30 giorni"
+      },
+        "Company": {
+            "Company": "Azienda",
+            "About": "Chi siamo",
+            "Home": "Home",
+            "Careers": "Carriere",
+            "Shipping": "Spedizione",
+            "Contact": "Contattaci"
+        },
+        "Shop": {
+            "Shop": "NEGOZIO",
+            "Arrivals": "Nuovi Arrivi",
+            "Accessories": "Accessori",
+            "Men": "Uomini",
+            "Women": "Donne",
+            "ShopAll": "Tutti i Prodotti"
+        },
+        "Help": {
+            "Help": "AIUTO",
+            "CustomerService": "Servizio Clienti",
+            "Account": "Il Mio Account",
+            "TrackOrder": "Traccia Ordine",
+            "Return": "Portale Resi",
+            "Legal&Privacy": "Legale e Privacy",
+            "GiftCard": "Carta Regalo"
+          },
+          "Subscribe": {
+            "Subscribe": "ISCRIVITI",
+            "CallToAction": "Sii il primo a ricevere le ultime notizie su tendenze, promozioni e tanto altro!",
+            "Email": "Il tuo indirizzo email",
+            "Join": "UNISCITI"
+          },
+          "Bottom": {
+            "Language": "LINGUA",
+            "Currency": "VALUTA",
+            "LanguageTranslation": "ITALIENNE"
+          }
+    },
+    "navbar": {
+        "top": {
+            "Shipping": "SPEDIZIONE",
+            "Contact": "CONTATTO"
+        },
+        "bottom": {
+            "productMenus": [
+                {
+                    "category": "DONNE",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "https://www.google.co.uk/"
+                        },
+                        {
+                            "name": "Bluse",
+                            "link": "/bluse"
+                        },
+                        {
+                            "name": "Gonne",
+                            "link": "/gonne"
+                        }
+                    ]
+                },
+                {
+                    "category": "UOMINI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie"
+                        },
+                        {
+                            "name": "Blazer",
+                            "link": "/blazer"
+                        }
+                    ]
+                },
+                {
+                    "category": "RAGAZZE",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-ragazze"
+                        },
+                        {
+                            "name": "Top",
+                            "link": "/top-ragazze"
+                        },
+                        {
+                            "name": "Fondi",
+                            "link": "/fondi-ragazze"
+                        }
+                    ]
+                },
+                {
+                    "category": "RAGAZZI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-ragazzi"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie-ragazzi"
+                        },
+                        {
+                            "name": "Abiti",
+                            "link": "/abiti-ragazzi"
+                        }
+                    ]
+                },
+                {
+                    "category": "SALDI",
+                    "subCategory": [
+                        {
+                            "name": "Pantaloni",
+                            "link": "/pantaloni-saldi"
+                        },
+                        {
+                            "name": "Camicie",
+                            "link": "/camicie-saldi"
+                        },
+                        {
+                            "name": "Abiti",
+                            "link": "/abiti-saldi"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "heroBanner": {
+        "glow": "LUMINOSITÀ NATURALE",
+        "bannerText": "I prodotti Beaux proteggono, idratano e lubrificano la tua pelle. Nutrono intelligentemente la tua pelle con creme, creme da giorno, creme da notte, idratanti colorati e altro.",
+        "more": "VEDI DI PIÙ"
+    },
+    "weeklyFeatured": {
+        "products": "PRODOTTI IN PRIMO PIANO SETTIMANALI",
+        "premiumTitle": "I Marchi Premium del Mondo in una Sola Destinazione."
+    },
+    "weeklySingleCard": {
+        "add": "AGGIUNGI AL CARRELLO",
+        "makeup": "Trucco",
+        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    },
+    "recentsSingleCard": {
+        "add": "AGGIUNGI AL CARRELLO",
+        "makeup": "Trucco",
+        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    },
+    "preferredSingleCard": {
+        "lipstick": "rossetto"
+    },
+    "mostPreferred": {
+        "categories": "CATEGORIE PIÙ PREFERITE",
+        "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
+    },
+    "recentlyViewed": {
+        "recentlyViewed": "VISTI DI RECENTE",
+        "stillInterested": "Sei ancora interessato a questi prodotti?"
+    },
+    "dropdown": {
+        "en": "INGLESE",
+        "fr": "FRANCESE",
+        "it": "ITALIANO"
+    }
+}
