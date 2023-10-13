@@ -1,71 +1,126 @@
 .MostPopularContainer {
-  padding: 0px 255px 0 255px;
-  max-width: 1280px;
-  background-color: red;
-  height: 800px;
+  padding: 50px 185px 0 185px;
+
 }
 
-.MostPopularTitleH2 {
-  color: var(--color-head, #222);
+.MostPopularTitle {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
   text-align: center;
-  font-family: Avenir;
+  justify-content: start;
+}
+
+.MostPopularTitleH3 {
+  color: #222222;
   font-size: 25px;
-  font-style: normal;
+  font-family: Avenir;
   font-weight: 500;
-  line-height: normal;
+  word-wrap: break-word;
   margin: 0;
   padding: 10px;
 }
 
 .MostPopularTitleP {
   color: #5a5a5a;
-  text-align: center;
-  font-family: Avenir;
   font-size: 15px;
-  font-style: normal;
+  font-family: Avenir;
   font-weight: 400;
-  line-height: normal;
+  word-wrap: break-word;
   margin: 0;
   padding-bottom: 20px;
 }
 
-.MostPopularCards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(210px, 1fr));
-  padding-top: 20px;
-  grid-gap: 20px;
-}
-
-
-.MostPopularSingleCardP {
-  color: var(--color-head, #222);
-  text-align: center;
-  font-family: Avenir;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-.MostPopularSingleCardImage {
-  width: 210px;
-  height: 350px;
-}
-
-.MostPopularSingleCardImage:hover {
-  transform: scale(1.1);
-}
-
 .MostPopularSingleCard {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  width: 210px;
-  height: 350px;
+  height: 500px;
 }
 
+.MostPopularImageContainer {
+  width: 210px;
+  height: 280px;
+  background: #f9f9f9;
+  display: grid;
+  align-items: center;
+}
+
+.MostPopularImage {
+  width: 210px;
+  height: 250px;
+}
+
+.MostPopularProductInfo {
+  width: 210px;
+  display: grid;
+  justify-items: center;
+}
+
+.MostPopularMakeup {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-family: Avenir;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin: 6px;
+}
+
+.MostPopularText {
+  color: #222222;
+  font-size: 12px;
+  font-family: Avenir;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin: 6px;
+}
+
+.MostPopularStars {
+  color: orange;
+  width: 12px;
+  height: 14px;
+}
+
+.MostPopularSingleCard .MostPopularAddToCartButton {
+  position: relative;
+  width: 210px;
+  height: 30px;
+  bottom: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #222;
+  color: #fff;
+  font-family: Jost;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border: 0;
+}
+
+.MostPopularSingleCard:hover .MostPopularAddToCartButton {
+  opacity: 1;
+}
+
+.ProductRatingStar {
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: gray;
+}
+
+.ProductRatingStarFilled {
+  color: #eba37a;
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 ul {
   list-style: none;
   display: flex;
@@ -81,6 +136,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-bottom: 50px;
 }
 
 .tab:hover {
