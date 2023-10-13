@@ -1,7 +1,5 @@
 .RecentlyViewedContainer {
-  padding: 0px 255px 0 255px;
-  max-width: 1280px;
-  max-height: 737px;
+  padding: 50px 185px 0 185px;
 }
 
 .RecentlyViewedTitle {
@@ -47,6 +45,7 @@
   height: 400px;
   padding-bottom: 50px;
 }
+.re
 
 .RecentlyViewedImageContainer {
   width: 210px;

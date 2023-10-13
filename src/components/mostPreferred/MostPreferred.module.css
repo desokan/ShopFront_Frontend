@@ -34,7 +34,6 @@
     grid-gap: 20px;
   }
   
-
   
   .MostPreferredSingleCardP {
     color: var(--color-head, #222);
@@ -51,6 +50,9 @@
   .MostPreferredSingleCardImage {
     width: 210px;
     height: 350px;
+  }
+  .MostPreferredSingleCardImage:hover{
+    transform: scale(1.1);
   }
   
   .MostPreferredSingleCard {
