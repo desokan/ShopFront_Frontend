@@ -1,13 +1,21 @@
 .heroBannerContainer {
   background-image: url('./images/heroBannerImage.png');
-  background-size: fill;
+  background-size: cover;
   height: 757px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  min-width: 900px;
 }
 
-.heroBannerContainer {
+.heroBannerTextContainer {
+  width: 100vw;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: start;
   padding: 0 255px 0 255px;
 }
 
@@ -36,12 +44,11 @@
 .heroBannerTextContainerButton {
   color: #fff;
   background-color: #222;
-  display: inline-flex;
+  display: flex;
   height: 50px;
-  padding: 10px 40px 15px 40px;
-  align-items: flex-end;
-  gap: 10px;
-  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 161px;
 }
 
 .heroBannerArrowLeft {
