@@ -238,7 +238,55 @@
             }
           ]
           
-    },
+    },"mostPopular": {
+      "title": "LES PLUS POPULAIRES",
+      "subTitle": "Les Marques Premium du Monde en Une Destination.",
+      "tabs": [
+          {
+              "tabName": "TOUS"
+          },
+          {
+              "tabName": "VISAGE"
+          },
+          {
+              "tabName": "YEUX"
+          },
+          {
+              "tabName": "LÈVRES"
+          }
+      ],
+      "products": [
+          {
+              "name": "FOND DE TEINT LUMINEUX",
+              "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+              "category": "Maquillage",
+              "price": 29,
+              "rating": 4
+          },
+          {
+              "name": "CRÈME HYDRATANTE POUR LA PEAU",
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+              "category": "Soins de la Peau",
+              "price": 35,
+              "rating": 5
+          },
+          {
+              "name": "MASCARA AMPLIFICATEUR POUR LES YEUX",
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+              "category": "Maquillage",
+              "price": 15,
+              "rating": 3
+          },
+          {
+              "name": "NETTOYANT FACIAL HYDRATANT",
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+              "category": "Soins de la Peau",
+              "price": 20,
+              "rating": 4
+          }
+      ]
+  },
+  
     "dropdown": {
         "en": "ANGLAIS",
         "fr": "FRANÇAIS",

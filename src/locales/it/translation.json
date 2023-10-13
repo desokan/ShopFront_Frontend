@@ -237,7 +237,55 @@
             }
           ]
           
+    },"mostPopular": {
+        "title": "I PIÙ POPOLARI",
+        "subTitle": "I Marchi Premium del Mondo in una Sola Destinazione.",
+        "tabs": [
+            {
+                "tabName": "TUTTO"
+            },
+            {
+                "tabName": "VISO"
+            },
+            {
+                "tabName": "OCCHI"
+            },
+            {
+                "tabName": "LABBRA"
+            }
+        ],
+        "products": [
+            {
+                "name": "FONDOTINTA LUMINOSO",
+                "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+                "category": "Trucco",
+                "price": 29,
+                "rating": 4
+            },
+            {
+                "name": "CREMA IDRATANTE PER LA PELLE",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+                "category": "Cura della Pelle",
+                "price": 35,
+                "rating": 5
+            },
+            {
+                "name": "MASCARA OCCHI INTENSIFICANTE",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+                "category": "Trucco",
+                "price": 15,
+                "rating": 3
+            },
+            {
+                "name": "DETERGENTE VISO IDRATANTE",
+                "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+                "category": "Cura della Pelle",
+                "price": 20,
+                "rating": 4
+            }
+        ]
     },
+    
     "dropdown": {
         "en": "INGLESE",
         "fr": "FRANCESE",
