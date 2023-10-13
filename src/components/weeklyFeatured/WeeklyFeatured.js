@@ -5,6 +5,8 @@ import Carousel from './Carousel'
 
 const WeeklyFeatured = () => {
 	const { t } = useTranslation();
+  const products = t('recentlyViewed.products', { returnObjects: true })
+  console.log(products)
 	return (
 		<div className={classes.WeeklyFeaturedContainer}>
 			<div className={classes.WeeklyFeaturedTitle}>
@@ -16,7 +18,11 @@ const WeeklyFeatured = () => {
 				</p>
 			</div>
 			<div className={classes.WeeklyFeaturedCards}>
-			<Carousel products={t("recentlyViewed.products")}/>
+     
+        <Carousel
+          products={products}
+        />
+    
 			</div>
 		</div>
 	)

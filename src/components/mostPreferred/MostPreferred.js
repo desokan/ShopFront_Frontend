@@ -12,10 +12,10 @@ const MostPreferred = () => {
       <div className={classes.MostPreferredTitleContainer}>
         <div className={classes.MostPreferredTitle}>
           <h2 className={classes.MostPreferredTitleH2}>
-            MOST PREFERRED CATEGORIES
+          {t("mostPreferred.categories")}
           </h2>
           <p className={classes.MostPreferredTitleP}>
-            The World's Premium Brands In One Destination.
+          {t("mostPreferred.premium")}
           </p>
         </div>
       </div>

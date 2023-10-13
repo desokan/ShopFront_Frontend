@@ -4,6 +4,7 @@ import Carousel from '../weeklyFeatured/Carousel'
 
 const RecentlyViewed = () => {
 	const { t } = useTranslation();
+	const products = t('recentlyViewed.products', { returnObjects: true })
 	return (
 		<div className={classes.RecentlyViewedContainer}>
 			<div className={classes.RecentlyViewedTitle}>
@@ -14,7 +15,11 @@ const RecentlyViewed = () => {
 					{t("recentlyViewed.stillInterested")}
 				</p>
 			</div>
-			<Carousel products={t("recentlyViewed.products")}/>
+		
+        <Carousel
+          products={products}
+        />
+
 		</div>
 	)
 }

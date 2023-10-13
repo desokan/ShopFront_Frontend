@@ -4,7 +4,7 @@ import BagIcon from '../svgs/BagIcon';
 
 
 const SingleCard = ({ product }) => {
-  const { name, category, price, rating, image } = product;
+  const { name, category, price, rating, imageUrl } = product;
 
   const renderStars = () => {
     const stars = [];
@@ -28,7 +28,7 @@ const SingleCard = ({ product }) => {
       <div className={classes.WeeklyFeaturedImageContainer}>
         <img
           className={classes.WeeklyFeaturedImage}
-          src={image}
+          src={imageUrl}
           alt={name}
         />
       </div>
