@@ -9,7 +9,6 @@ import Carousel from './Carousel'
 const MainSlider = () => {
 	const { t } = useTranslation();
 	const banners = t('heroBanner.banners', { returnObjects: true })
-console.log("herobanner.js",banners)
 	return (
 		
 		<Carousel  banner={banners}/>
