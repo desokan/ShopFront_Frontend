@@ -160,7 +160,26 @@
         "detail": "FONDOTINTA EFFETTO RADIOSO"
     },
     "preferredSingleCard": {
-        "lipstick": "rossetto"
+        "category": "trucco",
+"subCategory": [
+  {
+    "name": "Rossetto",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
+  },
+  {
+    "name": "Fondotinta",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
+  },
+  {
+    "name": "Mascara",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
+  },
+  {
+    "name": "Cura della pelle",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
+  }
+]
+
     },
     "mostPreferred": {
         "categories": "CATEGORIE PIÙ PREFERITE",
@@ -168,7 +187,38 @@
     },
     "recentlyViewed": {
         "recentlyViewed": "VISTI DI RECENTE",
-        "stillInterested": "Sei ancora interessato a questi prodotti?"
+        "stillInterested": "Sei ancora interessato a questi prodotti?",
+        "products": [
+            {
+              "name": "FONDOTINTA LUMINOSO",
+              "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+              "category": "Trucco",
+              "price": 29,
+              "rating": 4
+            },
+            {
+              "name": "CREMA IDRATANTE PER LA PELLE",
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+              "category": "Cura della pelle",
+              "price": 35,
+              "rating": 5
+            },
+            {
+              "name": "MASCARA ESALTANTE PER GLI OCCHI",
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+              "category": "Trucco",
+              "price": 15,
+              "rating": 3
+            },
+            {
+              "name": "DETERGENTE VISO IDRATANTE",
+              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+              "category": "Cura della pelle",
+              "price": 20,
+              "rating": 4
+            }
+          ]
+          
     },
     "dropdown": {
         "en": "INGLESE",
