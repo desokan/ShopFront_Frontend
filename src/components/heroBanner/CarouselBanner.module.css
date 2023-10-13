@@ -1,0 +1,26 @@
+.carousel {
+    overflow: hidden;
+width: 100vw;
+  }
+  
+  .cardContainer {
+    gap: 30px;
+    display: flex;
+  }
+  
+  .card {
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .arrowRight {
+    width: 50px;
+    position: relative;
+    bottom: 388px;
+    right: -1550px;
+  }
+  .arrowLeft{
+    position: relative;
+    left: 50px;
+    top:420px
+  }

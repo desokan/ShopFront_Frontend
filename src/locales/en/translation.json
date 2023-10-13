@@ -141,10 +141,28 @@
     }
   },
   "heroBanner": {
-    "glow": "NATURAL GLOW",
-    "bannerText": "Beaux products protect, moisturize, and lubricate your skin. It smartly nourish your skin with lotions, day creams, night creams, tinted moisturizers, and more.",
-    "more": "VIEW MORE"
-  },
+    "banners": [
+      {
+        "glow": "NATURAL",
+        "bannerText": "Beaux products protect and nourish your skin with a range of lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
+      },
+      {
+        "glow": "GLOWING SKIN",
+        "bannerText": "Discover the power of Beaux products to moisturize and revitalize your skin. Our range includes lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
+      },
+      {
+        "glow": "NATURAL GLOW",
+        "bannerText": "Experience the magic of Beaux products in moisturizing and rejuvenating your skin. Explore our selection of lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
+      }
+    ]
+  }
+  ,
   "weeklyFeatured": {
     "products": "WEEKLY FEATURED PRODUCTS",
     "premiumTitle": "The World's Premium Brands In One Destination."
@@ -187,39 +205,37 @@
   "recentlyViewed": {
     "recentlyViewed": "RECENTLY VIEWED",
     "stillInterested": "Are you still interested in these products?",
-    
-      "products": [
-        {
-          "name": "RADIANT LIFT FOUNDATION",
-          "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
-          "category": "Makeup",
-          "price": 29,
-          "rating": 4
-        },
-        {
-          "name": "MOISTURIZING SKIN CREAM",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-          "category": "Skincare",
-          "price": 35,
-          "rating": 5
-        },
-        {
-          "name": "EYE ENHANCING MASCARA",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
-          "category": "Makeup",
-          "price": 15,
-          "rating": 3
-        },
-        {
-          "name": "HYDRATING FACIAL CLEANSER",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
-          "category": "Skincare",
-          "price": 20,
-          "rating": 4
-        }
-      ]
-    
-    
+
+    "products": [
+      {
+        "name": "RADIANT LIFT FOUNDATION",
+        "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+        "category": "Makeup",
+        "price": 29,
+        "rating": 4
+      },
+      {
+        "name": "MOISTURIZING SKIN CREAM",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Skincare",
+        "price": 35,
+        "rating": 5
+      },
+      {
+        "name": "EYE ENHANCING MASCARA",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+        "category": "Makeup",
+        "price": 15,
+        "rating": 3
+      },
+      {
+        "name": "HYDRATING FACIAL CLEANSER",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+        "category": "Skincare",
+        "price": 20,
+        "rating": 4
+      }
+    ]
   },
   "dropdown": {
     "en": "ENGLISH",

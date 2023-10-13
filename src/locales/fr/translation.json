@@ -142,10 +142,28 @@
         }
     },
     "heroBanner": {
-        "glow": "LUMIÈRE NATURELLE",
-        "bannerText": "Les produits Beaux protègent, hydratent et lubrifient votre peau. Ils nourrissent intelligemment votre peau avec des lotions, des crèmes de jour, des crèmes de nuit, des hydratants teintés, et plus encore.",
-        "more": "VOIR PLUS"
-    },
+        "banners": [
+          {
+            "glow": "NATUREL",
+            "bannerText": "Les produits Beaux protègent et nourrissent votre peau avec une gamme de lotions, de crèmes de jour, de crèmes de nuit, de crèmes teintées et plus encore.",
+            "more": "VOIR PLUS",
+            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
+          },
+          {
+            "glow": "PEAU ÉCLATANTE",
+            "bannerText": "Découvrez la puissance des produits Beaux pour hydrater et revitaliser votre peau. Notre gamme comprend des lotions, des crèmes de jour, des crèmes de nuit, des crèmes teintées et plus encore.",
+            "more": "VOIR PLUS",
+            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
+          },
+          {
+            "glow": "ÉCLAT NATUREL",
+            "bannerText": "Découvrez la magie des produits Beaux pour hydrater et rajeunir votre peau. Explorez notre sélection de lotions, de crèmes de jour, de crèmes de nuit, de crèmes teintées et plus encore.",
+            "more": "VOIR PLUS",
+            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
+          }
+        ]
+      }
+      ,
     "weeklyFeatured": {
         "products": "PRODUITS MIS EN AVANT DE LA SEMAINE",
         "premiumTitle": "Les Marques Premium du Monde en une Seule Destination."
