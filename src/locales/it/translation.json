@@ -12,7 +12,7 @@
             "Company": "Azienda",
             "About": "Chi siamo",
             "Home": "Home",
-            "Careers": "Carriere",
+            "Careers": "Carriera",
             "Shipping": "Spedizione",
             "Contact": "Contattaci"
         },
@@ -42,13 +42,13 @@
           "Bottom": {
             "Language": "LINGUA",
             "Currency": "VALUTA",
-            "LanguageTranslation": "ITALIENNE"
+            "LanguageTranslation": "ITALIANO"
           }
     },
     "navbar": {
         "top": {
             "Shipping": "SPEDIZIONE",
-            "Contact": "CONTATTO"
+            "Contact": "CONTATTI"
         },
         "bottom": {
             "productMenus": [
