@@ -10,7 +10,7 @@ const MostPopular = () => {
 		returnObjects: true,
 	})
 
-	const products = t('recentlyViewed.products', {
+	const products = t('mostPopular.products', {
 		returnObjects: true,
 	})
 
@@ -20,13 +20,23 @@ const MostPopular = () => {
 		<div className={classes.MostPopularContainer}>
 			<div className={classes.MostPopularTitleContainer}>
 				<div className={classes.MostPopularTitle}>
-					<h2 className={classes.MostPopularTitleH2}>
+					<h2 className={classes.MostPopularTitleH3}>
 						{t('mostPopular.title')}
 					</h2>
 					<p className={classes.MostPopularTitleP}>
 						{t('mostPopular.subTitle')}
 					</p>
 				</div>
+			</div>
+			<div>
+				<ul>
+
+				{productCategories.map((category, index)=>(
+					<li className={classes.tab} key={index}>
+						{category.tabName}
+					</li>
+				))}
+				</ul>
 			</div>
 			<div className={classes.MostPopularCards}>
 				<Carousel products={products} />
