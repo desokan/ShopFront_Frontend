@@ -8,5 +8,12 @@
       "subscriber": "sarajbeazley@gmail.com",
       "id": 2
     }
+  ],
+  "users": [
+    {
+      "userid": 1,
+      "email": "test-user@email.com",
+      "password" :"test-password"
+    }
   ]
 }
