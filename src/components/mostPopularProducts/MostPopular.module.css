@@ -147,3 +147,11 @@ ul {
   text-decoration: underline 2.5px solid;
   text-underline-offset: 0.5em;
 }
+.active {
+  color: var(--color-head, #222);
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  text-decoration: underline 2.5px solid;
+  text-underline-offset: 0.5em;
+}

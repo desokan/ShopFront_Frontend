@@ -4,7 +4,6 @@ import BagIcon from '../svgs/BagIcon'
 
 const SingleCard = ({ product }) => {
   const { name, category, price, rating, imageUrl } = product
-  console.log(product)
 
   const renderStars = () => {
     const stars = []
