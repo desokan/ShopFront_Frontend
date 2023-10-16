@@ -17,7 +17,7 @@ const MostPopular = () => {
 	  } else {
 		setSelectedTab("ALL");
 	  }
-	}, []);
+	}, [i18n.language]);
   
 	const productCategories = t('mostPopular.tabs', {
 	  returnObjects: true,

@@ -17,12 +17,12 @@
 .arrowRight {
   width: 50px;
   position: relative;
-  bottom: 388px;
-  right: -1550px;
+  bottom: 385px;
+  right: -95%;
 }
 
 .arrowLeft {
   position: relative;
   left: 50px;
-  top: 420px
+  top: 420px;
 }
