@@ -43,7 +43,7 @@ const MostPopular = () => {
         </div>
       </div>
       <div>
-        <ul>
+        <ul className={classes.MostPopularUl}>
           {productCategories.map((category, index) => (
             <li
               className={`${classes.tab} ${selectedTab === category.tabName ? classes.active : ''}`}

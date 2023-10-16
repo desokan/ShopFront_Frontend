@@ -121,7 +121,8 @@
   font-weight: 400;
   line-height: normal;
 }
-ul {
+
+.MostPopularUl {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -147,6 +148,7 @@ ul {
   text-decoration: underline 2.5px solid;
   text-underline-offset: 0.5em;
 }
+
 .active {
   color: var(--color-head, #222);
   font-style: normal;
