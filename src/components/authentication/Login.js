@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./Login.module.css";
+import BackDrop from "../util/Backdrop";
 
 const baseUrl = "http://localhost:4000";
 
@@ -55,33 +56,35 @@ const Login = () => {
   };
 
   return (
-    <div className="loginBox">
-        <div className={classes.backDrop}></div>
-      <p><b>LOGIN</b></p>
-      <form className="login-form" onSubmit={handleSubmit}>
-        <div className="input-container">
+    <div className={classes.backDrop}>
+        <BackDrop />
+        <div className={classes.loginBox}>
+      <p>
+        <b>LOGIN</b>
+      </p>
+      <form className={classes.loginForm} onSubmit={handleSubmit}>
+        <div className={classes.inputContainer}>
           <input
-            className="text-box"
+            className={classes.textBox}
             type="text"
-            placeholder="username"
+            placeholder="Username or email address *"
             onChange={handleChange}
             name="username"
             value={username}
           />
         </div>
-        <div className="input-container">
+        <div className={classes.inputContainer}>
           <input
-            className="text-box"
+            className={classes.textBox}
             type="password"
-            placeholder="password"
+            placeholder="Password *"
             onChange={handleChange}
             name="password"
             value={password}
           />
         </div>
-        <div className="input-info">
+        <div className={classes.inputInfo}>
           <label className="checkbox-label">
-            <p>Remember me</p>
             <input
               className="checkbox-input"
               type="checkbox"
@@ -91,15 +94,17 @@ const Login = () => {
               name="rememberMe"
             />
           </label>
+          <p>Remember me</p>
+
+          <p>Lost password?</p>
         </div>
-        <p>Lost password?</p>
         <button className="login-button" type="submit">
           LOG IN
         </button>
         <p>No account yet? Create Account</p>
       </form>
     </div>
-
+    </div>
   );
 };
 
