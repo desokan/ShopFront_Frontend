@@ -1,7 +1,6 @@
 import classes from "./DropDownCurrency.module.css"
 
 const DropDownCurrency = ({className}) => {
-  console.log(className)
 
   return (
     <select className={(className === 'footer' ? classes.footerDropDown : classes.dropDownSelect)} name="Currency">

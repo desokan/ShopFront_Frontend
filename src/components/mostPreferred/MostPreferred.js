@@ -20,8 +20,8 @@ const MostPreferred = () => {
         </div>
       </div>
       <div className={classes.MostPreferredCards}>
-        {productCategories.map((category) => (
-          <SingleCardMostPreferred key={category.id} category={category} />
+        {productCategories.map((category,index) => (
+          <SingleCardMostPreferred key={index} category={category} />
         ))}
       </div>
     </div>

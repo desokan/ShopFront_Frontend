@@ -1,246 +1,344 @@
 {
-    "footer": {
+  "footer": {
     "Top": {
-        "DeliveryTitle": "CONSEGNA VELOCE E GRATUITA",
-        "DeliveryInfo": "Consegna gratuita per tutti gli ordini superiori a $140",
-        "SupportTitle": "SUPPORTO CLIENTI 24/7",
-        "SupportInfo": "Supporto clienti cordiale 24/7",
-        "ReturnTitle": "GARANZIA SODDISFATTI O RIMBORSATI",
-        "ReturnInfo": "Rimborsiamo i soldi entro 30 giorni"
-      },
-        "Company": {
-            "Company": "Azienda",
-            "About": "Chi siamo",
-            "Home": "Home",
-            "Careers": "Carriera",
-            "Shipping": "Spedizione",
-            "Contact": "Contattaci"
-        },
-        "Shop": {
-            "Shop": "NEGOZIO",
-            "Arrivals": "Nuovi Arrivi",
-            "Accessories": "Accessori",
-            "Men": "Uomini",
-            "Women": "Donne",
-            "ShopAll": "Tutti i Prodotti"
-        },
-        "Help": {
-            "Help": "AIUTO",
-            "CustomerService": "Servizio Clienti",
-            "Account": "Il Mio Account",
-            "TrackOrder": "Traccia Ordine",
-            "Return": "Portale Resi",
-            "Legal&Privacy": "Legale e Privacy",
-            "GiftCard": "Carta Regalo"
-          },
-          "Subscribe": {
-            "Subscribe": "ISCRIVITI",
-            "CallToAction": "Sii il primo a ricevere le ultime notizie su tendenze, promozioni e tanto altro!",
-            "Email": "Il tuo indirizzo email",
-            "Join": "UNISCITI"
-          },
-          "Bottom": {
-            "Language": "LINGUA",
-            "Currency": "VALUTA",
-            "LanguageTranslation": "ITALIANO"
-          }
+      "DeliveryTitle": "CONSEGNA VELOCE E GRATUITA",
+      "DeliveryInfo": "Consegna gratuita per tutti gli ordini superiori a $140",
+      "SupportTitle": "SUPPORTO CLIENTI 24/7",
+      "SupportInfo": "Supporto clienti cordiale 24/7",
+      "ReturnTitle": "GARANZIA SODDISFATTI O RIMBORSATI",
+      "ReturnInfo": "Rimborsiamo i soldi entro 30 giorni"
     },
-    "navbar": {
-        "top": {
-            "Shipping": "SPEDIZIONE",
-            "Contact": "CONTATTI"
-        },
-        "bottom": {
-            "productMenus": [
-                {
-                    "category": "DONNE",
-                    "subCategory": [
-                        {
-                            "name": "Pantaloni",
-                            "link": "https://www.google.co.uk/"
-                        },
-                        {
-                            "name": "Bluse",
-                            "link": "/bluse"
-                        },
-                        {
-                            "name": "Gonne",
-                            "link": "/gonne"
-                        }
-                    ]
-                },
-                {
-                    "category": "UOMINI",
-                    "subCategory": [
-                        {
-                            "name": "Pantaloni",
-                            "link": "/pantaloni"
-                        },
-                        {
-                            "name": "Camicie",
-                            "link": "/camicie"
-                        },
-                        {
-                            "name": "Blazer",
-                            "link": "/blazer"
-                        }
-                    ]
-                },
-                {
-                    "category": "RAGAZZE",
-                    "subCategory": [
-                        {
-                            "name": "Pantaloni",
-                            "link": "/pantaloni-ragazze"
-                        },
-                        {
-                            "name": "Top",
-                            "link": "/top-ragazze"
-                        },
-                        {
-                            "name": "Fondi",
-                            "link": "/fondi-ragazze"
-                        }
-                    ]
-                },
-                {
-                    "category": "RAGAZZI",
-                    "subCategory": [
-                        {
-                            "name": "Pantaloni",
-                            "link": "/pantaloni-ragazzi"
-                        },
-                        {
-                            "name": "Camicie",
-                            "link": "/camicie-ragazzi"
-                        },
-                        {
-                            "name": "Abiti",
-                            "link": "/abiti-ragazzi"
-                        }
-                    ]
-                },
-                {
-                    "category": "SALDI",
-                    "subCategory": [
-                        {
-                            "name": "Pantaloni",
-                            "link": "/pantaloni-saldi"
-                        },
-                        {
-                            "name": "Camicie",
-                            "link": "/camicie-saldi"
-                        },
-                        {
-                            "name": "Abiti",
-                            "link": "/abiti-saldi"
-                        }
-                    ]
-                }
-            ]
-        }
+    "Company": {
+      "Company": "Azienda",
+      "About": "Chi siamo",
+      "Home": "Home",
+      "Careers": "Carriera",
+      "Shipping": "Spedizione",
+      "Contact": "Contattaci"
     },
-    "heroBanner": {
-        "banners": [
-          {
-            "glow": "NATURALE",
-            "bannerText": "I prodotti Beaux proteggono e nutrono la tua pelle con una gamma di lozioni, creme da giorno, creme da notte, creme colorate e altro.",
-            "more": "VEDI ALTRO",
-            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
-          },
-          {
-            "glow": "PELLE LUMINOSA",
-            "bannerText": "Scopri il potere dei prodotti Beaux per idratare e rivitalizzare la tua pelle. La nostra gamma include lozioni, creme da giorno, creme da notte, creme colorate e altro.",
-            "more": "VEDI ALTRO",
-            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
-          },
-          {
-            "glow": "LUMINOSITÀ NATURALE",
-            "bannerText": "Vivi la magia dei prodotti Beaux nell'idratazione e nel ringiovanimento della tua pelle. Esplora la nostra selezione di lozioni, creme da giorno, creme da notte, creme colorate e altro.",
-            "more": "VEDI ALTRO",
-            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
-          }
-        ]
-      }
-      ,
-    "weeklyFeatured": {
-        "products": "PRODOTTI SETTIMANALI IN PRIMO PIANO",
-        "premiumTitle": "I Marchi Premium del Mondo in una Sola Destinazione."
+    "Shop": {
+      "Shop": "NEGOZIO",
+      "Arrivals": "Nuovi Arrivi",
+      "Accessories": "Accessori",
+      "Men": "Uomini",
+      "Women": "Donne",
+      "ShopAll": "Tutti i Prodotti"
     },
-    "weeklySingleCard": {
-        "add": "AGGIUNGI AL CARRELLO",
-        "makeup": "Trucco",
-        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    "Help": {
+      "Help": "AIUTO",
+      "CustomerService": "Servizio Clienti",
+      "Account": "Il Mio Account",
+      "TrackOrder": "Traccia Ordine",
+      "Return": "Portale Resi",
+      "Legal&Privacy": "Legale e Privacy",
+      "GiftCard": "Carta Regalo"
     },
-    "recentsSingleCard": {
-        "add": "AGGIUNGI AL CARRELLO",
-        "makeup": "Trucco",
-        "detail": "FONDOTINTA EFFETTO RADIOSO"
+    "Subscribe": {
+      "Subscribe": "ISCRIVITI",
+      "CallToAction": "Sii il primo a ricevere le ultime notizie su tendenze, promozioni e tanto altro!",
+      "Email": "Il tuo indirizzo email",
+      "Join": "UNISCITI"
     },
-    "preferredSingleCard": {
-        "category": "trucco",
-"subCategory": [
-  {
-    "name": "Rossetto",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
+    "Bottom": {
+      "Language": "LINGUA",
+      "Currency": "VALUTA",
+      "LanguageTranslation": "ITALIANO"
+    }
   },
-  {
-    "name": "Fondotinta",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
-  },
-  {
-    "name": "Mascara",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
-  },
-  {
-    "name": "Cura della pelle",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
-  }
-]
-
+  "navbar": {
+    "top": {
+      "Shipping": "SPEDIZIONE",
+      "Contact": "CONTATTI"
     },
-    "mostPreferred": {
-        "categories": "CATEGORIE PREFERITE",
-        "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
-    },
-    "recentlyViewed": {
-        "recentlyViewed": "VISTI DI RECENTE",
-        "stillInterested": "Sei ancora interessato a questi prodotti?",
-        "products": [
+    "bottom": {
+      "productMenus": [
+        {
+          "category": "DONNE",
+          "subCategory": [
             {
-              "name": "FONDOTINTA LUMINOSO",
-              "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
-              "category": "Trucco",
-              "price": 29,
-              "rating": 4
+              "name": "Pantaloni",
+              "link": "https://www.google.co.uk/"
             },
             {
-              "name": "CREMA IDRATANTE PER LA PELLE",
-              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-              "category": "Cura della pelle",
-              "price": 35,
-              "rating": 5
+              "name": "Bluse",
+              "link": "/bluse"
             },
             {
-              "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
-              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
-              "category": "Trucco",
-              "price": 15,
-              "rating": 3
-            },
-            {
-              "name": "DETERGENTE VISO IDRATANTE",
-              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
-              "category": "Cura della pelle",
-              "price": 20,
-              "rating": 4
+              "name": "Gonne",
+              "link": "/gonne"
             }
           ]
-          
-    },
-    "dropdown": {
-        "en": "INGLESE",
-        "fr": "FRANCESE",
-        "it": "ITALIANO"
+        },
+        {
+          "category": "UOMINI",
+          "subCategory": [
+            {
+              "name": "Pantaloni",
+              "link": "/pantaloni"
+            },
+            {
+              "name": "Camicie",
+              "link": "/camicie"
+            },
+            {
+              "name": "Blazer",
+              "link": "/blazer"
+            }
+          ]
+        },
+        {
+          "category": "RAGAZZE",
+          "subCategory": [
+            {
+              "name": "Pantaloni",
+              "link": "/pantaloni-ragazze"
+            },
+            {
+              "name": "Top",
+              "link": "/top-ragazze"
+            },
+            {
+              "name": "Fondi",
+              "link": "/fondi-ragazze"
+            }
+          ]
+        },
+        {
+          "category": "RAGAZZI",
+          "subCategory": [
+            {
+              "name": "Pantaloni",
+              "link": "/pantaloni-ragazzi"
+            },
+            {
+              "name": "Camicie",
+              "link": "/camicie-ragazzi"
+            },
+            {
+              "name": "Abiti",
+              "link": "/abiti-ragazzi"
+            }
+          ]
+        },
+        {
+          "category": "SALDI",
+          "subCategory": [
+            {
+              "name": "Pantaloni",
+              "link": "/pantaloni-saldi"
+            },
+            {
+              "name": "Camicie",
+              "link": "/camicie-saldi"
+            },
+            {
+              "name": "Abiti",
+              "link": "/abiti-saldi"
+            }
+          ]
+        }
+      ]
     }
+  },
+  "heroBanner": {
+    "banners": [
+      {
+        "glow": "NATURALE",
+        "bannerText": "I prodotti Beaux proteggono e nutrono la tua pelle con una gamma di lozioni, creme da giorno, creme da notte, creme colorate e altro.",
+        "more": "VEDI ALTRO",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
+      },
+      {
+        "glow": "PELLE LUMINOSA",
+        "bannerText": "Scopri il potere dei prodotti Beaux per idratare e rivitalizzare la tua pelle. La nostra gamma include lozioni, creme da giorno, creme da notte, creme colorate e altro.",
+        "more": "VEDI ALTRO",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
+      },
+      {
+        "glow": "LUMINOSITÀ NATURALE",
+        "bannerText": "Vivi la magia dei prodotti Beaux nell'idratazione e nel ringiovanimento della tua pelle. Esplora la nostra selezione di lozioni, creme da giorno, creme da notte, creme colorate e altro.",
+        "more": "VEDI ALTRO",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
+      }
+    ]
+  },
+  "weeklyFeatured": {
+    "products": "PRODOTTI SETTIMANALI IN PRIMO PIANO",
+    "premiumTitle": "I Marchi Premium del Mondo in una Sola Destinazione."
+  },
+  "weeklySingleCard": {
+    "add": "AGGIUNGI AL CARRELLO",
+    "makeup": "Trucco",
+    "detail": "FONDOTINTA EFFETTO RADIOSO"
+  },
+  "recentsSingleCard": {
+    "add": "AGGIUNGI AL CARRELLO",
+    "makeup": "Trucco",
+    "detail": "FONDOTINTA EFFETTO RADIOSO"
+  },
+  "preferredSingleCard": {
+    "category": "trucco",
+    "subCategory": [
+      {
+        "name": "Rossetto",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
+      },
+      {
+        "name": "Fondotinta",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
+      },
+      {
+        "name": "Mascara",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
+      },
+      {
+        "name": "Cura della pelle",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
+      }
+    ]
+  },
+  "mostPreferred": {
+    "categories": "CATEGORIE PREFERITE",
+    "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
+  },
+  "recentlyViewed": {
+    "recentlyViewed": "VISTI DI RECENTE",
+    "stillInterested": "Sei ancora interessato a questi prodotti?",
+    "products": [
+      {
+        "name": "FONDOTINTA LUMINOSO",
+        "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+        "category": "Trucco",
+        "price": 29,
+        "rating": 4
+      },
+      {
+        "name": "CREMA IDRATANTE PER LA PELLE",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Cura della pelle",
+        "price": 35,
+        "rating": 5
+      },
+      {
+        "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+        "category": "Trucco",
+        "price": 15,
+        "rating": 3
+      },
+      {
+        "name": "DETERGENTE VISO IDRATANTE",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+        "category": "Cura della pelle",
+        "price": 20,
+        "rating": 4
+      }
+    ]
+  },
+  "mostPopular": {
+    "title": "I PIÙ POPOLARI",
+    "subTitle": "I Marchi Premium del Mondo in una Sola Destinazione.",
+    "tabs": [
+      {
+        "tabName": "TUTTI"
+      },
+      {
+        "tabName": "VISO"
+      },
+      {
+        "tabName": "OCCHI"
+      },
+      {
+        "tabName": "LABBRA"
+      }
+    ],
+    "products": [
+      {
+        "name": "Crema Viso Anti-età",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Cura della Pelle",
+        "price": 30,
+        "rating": 4,
+        "mainCategory": "VISO"
+      },
+      {
+        "name": "Struccante Occhi",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
+        "category": "Trucco",
+        "price": 12,
+        "rating": 5,
+        "mainCategory": "OCCHI"
+      },
+      {
+        "name": "Rossetto Opaco",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
+        "category": "Rossetto",
+        "price": 15,
+        "rating": 4,
+        "mainCategory": "LABBRA"
+      },
+      {
+        "name": "Siero Idratante Viso",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
+        "category": "Cura della Pelle",
+        "price": 25,
+        "rating": 4,
+        "mainCategory": "VISO"
+      },
+      {
+        "name": "Palette Ombretti",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
+        "category": "Trucco",
+        "price": 18,
+        "rating": 4,
+        "mainCategory": "OCCHI"
+      },
+      {
+        "name": "Set di Balsami Labbra",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
+        "category": "Cura delle Labbra",
+        "price": 10,
+        "rating": 5,
+        "mainCategory": "LABBRA"
+      },
+      {
+        "name": "Crema Idratante Giorno",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
+        "category": "Cura della Pelle",
+        "price": 20,
+        "rating": 4,
+        "mainCategory": "VISO"
+      },
+      {
+        "name": "Mascara Waterproof",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
+        "category": "Trucco",
+        "price": 14,
+        "rating": 4,
+        "mainCategory": "OCCHI"
+      },
+      {
+        "name": "Set di Lucidalabbra",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
+        "category": "Rossetto",
+        "price": 22,
+        "rating": 5,
+        "mainCategory": "LABBRA"
+      },
+      {
+        "name": "Detergente Viso",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
+        "category": "Cura della Pelle",
+        "price": 16,
+        "rating": 4,
+        "mainCategory": "VISO"
+      }
+    ]
+  },
+
+  "dropdown": {
+    "en": "INGLESE",
+    "fr": "FRANCESE",
+    "it": "ITALIANO"
+  }
 }

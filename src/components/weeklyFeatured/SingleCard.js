@@ -1,14 +1,12 @@
-import React from 'react';
-import classes from './WeeklyFeatured.module.css';
-import BagIcon from '../svgs/BagIcon';
-
+import React from 'react'
+import classes from './WeeklyFeatured.module.css'
+import BagIcon from '../svgs/BagIcon'
 
 const SingleCard = ({ product }) => {
-  const { name, category, price, rating, imageUrl } = product;
-  console.log(product);
+  const { name, category, price, rating, imageUrl } = product
 
   const renderStars = () => {
-    const stars = [];
+    const stars = []
     for (let i = 1; i <= 5; i++) {
       stars.push(
         <span
@@ -19,10 +17,10 @@ const SingleCard = ({ product }) => {
         >
           {i <= rating ? '★' : '☆'}
         </span>
-      );
+      )
     }
-    return stars;
-  };
+    return stars
+  }
 
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>
@@ -48,7 +46,7 @@ const SingleCard = ({ product }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SingleCard;
+export default SingleCard
