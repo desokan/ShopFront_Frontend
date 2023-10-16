@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import classes from "./Login.module.css";
 
-const baseUrl = 'http://localhost:4000'
+const baseUrl = "http://localhost:4000";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -54,11 +55,11 @@ const Login = () => {
   };
 
   return (
-    <div className="page">
-      <h1>LOGIN</h1>
+    <div className="loginBox">
+        <div className={classes.backDrop}></div>
+      <p><b>LOGIN</b></p>
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="input-container">
-          <p>Username</p>
           <input
             className="text-box"
             type="text"
@@ -69,7 +70,6 @@ const Login = () => {
           />
         </div>
         <div className="input-container">
-          <p>Password</p>
           <input
             className="text-box"
             type="password"
@@ -79,11 +79,27 @@ const Login = () => {
             value={password}
           />
         </div>
-        <button className="admin-sign-button" type="submit">
-          Sign In
+        <div className="input-info">
+          <label className="checkbox-label">
+            <p>Remember me</p>
+            <input
+              className="checkbox-input"
+              type="checkbox"
+              id="rememberMe"
+              // checked={formData.isSold}
+              onChange={handleChange}
+              name="rememberMe"
+            />
+          </label>
+        </div>
+        <p>Lost password?</p>
+        <button className="login-button" type="submit">
+          LOG IN
         </button>
+        <p>No account yet? Create Account</p>
       </form>
     </div>
+
   );
 };
 

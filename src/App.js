@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Privacy from "./pages/Privacy";
+import Login from "./components/authentication/Login";
 import { CurrencyProvider } from "./store/CurrencyContext";
 
 
@@ -17,8 +18,8 @@ const App = () => {
         <Routes>
           <Route path={"/"} element={<HomePage />} />
           <Route path={"/privacy"} element={<Privacy />} />
-          {/* <Route path={"/login"}element={<LoginPage />} />
-          <Route path={"/register"}element={<RegistrationPage />} /> */}
+          <Route path={"/login"}element={<Login />} />
+          {/* <Route path={"/register"}element={<RegistrationPage />} /> */}
         </Routes>
       </CurrencyProvider>
     </>
