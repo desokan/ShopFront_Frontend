@@ -4,45 +4,77 @@
     position:fixed;
     top: 0;
     right: 0;
-    width: 250px;
+    width: 450px;
     background-color: white;
     z-index: 101;
+}
+
+.closeLoginForm{
+    background: #FAF9F8;
+    display: flex;
+    height:82px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+   
+}
+
+.loginText{
+    color: #222;
+    font-weight: 500;
 }
 
 .loginForm {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 50vh;
+    margin-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .textBox {
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 300px;
-}
+    width: 350px;
 
-.inputContainer {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    /* Add some spacing between input sections */
 }
 
 .inputInfo {
-    display: flex; /* Use flex to align items horizontally */
+    display: flex; 
     justify-content: space-between; /* Add space between the items */
     align-items: center; /* Vertically center items */
     margin-bottom: 10px;
   }
   
-  .checkbox-label {
-    display: inline-block; /* Display the label inline */
-    margin-right: 10px; /* Add some spacing between label and checkbox */
+  .checkboxLabel {
+    display: flex; 
+    justify-content: space-between;
+   
   }
   
-  .login-button {
-    width: 100px; /* Adjust the button width as needed */
+.checkboxInput{
+    margin-right: 10px;
+}
+
+  .loginButton {
+    width: 100%;
+    background: #222222;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
   }
+
+  .newAccount{
+   text-align: center;
+  }
+
+ .newAccount > span{
+    text-decoration: underline; 
+ }
+
+ .underline {
+    text-decoration: underline;
+ }

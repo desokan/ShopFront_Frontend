@@ -2,10 +2,11 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./Login.module.css";
 import BackDrop from "../util/Backdrop";
+import { Link } from "react-router-dom";
 
 const baseUrl = "http://localhost:4000";
 
-const Login = () => {
+const Login = ({closeLogin}) => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -22,6 +23,10 @@ const Login = () => {
       setPassword(value);
     }
   }
+
+  const handleCloseLogin = () => {
+   closeLogin(false)
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,13 +62,17 @@ const Login = () => {
 
   return (
     <div className={classes.backDrop}>
-        <BackDrop />
-        <div className={classes.loginBox}>
-      <p>
-        <b>LOGIN</b>
-      </p>
-      <form className={classes.loginForm} onSubmit={handleSubmit}>
-        <div className={classes.inputContainer}>
+      <BackDrop />
+      <div className={classes.loginBox}>
+        <div className={classes.closeLoginForm}>
+          <p className={classes.loginText}>
+            <b>LOGIN</b>
+          </p>
+          <button className={classes.loginText} onClick={handleCloseLogin}>
+            X
+          </button>
+        </div>
+        <form className={classes.loginForm} onSubmit={handleSubmit}>
           <input
             className={classes.textBox}
             type="text"
@@ -72,8 +81,7 @@ const Login = () => {
             name="username"
             value={username}
           />
-        </div>
-        <div className={classes.inputContainer}>
+
           <input
             className={classes.textBox}
             type="password"
@@ -82,28 +90,37 @@ const Login = () => {
             name="password"
             value={password}
           />
-        </div>
-        <div className={classes.inputInfo}>
-          <label className="checkbox-label">
-            <input
-              className="checkbox-input"
-              type="checkbox"
-              id="rememberMe"
-              // checked={formData.isSold}
-              onChange={handleChange}
-              name="rememberMe"
-            />
-          </label>
-          <p>Remember me</p>
 
-          <p>Lost password?</p>
-        </div>
-        <button className="login-button" type="submit">
-          LOG IN
-        </button>
-        <p>No account yet? Create Account</p>
-      </form>
-    </div>
+          <div className={classes.inputInfo}>
+            <div className={classes.checkboxLabel}>
+              <input
+                className={classes.checkboxInput}
+                type="checkbox"
+                id="rememberMe"
+                // checked={formData.isSold}
+                onChange={handleChange}
+                name="rememberMe"
+              />{" "}
+              <label className={classes.checkboxLabel}>Remember Me</label>
+            </div>
+            <div>
+              <p className={classes.underline}>
+                <Link>Lost password?</Link>
+              </p>
+            </div>
+          </div>
+
+          <button className={classes.loginButton} type="submit">
+            LOG IN
+          </button>
+          <p className={classes.newAccount}>
+            No account yet?{" "}
+            <span>
+              <Link>Create Account</Link>
+            </span>
+          </p>
+        </form>
+      </div>
     </div>
   );
 };
