@@ -20,7 +20,7 @@ const App = () => {
           <Route path={"/"} element={<HomePage />} />
           <Route path={"/privacy"} element={<Privacy />} />
           <Route path={"/login"}element={<Login />} />
-         
+        
           {/* <Route path={"/register"}element={<RegistrationPage />} /> */}
         </Routes>
       </CurrencyProvider>
