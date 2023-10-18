@@ -68,7 +68,7 @@ const Login = ({closeLogin}) => {
           <p className={classes.loginText}>
             <b>LOGIN</b>
           </p>
-          <button className={classes.loginText} onClick={handleCloseLogin}>
+          <button className={classes.closeLogin} onClick={handleCloseLogin}>
             X
           </button>
         </div>
