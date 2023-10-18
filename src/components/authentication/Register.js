@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import classes from "./Login.module.css";
+import classes from "./Register.module.css";
 import BackDrop from "../util/Backdrop";
-import { Link } from "react-router-dom";
+
 
 const baseUrl = "http://localhost:4000";
 
-const Login = ({closeLogin}) => {
+const Register = ({ closeRegister }) => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
 
   const mockUsername = "SaraRasheed";
   const mockPassword = "TripleEqual";
@@ -17,22 +19,21 @@ const Login = ({closeLogin}) => {
   function handleChange(event) {
     const { name, value } = event.target;
     console.log(`Input "${name}":`, value);
-    if (name === "username") {
-      setUsername(value);
-    } else if (name === "password") {
+    if (username === "username" && email === "email") {
+      setUsername(value) && setEmail(value);
+    } else if (password === "password") {
       setPassword(value);
     }
   }
 
-  const handleCloseLogin = () => {
-   closeLogin(false)
-  };
+//   const handleCloseRegister = () => {
+//     closeRegister(false);
+//   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log(username, password);
-    console.log(mockUsername, mockPassword);
+  
+    console.log(username, email, password);
 
     if (username !== mockUsername || password !== mockPassword) {
       console.log("Login failed. Invalid credentials.");
@@ -56,6 +57,7 @@ const Login = ({closeLogin}) => {
       console.log("Redirecting to HomePage...");
 
       setUsername("");
+      setEmail("");
       setPassword("");
     }
   };
@@ -63,25 +65,33 @@ const Login = ({closeLogin}) => {
   return (
     <div className={classes.backDrop}>
       <BackDrop />
-      <div className={classes.loginBox}>
-        <div className={classes.closeLoginForm}>
-          <p className={classes.loginText}>
-            <b>LOGIN</b>
-          </p>
-          <button className={classes.closeLogin} onClick={handleCloseLogin}>
+      <div className={classes.registerBox}>
+        <div className={classes.closeRegisterForm}>
+          <p className={classes.registerText}>CREATE AN ACCOUNT</p>
+          <button
+            className={classes.closeRegister}
+            // onClick={handleCloseRegister}
+          >
             X
           </button>
         </div>
-        <form className={classes.loginForm} onSubmit={handleSubmit}>
+        <form className={classes.registerForm} onSubmit={handleSubmit}>
           <input
             className={classes.textBox}
             type="text"
-            placeholder="Username or email address *"
+            placeholder="Username"
             onChange={handleChange}
             name="username"
             value={username}
           />
-
+          <input
+            className={classes.textBox}
+            type="text"
+            placeholder="Email address *"
+            onChange={handleChange}
+            name="username"
+            value={username}
+          />
           <input
             className={classes.textBox}
             type="password"
@@ -90,39 +100,20 @@ const Login = ({closeLogin}) => {
             name="password"
             value={password}
           />
-
-          <div className={classes.inputInfo}>
-            <div className={classes.checkboxLabel}>
-              <input
-                className={classes.checkboxInput}
-                type="checkbox"
-                id="rememberMe"
-                // checked={formData.isSold}
-                onChange={handleChange}
-                name="rememberMe"
-              />{" "}
-              <label className={classes.checkboxLabel}>Remember Me</label>
-            </div>
-            <div>
-              <p className={classes.underline}>
-                <Link>Lost password?</Link>
-              </p>
-            </div>
-          </div>
-
-          <button className={classes.loginButton} type="submit">
-            LOG IN
+          
+            <p className={classes.personalData}>
+              Your personal data will be used to support your experience
+              throughout this website, to manage access to your account, and for
+              other purposes described in our privacy policy.
+            </p>
+          
+          <button className={classes.registerButton} type="submit">
+            REGISTER
           </button>
-          <p className={classes.newAccount}>
-            No account yet?{" "}
-            <span>
-              <Link to="/register">Create Account</Link>
-            </span>
-          </p>
         </form>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
