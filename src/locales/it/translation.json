@@ -149,7 +149,7 @@
         "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
       },
       {
-        "glow": "PIELLE LUMINOSA",
+        "glow": "PELLE LUMINOSA",
         "bannerText": "Scopri il potere dei prodotti Beaux per idratare e rivitalizzare la tua pelle. La nostra gamma include lozioni, creme da giorno, creme da notte, creme colorate e altro.",
         "more": "VEDI ALTRO",
         "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
@@ -198,7 +198,7 @@
     ]
   },
   "mostPreferred": {
-    "categories": "CATEGORIE PIÙ PREFERITE",
+    "categories": "CATEGORIE PREFERITE",
     "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
   },
   "recentlyViewed": {
@@ -220,7 +220,7 @@
         "rating": 5
       },
       {
-        "name": "MASCARA ESALTANTE PER GLI OCCHI",
+        "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
         "category": "Trucco",
         "price": 15,

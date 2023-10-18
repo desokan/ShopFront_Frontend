@@ -9,8 +9,9 @@ import i18n from "../i18n";
 import React, { useState } from "react";
 import ChatBoxIcon from "../components/chatbox/ChatBoxIcon";
 
+
 const HomePage = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); 
 
   return (
     <>

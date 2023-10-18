@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin: 0 auto;
   overflow: hidden;
+  max-width: 1090px;
 }
 
 .cardContainer {
@@ -18,8 +19,14 @@
   text-align: center;
 }
 
-.arrowLeft,
+
 .arrowRight {
   position: relative;
+  bottom: 100px;
+}
+
+.arrowLeft {
+  position: relative;
+  left: -3px;
   bottom: 100px;
 }

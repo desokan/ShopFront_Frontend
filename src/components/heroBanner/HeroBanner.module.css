@@ -1,17 +1,15 @@
 .heroBannerContainer {
-  background-image: url('./images/heroBannerImage.png');
-  background-size: cover;
+  background-size: 100%;
   height: 757px;
-  flex-shrink: 0;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-content: center;
-  width: 100vw;
-  min-width: 900px;
+  background-repeat: no-repeat;
 }
 
 .heroBannerTextContainer {
   width: 100vw;
+  min-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
