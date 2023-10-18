@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Privacy from "./pages/Privacy";
-import Login from "./components/authentication/Login";
 
 import { CurrencyProvider } from "./store/CurrencyContext";
 
