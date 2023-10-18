@@ -20,6 +20,13 @@
    
 }
 
+.closeLogin{
+  border: none;
+  background-color: #FAF9F8;
+  font-size: medium;
+  cursor: pointer;
+}
+
 .loginText{
     color: #222;
     font-weight: 500;
