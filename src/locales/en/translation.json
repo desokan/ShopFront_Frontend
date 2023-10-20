@@ -341,6 +341,27 @@
       }
     ]
   },
+	"productBanner": {
+		"shopNow": "SHOP NOW",
+		"title": "BRING OUT THE HIDDEN BEAUTY",
+		"subTitle": "Get styled with the high-fashion products and transform yourself.",
+		"products":[
+			{
+				"title": "FOUNDATION",
+				"subTitle": "Makes your face wet",
+				"shopNow": "SHOP NOW"
+			},
+			{
+				"title": "POWDER",
+				"subTitle": "Makes your face powdery",
+				"shopNow": "SHOP NOW"
+			},{
+				"title": "CREAM",
+				"subTitle": "Makes your face creamy",
+				"shopNow": "SHOP NOW"
+			}
+		]
+	},
   "dropdown": {
     "en": "ENGLISH",
     "fr": "FRENCH",

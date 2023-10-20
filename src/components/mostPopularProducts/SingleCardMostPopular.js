@@ -1,9 +1,12 @@
 import React from 'react'
 import classes from './MostPopular.module.css'
 import BagIcon from '../svgs/BagIcon'
+import { useTranslation } from 'react-i18next'
 
 const MostPopularSingleCard = ({ product }) => {
   const { name, category, price, rating, imageUrl } = product
+
+  const { t } = useTranslation();
 
   const renderStars = () => {
     const stars = []
@@ -30,7 +33,7 @@ const MostPopularSingleCard = ({ product }) => {
       <div className={classes.MostPopularAddToCartButtonContainer}>
         <button className={classes.MostPopularAddToCartButton}>
           <BagIcon fill="white" />
-         <span className={classes.span}> ADD TO CART</span>
+         <span className={classes.span}>{t("weeklyFeatured.add")}</span>
         </button>
       </div>
       <div className={classes.MostPopularProductInfo}>

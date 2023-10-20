@@ -26,9 +26,9 @@ const Register = ({ closeRegister }) => {
     }
   }
 
-//   const handleCloseRegister = () => {
-//     closeRegister(false);
-//   };
+  const handleCloseRegister = () => {
+    closeRegister(false);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -70,7 +70,7 @@ const Register = ({ closeRegister }) => {
           <p className={classes.registerText}>CREATE AN ACCOUNT</p>
           <button
             className={classes.closeRegister}
-            // onClick={handleCloseRegister}
+            onClick={handleCloseRegister}
           >
             X
           </button>

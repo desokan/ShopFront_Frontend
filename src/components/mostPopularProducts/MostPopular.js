@@ -8,16 +8,17 @@ const MostPopular = () => {
   const { t } = useTranslation();
 
   const [selectedTab, setSelectedTab] = useState("");
-
+  const language = i18n.language
   useEffect(() => {
-    if (i18n.language === "it") {
+    if (language === "it") {
       setSelectedTab("TUTTI");
-    } else if (i18n.language === "fr") {
+    } else if (language === "fr") {
       setSelectedTab("TOUS");
     } else {
       setSelectedTab("ALL");
     }
-  }, []); // [i18n.language]
+
+  }, [language]); 
 
   const productCategories = t("mostPopular.tabs", {
     returnObjects: true,
