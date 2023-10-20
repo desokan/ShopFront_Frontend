@@ -5,6 +5,7 @@ import Footer from "../components/footer/FooterContainer";
 import RecentlyViewed from "../components/recentlyViewed/RecentlyViewed";
 import MostPreferred from "../components/mostPreferred/MostPreferred";
 import MostPopular from "../components/mostPopularProducts/MostPopular";
+import ChatBox from '../components/chatbox/Chatbox'
 import i18n from "../i18n";
 import React, { useState } from "react";
 import ProductBanner from "../components/productBanner/ProductBanner";
@@ -23,6 +24,7 @@ const HomePage = () => {
         <RecentlyViewed />
         <ProductBanner/>
         <Footer />
+        <ChatBox/>
       </Context.Provider>
     </>
   );
