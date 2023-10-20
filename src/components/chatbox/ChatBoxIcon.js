@@ -1,7 +1,18 @@
 import ChatBox from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
+import { useTranslation } from "react-i18next";
+import React, { useEffect } from "react";
+import { useContext } from "react";
+import { Context } from "../../pages/HomePage";
 
 const ChatBoxIcon = () => {
+  const [selectedLanguage, setSelectedLanguage] = useContext(Context);
+
+  useEffect(() => {
+    
+  }, [selectedLanguage]);
+  const { t } = useTranslation();
+
   const theme = {
     background: "#f5f8fb",
     fontFamily: "Roboto",
@@ -19,18 +30,18 @@ const ChatBoxIcon = () => {
   };
   const styleArrow = {
     fill: "#eba37a",
-    shapeFill: "even"
-  }
+    shapeFill: "even",
+  };
 
   const steps = [
     {
       id: "Greet",
-      message: "Hello, welcome to UOMO!",
+      message: `${t("chatbox.messages.greet")}`,
       trigger: "Ask Name",
     },
     {
       id: "Ask Name",
-      message: "Please enter your name",
+      message: `${t("chatbox.messages.name")}`,
       trigger: "waiting1",
     },
     {
@@ -40,7 +51,7 @@ const ChatBoxIcon = () => {
     },
     {
       id: "Name",
-      message: "How can we help you {previousValue}",
+      message: `${t("chatbox.messages.help")} {previousValue}`,
       trigger: "Help Options",
     },
     {
