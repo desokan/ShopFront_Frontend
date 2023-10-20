@@ -7,16 +7,20 @@ import BagIcon from "../svgs/BagIcon";
 import Login from "../authentication/Login";
 import Register from "../authentication/Register";
 import { useState } from "react";
+// import { motion } from "framer-motion"
 
-const NavBarMid = () => {
+const NavBarMid = ({ isVisible }) => {
+
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
+  
 
   const handleLogin = () => {
     setOpenLoginModal(true);
   };
 
   return (
+    
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <LogoSvg fontColor={"#222222"} />
