@@ -163,6 +163,7 @@
     ]
   },
   "weeklyFeatured": {
+    "add": "AGGIUNGI AL CARRELLO",
     "products": "PRODOTTI SETTIMANALI IN PRIMO PIANO",
     "premiumTitle": "I Marchi Premium del Mondo in una Sola Destinazione."
   },
@@ -177,6 +178,7 @@
     "detail": "FONDOTINTA EFFETTO RADIOSO"
   },
   "preferredSingleCard": {
+    "add": "AGGIUNGI AL CARRELLO",
     "category": "trucco",
     "subCategory": [
       {
@@ -198,10 +200,12 @@
     ]
   },
   "mostPreferred": {
+    "add": "AGGIUNGI AL CARRELLO",
     "categories": "CATEGORIE PREFERITE",
     "premium": "I Marchi Premium del Mondo in una Sola Destinazione."
   },
   "recentlyViewed": {
+    "add": "AGGIUNGI AL CARRELLO",
     "recentlyViewed": "VISTI DI RECENTE",
     "stillInterested": "Sei ancora interessato a questi prodotti?",
     "products": [
@@ -236,6 +240,7 @@
     ]
   },
   "mostPopular": {
+    "add": "AGGIUNGI AL CARRELLO",
     "title": "I PIÙ POPOLARI",
     "subTitle": "I Marchi Premium del Mondo in una Sola Destinazione.",
     "tabs": [

@@ -163,6 +163,7 @@
 		]
 	},
 	"weeklyFeatured": {
+		"add": "ADD TO CART",
 		"products": "WEEKLY FEATURED PRODUCTS",
 		"premiumTitle": "The World's Premium Brands In One Destination."
 	},
@@ -172,6 +173,7 @@
 		"detail": "RADIANT LIFT FOUNDATION"
 	},
 	"preferredSingleCard": {
+		"add": "ADD TO CART",
 		"category": "makeup",
 		"subCategory": [
 			{
@@ -198,10 +200,12 @@
 		"detail": "RADIANT LIFT FOUNDATION"
 	},
 	"mostPreferred": {
+		"add": "ADD TO CART",
 		"categories": "MOST PREFERRED CATEGORIES",
 		"premium": "The World's Premium Brands In One Destination."
 	},
 	"recentlyViewed": {
+		"add": "ADD TO CART",
 		"recentlyViewed": "RECENTLY VIEWED",
 		"stillInterested": "Are you still interested in these products?",
 
@@ -237,6 +241,7 @@
 		]
 	},
 	"mostPopular": {
+		"add": "ADD TO CART",
 		"title": "MOST POPULAR",
 		"subTitle": "The World's Premium Brands In One Destination.",
 		"tabs": [
