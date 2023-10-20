@@ -367,5 +367,33 @@
     "en": "INGLESE",
     "fr": "FRANCESE",
     "it": "ITALIANO"
-  }
+  },
+  "chatbox": {
+    "messages": {
+        "greet": "Ciao, benvenuto in UOMO!",
+        "name": "Per favore inserisci il tuo nome",
+        "help": "Come possiamo aiutarti?",
+        "helpToday": "Come possiamo aiutarti oggi?",
+        "orderNum": "Qual è il tuo numero d'ordine?",
+        "locateOrder": "Non siamo riusciti a individuare l'ordine con il numero",
+        "purchaseCode": "Qual è il tuo codice d'acquisto?",
+        "locatePurchase": "Non siamo riusciti a trovare un acquisto con il codice",
+        "RepsBusyMessage": "Tutti i nostri rappresentanti del servizio clienti sono occupati con altri clienti al momento. Per favore, utilizza le nostre opzioni in modo che possiamo comunque assisterti.",
+        "contactDetails": "Puoi contattarci via email: sale@uomo.com, telefono: +1 246-345-0695 o sentiti libero di scriverci una lettera indirizzata a: 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
+        "additionalHelp": "Per favore fammi sapere se hai bisogno di qualcos'altro",
+        "byeMessage": "Arrivederci, buona giornata",
+        "closeChat": "La chat è chiusa"
+    },
+    "labels": {
+      "support": "Servizio Clienti",
+        "order": "Traccia Ordine",
+        "returns": "Resi e Rimborsi",
+        "contact": "Dettagli di Contatto",
+        "Rep": "Parla con un Agente del Cliente",
+        "helpMore": "Aiuto Aggiuntivo",
+        "notNow": "Non per ora",
+        "startOver": "Ricomincia",
+        "endChat": "Chiudi la chat"
+    }
+}
 }
