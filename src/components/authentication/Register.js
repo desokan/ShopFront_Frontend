@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./Register.module.css";
 import BackDrop from "../util/Backdrop";
+import { motion } from "framer-motion"
 
 
 const baseUrl = "http://localhost:4000";
@@ -65,7 +66,9 @@ const Register = ({ closeRegister }) => {
   return (
     <div className={classes.backDrop}>
       <BackDrop />
-      <div className={classes.registerBox}>
+      <motion.div className={classes.registerBox} initial={{ x: 100 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.8 }}>
         <div className={classes.closeRegisterForm}>
           <p className={classes.registerText}>CREATE AN ACCOUNT</p>
           <button
@@ -111,7 +114,7 @@ const Register = ({ closeRegister }) => {
             REGISTER
           </button>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

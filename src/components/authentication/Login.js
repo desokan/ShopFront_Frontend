@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 import classes from "./Login.module.css";
 import BackDrop from "../util/Backdrop";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 const baseUrl = "http://localhost:4000";
 
-const Login = ({closeLogin, openRegister}) => {
+const Login = ({ closeLogin, openRegister }) => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -25,12 +26,12 @@ const Login = ({closeLogin, openRegister}) => {
   }
 
   const handleCloseLogin = () => {
-   closeLogin(false)
-  //  setOpenLoginModal(false)
+    closeLogin(false);
+    //  setOpenLoginModal(false)
   };
 
   const handleRegister = () => {
-    closeLogin(false)
+    closeLogin(false);
     openRegister(true);
   };
 
@@ -67,9 +68,12 @@ const Login = ({closeLogin, openRegister}) => {
   };
 
   return (
-    <div className={classes.backDrop}>
+    <div>
       <BackDrop />
-      <div className={classes.loginBox}>
+      <motion.div className={classes.loginBox}
+      initial={{ x: 100 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.8 }}>
         <div className={classes.closeLoginForm}>
           <p className={classes.loginText}>
             <b>LOGIN</b>
@@ -126,7 +130,7 @@ const Login = ({closeLogin, openRegister}) => {
             </span>
           </p>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };
