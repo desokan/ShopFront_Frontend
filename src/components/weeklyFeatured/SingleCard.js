@@ -6,8 +6,6 @@ import { useTranslation } from 'react-i18next'
 const SingleCard = ({ product }) => {
   const { name, category, price, rating, imageUrl } = product
   const { t } = useTranslation();
-  const add = t('recentlyViewed.add', { returnObjects: true })
-console.log(add);
   const renderStars = () => {
     const stars = []
     for (let i = 1; i <= 5; i++) {
