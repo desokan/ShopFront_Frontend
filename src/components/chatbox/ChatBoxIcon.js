@@ -1,16 +1,18 @@
 import ChatBox from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import { useTranslation } from "react-i18next";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { Context } from "../../pages/HomePage";
 
 const ChatBoxIcon = () => {
   const [selectedLanguage, setSelectedLanguage] = useContext(Context);
+  const [langMod, setLangMod] = useState(false);
 
   useEffect(() => {
-    
+    setLangMod(true);
   }, [selectedLanguage]);
+
   const { t } = useTranslation();
 
   const theme = {
@@ -57,28 +59,28 @@ const ChatBoxIcon = () => {
     {
       id: "Help Options",
       options: [
-        { value: 1, label: "Customer Support", trigger: "Customer Support" },
-        { value: 2, label: "Track Order", trigger: "Track Order" },
-        { value: 3, label: "Returns & Refunds", trigger: "Returns & Refunds" },
-        { value: 4, label: "Contact Details", trigger: "Contact Details" },
+        { value: 1, label: `${t("chatbox.labels.support")}`, trigger: "Customer Support" },
+        { value: 2, label: `${t("chatbox.labels.order")}`, trigger: "Track Order" },
+        { value: 3, label: `${t("chatbox.labels.returns")}`, trigger: "Returns & Refunds" },
+        { value: 4, label: `${t("chatbox.labels.contact")}`, trigger: "Contact Details" },
       ],
     },
     {
       id: "Customer Support",
-      message: "How can we help you today?",
+      message: `${t("chatbox.messages.help")}`,
       trigger: "Customer Rep",
     },
     {
       id: "Customer Rep",
       options: [
-        { value: 1, label: "Track Order", trigger: "Track Order" },
-        { value: 2, label: "Returns & Refunds", trigger: "Returns & Refunds" },
-        { value: 3, label: "Talk to a Customer Agent", trigger: "Contact Rep" },
+        { value: 1, label: `${t("chatbox.labels.order")}`, trigger: "Track Order" },
+        { value: 2, label: `${t("chatbox.labels.returns")}`, trigger: "Returns & Refunds" },
+        { value: 3, label: `${t("chatbox.labels.Rep")}`, trigger: "Contact Rep" },
       ],
     },
     {
       id: "Track Order",
-      message: "What is your order number",
+      message: `${t("chatbox.messages.orderNum")}`,
       trigger: "Order",
     },
     {
@@ -88,12 +90,12 @@ const ChatBoxIcon = () => {
     },
     {
       id: "OrderNum",
-      message: "We couldn't locate the order with the number {previousValue}.",
+      message: `${t("chatbox.messages.locateOrder")} {previousValue}`,
       trigger: "Customer Rep",
     },
     {
       id: "Returns & Refunds",
-      message: "What is your purchase code",
+      message:`${t("chatbox.messages.purchaseCode")}`,
       trigger: "return1",
     },
 
@@ -104,65 +106,65 @@ const ChatBoxIcon = () => {
     },
     {
       id: "PurchaseCode",
-      message: "We couldn't find a purchase with the code {previousValue}.",
+      message: `${t("chatbox.messages.locatePurchase")} {previousValue}`,
       trigger: "Customer Rep",
     },
 
     {
       id: "Contact Rep",
-      message:
-        "All of our customer representatives are busy with other clients at the moment. Please use our options so we can still support you.",
+      message: `${t("chatbox.messages.RepsBusyMessage")}`,
       trigger: "Help Options",
     },
     {
       id: "Contact Details",
-      message:
-        "You can contact us by email: sale@uomo.com, phone: +1 246-345-0695 or feel free to write us a letter addressed to: 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
+      message: `${t("chatbox.messages.contactDetails")}`,
       trigger: "Help",
     },
     {
       id: "Help",
-      message: "Please let me know if you need anything else",
+      message: `${t("chatbox.messages.additionalHelp")}`,
       trigger: "Anything Else",
     },
     {
       id: "Anything Else",
       options: [
-        { value: 1, label: "Additional Help", trigger: "Help Options" },
-        { value: 2, label: "Not for now", trigger: "Bye" },
+        { value: 1, label:  `${t("chatbox.labels.helpMore")}`, trigger: "Help Options" },
+        { value: 2, label:  `${t("chatbox.labels.notNow")}`, trigger: "Bye" },
       ],
     },
 
     {
       id: "Bye",
-      message: "Goodbye, have a nice day",
+      message:  `${t("chatbox.messages.byeMessage")}`,
       trigger: "End",
     },
     {
       id: "End",
       options: [
-        { value: 1, label: "Start Over", trigger: "Greet" },
-        { value: 2, label: "End Chat", trigger: "End Chat" },
+        { value: 1, label:  `${t("chatbox.labels.startOver")}`, trigger: "Greet" },
+        { value: 2, label:  `${t("chatbox.labels.endChat")}`, trigger: "End Chat" },
       ],
     },
     {
       id: "End Chat",
-      message: "The chat is closed",
+      message:  `${t("chatbox.messages.closeChat")}`,
       end: true,
     },
   ];
   return (
     <>
       <ThemeProvider theme={theme}>
-        <ChatBox
-          headerTitle={"Uomo Chat"}
-          steps={steps}
-          floating={true}
-          hideBotAvatar={true}
-          hideUserAvatar={true}
-          bubbleOptionStyle={bubbleOptionStyle}
-          submitButtonStyle={styleArrow}
-        />
+        {langMod && (
+          <ChatBox
+            headerTitle={"Uomo Chat"}
+            steps={steps}
+            floating={true}
+            hideBotAvatar={true}
+            hideUserAvatar={true}
+            bubbleOptionStyle={bubbleOptionStyle}
+            submitButtonStyle={styleArrow}
+          />
+        )}
       </ThemeProvider>
     </>
   );

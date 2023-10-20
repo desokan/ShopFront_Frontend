@@ -384,14 +384,15 @@
       "closeChat": "The chat is closed"
     },
     "labels": {
-      "oder": "Track Order",
+		"support": "Customer Support",
+      "order": "Track Order",
       "returns": "Returns & Refunds",
       "contact": "Contact Details",
       "Rep": "Talk to a Customer Agent",
       "helpMore": "Additional Help",
       "notNow": "Not for now",
       "startOver": "Start Over",
-      "endChat": "Start Over"
+      "endChat": "End Chat"
     }
   }
 }

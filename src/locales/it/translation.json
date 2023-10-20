@@ -385,14 +385,15 @@
         "closeChat": "La chat è chiusa"
     },
     "labels": {
-        "oder": "Traccia Ordine",
+      "support": "Servizio Clienti",
+        "order": "Traccia Ordine",
         "returns": "Resi e Rimborsi",
         "contact": "Dettagli di Contatto",
         "Rep": "Parla con un Agente del Cliente",
         "helpMore": "Aiuto Aggiuntivo",
         "notNow": "Non per ora",
         "startOver": "Ricomincia",
-        "endChat": "Ricomincia"
+        "endChat": "Chiudi la chat"
     }
 }
 }

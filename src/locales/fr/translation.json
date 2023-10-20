@@ -383,14 +383,16 @@
         "closeChat": "La discussion est fermée"
     },
     "labels": {
-        "oder": "Suivre la Commande",
+      "support": "Service client",
+
+        "order": "Suivre la Commande",
         "returns": "Retours et Remboursements",
         "contact": "Coordonnées de Contact",
         "Rep": "Parler à un Agent du Service Client",
         "helpMore": "Aide Supplémentaire",
         "notNow": "Pas pour le moment",
         "startOver": "Recommencer",
-        "endChat": "Recommencer"
+        "endChat": "Terminer la discussion"
     }
 }
 }
