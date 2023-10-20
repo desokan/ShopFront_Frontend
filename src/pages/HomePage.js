@@ -8,7 +8,7 @@ import MostPopular from "../components/mostPopularProducts/MostPopular";
 import i18n from "../i18n";
 import React, { useState } from "react";
 import ChatBoxIcon from "../components/chatbox/ChatBoxIcon";
-
+import ProductBanner from "../components/productBanner/ProductBanner";
 
 const HomePage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); 
@@ -22,6 +22,7 @@ const HomePage = () => {
         <MostPreferred />
         <MostPopular />
         <RecentlyViewed />
+        <ProductBanner/>
         <Footer />
         <ChatBoxIcon />
       </Context.Provider>

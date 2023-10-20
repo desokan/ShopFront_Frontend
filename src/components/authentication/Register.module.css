@@ -1,7 +1,6 @@
-
-.loginBox{
+.registerBox {
     height: 100vh;
-    position:fixed;
+    position: fixed;
     top: 0;
     right: 0;
     width: 450px;
@@ -9,30 +8,30 @@
     z-index: 101;
 }
 
-.closeLoginForm{
+.closeRegisterForm {
     background: #FAF9F8;
     display: flex;
-    height:82px;
+    height: 82px;
     justify-content: space-between;
     align-items: center;
     padding-left: 35px;
     padding-right: 35px;
-   
+
 }
 
-.closeLogin{
-  border: none;
-  background-color: #FAF9F8;
-  font-size: medium;
-  cursor: pointer;
-}
-
-.loginText{
+.registerText {
     color: #222;
     font-weight: 500;
 }
 
-.loginForm {
+.closeRegister {
+    border: none;
+    background-color: #FAF9F8;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.registerForm {
     display: flex;
     flex-direction: column;
     height: 50vh;
@@ -50,38 +49,33 @@
 }
 
 .inputInfo {
-    display: flex; 
-    justify-content: space-between; /* Add space between the items */
-    align-items: center; /* Vertically center items */
-    margin-bottom: 10px;
-  }
-  
-  .checkboxLabel {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-   
-  }
-  
-.checkboxInput{
-    margin-right: 10px;
+    /* Add space between the items */
+    align-items: center;
+    /* Vertically center items */
+    margin-bottom: 10px;
 }
 
-  .loginButton {
+.personalData {
+    color: #767676;
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.registerButton {
     width: 100%;
     background: #222222;
     color: white;
     padding: 15px;
     margin-bottom: 10px;
-  }
-
-  .newAccount{
-   text-align: center;
-  }
-
- .newAccount > span{
-    text-decoration: underline; 
- }
-
- .underline {
-    text-decoration: underline;
- }
+}

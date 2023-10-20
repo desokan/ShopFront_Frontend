@@ -1,348 +1,348 @@
 {
-    "footer": {
-      "Top": {
-        "DeliveryTitle": "LIVRAISON RAPIDE ET GRATUITE",
-        "DeliveryInfo": "Livraison gratuite pour toutes les commandes de plus de 140 $",
-        "SupportTitle": "SUPPORT CLIENT 24/7",
-        "SupportInfo": "Support client amical 24/7",
-        "ReturnTitle": "GARANTIE DE REMBOURSEMENT",
-        "ReturnInfo": "Nous remboursons dans les 30 jours"
-      },
-          "Company": {
-            "Company": "ENTERPRISE",
-            "About": "À propos de nous",
-            "Home": "Accueil",
-            "Careers": "Carrières",
-            "Shipping": "Livraison et Expédition",
-            "Contact": "Nous Contacter"
-        },
-        "Shop": {
-          "Shop": "MAGASIN",
-          "Arrivals": "Nouveautés",
-          "Accessories": "Accessoires",
-          "Men": "Hommes",
-          "Women": "Femmes",
-          "ShopAll": "Tout Voir"
-        },
-        "Help": {
-          "Help": "AIDE",
-          "CustomerService": "Service Client",
-          "Account": "Mon Compte",
-          "TrackOrder": "Suivre la Commande",
-          "Return": "Portail de Retours",
-          "Legal&Privacy": "Légal et Confidentialité",
-          "GiftCard": "Carte Cadeau"
-        },
-        "Subscribe": {
-          "Subscribe": "S'ABONNER",
-          "CallToAction": "Soyez le premier à recevoir les dernières nouvelles sur les tendances, les promotions et bien plus encore !",
-          "Email": "Votre adresse e-mail",
-          "Join": "REJOINDRE"
-        },
-        "Bottom": {
-          "Language": "LANGUE",
-          "Currency": "DEVISE",
-          "LanguageTranslation": "FRANÇAISE"
-
-        }
-      },
-      "navbar": {
-        "top": {
-            "Shipping": "LIVRAISON",
-            "Contact": "CONTACT"
-        },
-        "bottom": {
-            "productMenus": [
-                {
-                    "category": "FEMMES",
-                    "subCategory": [
-                        {
-                            "name": "Pantalons",
-                            "link": "https://www.google.co.uk/"
-                        },
-                        {
-                            "name": "Chemisiers",
-                            "link": "/chemisiers"
-                        },
-                        {
-                            "name": "Jupes",
-                            "link": "/jupes"
-                        }
-                    ]
-                },
-                {
-                    "category": "HOMMES",
-                    "subCategory": [
-                        {
-                            "name": "Pantalons",
-                            "link": "/pantalons"
-                        },
-                        {
-                            "name": "Chemises",
-                            "link": "/chemises"
-                        },
-                        {
-                            "name": "Blazers",
-                            "link": "/blazers"
-                        }
-                    ]
-                },
-                {
-                    "category": "FILLES",
-                    "subCategory": [
-                        {
-                            "name": "Pantalons",
-                            "link": "/pantalons-filles"
-                        },
-                        {
-                            "name": "Hauts",
-                            "link": "/hauts-filles"
-                        },
-                        {
-                            "name": "Bas",
-                            "link": "/bas-filles"
-                        }
-                    ]
-                },
-                {
-                    "category": "GARÇONS",
-                    "subCategory": [
-                        {
-                            "name": "Pantalons",
-                            "link": "/pantalons-garcons"
-                        },
-                        {
-                            "name": "Chemises",
-                            "link": "/chemises-garcons"
-                        },
-                        {
-                            "name": "Costumes",
-                            "link": "/costumes-garcons"
-                        }
-                    ]
-                },
-                {
-                    "category": "SOLDES",
-                    "subCategory": [
-                        {
-                            "name": "Pantalons",
-                            "link": "/pantalons-soldes"
-                        },
-                        {
-                            "name": "Chemises",
-                            "link": "/chemises-soldes"
-                        },
-                        {
-                            "name": "Costumes",
-                            "link": "/costumes-soldes"
-                        }
-                    ]
-                }
-            ]
-        }
+  "footer": {
+    "Top": {
+      "DeliveryTitle": "LIVRAISON RAPIDE ET GRATUITE",
+      "DeliveryInfo": "Livraison gratuite pour toutes les commandes de plus de 140 $",
+      "SupportTitle": "SUPPORT CLIENT 24/7",
+      "SupportInfo": "Support client amical 24/7",
+      "ReturnTitle": "GARANTIE DE REMBOURSEMENT",
+      "ReturnInfo": "Nous remboursons dans les 30 jours"
     },
-    "heroBanner": {
-        "banners": [
-          {
-            "glow": "NATUREL",
-            "bannerText": "Les produits Beaux protègent et nourrissent votre peau avec une gamme de lotions, de crèmes de jour, de crèmes de nuit, de crèmes teintées et plus encore.",
-            "more": "VOIR PLUS",
-            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
-          },
-          {
-            "glow": "PEAU ÉCLATANTE",
-            "bannerText": "Découvrez la puissance des produits Beaux pour hydrater et revitaliser votre peau. Notre gamme comprend des lotions, des crèmes de jour, des crèmes de nuit, des crèmes teintées et plus encore.",
-            "more": "VOIR PLUS",
-            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
-          },
-          {
-            "glow": "ÉCLAT NATUREL",
-            "bannerText": "Découvrez la magie des produits Beaux pour hydrater et rajeunir votre peau. Explorez notre sélection de lotions, de crèmes de jour, de crèmes de nuit, de crèmes teintées et plus encore.",
-            "more": "VOIR PLUS",
-            "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
-          }
-        ]
-      }
-      ,
-    "weeklyFeatured": {
-        "products": "PRODUITS MIS EN AVANT DE LA SEMAINE",
-        "premiumTitle": "Les Marques Premium du Monde en une Seule Destination."
+    "Company": {
+      "Company": "ENTERPRISE",
+      "About": "À propos de nous",
+      "Home": "Accueil",
+      "Careers": "Carrières",
+      "Shipping": "Livraison et Expédition",
+      "Contact": "Nous Contacter"
     },
-    "weeklySingleCard": {
-        "add": "AJOUTER AU PANIER",
-        "makeup": "Maquillage",
-        "detail": "FOND DE TEINT LUMINEUX"
+    "Shop": {
+      "Shop": "MAGASIN",
+      "Arrivals": "Nouveautés",
+      "Accessories": "Accessoires",
+      "Men": "Hommes",
+      "Women": "Femmes",
+      "ShopAll": "Tout Voir"
     },
-    "recentsSingleCard": {
-        "add": "AJOUTER AU PANIER",
-        "makeup": "Maquillage",
-        "detail": "FOND DE TEINT LUMINEUX"
+    "Help": {
+      "Help": "AIDE",
+      "CustomerService": "Service Client",
+      "Account": "Mon Compte",
+      "TrackOrder": "Suivre la Commande",
+      "Return": "Portail de Retours",
+      "Legal&Privacy": "Légal et Confidentialité",
+      "GiftCard": "Carte Cadeau"
     },
-    "preferredSingleCard": {
-        "category": "maquillage",
-        "subCategory": [
-          {
-            "name": "Rouge à lèvres",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
-          },
-          {
-            "name": "Fond de teint",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
-          },
-          {
-            "name": "Mascara",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
-          },
-          {
-            "name": "Soins de la peau",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
-          }
-        ]
+    "Subscribe": {
+      "Subscribe": "S'ABONNER",
+      "CallToAction": "Soyez le premier à recevoir les dernières nouvelles sur les tendances, les promotions et bien plus encore !",
+      "Email": "Votre adresse e-mail",
+      "Join": "REJOINDRE"
+    },
+    "Bottom": {
+      "Language": "LANGUE",
+      "Currency": "DEVISE",
+      "LanguageTranslation": "FRANÇAISE"
     }
-    ,
-    "mostPreferred": {
-        "categories": "CATÉGORIES LES PLUS APPRÉCIÉES",
-        "premium": "Les Marques Premium du Monde en une Seule Destination."
+  },
+  "navbar": {
+    "top": {
+      "Shipping": "LIVRAISON",
+      "Contact": "CONTACT"
     },
-    "recentlyViewed": {
-        "recentlyViewed": "CONSULTÉ RÉCEMMENT",
-        "stillInterested": "Êtes-vous toujours intéressé par ces produits ?",
-        "products": [
+    "bottom": {
+      "productMenus": [
+        {
+          "category": "FEMMES",
+          "subCategory": [
             {
-              "name": "FOND DE TEINT LUMINEUX",
-              "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
-              "category": "Maquillage",
-              "price": 29,
-              "rating": 4
+              "name": "Pantalons",
+              "link": "https://www.google.co.uk/"
             },
             {
-              "name": "CRÈME HYDRATANTE POUR LA PEAU",
-              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-              "category": "Soin de la peau",
-              "price": 35,
-              "rating": 5
+              "name": "Chemisiers",
+              "link": "/chemisiers"
             },
             {
-              "name": "MASCARA AMPLIFICATEUR DE CILS",
-              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
-              "category": "Maquillage",
-              "price": 15,
-              "rating": 3
-            },
-            {
-              "name": "NETTOYANT VISAGE HYDRATANT",
-              "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
-              "category": "Soin de la peau",
-              "price": 20,
-              "rating": 4
+              "name": "Jupes",
+              "link": "/jupes"
             }
           ]
-          
-    },"mostPopular": {
-        "title": "LES PLUS POPULAIRES",
-        "subTitle": "Les Marques Premium du Monde en une Seule Destination.",
-        "tabs": [
-          {
-            "tabName": "TOUS"
-          },
-          {
-            "tabName": "VISAGE"
-          },
-          {
-            "tabName": "YEUX"
-          },
-          {
-            "tabName": "LÈVRES"
-          }
-        ],
-        "products": [
-          {
-            "name": "Crème Anti-âge Visage",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-            "category": "Soin de la Peau",
-            "price": 30,
-            "rating": 4,
-            "mainCategory": "VISAGE"
-          },
-          {
-            "name": "Démaquillant Yeux",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
-            "category": "Maquillage",
-            "price": 12,
-            "rating": 5,
-            "mainCategory": "YEUX"
-          },
-          {
-            "name": "Rouge à Lèvres Mat",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
-            "category": "Rouge à Lèvres",
-            "price": 15,
-            "rating": 4,
-            "mainCategory": "LÈVRES"
-          },
-          {
-            "name": "Sérum Hydratant Visage",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
-            "category": "Soin de la Peau",
-            "price": 25,
-            "rating": 4,
-            "mainCategory": "VISAGE"
-          },
-          {
-            "name": "Palette d'Ombres à Paupières",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
-            "category": "Maquillage",
-            "price": 18,
-            "rating": 4,
-            "mainCategory": "YEUX"
-          },
-          {
-            "name": "Ensemble de Baumes à Lèvres",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
-            "category": "Soin des Lèvres",
-            "price": 10,
-            "rating": 5,
-            "mainCategory": "LÈVRES"
-          },
-          {
-            "name": "Crème Hydratante de Jour",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
-            "category": "Soin de la Peau",
-            "price": 20,
-            "rating": 4,
-            "mainCategory": "VISAGE"
-          },
-          {
-            "name": "Mascara Waterproof",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
-            "category": "Maquillage",
-            "price": 14,
-            "rating": 4,
-            "mainCategory": "YEUX"
-          },
-          {
-            "name": "Ensemble de Brillants à Lèvres",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
-            "category": "Rouge à Lèvres",
-            "price": 22,
-            "rating": 5,
-            "mainCategory": "LÈVRES"
-          },
-          {
-            "name": "Nettoyant Visage",
-            "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
-            "category": "Soin de la Peau",
-            "price": 16,
-            "rating": 4,
-            "mainCategory": "VISAGE"
-          }
-        ]
-      }
-    ,
-  
-    "dropdown": {
-        "en": "ANGLAIS",
-        "fr": "FRANÇAIS",
-        "it": "ITALIEN"
+        },
+        {
+          "category": "HOMMES",
+          "subCategory": [
+            {
+              "name": "Pantalons",
+              "link": "/pantalons"
+            },
+            {
+              "name": "Chemises",
+              "link": "/chemises"
+            },
+            {
+              "name": "Blazers",
+              "link": "/blazers"
+            }
+          ]
+        },
+        {
+          "category": "FILLES",
+          "subCategory": [
+            {
+              "name": "Pantalons",
+              "link": "/pantalons-filles"
+            },
+            {
+              "name": "Hauts",
+              "link": "/hauts-filles"
+            },
+            {
+              "name": "Bas",
+              "link": "/bas-filles"
+            }
+          ]
+        },
+        {
+          "category": "GARÇONS",
+          "subCategory": [
+            {
+              "name": "Pantalons",
+              "link": "/pantalons-garcons"
+            },
+            {
+              "name": "Chemises",
+              "link": "/chemises-garcons"
+            },
+            {
+              "name": "Costumes",
+              "link": "/costumes-garcons"
+            }
+          ]
+        },
+        {
+          "category": "SOLDES",
+          "subCategory": [
+            {
+              "name": "Pantalons",
+              "link": "/pantalons-soldes"
+            },
+            {
+              "name": "Chemises",
+              "link": "/chemises-soldes"
+            },
+            {
+              "name": "Costumes",
+              "link": "/costumes-soldes"
+            }
+          ]
+        }
+      ]
     }
+  },
+  "heroBanner": {
+    "banners": [
+      {
+        "glow": "NATUREL",
+        "bannerText": "Les produits Beaux protègent et nourrissent votre peau avec une gamme de lotions, de crèmes de jour, de crèmes de nuit, de crèmes teintées et plus encore.",
+        "more": "VOIR PLUS",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
+      },
+      {
+        "glow": "PEAU ÉCLATANTE",
+        "bannerText": "Découvrez la puissance des produits Beaux pour hydrater et revitaliser votre peau. Notre gamme comprend des lotions, des crèmes de jour, des crèmes de nuit, des crèmes teintées et plus encore.",
+        "more": "VOIR PLUS",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
+      },
+      {
+        "glow": "ÉCLAT NATUREL",
+        "bannerText": "Découvrez la magie des produits Beaux pour hydrater et rajeunir votre peau. Explorez notre sélection de lotions, de crèmes de jour, de crèmes de nuit, de crèmes teintées et plus encore.",
+        "more": "VOIR PLUS",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
+      }
+    ]
+  },
+  "weeklyFeatured": {
+    "add": "AJOUTER AU PANIER",
+    "products": "PRODUITS MIS EN AVANT DE LA SEMAINE",
+    "premiumTitle": "Les Marques Premium du Monde en une Seule Destination."
+  },
+  "weeklySingleCard": {
+    "add": "AJOUTER AU PANIER",
+    "makeup": "Maquillage",
+    "detail": "FOND DE TEINT LUMINEUX"
+  },
+  "recentsSingleCard": {
+    "add": "AJOUTER AU PANIER",
+    "makeup": "Maquillage",
+    "detail": "FOND DE TEINT LUMINEUX"
+  },
+  "preferredSingleCard": {
+    "add": "AJOUTER AU PANIER",
+    "category": "maquillage",
+    "subCategory": [
+      {
+        "name": "Rouge à lèvres",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
+      },
+      {
+        "name": "Fond de teint",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
+      },
+      {
+        "name": "Mascara",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
+      },
+      {
+        "name": "Soins de la peau",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
+      }
+    ]
+  },
+  "mostPreferred": {
+    "add": "AJOUTER AU PANIER",
+    "categories": "CATÉGORIES LES PLUS APPRÉCIÉES",
+    "premium": "Les Marques Premium du Monde en une Seule Destination."
+  },
+  "recentlyViewed": {
+    "add": "AJOUTER AU PANIER",
+    "recentlyViewed": "CONSULTÉ RÉCEMMENT",
+    "stillInterested": "Êtes-vous toujours intéressé par ces produits ?",
+    "products": [
+      {
+        "name": "FOND DE TEINT LUMINEUX",
+        "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
+        "category": "Maquillage",
+        "price": 29,
+        "rating": 4
+      },
+      {
+        "name": "CRÈME HYDRATANTE POUR LA PEAU",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Soin de la peau",
+        "price": 35,
+        "rating": 5
+      },
+      {
+        "name": "MASCARA AMPLIFICATEUR DE CILS",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+        "category": "Maquillage",
+        "price": 15,
+        "rating": 3
+      },
+      {
+        "name": "NETTOYANT VISAGE HYDRATANT",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+        "category": "Soin de la peau",
+        "price": 20,
+        "rating": 4
+      }
+    ]
+  },
+  "mostPopular": {
+    "add": "AJOUTER AU PANIER",
+    "title": "LES PLUS POPULAIRES",
+    "subTitle": "Les Marques Premium du Monde en une Seule Destination.",
+    "tabs": [
+      {
+        "tabName": "TOUS"
+      },
+      {
+        "tabName": "VISAGE"
+      },
+      {
+        "tabName": "YEUX"
+      },
+      {
+        "tabName": "LÈVRES"
+      }
+    ],
+    "products": [
+      {
+        "name": "Crème Anti-âge Visage",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Soin de la Peau",
+        "price": 30,
+        "rating": 4,
+        "mainCategory": "VISAGE"
+      },
+      {
+        "name": "Démaquillant Yeux",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
+        "category": "Maquillage",
+        "price": 12,
+        "rating": 5,
+        "mainCategory": "YEUX"
+      },
+      {
+        "name": "Rouge à Lèvres Mat",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
+        "category": "Rouge à Lèvres",
+        "price": 15,
+        "rating": 4,
+        "mainCategory": "LÈVRES"
+      },
+      {
+        "name": "Sérum Hydratant Visage",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
+        "category": "Soin de la Peau",
+        "price": 25,
+        "rating": 4,
+        "mainCategory": "VISAGE"
+      },
+      {
+        "name": "Palette d'Ombres à Paupières",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
+        "category": "Maquillage",
+        "price": 18,
+        "rating": 4,
+        "mainCategory": "YEUX"
+      },
+      {
+        "name": "Ensemble de Baumes à Lèvres",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
+        "category": "Soin des Lèvres",
+        "price": 10,
+        "rating": 5,
+        "mainCategory": "LÈVRES"
+      },
+      {
+        "name": "Crème Hydratante de Jour",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
+        "category": "Soin de la Peau",
+        "price": 20,
+        "rating": 4,
+        "mainCategory": "VISAGE"
+      },
+      {
+        "name": "Mascara Waterproof",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
+        "category": "Maquillage",
+        "price": 14,
+        "rating": 4,
+        "mainCategory": "YEUX"
+      },
+      {
+        "name": "Ensemble de Brillants à Lèvres",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
+        "category": "Rouge à Lèvres",
+        "price": 22,
+        "rating": 5,
+        "mainCategory": "LÈVRES"
+      },
+      {
+        "name": "Nettoyant Visage",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
+        "category": "Soin de la Peau",
+        "price": 16,
+        "rating": 4,
+        "mainCategory": "VISAGE"
+      }
+    ]
+  },
+  "dropdown": {
+    "en": "ANGLAIS",
+    "fr": "FRANÇAIS",
+    "it": "ITALIEN"
   }
+}
