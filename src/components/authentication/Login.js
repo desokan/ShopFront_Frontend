@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const baseUrl = "http://localhost:4000";
 
-const Login = ({closeLogin}) => {
+const Login = ({closeLogin, openRegister}) => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -26,6 +26,12 @@ const Login = ({closeLogin}) => {
 
   const handleCloseLogin = () => {
    closeLogin(false)
+  //  setOpenLoginModal(false)
+  };
+
+  const handleRegister = () => {
+    closeLogin(false)
+    openRegister(true);
   };
 
   const handleSubmit = (e) => {
@@ -116,7 +122,7 @@ const Login = ({closeLogin}) => {
           <p className={classes.newAccount}>
             No account yet?{" "}
             <span>
-              <Link to="/register">Create Account</Link>
+              <Link onClick={handleRegister}>Create Account</Link>
             </span>
           </p>
         </form>
