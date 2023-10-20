@@ -344,5 +344,32 @@
     "en": "ANGLAIS",
     "fr": "FRANÇAIS",
     "it": "ITALIEN"
-  }
+  },
+  "chatbox": {
+    "messages": {
+        "greet": "Bonjour, bienvenue chez UOMO !",
+        "name": "Veuillez entrer votre nom",
+        "help": "Comment pouvons-nous vous aider ?",
+        "helpToday": "Comment pouvons-nous vous aider aujourd'hui ?",
+        "orderNum": "Quel est votre numéro de commande ?",
+        "locateOrder": "Nous n'avons pas pu localiser la commande avec le numéro",
+        "purchaseCode": "Quel est votre code d'achat ?",
+        "locatePurchase": "Nous n'avons pas pu trouver un achat avec le code",
+        "RepsBusyMessage": "Tous nos représentants du service client sont occupés avec d'autres clients pour le moment. Veuillez utiliser nos options pour que nous puissions quand même vous assister.",
+        "contactDetails": "Vous pouvez nous contacter par e-mail : sale@uomo.com, téléphone : +1 246-345-0695, ou n'hésitez pas à nous écrire une lettre à l'adresse suivante : 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
+        "additionalHelp": "N'hésitez pas à me faire savoir si vous avez besoin d'autre chose",
+        "byeMessage": "Au revoir, passez une bonne journée",
+        "closeChat": "La discussion est fermée"
+    },
+    "labels": {
+        "oder": "Suivre la Commande",
+        "returns": "Retours et Remboursements",
+        "contact": "Coordonnées de Contact",
+        "Rep": "Parler à un Agent du Service Client",
+        "helpMore": "Aide Supplémentaire",
+        "notNow": "Pas pour le moment",
+        "startOver": "Recommencer",
+        "endChat": "Recommencer"
+    }
+}
 }
