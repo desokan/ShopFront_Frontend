@@ -30,7 +30,7 @@ const MostPopularSingleCard = ({ product }) => {
       <div className={classes.MostPopularAddToCartButtonContainer}>
         <button className={classes.MostPopularAddToCartButton}>
           <BagIcon fill="white" />
-          ADD TO CART
+         <span className={classes.span}> ADD TO CART</span>
         </button>
       </div>
       <div className={classes.MostPopularProductInfo}>

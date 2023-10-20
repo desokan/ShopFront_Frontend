@@ -1,10 +1,13 @@
 import React from 'react'
 import classes from './WeeklyFeatured.module.css'
 import BagIcon from '../svgs/BagIcon'
+import { useTranslation } from 'react-i18next'
 
 const SingleCard = ({ product }) => {
   const { name, category, price, rating, imageUrl } = product
-
+  const { t } = useTranslation();
+  const add = t('recentlyViewed.add', { returnObjects: true })
+console.log(add);
   const renderStars = () => {
     const stars = []
     for (let i = 1; i <= 5; i++) {
@@ -34,7 +37,7 @@ const SingleCard = ({ product }) => {
       <div className={classes.WeeklyFeaturedAddToCartButtonContainer}>
         <button className={classes.WeeklyFeaturedAddToCartButton}>
           <BagIcon fill="white" />
-          ADD TO CART
+         <span  className={classes.span}> {t("weeklyFeatured.add")}</span>
         </button>
       </div>
       <div className={classes.WeeklyFeaturedProductInfo}>

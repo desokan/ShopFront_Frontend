@@ -98,6 +98,10 @@
   font-weight: 500;
   line-height: 24px;
   border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .MostPopularSingleCard:hover .MostPopularAddToCartButton {
@@ -156,4 +160,9 @@
   font-weight: bold;
   text-decoration: underline 2.5px solid;
   text-underline-offset: 0.5em;
+}
+.span{
+  margin-left: 15px;
+  padding-top: 5px;
+  text-transform: uppercase;
 }

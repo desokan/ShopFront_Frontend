@@ -1,0 +1,370 @@
+.ProductBannerContainer {
+    height: 500px;
+    margin: 0px 255px 50px 255px;
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    width: 940px;
+  }
+  .ProductBannerMain{
+    display: flex;
+    justify-content: center;
+  }
+  .ProductBannerRight {
+    background-image: url('https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS2022_FALL_COCOACLEANSR_BARSOAP_ERICK_066_X_1200X1500_72DPI_5fae332b-ab46-4431-b432-921af1f42be7.jpg?v=1658960881');
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .ProductBannerLeft {
+    background: #ebd8d0;
+    width: 100%;
+  }
+  
+  .ProductBannerTextBox {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+  }
+  
+.ProductBannerH2 {
+  color: var(--color-head, #222);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 20px;
+}
+.ProductBannerP {
+  color: #5a5a5a;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.ProductBannerButton {
+  color: #222;
+  font-family: Avenir;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: white;
+  border: 0;
+  padding-top: 10px;
+
+}
+.ProductBannerButton {
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+.ProductBannerButton::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background: #222;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+  margin-left: 10px;
+}
+
+.ProductBannerButton:hover::before {
+    margin-left: 10px;
+  width: 50%;
+}
+.ProductBannerImage1 {
+  width: 400px;
+  height: 360px;
+  transform: rotate(-30deg);
+}
+.ProductBannerProduct1 {
+  position: relative;
+  top: 100px;
+  left: -50px;
+  
+}
+.ProductBannerPlusButton {
+    position: absolute;
+    left: 180px;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #ffffff71;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+
+}
+.ProductBannerPlus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+}
+.ProductInfo{
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 110px;
+    bottom: -25px;
+    left: 160px;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.ProductBannerPlusButton:hover{
+    transform: rotate(90deg);
+}
+.ProductBannerPlusButton:hover + .ProductInfo , .ProductInfo:hover{
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out; 
+}
+.ProductInfoEmpty{
+    position: absolute;
+    bottom:100px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: rgb(255, 255, 255);
+}
+
+.ProductInfoH2{
+color: var(--color-head, #222);
+text-align: center;
+font-family: Avenir;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+padding-top: 10px;
+}
+.ProductInfoP{
+    color: #5A5A5A;
+text-align: center;
+font-family: Avenir;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.ProductInfoButton {
+    text-transform: uppercase;
+    border: 0;
+    background-color: white;
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.ProductInfoButton::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background: #222;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+  margin-left: 10px;
+}
+
+.ProductInfoButton:hover::before {
+    margin-left: 10px;
+  width: 50%;
+}
+.ProductBannerProduct2{
+    position: absolute;
+    bottom: 260px;
+
+}
+.ProductBannerImage2{
+    width: 200px;
+    height: 240px;
+    transform: rotate(10deg);
+}
+.ProductBannerPlusButton2 {
+    position: absolute;
+    left: 70px;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #ffffff71;
+  transform: rotate(0deg); 
+  transition: transform 0.3s ease;
+
+}
+.ProductBannerPlus2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+}
+.ProductInfoButton2::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background: #222;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+    margin-left: 10px;
+  }
+  
+
+  .ProductBannerPlusButton2:hover{
+    transform: rotate(90deg);
+}
+.ProductBannerPlusButton2:hover + .ProductInfo2,  .ProductInfo2:hover {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out; 
+  }
+  .ProductInfoEmpty2{
+    position: absolute;
+    bottom:100px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: rgb(255, 255, 255);
+}
+.ProductInfo2{
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 110px;
+    bottom: -25px;
+    left: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.ProductBannerProduct3{
+    position: absolute;
+    left: 280px;
+    bottom: 0px;
+
+}
+.ProductBannerImage3{
+    width: 180px;
+    height: 200px;
+}
+.ProductBannerPlusButton3 {
+    position: absolute;
+    left: 70px;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #ffffff71;
+  transform: rotate(0deg); 
+  transition: transform 0.3s ease;
+
+}
+.ProductBannerPlus3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+}
+.ProductInfoButton3::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background: #222;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+    margin-left: 10px;
+  }
+  
+
+  .ProductBannerPlusButton3:hover{
+    transform: rotate(90deg);
+}
+.ProductBannerPlusButton3:hover + .ProductInfo3, .ProductInfo3:hover {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out; 
+  }
+  .ProductInfoEmpty3{
+    position: absolute;
+    bottom:100px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: rgb(255, 255, 255);
+}
+.ProductInfo3{
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 110px;
+    bottom: -25px;
+    left: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
