@@ -10,7 +10,7 @@ const DropDownLanguage = ({className}) => {
 
   const chooseLanguage = (e) => {
     e.preventDefault();
-    i18n.changeLanguage(e.target.value);   // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
+    i18n.changeLanguage(e.target.value);  
     setSelectedLanguage(e.target.value);
   }
 
