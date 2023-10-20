@@ -8,8 +8,10 @@ import { Context } from "../../pages/HomePage";
 const ChatBoxIcon = () => {
   const [selectedLanguage, setSelectedLanguage] = useContext(Context);
   const [langMod, setLangMod] = useState(false);
+  const [key, setKey] = useState(0);
 
   useEffect(() => {
+    setKey(prevKey => prevKey + 1);
     setLangMod(true);
   }, [selectedLanguage]);
 
@@ -163,6 +165,7 @@ const ChatBoxIcon = () => {
             hideUserAvatar={true}
             bubbleOptionStyle={bubbleOptionStyle}
             submitButtonStyle={styleArrow}
+            key={key}
           />
         )}
       </ThemeProvider>
