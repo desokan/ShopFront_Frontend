@@ -17,6 +17,10 @@ const ChatBoxIcon = () => {
   const bubbleOptionStyle = {
     backgroundColor: "#ffc084",
   };
+  const styleArrow = {
+    fill: "#eba37a",
+    shapeFill: "even"
+  }
 
   const steps = [
     {
@@ -81,7 +85,7 @@ const ChatBoxIcon = () => {
       message: "What is your purchase code",
       trigger: "return1",
     },
-    
+
     {
       id: "return1",
       user: true,
@@ -140,11 +144,13 @@ const ChatBoxIcon = () => {
     <>
       <ThemeProvider theme={theme}>
         <ChatBox
+          headerTitle={"Uomo Chat"}
           steps={steps}
           floating={true}
           hideBotAvatar={true}
           hideUserAvatar={true}
           bubbleOptionStyle={bubbleOptionStyle}
+          submitButtonStyle={styleArrow}
         />
       </ThemeProvider>
     </>
