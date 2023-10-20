@@ -5,13 +5,15 @@ import HeartIcon from "../svgs/HeartIcon";
 import UserIcon from "../svgs/UserIcon";
 import BagIcon from "../svgs/BagIcon";
 import Login from "../authentication/Login";
+import Register from "../authentication/Register";
 import { useState } from "react";
 
 const NavBarMid = () => {
   const [openLoginModal, setOpenLoginModal] = useState(false);
+  const [openRegisterModal, setOpenRegisterModal] = useState(false);
 
   const handleLogin = () => {
-    setOpenLoginModal(!openLoginModal);
+    setOpenLoginModal(true);
   };
 
   return (
@@ -26,7 +28,15 @@ const NavBarMid = () => {
         <div className={classes.icons}>
           <HeartIcon />
           <UserIcon onClick={handleLogin} />
-          {openLoginModal && <Login closeLogin={setOpenLoginModal} />}
+          {openLoginModal && (
+            <Login
+              closeLogin={setOpenLoginModal}
+              openRegister={setOpenRegisterModal}
+            />
+          )}
+          {openRegisterModal && (
+            <Register closeRegister={setOpenRegisterModal} />
+          )}
           <BagIcon />
         </div>
       </div>

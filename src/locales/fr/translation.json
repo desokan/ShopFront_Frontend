@@ -339,7 +339,28 @@
         "mainCategory": "VISAGE"
       }
     ]
-  },
+  },"productBanner": {
+    "shopNow": "ACHETER MAINTENANT",
+    "title": "RÉVÉLEZ LA BEAUTÉ CACHÉE",
+    "subTitle": "Obtenez un style avec des produits de haute couture et transformez-vous.",
+    "products": [
+        {
+            "title": "FOND DE TEINT",
+            "subTitle": "Rend votre visage humide",
+            "shopNow": "ACHETER MAINTENANT"
+        },
+        {
+            "title": "POUDRE",
+            "subTitle": "Rend votre visage poudré",
+            "shopNow": "ACHETER MAINTENANT"
+        },
+        {
+            "title": "CRÈME",
+            "subTitle": "Rend votre visage crémeux",
+            "shopNow": "ACHETER MAINTENANT"
+        }
+    ]
+},
   "dropdown": {
     "en": "ANGLAIS",
     "fr": "FRANÇAIS",

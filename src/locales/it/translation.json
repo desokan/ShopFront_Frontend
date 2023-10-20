@@ -340,6 +340,28 @@
       }
     ]
   },
+  "productBanner": {
+    "shopNow": "ACQUISTA ORA",
+    "title": "SCOPRI LA BELLEZZA NASCOSTA",
+    "subTitle": "Scegli i prodotti di alta moda e trasformati.",
+    "products": [
+      {
+        "title": "FONDOTINTA",
+        "subTitle": "Rende il tuo viso bagnato",
+        "shopNow": "ACQUISTA ORA"
+      },
+      {
+        "title": "CIPRIA",
+        "subTitle": "Rende il tuo viso polveroso",
+        "shopNow": "ACQUISTA ORA"
+      },
+      {
+        "title": "CREMA",
+        "subTitle": "Rende il tuo viso cremoso",
+        "shopNow": "ACQUISTA ORA"
+      }
+    ]
+  },
   "dropdown": {
     "en": "INGLESE",
     "fr": "FRANCESE",
