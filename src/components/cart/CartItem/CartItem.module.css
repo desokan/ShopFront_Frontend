@@ -1,0 +1,25 @@
+.itemContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.topItemGrid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.imgContainer img {
+  width: 120px;
+  height: 120px;
+}
+
+.itemsInfo {
+  margin: 10px;
+}
+
+.closeLogin {
+  border: none;
+  background-color: #ffffff;
+  font-size: medium;
+  justify-self: right;
+}
