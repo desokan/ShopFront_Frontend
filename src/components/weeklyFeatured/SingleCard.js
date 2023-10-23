@@ -22,7 +22,13 @@ const SingleCard = ({ product }) => {
     }
     return stars
   }
+  const handleAddToCart = () => {
+    const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
 
+    existingCart.push(product);
+
+    localStorage.setItem('cart', JSON.stringify(existingCart));
+  };
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>
       <div className={classes.WeeklyFeaturedImageContainer}>
@@ -33,7 +39,7 @@ const SingleCard = ({ product }) => {
         />
       </div>
       <div className={classes.WeeklyFeaturedAddToCartButtonContainer}>
-        <button className={classes.WeeklyFeaturedAddToCartButton}>
+        <button className={classes.WeeklyFeaturedAddToCartButton} onClick={handleAddToCart}>
           <BagIcon fill="white" />
          <span  className={classes.span}> {t("weeklyFeatured.add")}</span>
         </button>

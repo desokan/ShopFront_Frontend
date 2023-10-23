@@ -24,14 +24,20 @@ const MostPopularSingleCard = ({ product }) => {
     }
     return stars
   }
+  const handleAddToCart = () => {
+    const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
 
+    existingCart.push(product);
+
+    localStorage.setItem('cart', JSON.stringify(existingCart));
+  };
   return (
     <div className={classes.MostPopularSingleCard}>
       <div className={classes.MostPopularImageContainer}>
         <img className={classes.MostPopularImage} src={imageUrl} alt={name} />
       </div>
       <div className={classes.MostPopularAddToCartButtonContainer}>
-        <button className={classes.MostPopularAddToCartButton}>
+        <button className={classes.MostPopularAddToCartButton} onClick={handleAddToCart}>
           <BagIcon fill="white" />
          <span className={classes.span}>{t("weeklyFeatured.add")}</span>
         </button>
