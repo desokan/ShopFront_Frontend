@@ -15,8 +15,14 @@ const CartItem = () => {
           <button className={classes.closeLogin}>X</button>
         </div>
 
-        <div>
-          -<span>2</span>+
+        <div className={classes.amount}>
+          <div className={classes.quantity}>
+            <span className={classes.quantityButton}>-</span>
+            <span className={classes.itemQuantity}>2</span>
+            <span className={classes.quantityButton}>+</span>
+          </div>
+         
+          <span className={classes.price}>$10</span>
         </div>
       </div>
     </section>

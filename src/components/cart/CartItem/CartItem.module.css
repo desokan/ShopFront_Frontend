@@ -23,3 +23,28 @@
   font-size: medium;
   justify-self: right;
 }
+.amount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 25px;
+}
+.price {
+  text-align: right;
+  color: #222;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quantity{
+  color: #767676;
+}
+.itemQuantity{
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+.quantityButton{
+  margin: 11px;
+}
