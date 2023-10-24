@@ -1,33 +1,49 @@
-import React from 'react'
-import classes from './WeeklyFeatured.module.css'
-import BagIcon from '../svgs/BagIcon'
-import { useTranslation } from 'react-i18next'
+import React from "react";
+import classes from "./WeeklyFeatured.module.css";
+import BagIcon from "../svgs/BagIcon";
+import { useTranslation } from "react-i18next";
 
 const SingleCard = ({ product }) => {
-  const { name, category, price, rating, imageUrl } = product
+  const { name, category, price, rating, imageUrl } = product;
   const { t } = useTranslation();
   const renderStars = () => {
-    const stars = []
+    const stars = [];
     for (let i = 1; i <= 5; i++) {
       stars.push(
         <span
           key={i}
           className={`${classes.ProductRatingStar} ${
-            i <= rating ? classes.ProductRatingStarFilled : ''
+            i <= rating ? classes.ProductRatingStarFilled : ""
           }`}
         >
-          {i <= rating ? '★' : '☆'}
+          {i <= rating ? "★" : "☆"}
         </span>
-      )
+      );
     }
-    return stars
-  }
+    return stars;
+  };
   const handleAddToCart = () => {
-    const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    existingCart.push(product);
+    if (existingCart.length === 0) {
+      existingCart.push(product);
+      product.quantity = 1;
+      console.log("prod", product);
+    } else {
+      existingCart.map((item) => {
+        if (item.name === product.name) {
+          product.quantity++;
+          console.log("q", product.quantity);
+          console.log("prod", product);
+        } else {
+          existingCart.push(product);
+          product.quantity = 1;
+          console.log("prod", product);
+        }
+      });
+    }
 
-    localStorage.setItem('cart', JSON.stringify(existingCart));
+    localStorage.setItem("cart", JSON.stringify(existingCart));
   };
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>
@@ -39,9 +55,12 @@ const SingleCard = ({ product }) => {
         />
       </div>
       <div className={classes.WeeklyFeaturedAddToCartButtonContainer}>
-        <button className={classes.WeeklyFeaturedAddToCartButton} onClick={handleAddToCart}>
+        <button
+          className={classes.WeeklyFeaturedAddToCartButton}
+          onClick={handleAddToCart}
+        >
           <BagIcon fill="white" />
-         <span  className={classes.span}> {t("weeklyFeatured.add")}</span>
+          <span className={classes.span}> {t("weeklyFeatured.add")}</span>
         </button>
       </div>
       <div className={classes.WeeklyFeaturedProductInfo}>
@@ -53,7 +72,7 @@ const SingleCard = ({ product }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SingleCard
+export default SingleCard;
