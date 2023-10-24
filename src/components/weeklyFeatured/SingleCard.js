@@ -1,50 +1,52 @@
-import React from "react";
-import classes from "./WeeklyFeatured.module.css";
-import BagIcon from "../svgs/BagIcon";
-import { useTranslation } from "react-i18next";
-import { Context } from "../../pages/HomePage";
-import { useContext } from "react";
+import React from 'react'
+import classes from './WeeklyFeatured.module.css'
+import BagIcon from '../svgs/BagIcon'
+import { useTranslation } from 'react-i18next'
+import { Context1 } from '../../pages/HomePage'
+import { useContext } from 'react'
 
 const SingleCard = ({ product }) => {
-  const [myShoppingBag, setMyShoppingBag] = useContext(Context);
-  const { name, category, price, rating, imageUrl, quantity } = product;
-  const { t } = useTranslation();
+  const [myShoppingBag, setMyShoppingBag] = useContext(Context1)
+
+  const { name, category, price, rating, imageUrl } = product
+
+  const { t } = useTranslation()
+
   const renderStars = () => {
-    const stars = [];
+    const stars = []
     for (let i = 1; i <= 5; i++) {
       stars.push(
         <span
           key={i}
           className={`${classes.ProductRatingStar} ${
-            i <= rating ? classes.ProductRatingStarFilled : ""
+            i <= rating ? classes.ProductRatingStarFilled : ''
           }`}
         >
-          {i <= rating ? "★" : "☆"}
+          {i <= rating ? '★' : '☆'}
         </span>
-      );
+      )
     }
-    return stars;
-  };
-  const handleAddToCart = () => {
-    console.log("clicked",myShoppingBag)
-    if (myShoppingBag.length === 0) {
-      setMyShoppingBag(product)
-      console.log("existing",myShoppingBag)
-      product.quantity ++
-    // } else {
-    //   myShoppingBag.map((item) => {
-    //     if (item.name === product.name) {
-    //       item.quantity++;
-    //     } else {
-    //       myShoppingBag.push(product);
-    //       product.quantity ++
-    //       console.log("prod", product);
-    //     }
-    //   });
-    }
+    return stars
+  }
 
-;
-  };
+  const handleAddToCart = () => {
+    const bag = [...myShoppingBag]
+
+    const findItem = bag.find((item) => item.name === product.name)
+
+    if (myShoppingBag.length === 0) {
+      bag.push(product)
+      product.quantity++
+    } else {
+      if (findItem) {
+        findItem.quantity++
+      } else {
+        bag.push(product)
+        product.quantity++
+      }
+    }
+    setMyShoppingBag(bag)
+  }
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>
       <div className={classes.WeeklyFeaturedImageContainer}>
@@ -60,7 +62,7 @@ const SingleCard = ({ product }) => {
           onClick={handleAddToCart}
         >
           <BagIcon fill="white" />
-          <span className={classes.span}> {t("weeklyFeatured.add")}</span>
+          <span className={classes.span}> {t('weeklyFeatured.add')}</span>
         </button>
       </div>
       <div className={classes.WeeklyFeaturedProductInfo}>
@@ -72,7 +74,7 @@ const SingleCard = ({ product }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SingleCard;
+export default SingleCard
