@@ -80,9 +80,11 @@ const Cart = ({ setOpenCartModal }) => {
             X
           </button>
         </div>
-        <form className={classes.loginForm} onSubmit={handleSubmit}>
-        
-<CartItem/>
+        <div className={classes.loginForm}>
+        <div className={classes.cartItems}> 
+          <CartItem/>
+        </div>
+
    
           <div className={classes.break}></div> 
           <div className={classes.subTotal}>
@@ -102,7 +104,7 @@ const Cart = ({ setOpenCartModal }) => {
             CHECKOUT
           </button>
         
-        </form>
+        </div>
       </motion.div>
     </div>
   );

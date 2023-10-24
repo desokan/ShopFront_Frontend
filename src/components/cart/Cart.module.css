@@ -33,10 +33,9 @@
 .loginForm {
   display: flex;
   flex-direction: column;
-  height: 50vh;
   margin-top: 20px;
   padding-left: 35px;
-  padding-right: 35px;
+
 }
 
 .textBox {
@@ -97,7 +96,7 @@
   font-weight: 500;
   line-height: 24px;
   word-wrap: break-word;
-  margin-bottom: 20px;
+
 }
 
 #amount {
@@ -107,4 +106,10 @@
 .break {
 border: 1px solid #E4E4E4;
   background: #e4e4e4;
+}
+.cartItems{
+
+  max-height: 65vh;
+  overflow-x: hidden;
+  overflow-y:visible;
 }

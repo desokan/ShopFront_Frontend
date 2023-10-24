@@ -1,20 +1,30 @@
 .itemContainer {
   display: grid;
   grid-template-columns: auto 1fr;
+  padding-bottom: 5px;
+  padding-top: 7px;
+  border-bottom: 1px solid #E4E4E4;
 }
 
 .topItemGrid {
   display: grid;
   grid-template-columns: 1fr auto;
 }
-
+.topItemGrid > p {
+  margin: 0 0 10px;
+  color:  #222;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 .imgContainer img {
   width: 120px;
   height: 120px;
 }
 
 .itemsInfo {
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .closeLogin {
@@ -26,7 +36,7 @@
 .amount {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 25px;
+  margin-top: 7px;
 }
 .price {
   text-align: right;
@@ -48,3 +58,21 @@ line-height: 24px; /* 171.429% */
 .quantityButton{
   margin: 11px;
 }
+
+.productInfo{
+  display: flex;
+  flex-direction: column;
+}
+.productInfo > span{
+  padding: 0 0 7px;
+  color:  #767676;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+/* .break {
+  border: 1px solid #E4E4E4;
+    background: #e4e4e4;
+  }
+   */
