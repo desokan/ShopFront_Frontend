@@ -214,28 +214,32 @@
         "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
         "category": "Maquillage",
         "price": 29,
-        "rating": 4
+        "rating": 4,
+        "quantity":0
       },
       {
         "name": "CRÈME HYDRATANTE POUR LA PEAU",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
         "category": "Soin de la peau",
         "price": 35,
-        "rating": 5
+        "rating": 5,
+        "quantity":0
       },
       {
         "name": "MASCARA AMPLIFICATEUR DE CILS",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
         "category": "Maquillage",
         "price": 15,
-        "rating": 3
+        "rating": 3,
+        "quantity":0
       },
       {
         "name": "NETTOYANT VISAGE HYDRATANT",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
         "category": "Soin de la peau",
         "price": 20,
-        "rating": 4
+        "rating": 4,
+        "quantity":0
       }
     ]
   },
@@ -264,7 +268,8 @@
         "category": "Soin de la Peau",
         "price": 30,
         "rating": 4,
-        "mainCategory": "VISAGE"
+        "mainCategory": "VISAGE",
+        "quantity":0
       },
       {
         "name": "Démaquillant Yeux",
@@ -272,7 +277,8 @@
         "category": "Maquillage",
         "price": 12,
         "rating": 5,
-        "mainCategory": "YEUX"
+        "mainCategory": "YEUX",
+        "quantity":0
       },
       {
         "name": "Rouge à Lèvres Mat",
@@ -280,7 +286,8 @@
         "category": "Rouge à Lèvres",
         "price": 15,
         "rating": 4,
-        "mainCategory": "LÈVRES"
+        "mainCategory": "LÈVRES",
+        "quantity":0
       },
       {
         "name": "Sérum Hydratant Visage",
@@ -288,7 +295,8 @@
         "category": "Soin de la Peau",
         "price": 25,
         "rating": 4,
-        "mainCategory": "VISAGE"
+        "mainCategory": "VISAGE",
+        "quantity":0
       },
       {
         "name": "Palette d'Ombres à Paupières",
@@ -296,7 +304,8 @@
         "category": "Maquillage",
         "price": 18,
         "rating": 4,
-        "mainCategory": "YEUX"
+        "mainCategory": "YEUX",
+        "quantity":0
       },
       {
         "name": "Ensemble de Baumes à Lèvres",
@@ -304,7 +313,8 @@
         "category": "Soin des Lèvres",
         "price": 10,
         "rating": 5,
-        "mainCategory": "LÈVRES"
+        "mainCategory": "LÈVRES",
+        "quantity":0
       },
       {
         "name": "Crème Hydratante de Jour",
@@ -312,7 +322,8 @@
         "category": "Soin de la Peau",
         "price": 20,
         "rating": 4,
-        "mainCategory": "VISAGE"
+        "mainCategory": "VISAGE",
+        "quantity":0
       },
       {
         "name": "Mascara Waterproof",
@@ -320,7 +331,8 @@
         "category": "Maquillage",
         "price": 14,
         "rating": 4,
-        "mainCategory": "YEUX"
+        "mainCategory": "YEUX",
+        "quantity":0
       },
       {
         "name": "Ensemble de Brillants à Lèvres",
@@ -328,7 +340,8 @@
         "category": "Rouge à Lèvres",
         "price": 22,
         "rating": 5,
-        "mainCategory": "LÈVRES"
+        "mainCategory": "LÈVRES",
+        "quantity":0
       },
       {
         "name": "Nettoyant Visage",
@@ -336,7 +349,8 @@
         "category": "Soin de la Peau",
         "price": 16,
         "rating": 4,
-        "mainCategory": "VISAGE"
+        "mainCategory": "VISAGE",
+        "quantity":0
       }
     ]
   },"productBanner": {

@@ -2,9 +2,12 @@ import React from "react";
 import classes from "./WeeklyFeatured.module.css";
 import BagIcon from "../svgs/BagIcon";
 import { useTranslation } from "react-i18next";
+import { Context } from "../../pages/HomePage";
+import { useContext } from "react";
 
 const SingleCard = ({ product }) => {
-  const { name, category, price, rating, imageUrl } = product;
+  const [myShoppingBag, setMyShoppingBag] = useContext(Context);
+  const { name, category, price, rating, imageUrl, quantity } = product;
   const { t } = useTranslation();
   const renderStars = () => {
     const stars = [];
@@ -23,27 +26,24 @@ const SingleCard = ({ product }) => {
     return stars;
   };
   const handleAddToCart = () => {
-    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    if (existingCart.length === 0) {
-      existingCart.push(product);
-      product.quantity = 1;
-      console.log("prod", product);
-    } else {
-      existingCart.map((item) => {
-        if (item.name === product.name) {
-          product.quantity++;
-          console.log("q", product.quantity);
-          console.log("prod", product);
-        } else {
-          existingCart.push(product);
-          product.quantity = 1;
-          console.log("prod", product);
-        }
-      });
+    console.log("clicked",myShoppingBag)
+    if (myShoppingBag.length === 0) {
+      setMyShoppingBag(product)
+      console.log("existing",myShoppingBag)
+      product.quantity ++
+    // } else {
+    //   myShoppingBag.map((item) => {
+    //     if (item.name === product.name) {
+    //       item.quantity++;
+    //     } else {
+    //       myShoppingBag.push(product);
+    //       product.quantity ++
+    //       console.log("prod", product);
+    //     }
+    //   });
     }
 
-    localStorage.setItem("cart", JSON.stringify(existingCart));
+;
   };
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>

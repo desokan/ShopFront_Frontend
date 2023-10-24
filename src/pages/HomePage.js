@@ -12,10 +12,10 @@ import ProductBanner from "../components/productBanner/ProductBanner";
 
 const HomePage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
-
+  const [myShoppingBag, setMyShoppingBag] = useState([])
   return (
     <>
-      <Context.Provider value={[selectedLanguage, setSelectedLanguage]}>
+      <Context.Provider value={[selectedLanguage, setSelectedLanguage,myShoppingBag, setMyShoppingBag]}>
         <NavBar />
         <MainSlider />
         <WeeklyFeatured />

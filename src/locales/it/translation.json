@@ -214,28 +214,32 @@
         "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
         "category": "Trucco",
         "price": 29,
-        "rating": 4
+        "rating": 4,
+        "quantity":0
       },
       {
         "name": "CREMA IDRATANTE PER LA PELLE",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
         "category": "Cura della pelle",
         "price": 35,
-        "rating": 5
+        "rating": 5,
+        "quantity":0
       },
       {
         "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
         "category": "Trucco",
         "price": 15,
-        "rating": 3
+        "rating": 3,
+        "quantity":0
       },
       {
         "name": "DETERGENTE VISO IDRATANTE",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
         "category": "Cura della pelle",
         "price": 20,
-        "rating": 4
+        "rating": 4,
+        "quantity":0
       }
     ]
   },
@@ -264,7 +268,8 @@
         "category": "Cura della Pelle",
         "price": 30,
         "rating": 4,
-        "mainCategory": "VISO"
+        "mainCategory": "VISO",
+        "quantity":0
       },
       {
         "name": "Struccante Occhi",
@@ -272,7 +277,8 @@
         "category": "Trucco",
         "price": 12,
         "rating": 5,
-        "mainCategory": "OCCHI"
+        "mainCategory": "OCCHI",
+        "quantity":0
       },
       {
         "name": "Rossetto Opaco",
@@ -280,7 +286,8 @@
         "category": "Rossetto",
         "price": 15,
         "rating": 4,
-        "mainCategory": "LABBRA"
+        "mainCategory": "LABBRA",
+        "quantity":0
       },
       {
         "name": "Siero Idratante Viso",
@@ -288,7 +295,8 @@
         "category": "Cura della Pelle",
         "price": 25,
         "rating": 4,
-        "mainCategory": "VISO"
+        "mainCategory": "VISO",
+        "quantity":0
       },
       {
         "name": "Palette Ombretti",
@@ -296,7 +304,8 @@
         "category": "Trucco",
         "price": 18,
         "rating": 4,
-        "mainCategory": "OCCHI"
+        "mainCategory": "OCCHI",
+        "quantity":0
       },
       {
         "name": "Set di Balsami Labbra",
@@ -304,7 +313,8 @@
         "category": "Cura delle Labbra",
         "price": 10,
         "rating": 5,
-        "mainCategory": "LABBRA"
+        "mainCategory": "LABBRA",
+        "quantity":0
       },
       {
         "name": "Crema Idratante Giorno",
@@ -312,7 +322,8 @@
         "category": "Cura della Pelle",
         "price": 20,
         "rating": 4,
-        "mainCategory": "VISO"
+        "mainCategory": "VISO",
+        "quantity":0
       },
       {
         "name": "Mascara Waterproof",
@@ -320,7 +331,8 @@
         "category": "Trucco",
         "price": 14,
         "rating": 4,
-        "mainCategory": "OCCHI"
+        "mainCategory": "OCCHI",
+        "quantity":0
       },
       {
         "name": "Set di Lucidalabbra",
@@ -328,7 +340,8 @@
         "category": "Rossetto",
         "price": 22,
         "rating": 5,
-        "mainCategory": "LABBRA"
+        "mainCategory": "LABBRA",
+        "quantity":0
       },
       {
         "name": "Detergente Viso",
@@ -336,7 +349,8 @@
         "category": "Cura della Pelle",
         "price": 16,
         "rating": 4,
-        "mainCategory": "VISO"
+        "mainCategory": "VISO",
+        "quantity":0
       }
     ]
   },
