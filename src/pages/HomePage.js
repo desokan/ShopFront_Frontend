@@ -15,7 +15,9 @@ const HomePage = () => {
   const [myShoppingBag, setMyShoppingBag] = useState([])
   return (
     <>
-      <Context.Provider value={[selectedLanguage, setSelectedLanguage,myShoppingBag, setMyShoppingBag]}>
+     <Context1.Provider value={[myShoppingBag, setMyShoppingBag]}>
+      <Context.Provider value={[selectedLanguage, setSelectedLanguage]}>
+        
         <NavBar />
         <MainSlider />
         <WeeklyFeatured />
@@ -26,9 +28,11 @@ const HomePage = () => {
         <Footer />
         <ChatBox/>
       </Context.Provider>
+      </Context1.Provider>
     </>
   );
 };
 
 export default HomePage;
 export const Context = React.createContext();
+export const Context1 = React.createContext();
