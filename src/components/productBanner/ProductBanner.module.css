@@ -62,6 +62,7 @@
   background-color: white;
   border: 0;
   padding-top: 10px;
+  cursor: pointer;
 }
 .ProductBannerButton {
   position: relative;
@@ -140,11 +141,13 @@
 }
 .ProductBannerPlusButton:hover {
   transform: rotate(90deg);
+  cursor: pointer;
 }
 .ProductBannerPlusButton:hover + .ProductInfo,
 .ProductInfo:hover {
   visibility: visible;
   transition: opacity 0.9s ease-in-out;
+
 }
 .ProductInfoEmpty {
   position: absolute;
@@ -188,6 +191,7 @@
   line-height: normal;
   padding-bottom: 5px;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .ProductInfoButton::before {
@@ -200,11 +204,13 @@
   left: 0;
   transition: width 0.3s;
   margin-left: 10px;
+
 }
 
 .ProductInfoButton:hover::before {
   margin-left: 10px;
   width: 50%;
+
 }
 .ProductBannerProduct2 {
   position: absolute;
@@ -229,6 +235,7 @@
   background-color: #ffffff71;
   transform: rotate(0deg);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .ProductBannerPlus2 {
   display: flex;
@@ -307,6 +314,7 @@
   background-color: #ffffff71;
   transform: rotate(0deg);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .ProductBannerPlus3 {
   display: flex;
@@ -328,10 +336,12 @@
   left: 0;
   transition: width 0.3s;
   margin-left: 10px;
+  
 }
 
 .ProductBannerPlusButton3:hover {
   transform: rotate(90deg);
+  cursor: pointer;
 }
 .ProductBannerPlusButton3:hover + .ProductInfo3,
 .ProductInfo3:hover {

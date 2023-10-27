@@ -215,7 +215,7 @@
         "category": "Maquillage",
         "price": 29,
         "rating": 4,
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "CRÈME HYDRATANTE POUR LA PEAU",
@@ -223,7 +223,7 @@
         "category": "Soin de la peau",
         "price": 35,
         "rating": 5,
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "MASCARA AMPLIFICATEUR DE CILS",
@@ -231,7 +231,7 @@
         "category": "Maquillage",
         "price": 15,
         "rating": 3,
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "NETTOYANT VISAGE HYDRATANT",
@@ -239,7 +239,7 @@
         "category": "Soin de la peau",
         "price": 20,
         "rating": 4,
-        "quantity":0
+        "quantity": 0
       }
     ]
   },
@@ -269,7 +269,7 @@
         "price": 30,
         "rating": 4,
         "mainCategory": "VISAGE",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Démaquillant Yeux",
@@ -278,7 +278,7 @@
         "price": 12,
         "rating": 5,
         "mainCategory": "YEUX",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Rouge à Lèvres Mat",
@@ -287,7 +287,7 @@
         "price": 15,
         "rating": 4,
         "mainCategory": "LÈVRES",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Sérum Hydratant Visage",
@@ -296,7 +296,7 @@
         "price": 25,
         "rating": 4,
         "mainCategory": "VISAGE",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Palette d'Ombres à Paupières",
@@ -305,7 +305,7 @@
         "price": 18,
         "rating": 4,
         "mainCategory": "YEUX",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Ensemble de Baumes à Lèvres",
@@ -314,7 +314,7 @@
         "price": 10,
         "rating": 5,
         "mainCategory": "LÈVRES",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Crème Hydratante de Jour",
@@ -323,7 +323,7 @@
         "price": 20,
         "rating": 4,
         "mainCategory": "VISAGE",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Mascara Waterproof",
@@ -332,7 +332,7 @@
         "price": 14,
         "rating": 4,
         "mainCategory": "YEUX",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Ensemble de Brillants à Lèvres",
@@ -341,7 +341,7 @@
         "price": 22,
         "rating": 5,
         "mainCategory": "LÈVRES",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Nettoyant Visage",
@@ -350,35 +350,31 @@
         "price": 16,
         "rating": 4,
         "mainCategory": "VISAGE",
-        "quantity":0
+        "quantity": 0
       }
     ]
-  },"productBanner": {
+  },
+  "productBanner": {
     "shopNow": "ACHETER MAINTENANT",
     "title": "RÉVÉLEZ LA BEAUTÉ CACHÉE",
     "subTitle": "Obtenez un style avec des produits de haute couture et transformez-vous.",
     "products": [
-        {
-            "title": "FOND DE TEINT",
-            "subTitle": "Rend votre visage humide",
-            "shopNow": "ACHETER MAINTENANT"
-        },
-        {
-            "title": "POUDRE",
-            "subTitle": "Rend votre visage poudré",
-            "shopNow": "ACHETER MAINTENANT"
-        },
-        {
-            "title": "CRÈME",
-            "subTitle": "Rend votre visage crémeux",
-            "shopNow": "ACHETER MAINTENANT"
-        }
+      {
+        "title": "FOND DE TEINT",
+        "subTitle": "Rend votre visage humide",
+        "shopNow": "ACHETER MAINTENANT"
+      },
+      {
+        "title": "POUDRE",
+        "subTitle": "Rend votre visage poudré",
+        "shopNow": "ACHETER MAINTENANT"
+      },
+      {
+        "title": "CRÈME",
+        "subTitle": "Rend votre visage crémeux",
+        "shopNow": "ACHETER MAINTENANT"
+      }
     ]
-},
-  "dropdown": {
-    "en": "ANGLAIS",
-    "fr": "FRANÇAIS",
-    "it": "ITALIAN"
   },
   "cart": {
     "shoppingBag": "SAC DE MAGASINAGE",
@@ -388,36 +384,35 @@
     "viewCart": "VOIR LE PANIER",
     "checkout": "PASSER À LA CAISSE",
     "empty": "Votre panier est vide !"
-
-},
+  },
 
   "chatbox": {
     "messages": {
-        "greet": "Bonjour, bienvenue chez UOMO !",
-        "name": "Veuillez entrer votre nom",
-        "help": "Comment pouvons-nous vous aider ?",
-        "helpToday": "Comment pouvons-nous vous aider aujourd'hui ?",
-        "orderNum": "Quel est votre numéro de commande ?",
-        "locateOrder": "Nous n'avons pas pu localiser la commande avec le numéro",
-        "purchaseCode": "Quel est votre code d'achat ?",
-        "locatePurchase": "Nous n'avons pas pu trouver un achat avec le code",
-        "RepsBusyMessage": "Tous nos représentants du service client sont occupés avec d'autres clients pour le moment. Veuillez utiliser nos options pour que nous puissions quand même vous assister.",
-        "contactDetails": "Vous pouvez nous contacter par e-mail : sale@uomo.com, téléphone : +1 246-345-0695, ou n'hésitez pas à nous écrire une lettre à l'adresse suivante : 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
-        "additionalHelp": "N'hésitez pas à me faire savoir si vous avez besoin d'autre chose",
-        "byeMessage": "Au revoir, passez une bonne journée",
-        "closeChat": "La discussion est fermée"
+      "greet": "Bonjour, bienvenue chez UOMO !",
+      "name": "Veuillez entrer votre nom",
+      "help": "Comment pouvons-nous vous aider ?",
+      "helpToday": "Comment pouvons-nous vous aider aujourd'hui ?",
+      "orderNum": "Quel est votre numéro de commande ?",
+      "locateOrder": "Nous n'avons pas pu localiser la commande avec le numéro",
+      "purchaseCode": "Quel est votre code d'achat ?",
+      "locatePurchase": "Nous n'avons pas pu trouver un achat avec le code",
+      "RepsBusyMessage": "Tous nos représentants du service client sont occupés avec d'autres clients pour le moment. Veuillez utiliser nos options pour que nous puissions quand même vous assister.",
+      "contactDetails": "Vous pouvez nous contacter par e-mail : sale@uomo.com, téléphone : +1 246-345-0695, ou n'hésitez pas à nous écrire une lettre à l'adresse suivante : 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
+      "additionalHelp": "N'hésitez pas à me faire savoir si vous avez besoin d'autre chose",
+      "byeMessage": "Au revoir, passez une bonne journée",
+      "closeChat": "La discussion est fermée"
     },
     "labels": {
       "support": "Service client",
 
-        "order": "Suivre la Commande",
-        "returns": "Retours et Remboursements",
-        "contact": "Coordonnées de Contact",
-        "Rep": "Parler à un Agent du Service Client",
-        "helpMore": "Aide Supplémentaire",
-        "notNow": "Pas pour le moment",
-        "startOver": "Recommencer",
-        "endChat": "Terminer la discussion"
+      "order": "Suivre la Commande",
+      "returns": "Retours et Remboursements",
+      "contact": "Coordonnées de Contact",
+      "Rep": "Parler à un Agent du Service Client",
+      "helpMore": "Aide Supplémentaire",
+      "notNow": "Pas pour le moment",
+      "startOver": "Recommencer",
+      "endChat": "Terminer la discussion"
     }
-}
+  }
 }

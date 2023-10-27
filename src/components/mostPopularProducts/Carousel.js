@@ -19,7 +19,7 @@ const Carousel = ({ products }) => {
 
   const visibleProducts = products.slice(startIndex, startIndex + cardsPerPage)
 
-  // Duplicate the first few products to the end to create the illusion of an infinite carousel.
+
   if (visibleProducts.length < cardsPerPage) {
     const remaining = cardsPerPage - visibleProducts.length
     visibleProducts.push(...products.slice(0, remaining))

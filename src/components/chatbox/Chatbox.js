@@ -3,10 +3,10 @@ import { ThemeProvider } from "styled-components";
 import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
-import { Context } from "../../pages/HomePage";
+import { Language } from "../../pages/HomePage";
 
 const ChatBoxIcon = () => {
-  const [selectedLanguage, setSelectedLanguage] = useContext(Context);
+  const [selectedLanguage, setSelectedLanguage] = useContext(Language);
   const [langMod, setLangMod] = useState(false);
   const [key, setKey] = useState(0);
 

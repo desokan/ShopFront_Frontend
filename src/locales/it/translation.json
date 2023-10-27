@@ -215,7 +215,7 @@
         "category": "Trucco",
         "price": 29,
         "rating": 4,
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "CREMA IDRATANTE PER LA PELLE",
@@ -223,7 +223,7 @@
         "category": "Cura della pelle",
         "price": 35,
         "rating": 5,
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
@@ -231,7 +231,7 @@
         "category": "Trucco",
         "price": 15,
         "rating": 3,
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "DETERGENTE VISO IDRATANTE",
@@ -239,7 +239,7 @@
         "category": "Cura della pelle",
         "price": 20,
         "rating": 4,
-        "quantity":0
+        "quantity": 0
       }
     ]
   },
@@ -269,7 +269,7 @@
         "price": 30,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Struccante Occhi",
@@ -278,7 +278,7 @@
         "price": 12,
         "rating": 5,
         "mainCategory": "OCCHI",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Rossetto Opaco",
@@ -287,7 +287,7 @@
         "price": 15,
         "rating": 4,
         "mainCategory": "LABBRA",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Siero Idratante Viso",
@@ -296,7 +296,7 @@
         "price": 25,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Palette Ombretti",
@@ -305,7 +305,7 @@
         "price": 18,
         "rating": 4,
         "mainCategory": "OCCHI",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Set di Balsami Labbra",
@@ -314,7 +314,7 @@
         "price": 10,
         "rating": 5,
         "mainCategory": "LABBRA",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Crema Idratante Giorno",
@@ -323,7 +323,7 @@
         "price": 20,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Mascara Waterproof",
@@ -332,7 +332,7 @@
         "price": 14,
         "rating": 4,
         "mainCategory": "OCCHI",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Set di Lucidalabbra",
@@ -341,7 +341,7 @@
         "price": 22,
         "rating": 5,
         "mainCategory": "LABBRA",
-        "quantity":0
+        "quantity": 0
       },
       {
         "name": "Detergente Viso",
@@ -350,7 +350,7 @@
         "price": 16,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity":0
+        "quantity": 0
       }
     ]
   },
@@ -376,12 +376,6 @@
       }
     ]
   },
-
-  "dropdown": {
-    "en": "INGLESE",
-    "fr": "FRANCESE",
-    "it": "ITALIANO"
-  },
   "cart": {
     "shoppingBag": "SACCA DELLA SPESA",
     "category": "Categoria",
@@ -390,35 +384,34 @@
     "viewCart": "VISUALIZZA CARRELLO",
     "checkout": "VAI AL PAGAMENTO",
     "empty": "Il tuo carrello è vuoto!"
-
-},
+  },
 
   "chatbox": {
     "messages": {
-        "greet": "Ciao, benvenuto in UOMO!",
-        "name": "Per favore inserisci il tuo nome",
-        "help": "Come possiamo aiutarti?",
-        "helpToday": "Come possiamo aiutarti oggi?",
-        "orderNum": "Qual è il tuo numero d'ordine?",
-        "locateOrder": "Non siamo riusciti a individuare l'ordine con il numero",
-        "purchaseCode": "Qual è il tuo codice d'acquisto?",
-        "locatePurchase": "Non siamo riusciti a trovare un acquisto con il codice",
-        "RepsBusyMessage": "Tutti i nostri rappresentanti del servizio clienti sono occupati con altri clienti al momento. Per favore, utilizza le nostre opzioni in modo che possiamo comunque assisterti.",
-        "contactDetails": "Puoi contattarci via email: sale@uomo.com, telefono: +1 246-345-0695 o sentiti libero di scriverci una lettera indirizzata a: 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
-        "additionalHelp": "Per favore fammi sapere se hai bisogno di qualcos'altro",
-        "byeMessage": "Arrivederci, buona giornata",
-        "closeChat": "La chat è chiusa"
+      "greet": "Ciao, benvenuto in UOMO!",
+      "name": "Per favore inserisci il tuo nome",
+      "help": "Come possiamo aiutarti?",
+      "helpToday": "Come possiamo aiutarti oggi?",
+      "orderNum": "Qual è il tuo numero d'ordine?",
+      "locateOrder": "Non siamo riusciti a individuare l'ordine con il numero",
+      "purchaseCode": "Qual è il tuo codice d'acquisto?",
+      "locatePurchase": "Non siamo riusciti a trovare un acquisto con il codice",
+      "RepsBusyMessage": "Tutti i nostri rappresentanti del servizio clienti sono occupati con altri clienti al momento. Per favore, utilizza le nostre opzioni in modo che possiamo comunque assisterti.",
+      "contactDetails": "Puoi contattarci via email: sale@uomo.com, telefono: +1 246-345-0695 o sentiti libero di scriverci una lettera indirizzata a: 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
+      "additionalHelp": "Per favore fammi sapere se hai bisogno di qualcos'altro",
+      "byeMessage": "Arrivederci, buona giornata",
+      "closeChat": "La chat è chiusa"
     },
     "labels": {
       "support": "Servizio Clienti",
-        "order": "Traccia Ordine",
-        "returns": "Resi e Rimborsi",
-        "contact": "Dettagli di Contatto",
-        "Rep": "Parla con un Agente del Cliente",
-        "helpMore": "Aiuto Aggiuntivo",
-        "notNow": "Non per ora",
-        "startOver": "Ricomincia",
-        "endChat": "Chiudi la chat"
+      "order": "Traccia Ordine",
+      "returns": "Resi e Rimborsi",
+      "contact": "Dettagli di Contatto",
+      "Rep": "Parla con un Agente del Cliente",
+      "helpMore": "Aiuto Aggiuntivo",
+      "notNow": "Non per ora",
+      "startOver": "Ricomincia",
+      "endChat": "Chiudi la chat"
     }
-}
+  }
 }

@@ -1,5 +1,5 @@
 import classes from "./CartItem.module.css";
-import { Context1 } from "../../../pages/HomePage";
+import { ShoppingBag } from "../../../pages/HomePage";
 import { useContext } from "react";
 import CloseIcon from "../../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";
@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const CartItem = () => {
   const { t } = useTranslation();
 
-  const [myShoppingBag, setMyShoppingBag] = useContext(Context1);
+  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag);
 
   const handleMinusQuantity = (index) => {
     const bag = [...myShoppingBag];
@@ -35,7 +35,7 @@ const CartItem = () => {
       {myShoppingBag.length > 0 &&
         myShoppingBag.map((cartItem, index) => {
           return (
-            <section className={classes.itemContainer}>
+            <section className={classes.itemContainer} key={index}>
               <div className={classes.imgContainer}>
                 <img src={cartItem.imageUrl} alt={cartItem.name} />
               </div>

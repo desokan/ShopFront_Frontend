@@ -2,11 +2,11 @@ import React from 'react'
 import classes from './WeeklyFeatured.module.css'
 import BagIcon from '../svgs/BagIcon'
 import { useTranslation } from 'react-i18next'
-import { Context1 } from '../../pages/HomePage'
+import { ShoppingBag } from '../../pages/HomePage'
 import { useContext } from 'react'
 
 const SingleCard = ({ product }) => {
-  const [myShoppingBag, setMyShoppingBag] = useContext(Context1)
+  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag)
 
   const { name, category, price, rating, imageUrl } = product
 

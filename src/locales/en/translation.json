@@ -376,11 +376,6 @@
 			  }
 		  ]
 	  },
-	"dropdown": {
-	  "en": "ENGLISH",
-	  "fr": "FRENCH",
-	  "it": "ITALIAN"
-	},
 	"cart":{
 		"shoppingBag":"SHOPPING BAG",
 		"category":"Category",

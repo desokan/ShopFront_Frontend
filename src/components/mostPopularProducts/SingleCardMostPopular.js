@@ -2,12 +2,12 @@ import React from 'react'
 import classes from './MostPopular.module.css'
 import BagIcon from '../svgs/BagIcon'
 import { useTranslation } from 'react-i18next'
-import { Context1 } from '../../pages/HomePage'
+import { ShoppingBag } from '../../pages/HomePage'
 import { useContext } from 'react'
 
 const MostPopularSingleCard = ({ product }) => {
   const { name, category, price, rating, imageUrl } = product
-  const [myShoppingBag, setMyShoppingBag] = useContext(Context1)
+  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag)
   const { t } = useTranslation();
 
   const renderStars = () => {

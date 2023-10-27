@@ -8,13 +8,13 @@ import Login from '../authentication/Login'
 import Register from '../authentication/Register'
 import { useState, useContext, useEffect } from 'react'
 import Cart from '../cart/Cart'
-import { Context1 } from '../../pages/HomePage'
+import { ShoppingBag } from '../../pages/HomePage'
 
 const NavBarMid = ({ isVisible }) => {
   const [openLoginModal, setOpenLoginModal] = useState(false)
   const [openRegisterModal, setOpenRegisterModal] = useState(false)
   const [openCartModal, setOpenCartModal] = useState(false)
-  const [myShoppingBag, setMyShoppingBag] = useContext(Context1)
+  const [myShoppingBag] = useContext(ShoppingBag)
   const [emptyCart, setEmptyCart] = useState(true);
 
   const handleLogin = () => {
