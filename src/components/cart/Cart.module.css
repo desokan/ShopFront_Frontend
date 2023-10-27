@@ -1,4 +1,4 @@
-.loginBox {
+.CartBox {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -8,7 +8,7 @@
   z-index: 101;
 }
 
-.closeLoginForm {
+.closeShoppingBag {
   background: #faf9f8;
   display: flex;
   height: 82px;
@@ -18,50 +18,28 @@
   padding-right: 35px;
 }
 
-.closeLogin {
+.closeCart {
   border: none;
   background-color: #faf9f8;
   font-size: medium;
   cursor: pointer;
 }
 
-.loginText {
+.cartText {
   color: #222;
   font-weight: 500;
 }
 
-.loginForm {
+.cartContainer {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  padding-left: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
 
 }
 
-.textBox {
-  padding: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 350px;
-}
-
-.inputInfo {
-  display: flex;
-  justify-content: space-between; /* Add space between the items */
-  align-items: center; /* Vertically center items */
-  margin-bottom: 10px;
-}
-
-.checkboxLabel {
-  display: flex;
-  justify-content: space-between;
-}
-
-.checkboxInput {
-  margin-right: 10px;
-}
-
-.loginButton {
+.checkoutButton {
   width: 100%;
   background: #222222;
   color: white;
@@ -70,17 +48,15 @@
   border: 0;
 }
 
-.newAccount {
-  text-align: center;
+.checkoutButtonTwo {
+  width: 100%;
+  background: #e4e4e4;
+  color: black;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 0;
 }
 
-.newAccount > span {
-  text-decoration: underline;
-}
-
-.underline {
-  text-decoration: underline;
-}
 
 #viewCart {
   background-color: #e4e4e4;
@@ -107,6 +83,7 @@
 border: 1px solid #E4E4E4;
   background: #e4e4e4;
 }
+
 .cartItems{
 
   max-height: 65vh;

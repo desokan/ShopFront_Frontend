@@ -1,30 +1,31 @@
-import classes from './CartItem.module.css'
-import { Context1 } from '../../../pages/HomePage'
-import { useContext } from 'react'
+import classes from "./CartItem.module.css";
+import { Context1 } from "../../../pages/HomePage";
+import { useContext } from "react";
+import CloseIcon from "../../svgs/CloseIcon";
 
 const CartItem = () => {
-  const [myShoppingBag, setMyShoppingBag] = useContext(Context1)
+  const [myShoppingBag, setMyShoppingBag] = useContext(Context1);
 
   const handleMinusQuantity = (index) => {
-    const bag = [...myShoppingBag]
-    bag[index].quantity -= 1
+    const bag = [...myShoppingBag];
+    bag[index].quantity -= 1;
     if (bag[index].quantity === 0) {
-      bag.splice(index, 1)
+      bag.splice(index, 1);
     }
-    setMyShoppingBag(bag)
-  }
+    setMyShoppingBag(bag);
+  };
   const removeItem = (index) => {
-    const bag = [...myShoppingBag]
+    const bag = [...myShoppingBag];
 
-    bag.splice(index, 1)
+    bag.splice(index, 1);
 
-    setMyShoppingBag(bag)
-  }
+    setMyShoppingBag(bag);
+  };
   const handlePlusQuantity = (index) => {
-    const bag = [...myShoppingBag]
-    bag[index].quantity += 1
-    setMyShoppingBag(bag)
-  }
+    const bag = [...myShoppingBag];
+    bag[index].quantity += 1;
+    setMyShoppingBag(bag);
+  };
 
   return (
     <div>
@@ -42,7 +43,7 @@ const CartItem = () => {
                     className={classes.closeLogin}
                     onClick={() => removeItem(index)}
                   >
-                    X
+                    <CloseIcon />
                   </button>
                 </div>
                 <div className={classes.productInfo}>
@@ -51,31 +52,35 @@ const CartItem = () => {
                 </div>
                 <div className={classes.amount}>
                   <div className={classes.quantity}>
-                    <span
+                    <div
                       className={classes.quantityButton}
                       onClick={() => handleMinusQuantity(index)}
                     >
                       -
-                    </span>
+                    </div>
                     <span className={classes.itemQuantity}>
                       {cartItem.quantity}
                     </span>
-                    <span
+                    <div
                       className={classes.quantityButton}
                       onClick={() => handlePlusQuantity(index)}
                     >
                       +
-                    </span>
+                    </div>
                   </div>
-                  <span className={classes.price}>${cartItem.price}</span>
+                  <span className={classes.price}>${cartItem.price*cartItem.quantity}</span>
                 </div>
               </div>
             </section>
-          )
+          );
         })}
-      {myShoppingBag.length === 0 && <div>Your Cart is empty</div>}
+      {myShoppingBag.length === 0 && (
+        <div>
+          <p>Your cart is empty! </p>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default CartItem
+export default CartItem;
