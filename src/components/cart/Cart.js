@@ -42,7 +42,7 @@ const Cart = ({ setOpenCartModal }) => {
       >
         <div className={classes.closeShoppingBag}>
           <p className={classes.cartText}>
-            <b>{t('cart.shoppingBag')}({myShoppingBag.length})</b>
+            <b>{t('cart.shoppingBag')}  ({myShoppingBag.length})</b>
           </p>
           <button className={classes.closeCart} onClick={handleCloseCart}>
             <CloseIcon />

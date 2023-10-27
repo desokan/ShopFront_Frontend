@@ -9,6 +9,23 @@ const CartItem = () => {
 
   const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag);
 
+  const renderStars = (cartItem) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      stars.push(
+        <span
+          key={i}
+          className={`${classes.ProductRatingStar} ${
+            i <= cartItem.rating ? classes.ProductRatingStarFilled : ""
+          }`}
+        >
+          {i <= cartItem.rating ? "★" : "☆"}
+        </span>
+      );
+    }
+    return stars;
+  };
+
   const handleMinusQuantity = (index) => {
     const bag = [...myShoppingBag];
     bag[index].quantity -= 1;
@@ -50,8 +67,12 @@ const CartItem = () => {
                   </button>
                 </div>
                 <div className={classes.productInfo}>
-                  <span>{t('cart.category')}: {cartItem.category}</span>
-                  <span>{t('cart.rating')}: {cartItem.rating}</span>
+                  <span>
+                    {t("cart.category")}: {cartItem.category}
+                  </span>
+                  <span>
+                    {t("cart.rating")}: {renderStars(cartItem)}
+                  </span>
                 </div>
                 <div className={classes.amount}>
                   <div className={classes.quantity}>
@@ -71,7 +92,9 @@ const CartItem = () => {
                       +
                     </div>
                   </div>
-                  <span className={classes.price}>${cartItem.price*cartItem.quantity}</span>
+                  <span className={classes.price}>
+                    ${cartItem.price * cartItem.quantity}
+                  </span>
                 </div>
               </div>
             </section>
@@ -79,7 +102,7 @@ const CartItem = () => {
         })}
       {myShoppingBag.length === 0 && (
         <div>
-          <p>{t('cart.empty')}</p>
+          <p>{t("cart.empty")}</p>
         </div>
       )}
     </div>
