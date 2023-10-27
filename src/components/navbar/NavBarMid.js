@@ -15,7 +15,7 @@ const NavBarMid = ({ isVisible }) => {
   const [openRegisterModal, setOpenRegisterModal] = useState(false)
   const [openCartModal, setOpenCartModal] = useState(false)
   const [myShoppingBag, setMyShoppingBag] = useContext(Context1)
-  const [emptyCart, setEmptyCart] = useState('');
+  const [emptyCart, setEmptyCart] = useState(true);
 
   const handleLogin = () => {
     setOpenLoginModal(true)
