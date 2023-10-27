@@ -381,6 +381,15 @@
 	  "fr": "FRENCH",
 	  "it": "ITALIAN"
 	},
+	"cart":{
+		"shoppingBag":"SHOPPING BAG",
+		"category":"Category",
+		"rating":"Rating",
+		"total":"TOTAL",
+		"viewCart": "VIEW CART",
+		"checkout": "CHECKOUT",
+		"empty":"Your cart is empty!"
+	},
 	"chatbox": {
 	  "messages": {
 		"greet": "Hello, welcome to UOMO!",

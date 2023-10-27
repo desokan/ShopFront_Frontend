@@ -382,6 +382,17 @@
     "fr": "FRANCESE",
     "it": "ITALIANO"
   },
+  "cart": {
+    "shoppingBag": "SACCA DELLA SPESA",
+    "category": "Categoria",
+    "rating": "Valutazione",
+    "total": "TOTALE",
+    "viewCart": "VISUALIZZA CARRELLO",
+    "checkout": "VAI AL PAGAMENTO",
+    "empty": "Il tuo carrello è vuoto!"
+
+},
+
   "chatbox": {
     "messages": {
         "greet": "Ciao, benvenuto in UOMO!",

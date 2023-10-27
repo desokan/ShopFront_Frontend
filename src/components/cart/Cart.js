@@ -6,8 +6,11 @@ import CartItem from "./CartItem/CartItem";
 import { Context1 } from "../../pages/HomePage";
 import { useContext } from "react";
 import CloseIcon from "../svgs/CloseIcon";
+import { useTranslation } from "react-i18next";
 
 const Cart = ({ setOpenCartModal }) => {
+  const { t } = useTranslation();
+
   const [myShoppingBag, setMyShoppingBag] = useContext(Context1);
   const [emptyCart, setEmptyCart] = useState("");
 
@@ -39,7 +42,7 @@ const Cart = ({ setOpenCartModal }) => {
       >
         <div className={classes.closeShoppingBag}>
           <p className={classes.cartText}>
-            <b>SHOPPING BAG ({myShoppingBag.length})</b>
+            <b>{t('cart.shoppingBag')}({myShoppingBag.length})</b>
           </p>
           <button className={classes.closeCart} onClick={handleCloseCart}>
             <CloseIcon />
@@ -52,7 +55,7 @@ const Cart = ({ setOpenCartModal }) => {
 
           <div className={classes.break}></div>
           <div className={classes.subTotal}>
-            <p>TOTAL:</p>
+            <p>{t('cart.total')}:</p>
             <p id={classes.amount}>${total()}</p>
           </div>
 
@@ -61,7 +64,7 @@ const Cart = ({ setOpenCartModal }) => {
             className={classes.checkoutButton}
             type="submit"
           >
-            VIEW CART
+            {t('cart.viewCart')}
           </button>
           {emptyCart && (
             <button
@@ -71,7 +74,7 @@ const Cart = ({ setOpenCartModal }) => {
               type="submit"
               disabled
             >
-              CHECKOUT
+              {t('cart.checkout')}
             </button>
           )}
           {!emptyCart && (
@@ -82,7 +85,7 @@ const Cart = ({ setOpenCartModal }) => {
               type="submit"
               disabled
             >
-              CHECKOUT
+              {t('cart.checkout')}
             </button>
           )}
         </div>

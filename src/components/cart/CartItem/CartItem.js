@@ -2,8 +2,11 @@ import classes from "./CartItem.module.css";
 import { Context1 } from "../../../pages/HomePage";
 import { useContext } from "react";
 import CloseIcon from "../../svgs/CloseIcon";
+import { useTranslation } from "react-i18next";
 
 const CartItem = () => {
+  const { t } = useTranslation();
+
   const [myShoppingBag, setMyShoppingBag] = useContext(Context1);
 
   const handleMinusQuantity = (index) => {
@@ -47,8 +50,8 @@ const CartItem = () => {
                   </button>
                 </div>
                 <div className={classes.productInfo}>
-                  <span>Category: {cartItem.category}</span>
-                  <span>Rating: {cartItem.rating}</span>
+                  <span>{t('cart.category')}: {cartItem.category}</span>
+                  <span>{t('cart.rating')}: {cartItem.rating}</span>
                 </div>
                 <div className={classes.amount}>
                   <div className={classes.quantity}>
@@ -76,7 +79,7 @@ const CartItem = () => {
         })}
       {myShoppingBag.length === 0 && (
         <div>
-          <p>Your cart is empty! </p>
+          <p>{t('cart.empty')}</p>
         </div>
       )}
     </div>

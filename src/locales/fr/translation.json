@@ -380,6 +380,17 @@
     "fr": "FRANÇAIS",
     "it": "ITALIAN"
   },
+  "cart": {
+    "shoppingBag": "SAC DE MAGASINAGE",
+    "category": "Catégorie",
+    "rating": "Évaluation",
+    "total": "TOTAL",
+    "viewCart": "VOIR LE PANIER",
+    "checkout": "PASSER À LA CAISSE",
+    "empty": "Votre panier est vide !"
+
+},
+
   "chatbox": {
     "messages": {
         "greet": "Bonjour, bienvenue chez UOMO !",
