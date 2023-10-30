@@ -1,11 +1,11 @@
 import classes from "./DropDownLanguage.module.css";
 import { useTranslation } from "react-i18next";
 import { useContext, useEffect } from "react";
-import { Context } from "../../pages/HomePage";
+import { Language } from "../../pages/HomePage";
 import i18n from "../../i18n";
 
 const DropDownLanguage = ({ className }) => {
-  const [selectedLanguage, setSelectedLanguage] = useContext(Context);
+  const [selectedLanguage, setSelectedLanguage] = useContext(Language);
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -31,9 +31,9 @@ const DropDownLanguage = ({ className }) => {
       className={className === "footer" ? classes.footerDropDown : classes.dropDownSelect}
       name="Language"
     >
-      <option value="en">{t("dropdown.en")}</option>
-      <option value="fr">{t("dropdown.fr")}</option>
-      <option value="it">{t("dropdown.it")}</option>
+      <option value="en">ENGLISH</option>
+      <option value="fr">FRANÇAIS</option>
+      <option value="it">ITALIANO</option>
     </select>
   );
 };

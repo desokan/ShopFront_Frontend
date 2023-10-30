@@ -215,28 +215,32 @@
 		  "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWNkp2TW0CW1GYOZy1GU7dismoiEJ-xgTFK9E6WM7FbpAiYEUwraCq5uph7_uKbLVMFvncd0K9Vngn2Rd8hAccTcD-uxprYfy-ovobHf2-&usqp=CAc",
 		  "category": "Makeup",
 		  "price": 29,
-		  "rating": 4
+		  "rating": 4,
+		  "quantity":0
 		},
 		{
 		  "name": "MOISTURIZING SKIN CREAM",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
 		  "category": "Skincare",
 		  "price": 35,
-		  "rating": 5
+		  "rating": 5,
+		  "quantity":0
 		},
 		{
 		  "name": "EYE ENHANCING MASCARA",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
 		  "category": "Makeup",
 		  "price": 15,
-		  "rating": 3
+		  "rating": 3,
+		  "quantity":0
 		},
 		{
 		  "name": "HYDRATING FACIAL CLEANSER",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
 		  "category": "Skincare",
 		  "price": 20,
-		  "rating": 4
+		  "rating": 4,
+		  "quantity":0
 		}
 	  ]
 	},
@@ -265,7 +269,8 @@
 		  "category": "Skincare",
 		  "price": 30,
 		  "rating": 4,
-		  "mainCategory": "FACE"
+		  "mainCategory": "FACE",
+		  "quantity":0
 		},
 		{
 		  "name": "Eye Makeup Remover",
@@ -273,7 +278,8 @@
 		  "category": "Makeup",
 		  "price": 12,
 		  "rating": 5,
-		  "mainCategory": "EYES"
+		  "mainCategory": "EYES",
+		  "quantity":0
 		},
 		{
 		  "name": "Matte Lipstick",
@@ -281,7 +287,8 @@
 		  "category": "Lipstick",
 		  "price": 15,
 		  "rating": 4,
-		  "mainCategory": "LIPS"
+		  "mainCategory": "LIPS",
+		  "quantity":0
 		},
 		{
 		  "name": "Hydrating Face Serum",
@@ -289,7 +296,8 @@
 		  "category": "Skincare",
 		  "price": 25,
 		  "rating": 4,
-		  "mainCategory": "FACE"
+		  "mainCategory": "FACE",
+		  "quantity":0
 		},
 		{
 		  "name": "Eyeshadow Palette",
@@ -297,7 +305,8 @@
 		  "category": "Makeup",
 		  "price": 18,
 		  "rating": 4,
-		  "mainCategory": "EYES"
+		  "mainCategory": "EYES",
+		  "quantity":0
 		},
 		{
 		  "name": "Lip Balm Set",
@@ -305,7 +314,8 @@
 		  "category": "Lip Care",
 		  "price": 10,
 		  "rating": 5,
-		  "mainCategory": "LIPS"
+		  "mainCategory": "LIPS",
+		  "quantity":0
 		},
 		{
 		  "name": "Moisturizing Day Cream",
@@ -313,7 +323,8 @@
 		  "category": "Skincare",
 		  "price": 20,
 		  "rating": 4,
-		  "mainCategory": "FACE"
+		  "mainCategory": "FACE",
+		  "quantity":0
 		},
 		{
 		  "name": "Waterproof Mascara",
@@ -321,7 +332,8 @@
 		  "category": "Makeup",
 		  "price": 14,
 		  "rating": 4,
-		  "mainCategory": "EYES"
+		  "mainCategory": "EYES",
+		  "quantity":0
 		},
 		{
 		  "name": "Lip Gloss Set",
@@ -329,7 +341,8 @@
 		  "category": "Lipstick",
 		  "price": 22,
 		  "rating": 5,
-		  "mainCategory": "LIPS"
+		  "mainCategory": "LIPS",
+		  "quantity":0
 		},
 		{
 		  "name": "Facial Cleanser",
@@ -337,7 +350,8 @@
 		  "category": "Skincare",
 		  "price": 16,
 		  "rating": 4,
-		  "mainCategory": "FACE"
+		  "mainCategory": "FACE",
+		  "quantity":0
 		}
 	  ]
 	},
@@ -362,10 +376,14 @@
 			  }
 		  ]
 	  },
-	"dropdown": {
-	  "en": "ENGLISH",
-	  "fr": "FRENCH",
-	  "it": "ITALIAN"
+	"cart":{
+		"shoppingBag":"SHOPPING BAG",
+		"category":"Category",
+		"rating":"Rating",
+		"total":"TOTAL",
+		"viewCart": "VIEW CART",
+		"checkout": "CHECKOUT",
+		"empty":"Your cart is empty!"
 	},
 	"chatbox": {
 	  "messages": {

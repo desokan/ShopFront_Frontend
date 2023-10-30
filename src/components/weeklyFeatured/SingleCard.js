@@ -2,10 +2,16 @@ import React from 'react'
 import classes from './WeeklyFeatured.module.css'
 import BagIcon from '../svgs/BagIcon'
 import { useTranslation } from 'react-i18next'
+import { ShoppingBag } from '../../pages/HomePage'
+import { useContext } from 'react'
 
 const SingleCard = ({ product }) => {
+  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag)
+
   const { name, category, price, rating, imageUrl } = product
-  const { t } = useTranslation();
+
+  const { t } = useTranslation()
+
   const renderStars = () => {
     const stars = []
     for (let i = 1; i <= 5; i++) {
@@ -22,13 +28,25 @@ const SingleCard = ({ product }) => {
     }
     return stars
   }
+
   const handleAddToCart = () => {
-    const existingCart = JSON.parse(localStorage.getItem('cart')) || [];
+    const bag = [...myShoppingBag]
 
-    existingCart.push(product);
+    const findItem = bag.find((item) => item.name === product.name)
 
-    localStorage.setItem('cart', JSON.stringify(existingCart));
-  };
+    if (myShoppingBag.length === 0) {
+      bag.push(product)
+      product.quantity++
+    } else {
+      if (findItem) {
+        findItem.quantity++
+      } else {
+        bag.push(product)
+        product.quantity++
+      }
+    }
+    setMyShoppingBag(bag)
+  }
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>
       <div className={classes.WeeklyFeaturedImageContainer}>
@@ -39,9 +57,12 @@ const SingleCard = ({ product }) => {
         />
       </div>
       <div className={classes.WeeklyFeaturedAddToCartButtonContainer}>
-        <button className={classes.WeeklyFeaturedAddToCartButton} onClick={handleAddToCart}>
+        <button
+          className={classes.WeeklyFeaturedAddToCartButton}
+          onClick={handleAddToCart}
+        >
           <BagIcon fill="white" />
-         <span  className={classes.span}> {t("weeklyFeatured.add")}</span>
+          <span className={classes.span}> {t('weeklyFeatured.add')}</span>
         </button>
       </div>
       <div className={classes.WeeklyFeaturedProductInfo}>

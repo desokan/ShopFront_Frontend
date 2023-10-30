@@ -50,6 +50,7 @@
   .MostPreferredSingleCardImage {
     width: 210px;
     height: 350px;
+    transition: transform 0.6s;
   }
   .MostPreferredSingleCardImage:hover{
     transform: scale(1.1);

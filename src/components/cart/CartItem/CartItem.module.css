@@ -1,0 +1,98 @@
+.itemContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 5px;
+  padding-top: 7px;
+
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.topItemGrid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.topItemGrid > p {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.imgContainer img {
+  width: 120px;
+  height: 120px;
+}
+
+.itemsInfo {
+  margin-left: 10px;
+}
+
+.closeLogin {
+  border: none;
+  background-color: #ffffff;
+  font-size: medium;
+  justify-self: right;
+}
+.amount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 7px;
+}
+.price {
+  text-align: right;
+  color: #222;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quantity {
+  color: #767676;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.itemQuantity {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.quantityButton {
+  width: 10px;
+  margin: 0px 5px;
+
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+.productInfo > span {
+  padding: 0 0 7px;
+  color: #767676;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+
+   .ProductRatingStar {
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: gray;
+  }
+  
+  .ProductRatingStarFilled {
+    color: #eba37a;
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

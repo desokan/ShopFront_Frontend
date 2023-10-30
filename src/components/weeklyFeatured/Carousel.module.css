@@ -22,10 +22,12 @@
 .arrowRight {
   position: relative;
   bottom: 100px;
+  cursor: pointer;
 }
 
 .arrowLeft {
   position: relative;
   bottom: 100px;
   left: -3px;
+  cursor: pointer;
 }

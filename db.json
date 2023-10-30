@@ -1,8 +1,8 @@
 {
   "subscribers": [
     {
-      "id": 1,
-      "email": "test-user@email.com"
+      "subscriber": "test-user@email.com",
+      "id": 1
     },
     {
       "subscriber": "sarajbeazley@gmail.com",
