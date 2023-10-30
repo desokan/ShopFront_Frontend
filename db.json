@@ -20,6 +20,36 @@
       "password": "",
       "email": "carolinacalar1234ruda@gmail.com",
       "id": 2
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "email": "test@test.com",
+      "id": 3
+    },
+    {
+      "email": "tiagopereirarocha@tutanota.com",
+      "password": "$2a$10$v1IMJ3n5udolHRhx1ZJF8uw7hPTZw41vuEfkU8Ba/HgReYmBtaOVC",
+      "username": "test2",
+      "id": 4
+    },
+    {
+      "email": "carolinacalarruda@gmail.com",
+      "password": "$2a$10$lERFCBsme3dQrnFsDFDiaOeoqKA/dqtmD00HFeGYz1j/3/YkFkcbm",
+      "username": "carol",
+      "id": 5
+    },
+    {
+      "email": "toiago2@hotmail.com",
+      "password": "$2a$10$Em4KmgUl.SRudOqliMbVP.UIvGOWNtZxcg.Bawk/I5KswTwtUMvnK",
+      "username": "mantas",
+      "id": 6
+    },
+    {
+      "email": "my@you.com",
+      "password": "$2a$10$XhESJlE.zdEXZswzMsr5F.bZZE82YJkoompS3A.JfPIpOMduML.uO",
+      "username": "cca",
+      "id": 7
     }
   ]
 }

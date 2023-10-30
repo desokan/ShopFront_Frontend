@@ -3,27 +3,23 @@ import { useNavigate } from "react-router-dom";
 import classes from "./Login.module.css";
 import BackDrop from "../util/Backdrop";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import CloseIcon from "../svgs/CloseIcon";
 
 const baseUrl = "http://localhost:4000";
 
 const Login = ({ closeLogin, openRegister }) => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
 
-  const mockUsername = "SaraRasheed";
-  const mockPassword = "TripleEqual";
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-  function handleChange(event) {
-    const { name, value } = event.target;
-    console.log(`Input "${name}":`, value);
-    if (name === "username") {
-      setUsername(value);
-    } else if (name === "password") {
-      setPassword(value);
-    }
-  }
+  
+  function handleChange(e) {
+    setFormData({...formData, [e.target.name] : e.target.value})
+}
 
   const handleCloseLogin = () => {
     closeLogin(false);
@@ -38,48 +34,36 @@ const Login = ({ closeLogin, openRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(username, password);
-    console.log(mockUsername, mockPassword);
+    fetch(`http://localhost:4000/login`, {
+      method: 'POST',
+      headers: {'Content-Type' : 'application/json'},
+      body: JSON.stringify(formData)
+      
+    })
+    .then(res => res.json())
+    .then(data => console.log(data.user))
 
-    if (username !== mockUsername || password !== mockPassword) {
-      console.log("Login failed. Invalid credentials.");
-    } else {
-      console.log("Login successful");
 
-      fetch(`${baseUrl}/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: username,
-          password: password,
-        }),
-      }).then(function (response) {
-        return response.json();
-      });
+    console.log("Redirecting to HomePage...");
 
-      navigate("/");
-      console.log("Redirecting to HomePage...");
-
-      setUsername("");
-      setPassword("");
-    }
+  
   };
 
   return (
     <div>
       <BackDrop />
-      <motion.div className={classes.loginBox}
-      initial={{ x: 100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.8 }}>
+      <motion.div
+        className={classes.loginBox}
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className={classes.closeLoginForm}>
           <p className={classes.loginText}>
             <b>LOGIN</b>
           </p>
           <button className={classes.closeLogin} onClick={handleCloseLogin}>
-            X
+            <CloseIcon />
           </button>
         </div>
         <form className={classes.loginForm} onSubmit={handleSubmit}>
@@ -87,18 +71,18 @@ const Login = ({ closeLogin, openRegister }) => {
             className={classes.textBox}
             type="text"
             placeholder="Username or email address *"
-            onChange={handleChange}
-            name="username"
-            value={username}
+            value={formData.email}
+            name="email"
+            onChange={(e) => handleChange(e)}
           />
 
           <input
             className={classes.textBox}
             type="password"
             placeholder="Password *"
-            onChange={handleChange}
             name="password"
-            value={password}
+            value={formData.password}
+            onChange={(e) => handleChange(e)}
           />
 
           <div className={classes.inputInfo}>
