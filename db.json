@@ -11,9 +11,15 @@
   ],
   "users": [
     {
-      "userid": 1,
+      "id": 1,
       "email": "test-user@email.com",
-      "password" :"test-password"
+      "password": "test-password"
+    },
+    {
+      "username": "carol",
+      "password": "",
+      "email": "carolinacalar1234ruda@gmail.com",
+      "id": 2
     }
   ]
 }

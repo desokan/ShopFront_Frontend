@@ -14,18 +14,6 @@ const Register = ({ closeRegister }) => {
   const [password, setPassword] = useState("");
 
 
-  const mockUsername = "SaraRasheed";
-  const mockPassword = "TripleEqual";
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    console.log(`Input "${name}":`, value);
-    if (username === "username" && email === "email") {
-      setUsername(value) && setEmail(value);
-    } else if (password === "password") {
-      setPassword(value);
-    }
-  }
 
   const handleCloseRegister = () => {
     closeRegister(false);
@@ -33,15 +21,8 @@ const Register = ({ closeRegister }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    console.log(username, email, password);
 
-    if (username !== mockUsername || password !== mockPassword) {
-      console.log("Login failed. Invalid credentials.");
-    } else {
-      console.log("Login successful");
-
-      fetch(`${baseUrl}/login`, {
+      fetch(`${baseUrl}/users`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,6 +30,7 @@ const Register = ({ closeRegister }) => {
         body: JSON.stringify({
           username: username,
           password: password,
+          email: email
         }),
       }).then(function (response) {
         return response.json();
@@ -60,7 +42,7 @@ const Register = ({ closeRegister }) => {
       setUsername("");
       setEmail("");
       setPassword("");
-    }
+    
   };
 
   return (
@@ -83,7 +65,8 @@ const Register = ({ closeRegister }) => {
             className={classes.textBox}
             type="text"
             placeholder="Username"
-            onChange={handleChange}
+
+            onChange={(e)=> {setUsername(e.target.value)}}
             name="username"
             value={username}
           />
@@ -91,17 +74,18 @@ const Register = ({ closeRegister }) => {
             className={classes.textBox}
             type="text"
             placeholder="Email address *"
-            onChange={handleChange}
-            name="username"
-            value={username}
+            onChange={(e)=> {setEmail(e.target.value)}}
+            name="email"
+            value={email}
           />
           <input
             className={classes.textBox}
             type="password"
             placeholder="Password *"
-            onChange={handleChange}
+            onChange={(e)=> {setPassword(e.target.value)}}
             name="password"
             value={password}
+            required
           />
           
             <p className={classes.personalData}>
