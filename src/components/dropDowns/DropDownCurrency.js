@@ -1,13 +1,15 @@
-import classes from "./DropDownCurrency.module.css"
+import classes from "./DropDownCurrency.module.css";
 
-const DropDownCurrency = ({className}) => {
-
+const DropDownCurrency = ({ className }) => {
   return (
-    <select className={(className === 'footer' ? classes.footerDropDown : classes.dropDownSelect)} name="Currency">
-      <option value="Pound">GBP £</option>
-      <option value="Euros">EURO €</option>
-      <option value="Dollars">USD $</option>
-    </select>
+    <div
+      className={
+        className === "footer" ? classes.footerDropDown : classes.dropDownSelect
+      }
+      name="Currency"
+    >
+      EURO €
+    </div>
   );
 };
 

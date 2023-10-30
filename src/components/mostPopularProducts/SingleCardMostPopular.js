@@ -58,7 +58,7 @@ const MostPopularSingleCard = ({ product }) => {
       <div className={classes.MostPopularProductInfo}>
         <p className={classes.MostPopularMakeup}>{category}</p>
         <p className={classes.MostPopularText}>{name}</p>
-        <p className={classes.MostPopularText}>${price}</p>
+        <p className={classes.MostPopularText}>€{price}</p>
         <div className={classes.MostPopularStarsContainer}>{renderStars()}</div>
       </div>
     </div>
