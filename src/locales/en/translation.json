@@ -19,9 +19,9 @@
 	  "Shop": {
 		"Shop": "SHOP",
 		"Arrivals": "New Arrivals",
-		"Accessories": "Accessories",
-		"Men": "Men",
-		"Women": "Women",
+		"Makeup": "Makeup",
+		"Skincare": "Skincare",
+		"Hair": "Hair",
 		"ShopAll": "Shop All"
 	  },
 	  "Help": {
@@ -53,70 +53,106 @@
 	  "bottom": {
 		"productMenus": [
 		  {
-			"category": "WOMEN",
+			"category": "MAKEUP",
 			"subCategory": [
 			  {
-				"name": "Trousers",
-				"link": "https://www.google.co.uk/"
+				"name": "Popular",
+				"link": "/popular"
 			  },
 			  {
-				"name": "Blouses",
-				"link": "/blouses"
+				"name": "Face",
+				"link": "/face"
 			  },
 			  {
-				"name": "Skirts",
-				"link": "/skirts"
+				"name": "Eyes",
+				"link": "/eye"
+			  },
+			  {
+				"name": "Lips",
+				"link": "/lips"
+			  },
+			  {
+				"name": "Cheeks",
+				"link": "/cheeks"
+			  },
+			  {
+				"name": "New",
+				"link": "/new"
 			  }
 			]
 		  },
 		  {
-			"category": "MEN",
+			"category": "SKINCARE",
 			"subCategory": [
 			  {
-				"name": "Trousers",
-				"link": "/trousers"
+				"name": "All",
+				"link": "/all"
 			  },
 			  {
-				"name": "Shirts",
-				"link": "/shirts"
+				"name": "Moisturizers",
+				"link": "/moisturizers"
 			  },
 			  {
-				"name": "Blazers",
-				"link": "/blazers"
+				"name": "Cleansers",
+				"link": "/cleansers"
+			  },
+			  {
+				"name": "Treatments",
+				"link": "/treatments"
+			  },
+			  {
+				"name": "Masks",
+				"link": "/masks"
+			  },
+			  {
+				"name": "Sunscreen",
+				"link": "/sunscreen"
 			  }
 			]
 		  },
 		  {
-			"category": "GIRLS",
+			"category": "HAIR",
 			"subCategory": [
 			  {
-				"name": "Trousers",
-				"link": "/trousers"
+				"name": "Shampoo",
+				"link": "/shampoo"
 			  },
 			  {
-				"name": "Tops",
-				"link": "/girls-tops"
+				"name": "Conditioners",
+				"link": "/conditioners"
 			  },
 			  {
-				"name": "Bottoms",
-				"link": "/girls-bottoms"
+				"name": "Treatments",
+				"link": "/treatments"
+			  },
+			  {
+				"name": "Styling",
+				"link": "/styling"
+			  },
+			  {
+				"name": "Tools",
+				"link": "/tools"
 			  }
 			]
 		  },
 		  {
-			"category": "BOYS",
+			"category": "FRAGRANCE",
 			"subCategory": [
 			  {
-				"name": "Trousers",
-				"link": "/boys-trousers"
+				"name": "Women",
+				"link": "/women"
 			  },
 			  {
-				"name": "Shirts",
-				"link": "/boys-shirts"
+				"name": "Men",
+				"link": "/men"
 			  },
 			  {
-				"name": "Suits",
-				"link": "/boys-suits"
+				"name": "Unisex",
+				"link": "/unisex"
+			  },
+			  {
+				"name": "Candles",
+				"link": "/candles"
 			  }
 			]
 		  },
@@ -124,16 +160,20 @@
 			"category": "SALE",
 			"subCategory": [
 			  {
-				"name": "Trousers",
-				"link": "/sale-trousers"
+				"name": "Makeup",
+				"link": "/sale-makeeup"
 			  },
 			  {
-				"name": "Shirts",
-				"link": "/sale-shirts"
+				"name": "Skincare",
+				"link": "/sale-skincare"
 			  },
 			  {
-				"name": "Suits",
-				"link": "/sale-suits"
+				"name": "Hair care",
+				"link": "/sale-haircare"
+			  },
+			  {
+				"name": "Fragrance",
+				"link": "/sale-fragrance"
 			  }
 			]
 		  }

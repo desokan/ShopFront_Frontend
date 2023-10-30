@@ -92,9 +92,9 @@ const FooterMid = ({t}) => {
           <div>
             <ul className={classes.company}>
               <li>{t("footer.Shop.Arrivals")}</li>
-              <li>{t("footer.Shop.Accessories")}</li>
-              <li>{t("footer.Shop.Men")}</li>
-              <li>{t("footer.Shop.Women")}</li>
+              <li>{t("footer.Shop.Makeup")}</li>
+              <li>{t("footer.Shop.Skincare")}</li>
+              <li>{t("footer.Shop.Hair")}</li>
               <li>{t("footer.Shop.ShopAll")}</li>
             </ul>
           </div>
