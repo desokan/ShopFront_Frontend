@@ -68,7 +68,7 @@ const SingleCard = ({ product }) => {
       <div className={classes.WeeklyFeaturedProductInfo}>
         <p className={classes.WeeklyFeaturedMakeup}>{category}</p>
         <p className={classes.WeeklyFeaturedText}>{name}</p>
-        <p className={classes.WeeklyFeaturedText}>${price}</p>
+        <p className={classes.WeeklyFeaturedText}>€{price}</p>
         <div className={classes.WeeklyFeaturedStarsContainer}>
           {renderStars()}
         </div>

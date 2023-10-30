@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 const Cart = ({ setOpenCartModal }) => {
   const { t } = useTranslation();
 
-  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag);
+  const [myShoppingBag] = useContext(ShoppingBag);
   const [emptyCart, setEmptyCart] = useState("");
 
   const handleCloseCart = () => {
@@ -56,7 +56,7 @@ const Cart = ({ setOpenCartModal }) => {
           <div className={classes.break}></div>
           <div className={classes.subTotal}>
             <p>{t('cart.total')}:</p>
-            <p id={classes.amount}>${total()}</p>
+            <p id={classes.amount}>€{total()}</p>
           </div>
 
           <button
