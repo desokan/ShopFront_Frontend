@@ -17,11 +17,11 @@
       "Contact": "Nous Contacter"
     },
     "Shop": {
-      "Shop": "MAGASIN",
+      "Shop": "BOUTIQUE",
       "Arrivals": "Nouveautés",
-      "Accessories": "Accessoires",
-      "Men": "Hommes",
-      "Women": "Femmes",
+      "Makeup": "Maquillage",
+      "Skincare": "Soins de la peau",
+      "Hair": "Cheveux",
       "ShopAll": "Tout Voir"
     },
     "Help": {
@@ -53,87 +53,127 @@
     "bottom": {
       "productMenus": [
         {
-          "category": "FEMMES",
+          "category": "MAQUILLAGE",
           "subCategory": [
             {
-              "name": "Pantalons",
-              "link": "https://www.google.co.uk/"
+              "name": "Populaire",
+              "link": "/populaire"
             },
             {
-              "name": "Chemisiers",
-              "link": "/chemisiers"
+              "name": "Visage",
+              "link": "/visage"
             },
             {
-              "name": "Jupes",
-              "link": "/jupes"
+              "name": "Yeux",
+              "link": "/yeux"
+            },
+            {
+              "name": "Lèvres",
+              "link": "/levres"
+            },
+            {
+              "name": "Joues",
+              "link": "/joues"
+            },
+            {
+              "name": "Nouveau",
+              "link": "/nouveau"
             }
           ]
         },
         {
-          "category": "HOMMES",
+          "category": "SOINS DE LA PEAU",
           "subCategory": [
             {
-              "name": "Pantalons",
-              "link": "/pantalons"
+              "name": "Tout",
+              "link": "/tout"
             },
             {
-              "name": "Chemises",
-              "link": "/chemises"
+              "name": "Hydratants",
+              "link": "/hydratants"
             },
             {
-              "name": "Blazers",
-              "link": "/blazers"
+              "name": "Nettoyants",
+              "link": "/nettoyants"
+            },
+            {
+              "name": "Traitements",
+              "link": "/traitements"
+            },
+            {
+              "name": "Masques",
+              "link": "/masques"
+            },
+            {
+              "name": "Écran solaire",
+              "link": "/ecran-solaire"
             }
           ]
         },
         {
-          "category": "FILLES",
+          "category": "CHEVEUX",
           "subCategory": [
             {
-              "name": "Pantalons",
-              "link": "/pantalons-filles"
+              "name": "Shampooing",
+              "link": "/shampooing"
             },
             {
-              "name": "Hauts",
-              "link": "/hauts-filles"
+              "name": "Après-shampooing",
+              "link": "/apres-shampooing"
             },
             {
-              "name": "Bas",
-              "link": "/bas-filles"
+              "name": "Traitements",
+              "link": "/traitements"
+            },
+            {
+              "name": "Coiffage",
+              "link": "/coiffage"
+            },
+            {
+              "name": "Outils",
+              "link": "/outils"
             }
           ]
         },
         {
-          "category": "GARÇONS",
+          "category": "PARFUM",
           "subCategory": [
             {
-              "name": "Pantalons",
-              "link": "/pantalons-garcons"
+              "name": "Femmes",
+              "link": "/femmes"
             },
             {
-              "name": "Chemises",
-              "link": "/chemises-garcons"
+              "name": "Hommes",
+              "link": "/hommes"
             },
             {
-              "name": "Costumes",
-              "link": "/costumes-garcons"
+              "name": "Unisexe",
+              "link": "/unisexe"
+            },
+            {
+              "name": "Bougies",
+              "link": "/bougies"
             }
           ]
         },
         {
-          "category": "SOLDES",
+          "category": "PROMOTION",
           "subCategory": [
             {
-              "name": "Pantalons",
-              "link": "/pantalons-soldes"
+              "name": "Maquillage",
+              "link": "/promotion-maquillage"
             },
             {
-              "name": "Chemises",
-              "link": "/chemises-soldes"
+              "name": "Soins de la peau",
+              "link": "/promotion-soins-de-la-peau"
             },
             {
-              "name": "Costumes",
-              "link": "/costumes-soldes"
+              "name": "Soins capillaires",
+              "link": "/promotion-soins-capillaires"
+            },
+            {
+              "name": "Parfum",
+              "link": "/promotion-parfum"
             }
           ]
         }

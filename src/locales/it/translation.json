@@ -17,13 +17,14 @@
       "Contact": "Contattaci"
     },
     "Shop": {
-      "Shop": "NEGOZIO",
-      "Arrivals": "Nuovi Arrivi",
-      "Accessories": "Accessori",
-      "Men": "Uomini",
-      "Women": "Donne",
-      "ShopAll": "Tutti i Prodotti"
-    },
+      "Shop": "BOUTIQUE",
+      "Arrivals": "Nouveautés",
+      "Makeup": "Maquillage",
+      "Skincare": "Soins de la peau",
+      "Hair": "Cheveux",
+      "ShopAll": "Tout Voir"
+    }
+    ,
     "Help": {
       "Help": "AIUTO",
       "CustomerService": "Servizio Clienti",
@@ -53,70 +54,106 @@
     "bottom": {
       "productMenus": [
         {
-          "category": "DONNE",
+          "category": "TRUCCO",
           "subCategory": [
             {
-              "name": "Pantaloni",
-              "link": "https://www.google.co.uk/"
+              "name": "Popolare",
+              "link": "/popolare"
             },
             {
-              "name": "Bluse",
-              "link": "/bluse"
+              "name": "Viso",
+              "link": "/viso"
             },
             {
-              "name": "Gonne",
-              "link": "/gonne"
+              "name": "Occhi",
+              "link": "/occhi"
+            },
+            {
+              "name": "Labbra",
+              "link": "/labbra"
+            },
+            {
+              "name": "Guance",
+              "link": "/guance"
+            },
+            {
+              "name": "Nuovi",
+              "link": "/nuovi"
             }
           ]
         },
         {
-          "category": "UOMINI",
+          "category": "CURE DELLA PELLE",
           "subCategory": [
             {
-              "name": "Pantaloni",
-              "link": "/pantaloni"
+              "name": "Tutto",
+              "link": "/tutto"
             },
             {
-              "name": "Camicie",
-              "link": "/camicie"
+              "name": "Idratanti",
+              "link": "/idratanti"
             },
             {
-              "name": "Blazer",
-              "link": "/blazer"
+              "name": "Detergenti",
+              "link": "/detergenti"
+            },
+            {
+              "name": "Trattamenti",
+              "link": "/trattamenti"
+            },
+            {
+              "name": "Maschere",
+              "link": "/maschere"
+            },
+            {
+              "name": "Protezione solare",
+              "link": "/protezione-solare"
             }
           ]
         },
         {
-          "category": "RAGAZZE",
+          "category": "CAPELLI",
           "subCategory": [
             {
-              "name": "Pantaloni",
-              "link": "/pantaloni-ragazze"
+              "name": "Shampoo",
+              "link": "/shampoo"
             },
             {
-              "name": "Top",
-              "link": "/top-ragazze"
+              "name": "Balsami",
+              "link": "/balsami"
             },
             {
-              "name": "Fondi",
-              "link": "/fondi-ragazze"
+              "name": "Trattamenti",
+              "link": "/trattamenti"
+            },
+            {
+              "name": "Styling",
+              "link": "/styling"
+            },
+            {
+              "name": "Strumenti",
+              "link": "/strumenti"
             }
           ]
         },
         {
-          "category": "RAGAZZI",
+          "category": "FRAGRANZE",
           "subCategory": [
             {
-              "name": "Pantaloni",
-              "link": "/pantaloni-ragazzi"
+              "name": "Donna",
+              "link": "/donna"
             },
             {
-              "name": "Camicie",
-              "link": "/camicie-ragazzi"
+              "name": "Uomo",
+              "link": "/uomo"
             },
             {
-              "name": "Abiti",
-              "link": "/abiti-ragazzi"
+              "name": "Unisex",
+              "link": "/unisex"
+            },
+            {
+              "name": "Candele",
+              "link": "/candele"
             }
           ]
         },
@@ -124,16 +161,20 @@
           "category": "SALDI",
           "subCategory": [
             {
-              "name": "Pantaloni",
-              "link": "/pantaloni-saldi"
+              "name": "Trucco",
+              "link": "/saldi-trucco"
             },
             {
-              "name": "Camicie",
-              "link": "/camicie-saldi"
+              "name": "Cura della pelle",
+              "link": "/saldi-cura-della-pelle"
             },
             {
-              "name": "Abiti",
-              "link": "/abiti-saldi"
+              "name": "Cura dei capelli",
+              "link": "/saldi-cura-dei-capelli"
+            },
+            {
+              "name": "Fragranze",
+              "link": "/saldi-fragranze"
             }
           ]
         }
