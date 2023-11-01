@@ -1,33 +1,22 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import classes from "./Login.module.css";
-import BackDrop from "../util/Backdrop";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion"
-
-const baseUrl = "http://localhost:4000";
+import CloseIcon from "../svgs/CloseIcon";
 
 const Login = ({ closeLogin, openRegister }) => {
-  const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
 
-  const mockUsername = "SaraRasheed";
-  const mockPassword = "TripleEqual";
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-  function handleChange(event) {
-    const { name, value } = event.target;
-    console.log(`Input "${name}":`, value);
-    if (name === "username") {
-      setUsername(value);
-    } else if (name === "password") {
-      setPassword(value);
-    }
+
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
   const handleCloseLogin = () => {
     closeLogin(false);
-    //  setOpenLoginModal(false)
   };
 
   const handleRegister = () => {
@@ -38,100 +27,78 @@ const Login = ({ closeLogin, openRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(username, password);
-    console.log(mockUsername, mockPassword);
-
-    if (username !== mockUsername || password !== mockPassword) {
-      console.log("Login failed. Invalid credentials.");
-    } else {
-      console.log("Login successful");
-
-      fetch(`${baseUrl}/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: username,
-          password: password,
-        }),
-      }).then(function (response) {
-        return response.json();
+    fetch(`http://localhost:4000/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        localStorage.setItem("token", data.accessToken);
+        const user = data.user
+        const stringifyUser = JSON.stringify(user)
+        localStorage.setItem("user", stringifyUser);
+        handleCloseLogin();
       });
-
-      navigate("/");
-      console.log("Redirecting to HomePage...");
-
-      setUsername("");
-      setPassword("");
-    }
   };
-
   return (
-    <div>
-      <BackDrop />
-      <motion.div className={classes.loginBox}
-      initial={{ x: 100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.8 }}>
-        <div className={classes.closeLoginForm}>
-          <p className={classes.loginText}>
-            <b>LOGIN</b>
-          </p>
-          <button className={classes.closeLogin} onClick={handleCloseLogin}>
-            X
-          </button>
-        </div>
-        <form className={classes.loginForm} onSubmit={handleSubmit}>
-          <input
-            className={classes.textBox}
-            type="text"
-            placeholder="Username or email address *"
-            onChange={handleChange}
-            name="username"
-            value={username}
-          />
+    <>
+      <div className={classes.closeLoginForm}>
+        <p className={classes.loginText}>
+          <b>LOGIN</b>
+        </p>
+        <button className={classes.closeLogin} onClick={handleCloseLogin}>
+          <CloseIcon />
+        </button>
+      </div>
+      <form className={classes.loginForm} onSubmit={handleSubmit}>
+        <input
+          className={classes.textBox}
+          type="text"
+          placeholder="Username or email address *"
+          value={formData.email}
+          name="email"
+          onChange={(e) => handleChange(e)}
+        />
 
-          <input
-            className={classes.textBox}
-            type="password"
-            placeholder="Password *"
-            onChange={handleChange}
-            name="password"
-            value={password}
-          />
+        <input
+          className={classes.textBox}
+          type="password"
+          placeholder="Password *"
+          name="password"
+          value={formData.password}
+          onChange={(e) => handleChange(e)}
+        />
 
-          <div className={classes.inputInfo}>
-            <div className={classes.checkboxLabel}>
-              <input
-                className={classes.checkboxInput}
-                type="checkbox"
-                id="rememberMe"
-                // checked={formData.isSold}
-                onChange={handleChange}
-                name="rememberMe"
-              />{" "}
-              <label className={classes.checkboxLabel}>Remember Me</label>
-            </div>
-            <div>
-              <p className={classes.underline}>
-                <Link>Lost password?</Link>
-              </p>
-            </div>
+        <div className={classes.inputInfo}>
+          <div className={classes.checkboxLabel}>
+            <input
+              className={classes.checkboxInput}
+              type="checkbox"
+              id="rememberMe"
+              onChange={handleChange}
+              name="rememberMe"
+            />{" "}
+            <label className={classes.checkboxLabel}>Remember Me</label>
           </div>
+          <div>
+            <p className={classes.underline}>
+              <Link>Lost password?</Link>
+            </p>
+          </div>
+        </div>
 
-          <button className={classes.loginButton} type="submit">
-            LOG IN
-          </button>
-          <p className={classes.newAccount}>
-            No account yet?{" "}
-            <span>
-              <Link onClick={handleRegister}>Create Account</Link>
-            </span>
-          </p>
-        </form>
-      </motion.div>
-    </div>
+        <button className={classes.loginButton} type="submit">
+          LOG IN
+        </button>
+        <p className={classes.newAccount}>
+          No account yet?{" "}
+          <span>
+            <Link onClick={handleRegister}>Create Account</Link>
+          </span>
+        </p>
+      </form>
+    </>
   );
 };
 

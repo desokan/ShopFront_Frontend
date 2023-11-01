@@ -11,9 +11,45 @@
   ],
   "users": [
     {
-      "userid": 1,
+      "id": 1,
       "email": "test-user@email.com",
-      "password" :"test-password"
+      "password": "test-password"
+    },
+    {
+      "username": "carol",
+      "password": "",
+      "email": "carolinacalar1234ruda@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "email": "test@test.com",
+      "id": 3
+    },
+    {
+      "email": "test@email.com",
+      "password": "$2a$10$Homfy8NGUDs9ue82IyyqlORAC0kJtKceOoFxAnQ9gmBbF1MolqA12",
+      "username": "test2",
+      "id": 4
+    },
+    {
+      "email": "email@email.com",
+      "password": "$2a$10$RCa2wD1FtnfBwC.FqGzvkeXuiFdW7kdv7lvkhEBMkB4FUV3Z5pufO",
+      "username": "test3",
+      "id": 5
+    },
+    {
+      "email": "email2@email.com",
+      "password": "$2a$10$pWpjw0QKg7KcBVkqV98rue89Us/RkRyDfRHOjK.gaaTucR99yyEKi",
+      "username": "test4",
+      "id": 6
+    },
+    {
+      "email": "test5@email.com",
+      "password": "$2a$10$8RIv3TVluqF7s9qMSdwGnOzTOfLO.MOUyYfRWi34E88CAlJ63.0tq",
+      "username": "test5",
+      "id": 7
     }
   ]
 }

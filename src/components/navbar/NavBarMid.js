@@ -4,7 +4,7 @@ import SearchIcon from "../svgs/SearchIcon";
 import HeartIcon from "../svgs/HeartIcon";
 import UserIcon from "../svgs/UserIcon";
 import CartIcon from "../svgs/CartIcon";
-import Login from "../authentication/Login";
+import Container from "../authentication/Container";
 import Register from "../authentication/Register";
 import { useState, useContext, useEffect } from "react";
 import Cart from "../cart/Cart";
@@ -43,7 +43,7 @@ const NavBarMid = ({ isVisible }) => {
           <UserIcon onClick={handleLogin} />
           <CartIcon onClick={handleCart} />
           {openLoginModal && (
-            <Login
+            <Container
               closeLogin={setOpenLoginModal}
               openRegister={setOpenRegisterModal}
             />

@@ -19,16 +19,16 @@ const resources = {
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next) 
   .init({
-    resources, // resources are important to load translations for the languages.
-    lng: "en", // It acts as default language. When the site loads, content is shown in this language.  
+    resources, 
+    lng: "en",   
     debug: true,
-    fallbackLng: "fr", // use fr if selected language is not available
+    fallbackLng: "fr", 
     interpolation: {
       escapeValue: false
     },
-    ns: "translation", // namespaces help to divide huge translations into multiple small files.
+    ns: "translation",
     defaultNS: "translation"
   });
 

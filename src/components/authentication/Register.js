@@ -1,81 +1,55 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./Register.module.css";
 import BackDrop from "../util/Backdrop";
-import { motion } from "framer-motion"
-
-
-const baseUrl = "http://localhost:4000";
+import { motion } from "framer-motion";
+import CloseIcon from "../svgs/CloseIcon";
 
 const Register = ({ closeRegister }) => {
-  const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    username: "",
+  });
 
-
-  const mockUsername = "SaraRasheed";
-  const mockPassword = "TripleEqual";
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    console.log(`Input "${name}":`, value);
-    if (username === "username" && email === "email") {
-      setUsername(value) && setEmail(value);
-    } else if (password === "password") {
-      setPassword(value);
-    }
-  }
 
   const handleCloseRegister = () => {
     closeRegister(false);
   };
 
-  const handleSubmit = (e) => {
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+  function handleSubmit(e) {
     e.preventDefault();
-  
-    console.log(username, email, password);
-
-    if (username !== mockUsername || password !== mockPassword) {
-      console.log("Login failed. Invalid credentials.");
-    } else {
-      console.log("Login successful");
-
-      fetch(`${baseUrl}/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: username,
-          password: password,
-        }),
-      }).then(function (response) {
-        return response.json();
+    fetch("http://localhost:4000/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        handleCloseRegister();
+        localStorage.setItem("token", data.accessToken);
       });
-
-      navigate("/");
-      console.log("Redirecting to HomePage...");
-
-      setUsername("");
-      setEmail("");
-      setPassword("");
-    }
-  };
+  }
 
   return (
     <div className={classes.backDrop}>
       <BackDrop />
-      <motion.div className={classes.registerBox} initial={{ x: 100 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.8 }}>
+      <motion.div
+        className={classes.registerBox}
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className={classes.closeRegisterForm}>
           <p className={classes.registerText}>CREATE AN ACCOUNT</p>
           <button
             className={classes.closeRegister}
             onClick={handleCloseRegister}
           >
-            X
+            <CloseIcon />
           </button>
         </div>
         <form className={classes.registerForm} onSubmit={handleSubmit}>
@@ -83,33 +57,34 @@ const Register = ({ closeRegister }) => {
             className={classes.textBox}
             type="text"
             placeholder="Username"
-            onChange={handleChange}
+            onChange={(e) => handleChange(e)}
+            value={formData.username}
             name="username"
-            value={username}
           />
           <input
             className={classes.textBox}
             type="text"
             placeholder="Email address *"
-            onChange={handleChange}
-            name="username"
-            value={username}
+            onChange={(e) => handleChange(e)}
+            value={formData.email}
+            name="email"
           />
           <input
             className={classes.textBox}
             type="password"
             placeholder="Password *"
-            onChange={handleChange}
+            onChange={(e) => handleChange(e)}
+            value={formData.password}
             name="password"
-            value={password}
+            required
           />
-          
-            <p className={classes.personalData}>
-              Your personal data will be used to support your experience
-              throughout this website, to manage access to your account, and for
-              other purposes described in our privacy policy.
-            </p>
-          
+
+          <p className={classes.personalData}>
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our privacy policy.
+          </p>
+
           <button className={classes.registerButton} type="submit">
             REGISTER
           </button>
