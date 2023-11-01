@@ -1,18 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./Register.module.css";
 import BackDrop from "../util/Backdrop";
 import { motion } from "framer-motion";
 import CloseIcon from "../svgs/CloseIcon";
 
-
 const Register = ({ closeRegister }) => {
-
   const [formData, setFormData] = useState({
     email: "",
     password: "",
     username: "",
   });
+
 
   const handleCloseRegister = () => {
     closeRegister(false);
@@ -22,18 +21,19 @@ const Register = ({ closeRegister }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
   function handleSubmit(e) {
-    e.preventDefault()
-    fetch('http://localhost:4000/users', {
-        method: 'POST',
-        headers: {'Content-Type' : 'application/json'},
-        body: JSON.stringify(formData)
+    e.preventDefault();
+    fetch("http://localhost:4000/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     })
-    .then(res => res.json())
-    .then(data => {
-      handleCloseRegister()
-      console.log(data)})
-
-}
+      .then((res) => res.json())
+      .then((data) => {
+        handleCloseRegister();
+        console.log(data);
+        localStorage.setItem("token", data.accessToken);
+      });
+  }
 
   return (
     <div className={classes.backDrop}>

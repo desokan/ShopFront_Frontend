@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CloseIcon from "../svgs/CloseIcon";
 
-const Login = ({ closeLogin, openRegister }) => {
+const AccountMenu = ({ closeLogin, openRegister, username }) => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-  const [username, setUsername] = useState("")
+
+
 
 
 
@@ -42,12 +43,9 @@ const Login = ({ closeLogin, openRegister }) => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         localStorage.setItem("token", data.accessToken);
-        localStorage.setItem("username", data.user.username);
-        console.log('data.user', data.user);
-        setUsername(data.user.username)
-        console.log('logged user', username);
-        
+
       });
 
     console.log("Redirecting to HomePage...");
@@ -56,7 +54,7 @@ const Login = ({ closeLogin, openRegister }) => {
     <>
       <div className={classes.closeLoginForm}>
         <p className={classes.loginText}>
-          <b>LOGIN</b>
+          <b>WELCOME BACK, {username.toUpperCase()}</b>
         </p>
         <button className={classes.closeLogin} onClick={handleCloseLogin}>
           <CloseIcon />
@@ -113,4 +111,4 @@ const Login = ({ closeLogin, openRegister }) => {
   );
 };
 
-export default Login;
+export default AccountMenu;
