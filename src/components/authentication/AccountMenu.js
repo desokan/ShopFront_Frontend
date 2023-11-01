@@ -11,6 +11,12 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
     closeLogin(false);
   };
 
+  const handleLogout = () => {
+    handleCloseAccount()
+    localStorage.removeItem('user')
+    localStorage.removeItem('token')
+  }
+
   return (
     <>
       <div className={classes.closeAccountForm}>
@@ -28,7 +34,7 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
           <li className={classes.accountLi}>ORDERS</li>
           <li className={classes.accountLi}>SETTINGS</li>
           <li className={classes.accountLi}>WISHLIST</li>
-          <li className={classes.accountLi} >
+          <li className={classes.accountLi} onClick={handleLogout} >
             LOGOUT
           </li>
         </ul>
