@@ -23,17 +23,6 @@ code {
 }
 
 :root {
-  --min-gap: 30px; /* Minimum gap size */
-  --max-gap: 1fr;  /* Maximum gap size (1fr means it takes available space) */
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  --min-gap: 30px; 
+  --max-gap: 1fr;  
 }
