@@ -1,21 +1,14 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import classes from "./Login.module.css";
-import BackDrop from "../util/Backdrop";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import CloseIcon from "../svgs/CloseIcon";
 
 const Login = ({ closeLogin, openRegister }) => {
-  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-  const [username, setUsername] = useState("")
-
-
 
 
   function handleChange(e) {
@@ -24,7 +17,6 @@ const Login = ({ closeLogin, openRegister }) => {
 
   const handleCloseLogin = () => {
     closeLogin(false);
-    //  setOpenLoginModal(false)
   };
 
   const handleRegister = () => {
@@ -43,14 +35,11 @@ const Login = ({ closeLogin, openRegister }) => {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem("token", data.accessToken);
-        localStorage.setItem("username", data.user.username);
-        console.log('data.user', data.user);
-        setUsername(data.user.username)
-        console.log('logged user', username);
-        
+        const user = data.user
+        const stringifyUser = JSON.stringify(user)
+        localStorage.setItem("user", stringifyUser);
+        handleCloseLogin();
       });
-
-    console.log("Redirecting to HomePage...");
   };
   return (
     <>

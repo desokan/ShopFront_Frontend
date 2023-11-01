@@ -30,7 +30,6 @@ const Register = ({ closeRegister }) => {
       .then((res) => res.json())
       .then((data) => {
         handleCloseRegister();
-        console.log(data);
         localStorage.setItem("token", data.accessToken);
       });
   }

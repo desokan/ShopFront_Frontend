@@ -8,12 +8,13 @@ import AccountMenu from "./AccountMenu";
 const Container = ({ closeLogin, openRegister }) => {
   const [loggedIn, setLoggedIn] = useState("");
   let token = localStorage.getItem("token");
-  const username = localStorage.getItem('username')
+
+  const userForParse = localStorage.getItem('user')
+  const user = JSON.parse(userForParse)
 
   useEffect(() => {
     if (token) {
       setLoggedIn(true);
-
     }
   }, []);
 
@@ -29,7 +30,7 @@ const Container = ({ closeLogin, openRegister }) => {
         {!loggedIn && (
           <Login closeLogin={closeLogin} openRegister={openRegister} />
         )}
-        {loggedIn && <AccountMenu closeLogin={closeLogin} openRegister={openRegister} username={username}/>}
+        {loggedIn && <AccountMenu closeLogin={closeLogin} openRegister={openRegister} user={user}/>}
       </motion.div>
     </div>
   );

@@ -6,13 +6,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CloseIcon from "../svgs/CloseIcon";
 
-const AccountMenu = ({ closeLogin, openRegister, username }) => {
+const AccountMenu = ({ closeLogin, openRegister, user }) => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+  console.log(user);
 
 
 
@@ -23,9 +25,9 @@ const AccountMenu = ({ closeLogin, openRegister, username }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
 
-  const handleCloseLogin = () => {
+  const handleCloseAccount = () => {
     closeLogin(false);
-    //  setOpenLoginModal(false)
+
   };
 
   const handleRegister = () => {
@@ -54,9 +56,9 @@ const AccountMenu = ({ closeLogin, openRegister, username }) => {
     <>
       <div className={classes.closeLoginForm}>
         <p className={classes.loginText}>
-          <b>WELCOME BACK, {username.toUpperCase()}</b>
+          <b>WELCOME BACK, {user.username.toUpperCase()}</b>
         </p>
-        <button className={classes.closeLogin} onClick={handleCloseLogin}>
+        <button className={classes.closeLogin} onClick={handleCloseAccount}>
           <CloseIcon />
         </button>
       </div>
