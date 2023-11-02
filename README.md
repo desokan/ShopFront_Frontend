@@ -29,9 +29,9 @@ With this library, we defined chatbot conversations using a straightforward conf
 The JSON file "db.json" contains subscription data, and it can be served as an API using the "json-server" with the command: `npm run server`. This allows developers to simulate and interact with a RESTful API for managing 
 subscriptions.
 
-<img src="screenshots/footer.png" alt="footer" height="400" width="800" />
+<img src="screenshots/footer.png" alt="footer" height="400" width="850" />
 
-## Shopping Cart key features:
+## Shopping Bag key features:
 
 1. Add products to the cart
 2. Remove products from the cart
