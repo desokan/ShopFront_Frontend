@@ -1,72 +1,49 @@
-# Getting Started with Create React App
+# ShopFront
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A front end website built using React, CSS and with a JSON server.
 
-## Available Scripts
+# General Info
 
-In the project directory, you can run:
+This is a project built and developed in around 6 weeks by 6 software developers who recently all graduated from Boolean Tech Academy and share a passion to want to continue their learning journey, gain experience working as a team in an agile-scrum setting and challenges themselves. 
+The design for ShopFront came from an existing Figma template which we reworked and tweaked. 
+The MVP consisted of a Landing Page with HeroBanner, Product carousel, NavBar and Footer as well as a Login/ Register feature and Shopping cart feature.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Special Features 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Some new areas of learning for us were:
 
-### `npm test`
+## The language feature using 'react-i18next': 
+i18next is a JavaScript i18n framework that manages translations for multilingual apps. It initialises with config, supports dynamic language changes based on the app's state, and targets values in JSON files using a simple function.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Creating interactive chatbot interfaces using 'react-simple-chatbot':
+With this library, we defined chatbot conversations using a straightforward configuration. It allowed us to customize the chatbot's appearance and behavior, making it easy to prompt users, receive responses, and take actions like redirection. "react-simple-chatbot" seamlessly integrated into our React project, enhancing user engagement.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to view the website:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  Open terminal
+2.  `git clone https://github.com/desokan/ShopFront_Frontend.git`
+3.  `cd ShopFront_Frontend`
+4.  `npm install`
+5.  `npm start`
+6.   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+7.  `npm run server`
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
 # ShopFront_Frontend
