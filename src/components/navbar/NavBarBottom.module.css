@@ -17,12 +17,12 @@
   padding: 20px 0;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropDownHover:hover {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+
 .dropDownHover:hover .dropbtn {
   font-weight: bold;
 }

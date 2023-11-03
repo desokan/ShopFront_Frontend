@@ -11,13 +11,11 @@ import Cart from "../cart/Cart";
 import { ShoppingBag } from "../../pages/HomePage";
 
 const NavBarMid = ({ isVisible }) => {
-  const [testContext, setTestContext] = useContext(ShoppingBag);
-  const cartForParse = localStorage.getItem("cart");
-  const shoppingCart = JSON.parse(cartForParse) || [];
+  const [testContext] = useContext(ShoppingBag);
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
   const [openCartModal, setOpenCartModal] = useState(false);
-  const [myShoppingBag] = useState(shoppingCart);
+  const [myShoppingBag, setMyShoppingBag] = useState(testContext);
   const [emptyCart, setEmptyCart] = useState(true);
   const handleLogin = () => {
     setOpenLoginModal(true);
@@ -25,13 +23,15 @@ const NavBarMid = ({ isVisible }) => {
   const handleCart = () => {
     setOpenCartModal(true);
   };
-  useEffect(() => {
-    setTestContext(shoppingCart||[])
-    if (myShoppingBag.length === 0 ) {
-      setEmptyCart(true);
-    } else setEmptyCart(false);
-  }, [cartForParse]);
 
+  useEffect(() => {
+    setMyShoppingBag(testContext);
+    if (myShoppingBag.length === 0) {
+      setEmptyCart(true);
+    } else {
+      setEmptyCart(false);
+    }
+  }, [myShoppingBag, testContext]);
 
   return (
     <div className={classes.container}>
