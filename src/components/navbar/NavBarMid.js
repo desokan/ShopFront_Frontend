@@ -8,7 +8,7 @@ import Container from "../authentication/Container";
 import Register from "../authentication/Register";
 import { useState, useContext, useEffect } from "react";
 import Cart from "../cart/Cart";
-import { ShoppingBag, Wishlist } from "../../pages/HomePage";
+import { ShoppingBag, Wishlist} from '../../App'
 import WishList from "../wishlist/Wishlist";
 
 const NavBarMid = ({ isVisible }) => {
@@ -38,6 +38,7 @@ const NavBarMid = ({ isVisible }) => {
     } else {
       setEmptyCart(false);
     }
+    setMyWishlist(wishlistContext)
     if (myWishlist.length === 0) {
       setEmptyWishlist(true);
     } else {

@@ -3,7 +3,7 @@ import classes from "./Cart.module.css";
 import BackDrop from "../util/Backdrop";
 import { motion } from "framer-motion";
 import CartItem from "./CartItem/CartItem";
-import { ShoppingBag } from "../../pages/HomePage";
+import { ShoppingBag } from "../../App";
 import { useContext } from "react";
 import CloseIcon from "../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";

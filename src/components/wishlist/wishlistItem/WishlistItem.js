@@ -1,5 +1,5 @@
 import classes from "./WishlistItem.module.css";
-import { Wishlist } from "../../../pages/HomePage";
+import { Wishlist } from "../../../App";
 import { useContext } from "react";
 import CloseIcon from "../../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";

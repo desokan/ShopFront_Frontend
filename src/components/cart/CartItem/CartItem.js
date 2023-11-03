@@ -1,5 +1,5 @@
 import classes from "./CartItem.module.css";
-import { ShoppingBag } from "../../../pages/HomePage";
+import { ShoppingBag } from "../../../App";
 import { useContext } from "react";
 import CloseIcon from "../../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";

@@ -1,7 +1,7 @@
 import classes from "./DropDownLanguage.module.css";
 import { useTranslation } from "react-i18next";
 import { useContext, useEffect } from "react";
-import { Language } from "../../pages/HomePage";
+import { Language} from '../../App'
 import i18n from "../../i18n";
 
 const DropDownLanguage = ({ className }) => {
