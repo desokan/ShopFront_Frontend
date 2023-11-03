@@ -11,9 +11,9 @@ import Cart from "../cart/Cart";
 import { ShoppingBag } from "../../pages/HomePage";
 
 const NavBarMid = ({ isVisible }) => {
-  const [testContext, setTestContext]= useContext(ShoppingBag)
-  const cartForParse = localStorage.getItem('cart')
-  const shoppingCart = JSON.parse(cartForParse) || []
+  const [testContext, setTestContext] = useContext(ShoppingBag);
+  const cartForParse = localStorage.getItem("cart");
+  const shoppingCart = JSON.parse(cartForParse) || [];
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
   const [openCartModal, setOpenCartModal] = useState(false);
@@ -31,6 +31,7 @@ const NavBarMid = ({ isVisible }) => {
       setEmptyCart(true);
     } else setEmptyCart(false);
   }, [cartForParse]);
+
 
   return (
     <div className={classes.container}>
