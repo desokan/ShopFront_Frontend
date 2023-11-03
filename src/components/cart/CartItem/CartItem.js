@@ -32,18 +32,20 @@ const CartItem = () => {
     if (bag[index].quantity === 0) {
       bag.splice(index, 1);
     }
+    localStorage.setItem("cart", JSON.stringify(bag));
     setMyShoppingBag(bag);
   };
   const removeItem = (index) => {
     const bag = [...myShoppingBag];
 
     bag.splice(index, 1);
-
+    localStorage.setItem("cart", JSON.stringify(bag));
     setMyShoppingBag(bag);
   };
   const handlePlusQuantity = (index) => {
     const bag = [...myShoppingBag];
     bag[index].quantity += 1;
+    localStorage.setItem("cart", JSON.stringify(bag));
     setMyShoppingBag(bag);
   };
 
@@ -93,7 +95,7 @@ const CartItem = () => {
                     </div>
                   </div>
                   <span className={classes.price}>
-                  €{cartItem.price * cartItem.quantity}
+                    €{cartItem.price * cartItem.quantity}
                   </span>
                 </div>
               </div>

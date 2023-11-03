@@ -12,7 +12,10 @@ import ProductBanner from "../components/productBanner/ProductBanner";
 
 const HomePage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-  const [myShoppingBag, setMyShoppingBag] = useState([]);
+  const cartForParse = localStorage.getItem("cart");
+  const shoppingCart = JSON.parse(cartForParse) || [];
+  const [myShoppingBag, setMyShoppingBag] = useState(shoppingCart);
+  
   return (
     <>
       <ShoppingBag.Provider value={[myShoppingBag, setMyShoppingBag]}>

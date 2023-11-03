@@ -11,23 +11,27 @@ import Cart from "../cart/Cart";
 import { ShoppingBag } from "../../pages/HomePage";
 
 const NavBarMid = ({ isVisible }) => {
+  const [testContext] = useContext(ShoppingBag);
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
   const [openCartModal, setOpenCartModal] = useState(false);
-  const [myShoppingBag] = useContext(ShoppingBag);
+  const [myShoppingBag, setMyShoppingBag] = useState(testContext);
   const [emptyCart, setEmptyCart] = useState(true);
-
   const handleLogin = () => {
     setOpenLoginModal(true);
   };
   const handleCart = () => {
     setOpenCartModal(true);
   };
+
   useEffect(() => {
+    setMyShoppingBag(testContext);
     if (myShoppingBag.length === 0) {
       setEmptyCart(true);
-    } else setEmptyCart(false);
-  }, [myShoppingBag]);
+    } else {
+      setEmptyCart(false);
+    }
+  }, [myShoppingBag, testContext]);
 
   return (
     <div className={classes.container}>
@@ -58,7 +62,7 @@ const NavBarMid = ({ isVisible }) => {
               emptyCart ? classes.noCartItemNumber : classes.cartItemNumber
             }
           >
-            {myShoppingBag.length}
+            {testContext.length}
           </div>
         </div>
       </div>
