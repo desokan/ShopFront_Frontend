@@ -12,6 +12,12 @@ const Register = ({ closeRegister }) => {
     username: "",
   });
 
+  const [status, setStatus] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [failed, setFailed] = useState(false);
+  const [red, setRed] = useState("");
+  const [shake, setShake] = useState("");
+  const sk = "shake 0.2s ease-in-out 0s 2";
 
   const handleCloseRegister = () => {
     closeRegister(false);
@@ -22,16 +28,35 @@ const Register = ({ closeRegister }) => {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:4000/users", {
+
+    const opts = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        handleCloseRegister();
-        localStorage.setItem("token", data.accessToken);
-      });
+    };
+
+    async function register() {
+      try {
+        const registerRes = await fetch("http://localhost:4000/users", opts);
+
+        const data = await registerRes.json();
+        setStatus(registerRes.status);
+        if (registerRes.status === 400) {
+          setErrorMessage(data);
+          setFailed(true);
+          setRed("red");
+          setShake(sk);
+        } else {
+          handleCloseRegister();
+          localStorage.setItem("token", data.accessToken);
+          const user = data.user;
+          const stringifyUser = JSON.stringify(user);
+          localStorage.setItem("user", stringifyUser);
+        }
+      } catch (error) {}
+    }
+
+    register();
   }
 
   return (
@@ -54,6 +79,10 @@ const Register = ({ closeRegister }) => {
         </div>
         <form className={classes.registerForm} onSubmit={handleSubmit}>
           <input
+            style={{
+              color: `${red}`,
+              animation: `${shake}`,
+            }}
             className={classes.textBox}
             type="text"
             placeholder="Username"
@@ -62,6 +91,10 @@ const Register = ({ closeRegister }) => {
             name="username"
           />
           <input
+            style={{
+              color: `${red}`,
+              animation: `${shake}`,
+            }}
             className={classes.textBox}
             type="text"
             placeholder="Email address *"
@@ -70,6 +103,10 @@ const Register = ({ closeRegister }) => {
             name="email"
           />
           <input
+            style={{
+              color: `${red}`,
+              animation: `${shake}`,
+            }}
             className={classes.textBox}
             type="password"
             placeholder="Password *"
@@ -78,7 +115,9 @@ const Register = ({ closeRegister }) => {
             name="password"
             required
           />
-
+          {!failed && <div className={classes.error}> </div>}
+          {failed && <div className={classes.error}>{errorMessage}</div>}
+          <br />
           <p className={classes.personalData}>
             Your personal data will be used to support your experience
             throughout this website, to manage access to your account, and for

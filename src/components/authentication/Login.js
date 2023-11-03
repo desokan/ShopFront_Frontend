@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import CloseIcon from "../svgs/CloseIcon";
 
 const Login = ({ closeLogin, openRegister }) => {
-
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
 
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,19 +25,26 @@ const Login = ({ closeLogin, openRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+  try {
+    
     fetch(`http://localhost:4000/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     })
+ 
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem("token", data.accessToken);
-        const user = data.user
-        const stringifyUser = JSON.stringify(user)
+        const user = data.user;
+        const stringifyUser = JSON.stringify(user);
         localStorage.setItem("user", stringifyUser);
         handleCloseLogin();
       });
+  } catch (error) {
+    console.log(error);
+  }
+    
   };
   return (
     <>
@@ -55,7 +60,7 @@ const Login = ({ closeLogin, openRegister }) => {
         <input
           className={classes.textBox}
           type="text"
-          placeholder="Username or email address *"
+          placeholder="Email address *"
           value={formData.email}
           name="email"
           onChange={(e) => handleChange(e)}
