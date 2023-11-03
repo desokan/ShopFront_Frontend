@@ -1,14 +1,13 @@
 import classes from "./CartItem.module.css";
 import { ShoppingBag } from "../../../pages/HomePage";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import CloseIcon from "../../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";
 
 const CartItem = () => {
   const { t } = useTranslation();
-  const cartForParse = localStorage.getItem('cart')
-  const shoppingCart = JSON.parse(cartForParse)
-  const [myShoppingBag, setMyShoppingBag] = useState(shoppingCart);
+
+  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag);
 
   const renderStars = (cartItem) => {
     const stars = [];
@@ -33,18 +32,20 @@ const CartItem = () => {
     if (bag[index].quantity === 0) {
       bag.splice(index, 1);
     }
+    localStorage.setItem('cart', JSON.stringify(bag))
     setMyShoppingBag(bag);
   };
   const removeItem = (index) => {
     const bag = [...myShoppingBag];
 
     bag.splice(index, 1);
-
+    localStorage.setItem('cart', JSON.stringify(bag))
     setMyShoppingBag(bag);
   };
   const handlePlusQuantity = (index) => {
     const bag = [...myShoppingBag];
     bag[index].quantity += 1;
+    localStorage.setItem('cart', JSON.stringify(bag))
     setMyShoppingBag(bag);
   };
 

@@ -10,26 +10,26 @@ import { useTranslation } from "react-i18next";
 
 const Cart = ({ setOpenCartModal }) => {
   const { t } = useTranslation();
-  const cartForParse = localStorage.getItem('cart')
-  const shoppingCart = JSON.parse(cartForParse)
+
+  const [myShoppingBag] = useContext(ShoppingBag);
   const [emptyCart, setEmptyCart] = useState("");
-console.log("cart",shoppingCart)
+
   const handleCloseCart = () => {
     setOpenCartModal(false);
   };
   const total = () => {
     let tot = 0;
-    shoppingCart.forEach((item) => {
+    myShoppingBag.forEach((item) => {
       tot += item.price * item.quantity;
     });
     return tot
   };
 
   useEffect(() => {
-    if (shoppingCart.length === 0) {
+    if (myShoppingBag.length === 0) {
       setEmptyCart(true);
     }
-  }, [shoppingCart]);
+  }, [myShoppingBag]);
 
   return (
     <div>
@@ -42,7 +42,7 @@ console.log("cart",shoppingCart)
       >
         <div className={classes.closeShoppingBag}>
           <p className={classes.cartText}>
-            <b>{t('cart.shoppingBag')}  ({shoppingCart.length})</b>
+            <b>{t('cart.shoppingBag')}  ({myShoppingBag.length})</b>
           </p>
           <button className={classes.closeCart} onClick={handleCloseCart}>
             <CloseIcon />
