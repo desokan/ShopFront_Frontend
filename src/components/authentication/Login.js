@@ -8,6 +8,11 @@ const Login = ({ closeLogin, openRegister }) => {
     email: "",
     password: "",
   });
+  const [errorMessage, setErrorMessage] = useState("");
+  const [failed, setFailed] = useState(false);
+  const [red, setRed] = useState("");
+  const [shake, setShake] = useState("");
+  const sk = "shake 0.2s ease-in-out 0s 2";
 
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,25 +30,31 @@ const Login = ({ closeLogin, openRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  try {
-    
-    fetch(`http://localhost:4000/login`, {
+ const opts = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
-    })
- 
-      .then((res) => res.json())
-      .then((data) => {
-        localStorage.setItem("token", data.accessToken);
-        const user = data.user;
-        const stringifyUser = JSON.stringify(user);
-        localStorage.setItem("user", stringifyUser);
-        handleCloseLogin();
-      });
-  } catch (error) {
-    console.log(error);
-  }
+    };
+    async function login() {
+      try {
+        const registerRes = await fetch("http://localhost:4000/login", opts);
+
+        const data = await registerRes.json();
+        if (registerRes.status === 400) {
+          setErrorMessage(data);
+          setFailed(true);
+          setRed("red");
+          setShake(sk);
+        } else {
+          handleCloseLogin();
+          localStorage.setItem("token", data.accessToken);
+          const user = data.user;
+          const stringifyUser = JSON.stringify(user);
+          localStorage.setItem("user", stringifyUser);
+        }
+      } catch (error) {}
+    }
+login()
     
   };
   return (
@@ -58,6 +69,10 @@ const Login = ({ closeLogin, openRegister }) => {
       </div>
       <form className={classes.loginForm} onSubmit={handleSubmit}>
         <input
+          style={{
+            color: `${red}`,
+            animation: `${shake}`,
+          }}
           className={classes.textBox}
           type="text"
           placeholder="Email address *"
@@ -67,6 +82,10 @@ const Login = ({ closeLogin, openRegister }) => {
         />
 
         <input
+          style={{
+            color: `${red}`,
+            animation: `${shake}`,
+          }}
           className={classes.textBox}
           type="password"
           placeholder="Password *"
@@ -75,6 +94,7 @@ const Login = ({ closeLogin, openRegister }) => {
           onChange={(e) => handleChange(e)}
         />
 
+          <br/>
         <div className={classes.inputInfo}>
           <div className={classes.checkboxLabel}>
             <input
@@ -92,7 +112,10 @@ const Login = ({ closeLogin, openRegister }) => {
             </p>
           </div>
         </div>
+        <br/>
 
+        {!failed && <div className={classes.error}> </div>}
+          {failed && <div className={classes.error}>{errorMessage}</div>}
         <button className={classes.loginButton} type="submit">
           LOG IN
         </button>

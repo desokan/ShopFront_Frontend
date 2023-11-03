@@ -12,7 +12,6 @@ const Register = ({ closeRegister }) => {
     username: "",
   });
 
-  const [status, setStatus] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [failed, setFailed] = useState(false);
   const [red, setRed] = useState("");
@@ -40,7 +39,6 @@ const Register = ({ closeRegister }) => {
         const registerRes = await fetch("http://localhost:4000/users", opts);
 
         const data = await registerRes.json();
-        setStatus(registerRes.status);
         if (registerRes.status === 400) {
           setErrorMessage(data);
           setFailed(true);
