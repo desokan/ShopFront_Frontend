@@ -46,6 +46,7 @@ const SingleCard = ({ product }) => {
       }
     }
     setMyShoppingBag(bag)
+    localStorage.setItem('cart', JSON.stringify(bag));
   }
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>

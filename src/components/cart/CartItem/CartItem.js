@@ -1,13 +1,14 @@
 import classes from "./CartItem.module.css";
 import { ShoppingBag } from "../../../pages/HomePage";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import CloseIcon from "../../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";
 
 const CartItem = () => {
   const { t } = useTranslation();
-
-  const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag);
+  const cartForParse = localStorage.getItem('cart')
+  const shoppingCart = JSON.parse(cartForParse)
+  const [myShoppingBag, setMyShoppingBag] = useState(shoppingCart);
 
   const renderStars = (cartItem) => {
     const stars = [];
