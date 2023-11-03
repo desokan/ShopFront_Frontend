@@ -2,15 +2,25 @@ import React from 'react'
 import classes from './WeeklyFeatured.module.css'
 import BagIcon from '../svgs/BagIcon'
 import { useTranslation } from 'react-i18next'
-import { ShoppingBag } from '../../pages/HomePage'
-import { useContext } from 'react'
+import { ShoppingBag, Wishlist } from '../../pages/HomePage'
+import { useContext, useState,useEffect } from 'react'
+import Heart from '../svgs/Heart'
 
 const SingleCard = ({ product }) => {
   const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag)
-
-  const { name, category, price, rating, imageUrl } = product
+  const [myWishlist, setMyWishlist] = useContext(Wishlist)
+  const [isHeartFilled, setIsHeartFilled] = useState(product.inWishlist);
+  const { name, category, price, rating, imageUrl} = product
 
   const { t } = useTranslation()
+
+  useEffect(() => {
+    const storedWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    setMyWishlist(storedWishlist);
+
+    const isInWishlist = storedWishlist.some(item => item.name === product.name);
+    setIsHeartFilled(isInWishlist);
+  }, []);
 
   const renderStars = () => {
     const stars = []
@@ -46,10 +56,37 @@ const SingleCard = ({ product }) => {
       }
     }
     setMyShoppingBag(bag)
-    localStorage.setItem('cart', JSON.stringify(bag));
+    localStorage.setItem('cart', JSON.stringify(bag))
   }
+
+  const handleAddToWishlist = () => {
+    const list = [...myWishlist];
+    const findItem = list.find((item) => item.name === product.name);
+  
+    if (!findItem) {
+      product.inWishlist = true;
+      list.push(product);
+      setIsHeartFilled(true)
+      console.log(" add product.inWishlist",product.inWishlist)
+    } else {
+      const indexToRemove = list.findIndex((item) => item.name === product.name);
+     
+      product.inWishlist = false;
+        list.splice(indexToRemove, 1);
+        setIsHeartFilled(false)
+        console.log("remove",product.inWishlist)
+      
+    }
+    setMyWishlist(list);
+    localStorage.setItem('wishlist', JSON.stringify(list));
+  }
+
   return (
     <div className={classes.WeeklyFeaturedSingleCard}>
+ <div className={classes.wishListButton} onClick={handleAddToWishlist}>
+ { isHeartFilled ?  <Heart fill='#eba37a'/> : <Heart/>}
+</div>
+
       <div className={classes.WeeklyFeaturedImageContainer}>
         <img
           className={classes.WeeklyFeaturedImage}
