@@ -4,7 +4,8 @@ import Privacy from "./pages/Privacy";
 import { CurrencyProvider } from "./store/CurrencyContext";
 import React, { useState } from "react";
 import i18n from "./i18n";
-import DashbordContainer from "./pages/dashbord/DashbordContainer";
+import Dashboard from "./pages/Dashboard";
+
 
 
 
@@ -27,7 +28,7 @@ const [dashbordNavigation, setDashbordNavigation] = useState('DASHBOARD')
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/dashbord" element={<DashbordContainer />} />
+          <Route path="/dashboard" element={<Dashboard />} />
 
         </Routes>
       </CurrencyProvider>

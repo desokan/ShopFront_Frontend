@@ -1,7 +1,7 @@
 import classes from "./WishlistItemDash.module.css";
 import { Wishlist } from "../../App";
 import { useContext } from "react";
-import CloseIcon from "../../components/svgs/CloseIcon";
+import CloseIcon from "../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";
 
 const WishlistItemDash = () => {
