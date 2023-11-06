@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import classes from "./Wishlist.module.css";
 import BackDrop from "../util/Backdrop";
 import { motion } from "framer-motion";
-import { Wishlist } from "../../pages/HomePage";
+import { Wishlist } from '../../App';
 import { useContext } from "react";
 import CloseIcon from "../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";

@@ -1,10 +1,10 @@
-import classes from "./WishlistItem.module.css";
-import { Wishlist } from "../../../App";
+import classes from "./WishlistItemDash.module.css";
+import { Wishlist } from "../../App";
 import { useContext } from "react";
-import CloseIcon from "../../svgs/CloseIcon";
+import CloseIcon from "../../components/svgs/CloseIcon";
 import { useTranslation } from "react-i18next";
 
-const WishlistItem = () => {
+const WishlistItemDash = () => {
   const { t } = useTranslation();
 
   const [myWishlist, setMyWishlist] = useContext(Wishlist);
@@ -36,7 +36,7 @@ const WishlistItem = () => {
   };
 
   return (
-    <div>
+    <div className={classes.items}>
       {myWishlist.length > 0 &&
         myWishlist.map((cartItem, index) => {
           return (
@@ -46,20 +46,23 @@ const WishlistItem = () => {
               </div>
               <div className={classes.itemsInfo}>
                 <div className={classes.topItemGrid}>
-                  <p>{cartItem.name}</p>
+                 <p>{cartItem.category}</p>
                   <button
                     className={classes.closeLogin}
                     onClick={() => removeItem(index)}
-                  >
+                    >
                     <CloseIcon />
                   </button>
                 </div>
                 <div className={classes.productInfo}>
                   <span>
-                    {t("cart.category")}: {cartItem.category}
+                    <p>{cartItem.name}</p>
                   </span>
                   <span>
                     {t("cart.rating")}: {renderStars(cartItem)}
+                  </span>
+                  <span>
+                €{cartItem.price}
                   </span>
                 </div>
                 
@@ -76,4 +79,4 @@ const WishlistItem = () => {
   );
 };
 
-export default WishlistItem;
+export default WishlistItemDash;

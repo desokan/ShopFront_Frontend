@@ -1,0 +1,85 @@
+.itemContainer {
+    display: flex;
+    flex-direction: column;   
+    cursor: auto;
+    
+  }
+  
+  .topItemGrid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .topItemGrid > p {
+    margin: 0;
+    color: var(--color-second, #767676);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .imgContainer img {
+    width: 320px;
+    height: 330px;
+  }
+  
+  .closeLogin {
+    border: none;
+    background-color: #ffffff;
+    font-size: medium;
+    justify-self: right;
+    cursor: pointer;
+    position: relative;
+    top:-320px;
+    right: 280px;
+  }
+
+  .price {
+    text-align: right;
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .productInfo > span {
+    color: var(--color-head, #222);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+
+  }
+  .productInfo > span>p {
+    margin: 0;
+  }
+  
+  .ProductRatingStar {
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: gray;
+  }
+  
+  .ProductRatingStarFilled {
+    color: #eba37a;
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .itemList{
+    margin-top: 100px;
+width: 100%;
+overflow-y: auto;
+  }
+  .items{
+    display: flex;
+    gap: 20px;
+  }

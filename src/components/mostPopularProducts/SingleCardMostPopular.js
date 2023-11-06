@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './MostPopular.module.css'
 import BagIcon from '../svgs/BagIcon'
 import { useTranslation } from 'react-i18next'
-import { ShoppingBag, Wishlist } from '../../pages/HomePage'
+import { ShoppingBag, Wishlist } from '../../App'
 import { useContext,useState,useEffect } from 'react'
 import Heart from '../svgs/Heart'
 
