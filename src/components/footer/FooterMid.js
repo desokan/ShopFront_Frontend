@@ -20,11 +20,8 @@ const FooterMid = ({ t }) => {
   const handleClick = () => {
     if ("/") {
       window.scrollTo(0, 0);
-      console.log('scrolling up');
     } else {
-      console.log('going to /');
       navigate("/");
-
     }
   };
 
