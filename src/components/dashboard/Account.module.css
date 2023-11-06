@@ -1,0 +1,30 @@
+.nameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-width: 1080px;
+    column-gap: 27px;
+
+}
+
+.nameInputs {
+
+  height: 60px;
+  background: white;
+  border: 2px #e4e4e4 solid;
+  padding-left: 22px;
+  margin-top: 30px;
+
+}
+
+.DisplayNameEmail {
+    display: flex;
+    flex-direction: column;  
+}
+
+form {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+
