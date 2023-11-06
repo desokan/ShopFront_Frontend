@@ -1,12 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import BackDrop from "../util/Backdrop";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import CloseIcon from "../svgs/CloseIcon";
 import classes from './Account.module.css'
+import { DashbordNavigation } from "../../App";
 
 const AccountMenu = ({ closeLogin, openRegister, user }) => {
+  
+  const [dashbordNavigation, setDashbordNavigation] = useContext(DashbordNavigation);
+  const [title, setTitle] = useState(dashbordNavigation);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setDashbordNavigation(title);
+  }, [title,dashbordNavigation]); // Only set title when dashbordNavigation changes
+
   const handleCloseAccount = () => {
     closeLogin(false);
   };
@@ -16,6 +23,12 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
     localStorage.removeItem('user')
     localStorage.removeItem('token')
   }
+
+  const handleClick = (value) => {
+    setDashbordNavigation(value);
+    navigate(`/dashbord`);
+    console.log('title',title);
+  };
 
   return (
     <>
@@ -28,13 +41,12 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
         </button>
       </div>
       <div className={classes.accountContainer}>
-        <h1 className={classes.accountH1}>ACCOUNT DETAILS</h1>
         <ul className={classes.accountUL}>
-          <li className={classes.accountLi}>DASHBORD</li>
-          <li className={classes.accountLi}>ORDERS</li>
-          <li className={classes.accountLi}>SETTINGS</li>
-          <li className={classes.accountLi}>WISHLIST</li>
-          <li className={classes.accountLi} onClick={handleLogout} >
+          <li className={classes.accountLi} value='DASHBORD' onClick={() => handleClick('DASHBORD')}>DASHBORD</li>
+          <li className={classes.accountLi} value='ORDERS' onClick={() => handleClick('ORDERS')}>ORDERS</li>
+          <li className={classes.accountLi} value='ACCOUNT DETAILS' onClick={() => handleClick('ACCOUNT DETAILS')}>ACCOUNT DETAILS</li>
+          <li className={classes.accountLi} value='WISHLIST' onClick={() => handleClick('WISHLIST')}>WISHLIST</li>
+          <li className={classes.accountLi} onClick={handleLogout}>
             LOGOUT
           </li>
         </ul>
