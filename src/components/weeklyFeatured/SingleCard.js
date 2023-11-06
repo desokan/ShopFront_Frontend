@@ -67,14 +67,13 @@ const SingleCard = ({ product }) => {
       product.inWishlist = true;
       list.push(product);
       setIsHeartFilled(true)
-      console.log(" add product.inWishlist",product.inWishlist)
+
     } else {
       const indexToRemove = list.findIndex((item) => item.name === product.name);
      
       product.inWishlist = false;
         list.splice(indexToRemove, 1);
         setIsHeartFilled(false)
-        console.log("remove",product.inWishlist)
       
     }
     setMyWishlist(list);

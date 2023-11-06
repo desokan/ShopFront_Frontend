@@ -24,7 +24,7 @@ const DashboardComponent = () => {
     localStorage.removeItem('user')
     navigate('/')
   }
-  console.log('user', user)
+
   const rightContent = () => {
     if (title === 'ORDERS') {
       return <Orders />

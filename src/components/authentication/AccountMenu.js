@@ -27,7 +27,6 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
   const handleClick = (value) => {
     setDashbordNavigation(value);
     navigate(`/dashboard`);
-    console.log('title',title);
   };
 
   return (
