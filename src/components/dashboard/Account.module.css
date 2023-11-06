@@ -2,14 +2,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    min-width: 1080px;
+    min-width: 600px;
     column-gap: 27px;
 
 }
 
 .nameInputs {
 
-  height: 60px;
+  height: 40px;
   background: white;
   border: 2px #e4e4e4 solid;
   padding-left: 22px;
@@ -28,3 +28,18 @@ form {
 }
 
 
+.submit{
+    margin-top: 32px;
+    width: 300px;
+height: 60px;
+flex-shrink: 0;
+background: var(--color-head, #222);
+color: var(--color-white, #FFF);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+border: 0;
+}
+#noMargin{
+    margin: 0;
+}

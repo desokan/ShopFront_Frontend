@@ -1,19 +1,19 @@
-import { useState } from "react";
-import classes from "./Account.module.css";
+import { useState } from 'react'
+import classes from './Account.module.css'
 
 const Account = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    displayName: "",
-    emailAddress: "",
-    currentPassword: "",
-    newPassword: "",
-    confirmPassword: "",
-  });
+    firstName: '',
+    lastName: '',
+    displayName: '',
+    emailAddress: '',
+    currentPassword: '',
+    newPassword: '',
+    confirmPassword: ''
+  })
 
   function handleChange(e) {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   }
   return (
     <form>
@@ -54,21 +54,22 @@ const Account = () => {
         />
         <h4> PASSWORD CHANGE</h4>
         <input
+        id={classes.noMargin}
           type="text"
           className={classes.nameInputs}
           placeholder="Current Password"
           value={formData.currentPassword}
           name="currentPassword"
           onChange={(e) => handleChange(e)}
-        />{" "}
+        />{' '}
         <input
           type="text"
           className={classes.nameInputs}
           placeholder="New Password"
           value={formData.newPassword}
-          name="emailAddress"
+          name="newPassword"
           onChange={(e) => handleChange(e)}
-        />{" "}
+        />{' '}
         <input
           type="text"
           className={classes.nameInputs}
@@ -78,7 +79,10 @@ const Account = () => {
           onChange={(e) => handleChange(e)}
         />
       </div>
+      <button type="submit" className={classes.submit}>
+        SAVE CHANGES
+      </button>
     </form>
-  );
-};
-export default Account;
+  )
+}
+export default Account
