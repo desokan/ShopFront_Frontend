@@ -256,7 +256,8 @@
 		  "category": "Makeup",
 		  "price": 29,
 		  "rating": 4,
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
 		  "name": "MOISTURIZING SKIN CREAM",
@@ -264,7 +265,8 @@
 		  "category": "Skincare",
 		  "price": 35,
 		  "rating": 5,
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
 		  "name": "EYE ENHANCING MASCARA",
@@ -272,7 +274,8 @@
 		  "category": "Makeup",
 		  "price": 15,
 		  "rating": 3,
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
 		  "name": "HYDRATING FACIAL CLEANSER",
@@ -280,7 +283,8 @@
 		  "category": "Skincare",
 		  "price": 20,
 		  "rating": 4,
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		}
 	  ]
 	},
@@ -304,94 +308,104 @@
 	  ],
 	  "products": [
 		{
-		  "name": "Anti-Aging Face Cream",
+		  "name": "ANTI-AGING FACE CREAM",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
 		  "category": "Skincare",
 		  "price": 30,
 		  "rating": 4,
 		  "mainCategory": "FACE",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Eye Makeup Remover",
+		  "name": "EYE MAKEUP REMOVER",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
 		  "category": "Makeup",
 		  "price": 12,
 		  "rating": 5,
 		  "mainCategory": "EYES",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Matte Lipstick",
+		  "name": "MATTE LIPSTICK",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
 		  "category": "Lipstick",
 		  "price": 15,
 		  "rating": 4,
 		  "mainCategory": "LIPS",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Hydrating Face Serum",
+		  "name": "HYDRATING FACE SERUM",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
 		  "category": "Skincare",
 		  "price": 25,
 		  "rating": 4,
 		  "mainCategory": "FACE",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Eyeshadow Palette",
+		  "name": "EYESHADOW PALETTE",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
 		  "category": "Makeup",
 		  "price": 18,
 		  "rating": 4,
 		  "mainCategory": "EYES",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Lip Balm Set",
+		  "name": "LIP BALM SET",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
 		  "category": "Lip Care",
 		  "price": 10,
 		  "rating": 5,
 		  "mainCategory": "LIPS",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Moisturizing Day Cream",
+		  "name": "MOISTURIZING DAY CREAM",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
 		  "category": "Skincare",
 		  "price": 20,
 		  "rating": 4,
 		  "mainCategory": "FACE",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Waterproof Mascara",
+		  "name": "WATERPROOF MASCARA",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
 		  "category": "Makeup",
 		  "price": 14,
 		  "rating": 4,
 		  "mainCategory": "EYES",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Lip Gloss Set",
+		  "name": "LIP GLOSS SET",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
 		  "category": "Lipstick",
 		  "price": 22,
 		  "rating": 5,
 		  "mainCategory": "LIPS",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		},
 		{
-		  "name": "Facial Cleanser",
+		  "name": "FACIAL CLEANSER",
 		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
 		  "category": "Skincare",
 		  "price": 16,
 		  "rating": 4,
 		  "mainCategory": "FACE",
-		  "quantity":0
+		  "quantity":0,
+		  "inWishlist":false
 		}
 	  ]
 	},
@@ -424,6 +438,13 @@
 		"viewCart": "VIEW CART",
 		"checkout": "CHECKOUT",
 		"empty":"Your cart is empty!"
+	},
+	"wishlist":{
+		"wishlist":"WISHLIST",
+		"category":"Category",
+		"rating":"Rating",
+		"viewWishlist": "VIEW WISHLIST",
+		"empty":"Your wishlist is empty!"
 	},
 	"chatbox": {
 	  "messages": {

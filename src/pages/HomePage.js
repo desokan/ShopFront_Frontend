@@ -15,9 +15,13 @@ const HomePage = () => {
   const cartForParse = localStorage.getItem("cart");
   const shoppingCart = JSON.parse(cartForParse) || [];
   const [myShoppingBag, setMyShoppingBag] = useState(shoppingCart);
+  const wishlistForParse = localStorage.getItem("wishlist");
+  const wishlist = JSON.parse(wishlistForParse) || [];
+  const [myWishlist, setMyWishlist] = useState(wishlist);
   
   return (
     <>
+    <Wishlist.Provider value={[myWishlist, setMyWishlist]}>
       <ShoppingBag.Provider value={[myShoppingBag, setMyShoppingBag]}>
         <Language.Provider value={[selectedLanguage, setSelectedLanguage]}>
           <NavBar />
@@ -31,6 +35,7 @@ const HomePage = () => {
           <ChatBox />
         </Language.Provider>
       </ShoppingBag.Provider>
+      </Wishlist.Provider>
     </>
   );
 };
@@ -38,3 +43,4 @@ const HomePage = () => {
 export default HomePage;
 export const Language = React.createContext();
 export const ShoppingBag = React.createContext();
+export const Wishlist = React.createContext();

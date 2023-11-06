@@ -105,7 +105,10 @@
   cursor: pointer;
 }
 
-.WeeklyFeaturedSingleCard:hover .WeeklyFeaturedAddToCartButton {
+.WeeklyFeaturedSingleCard:hover .WeeklyFeaturedAddToCartButton  {
+  opacity: 1;
+}
+.WeeklyFeaturedSingleCard:hover .wishListButton  {
   opacity: 1;
 }
 
@@ -130,4 +133,18 @@
   margin-left: 15px;
   padding-top: 5px;
   text-transform: uppercase;
+}
+.wishListButton{
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30px;
+  left: 170px;
+opacity: 0;
+  cursor: pointer;
+
 }

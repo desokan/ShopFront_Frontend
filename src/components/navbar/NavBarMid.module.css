@@ -47,10 +47,45 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 32px;
+  right: 71px;
   top: 13px;
 }
 .noCartItemNumber{
+  display: flex;
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  color: transparent;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 32px;
+  top: 13px;
+  visibility: hidden;
+}
+.wishlistNumber {
+  display: flex;
+  background-color: #eba37a;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 118px;
+  top: 13px;
+}
+.noWishlistNumber{
   display: flex;
   background-color: transparent;
   height: 16px;

@@ -256,7 +256,8 @@
         "category": "Trucco",
         "price": 29,
         "rating": 4,
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
         "name": "CREMA IDRATANTE PER LA PELLE",
@@ -264,7 +265,8 @@
         "category": "Cura della pelle",
         "price": 35,
         "rating": 5,
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
         "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
@@ -272,7 +274,8 @@
         "category": "Trucco",
         "price": 15,
         "rating": 3,
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
         "name": "DETERGENTE VISO IDRATANTE",
@@ -280,7 +283,8 @@
         "category": "Cura della pelle",
         "price": 20,
         "rating": 4,
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       }
     ]
   },
@@ -304,94 +308,104 @@
     ],
     "products": [
       {
-        "name": "Crema Viso Anti-età",
+        "name": "CREMA VISO ANTI-ETÁ",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
         "category": "Cura della Pelle",
         "price": 30,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Struccante Occhi",
+        "name": "STRUCCANTE OCCHI",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
         "category": "Trucco",
         "price": 12,
         "rating": 5,
         "mainCategory": "OCCHI",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Rossetto Opaco",
+        "name": "ROSSETTO OPACO",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
         "category": "Rossetto",
         "price": 15,
         "rating": 4,
         "mainCategory": "LABBRA",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Siero Idratante Viso",
+        "name": "SIERO IDRATANTE VISO",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
         "category": "Cura della Pelle",
         "price": 25,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Palette Ombretti",
+        "name": "PALETTE OMBERTTI",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
         "category": "Trucco",
         "price": 18,
         "rating": 4,
         "mainCategory": "OCCHI",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Set di Balsami Labbra",
+        "name": "SET DI BALSAMI LABBRA",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
         "category": "Cura delle Labbra",
         "price": 10,
         "rating": 5,
         "mainCategory": "LABBRA",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Crema Idratante Giorno",
+        "name": "CREAM IDRATANTE GIORNO",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
         "category": "Cura della Pelle",
         "price": 20,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Mascara Waterproof",
+        "name": "MASCARA WATERPROOF",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
         "category": "Trucco",
         "price": 14,
         "rating": 4,
         "mainCategory": "OCCHI",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Set di Lucidalabbra",
+        "name": "SET DI LUCODALABBRA",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
         "category": "Rossetto",
         "price": 22,
         "rating": 5,
         "mainCategory": "LABBRA",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       },
       {
-        "name": "Detergente Viso",
+        "name": "DETERGENTE VISO",
         "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
         "category": "Cura della Pelle",
         "price": 16,
         "rating": 4,
         "mainCategory": "VISO",
-        "quantity": 0
+        "quantity": 0,
+        "inWishlist":false
       }
     ]
   },
