@@ -4,15 +4,24 @@ import BackDrop from "../util/Backdrop";
 import { motion } from "framer-motion";
 import { Wishlist } from '../../App';
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import CloseIcon from "../svgs/CloseIcon";
 import { useTranslation } from "react-i18next";
 import WishlistItem from "./wishlistItem/WishlistItem";
+import { DashbordNavigation } from "../../App";
 
 const WishList = ({ closeWishlist }) => {
   const { t } = useTranslation();
 
+  const [dashbordNavigation, setDashbordNavigation] = useContext(DashbordNavigation);
+  const [title, setTitle] = useState(dashbordNavigation);
+  const navigate = useNavigate();
+
   const [myWishlist] = useContext(Wishlist);
   const [emptyWishlist, setEmptyWishlist] = useState("");
+  const [hasToken, setHasToken]= useState('')
+
+  const token = localStorage.getItem('token')
 
   const handleCloseCart = () => {
     closeWishlist(false);
@@ -22,7 +31,16 @@ const WishList = ({ closeWishlist }) => {
     if (myWishlist.length === 0) {
       setEmptyWishlist(true);
     }
+    if(token){
+      setHasToken(true)
+    }
   }, [myWishlist]);
+
+  const handleClick = (value) => {
+    setDashbordNavigation(value);
+    navigate(`/dashboard`);
+    console.log('title',title);
+  };
 
   return (
     <div>
@@ -60,11 +78,12 @@ const WishList = ({ closeWishlist }) => {
           )}
           {!emptyWishlist && (
             <button
+            onClick={() => handleClick('WISHLIST')}            
               className={
-                emptyWishlist ? classes.checkoutButtonTwo : classes.checkoutButton
+                (emptyWishlist || !hasToken) ? classes.checkoutButtonTwo : classes.checkoutButton
               }
-              type="submit"
-              disabled
+              
+              
             >
               {t('wishlist.wishlist')}
             </button>

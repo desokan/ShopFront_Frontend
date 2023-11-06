@@ -14,8 +14,7 @@
 }
 
 .searchBar {
-  border: solid 1px #e4e4e4;
-  border-radius: 25px;
+
   height: 48px;
   margin: 0 75px;
   display: flex;

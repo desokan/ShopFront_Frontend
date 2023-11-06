@@ -7,8 +7,9 @@ import CartIcon from "../svgs/CartIcon";
 import Container from "../authentication/Container";
 import Register from "../authentication/Register";
 import { useState, useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Cart from "../cart/Cart";
-import { ShoppingBag, Wishlist} from '../../App'
+import { ShoppingBag, Wishlist } from "../../App";
 import WishList from "../wishlist/Wishlist";
 
 const NavBarMid = ({ isVisible }) => {
@@ -22,6 +23,8 @@ const NavBarMid = ({ isVisible }) => {
   const [myWishlist, setMyWishlist] = useState(wishlistContext);
   const [emptyCart, setEmptyCart] = useState(true);
   const [emptyWishList, setEmptyWishlist] = useState(true);
+
+  const navigate = useNavigate();
   const handleLogin = () => {
     setOpenLoginModal(true);
   };
@@ -38,7 +41,7 @@ const NavBarMid = ({ isVisible }) => {
     } else {
       setEmptyCart(false);
     }
-    setMyWishlist(wishlistContext)
+    setMyWishlist(wishlistContext);
     if (myWishlist.length === 0) {
       setEmptyWishlist(true);
     } else {
@@ -46,17 +49,25 @@ const NavBarMid = ({ isVisible }) => {
     }
   }, [myShoppingBag, bagContext, myWishlist, wishlistContext]);
 
+  const handleClick = () => {
+    if ("/dashboard") {
+      navigate("/");
+    } 
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        <LogoSvg fontColor={"#222222"} />
+        <div onClick={handleClick}>
+          <LogoSvg fontColor={"#222222"} />
+        </div>
+
         <div className={classes.searchBar}>
-          <div>
-            <SearchIcon />
-          </div>
+
         </div>
         <div className={classes.icons}>
-          <HeartIcon onClick={handleWishlist}/>
+
+          <HeartIcon onClick={handleWishlist} />
           <UserIcon onClick={handleLogin} />
           <CartIcon onClick={handleCart} />
           {openLoginModal && (
@@ -68,15 +79,17 @@ const NavBarMid = ({ isVisible }) => {
           {openRegisterModal && (
             <Register closeRegister={setOpenRegisterModal} />
           )}
-          {openWishlistModal && 
-          <WishList closeWishlist={setOpenWishlistModal} />
-          }
+          {openWishlistModal && (
+            <WishList closeWishlist={setOpenWishlistModal} />
+          )}
           <div
-              onClick={setOpenWishlistModal}
-              className={emptyWishList ? classes.noWishlistNumber : classes.wishlistNumber}
-            >
-              {wishlistContext.length}
-            </div>
+            onClick={setOpenWishlistModal}
+            className={
+              emptyWishList ? classes.noWishlistNumber : classes.wishlistNumber
+            }
+          >
+            {wishlistContext.length}
+          </div>
           {openCartModal && <Cart setOpenCartModal={setOpenCartModal} />}
           <div
             onClick={setOpenCartModal}
@@ -86,7 +99,6 @@ const NavBarMid = ({ isVisible }) => {
           >
             {bagContext.length}
           </div>
-       
         </div>
       </div>
     </div>

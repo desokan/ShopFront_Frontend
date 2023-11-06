@@ -1,6 +1,7 @@
 import classes from "./FooterMid.module.css";
 import LogoSvg from "../svgs/LogoSvg.js";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Twitter,
   Facebook,
@@ -10,16 +11,21 @@ import {
 } from "../svgs/social-icons";
 import { Link } from "react-router-dom";
 
-
-const FooterMid = ({t}) => {
-
+const FooterMid = ({ t }) => {
+  const navigate = useNavigate();
   const [subscriber, setSubscriber] = useState();
 
-  const baseUrl = 'http://localhost:4000'
+  const baseUrl = "http://localhost:4000";
 
   const handleClick = () => {
-    window.location.reload();
-    window.scrollTo(0, 0);
+    if ("/") {
+      window.scrollTo(0, 0);
+      console.log('scrolling up');
+    } else {
+      console.log('going to /');
+      navigate("/");
+
+    }
   };
 
   const postSubscriber = (e) => {
@@ -35,11 +41,8 @@ const FooterMid = ({t}) => {
       body: JSON.stringify(newSubscriber),
     };
 
-    fetch(`${baseUrl}/subscribers`, options).then((res) =>
-      res.json()
-    );
+    fetch(`${baseUrl}/subscribers`, options).then((res) => res.json());
     setSubscriber("");
-
   };
 
   const handleSubscriber = (e) => {
@@ -109,7 +112,7 @@ const FooterMid = ({t}) => {
               <li>{t("footer.Help.Return")}</li>
               <li>
                 <a href="/privacy" target="_blank">
-                {t("footer.Help.Legal&Privacy")}
+                  {t("footer.Help.Legal&Privacy")}
                 </a>
               </li>
               <li>{t("footer.Help.GiftCard")}</li>
@@ -117,11 +120,9 @@ const FooterMid = ({t}) => {
           </div>
         </div>
         <div className={classes.titles}>
-          <h4>  {t("footer.Subscribe.Subscribe")}</h4>
+          <h4> {t("footer.Subscribe.Subscribe")}</h4>
           <div className={classes.subscribe}>
-            <p>
-            {t("footer.Subscribe.CallToAction")}
-            </p>
+            <p>{t("footer.Subscribe.CallToAction")}</p>
             <form onSubmit={postSubscriber}>
               <div className={classes.subscribeContainer}>
                 <input
@@ -131,7 +132,9 @@ const FooterMid = ({t}) => {
                   type="email"
                   placeholder={t("footer.Subscribe.Email")}
                 />
-                <button className={classes.subscribeButton}>{t("footer.Subscribe.Join")}</button>
+                <button className={classes.subscribeButton}>
+                  {t("footer.Subscribe.Join")}
+                </button>
               </div>
             </form>
           </div>
