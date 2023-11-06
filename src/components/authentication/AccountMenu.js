@@ -12,7 +12,7 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
 
   useEffect(() => {
     setDashbordNavigation(title);
-  }, [title,dashbordNavigation]); // Only set title when dashbordNavigation changes
+  }, [title,dashbordNavigation]);
 
   const handleCloseAccount = () => {
     closeLogin(false);
@@ -26,7 +26,7 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
 
   const handleClick = (value) => {
     setDashbordNavigation(value);
-    navigate(`/dashbord`);
+    navigate(`/dashboard`);
     console.log('title',title);
   };
 

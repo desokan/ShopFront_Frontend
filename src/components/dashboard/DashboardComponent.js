@@ -7,7 +7,7 @@ import Addresses from './Addresses'
 import Account from './Account'
 import Wishlist from './Wishlist'
 
-const Dashbord = () => {
+const DashboardComponent = () => {
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem('user') || {})
   )
@@ -116,4 +116,4 @@ const Dashbord = () => {
   )
 }
 
-export default Dashbord
+export default DashboardComponent
