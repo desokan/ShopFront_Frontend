@@ -55,7 +55,7 @@ const Account = () => {
         <h4> PASSWORD CHANGE</h4>
         <input
           type="text"
-          className={classes.currentPassword}
+          className={classes.nameInputs}
           placeholder="Current Password"
           value={formData.currentPassword}
           name="currentPassword"
@@ -63,7 +63,7 @@ const Account = () => {
         />{" "}
         <input
           type="text"
-          className={classes.newPassword}
+          className={classes.nameInputs}
           placeholder="New Password"
           value={formData.newPassword}
           name="emailAddress"
@@ -71,7 +71,7 @@ const Account = () => {
         />{" "}
         <input
           type="text"
-          className={classes.confirmPassword}
+          className={classes.nameInputs}
           placeholder="Confirm Password"
           value={formData.confirmPassword}
           name="confirmPassword"
