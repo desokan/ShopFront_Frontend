@@ -1,0 +1,63 @@
+.tableContainer {
+  width: 600px;
+  display: grid;
+padding-top: 150px;
+padding-bottom: 50px;
+}
+
+.ordersTable {
+  width: 100%;
+  height: 100%;
+  background: #e4e4e4;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  height: 50px;
+  align-items: center;
+}
+
+.ordersList {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  height: 110px;
+  align-items: center;
+  border: 1px solid #e4e4e4;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.titles {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.info {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.submit {
+  height: 40px;
+  width: 60px;
+  flex-shrink: 0;
+  background: var(--color-head, #222);
+  color: var(--color-white, #fff);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  border: 0;
+  text-decoration: none;
+}
