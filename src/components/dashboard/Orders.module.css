@@ -1,13 +1,12 @@
 .tableContainer {
-  width: 600px;
-  display: grid;
+  min-width: 600px;
+width: 100%;
 padding-top: 150px;
 padding-bottom: 50px;
 }
 
 .ordersTable {
   width: 100%;
-  height: 100%;
   background: #e4e4e4;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
