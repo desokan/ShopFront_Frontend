@@ -5,7 +5,6 @@ import translationsInEng from '../locales/en/translation.json';
 import translationsInFrench from '../locales/fr/translation.json';
 import translationsInItalian from '../locales/it/translation.json';
 
-// the translations
 const resources = {
   en: {
     translation: translationsInEng
