@@ -37,6 +37,7 @@ const WishList = ({ closeWishlist }) => {
   }, [myWishlist]);
 
   const handleClick = (value) => {
+    console.log('clicked')
     setDashbordNavigation(value);
     navigate(`/dashboard`);
   };

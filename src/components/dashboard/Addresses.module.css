@@ -1,0 +1,46 @@
+.container{
+margin-top: 65px;
+}
+.addressContainer{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    color:  #222;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
+.billingAddress, .shippingAddress{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.addressType{
+    color: #222;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 0;
+}
+.addressLine{
+    color: var(--color-head, #222);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.edit{
+    height: 50px;
+    color: var(--color-head, #222);
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 184.615% */
+margin: 50px;
+margin-top: 0;
+cursor: pointer;
+text-decoration: underline;
+}
