@@ -37,7 +37,6 @@ const WishList = ({ closeWishlist }) => {
   }, [myWishlist]);
 
   const handleClick = (value) => {
-    console.log('clicked')
     setDashbordNavigation(value);
     navigate(`/dashboard`);
   };
@@ -76,7 +75,7 @@ const WishList = ({ closeWishlist }) => {
               {t('wishlist.viewWishlist')}
             </button>
           )}
-          {!emptyWishlist && (
+          {!emptyWishlist && hasToken && (
             <button
             onClick={() => handleClick('WISHLIST')}            
               className={

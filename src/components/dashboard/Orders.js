@@ -3,28 +3,28 @@ import classes from "./Orders.module.css";
 const Orders = () => {
   const orderListData = [
     {
-      oderId: 2418,
+      orderId: 2418,
       orderDate: "October 27, 2023",
       orderStatus: "Completed",
       orderTotal: 100.65,
       orderItemsCount: 3,
     },
     {
-      oderId: 2419,
+      orderId: 2419,
       orderDate: "November 2, 2023",
       orderStatus: "Canceled",
       orderTotal: 20.65,
       orderItemsCount: 1,
     },
     {
-      oderId: 2420,
+      orderId: 2420,
       orderDate: "November 3, 2023",
       orderStatus: "In Transit",
       orderTotal: 30.65,
       orderItemsCount: 2,
     },
     {
-      oderId: 2421,
+      orderId: 2421,
       orderDate: "November 8, 2023",
       orderStatus: "On hold",
       orderTotal: 120.65,
@@ -43,11 +43,11 @@ const Orders = () => {
       </div>
       {orderListData.map((item) => {
         return (
-          <div className={classes.ordersList}>
+          <div className={classes.ordersList} key={item.orderId}>
             <div
               className={`${classes.info} ${classes.paddingLeft} ${classes.underline}`}
             >
-              #{item.oderId}
+              #{item.orderId}
             </div>
             <div className={classes.info}>{item.orderDate} </div>
             <div className={classes.info}>{item.orderStatus}</div>

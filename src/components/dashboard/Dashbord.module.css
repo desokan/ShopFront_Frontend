@@ -1,18 +1,28 @@
 .container {
   padding: 0 255px 0 255px;
-  display: flex;
-  flex-direction: row;
-
+  display: grid;
+  grid-template-columns: 330px 1fr;
 }
 .right {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+
 }
-.left{
-    width: 330px;
+
+.overflowX {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: scroll;
+
+}
+.left {
+  width: 330px;
 }
 .title {
   margin-top: 50px;
@@ -23,60 +33,59 @@
   text-transform: uppercase;
 }
 .listItem {
-    margin-bottom: 35px;
-    position: relative;
-    color: #222;
-    text-decoration: none;
-    font-style: normal;
-    line-height: normal;
-    padding-bottom: 5px;
-    list-style: none;
-    font-size: 18px;
-    max-width: 200px;
-    font-weight: 450;
-
+  margin-bottom: 35px;
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding-bottom: 5px;
+  list-style: none;
+  font-size: 18px;
+  max-width: 200px;
+  font-weight: 450;
+  cursor: pointer;
 }
-.listItem:hover{
-    color: #eba37a;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-
+.listItem:hover {
+  color: #eba37a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
 }
-  .listItem:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2.5px;
-    background: #eba37a;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s;
-    margin-left: 10px;
-  }
-  
-  .listItem:hover::before {
-    margin-left: 5px;
-    width: 50%;
-  }
-  .ul{
-    padding: 0;
-  }
-  .rightSectionContainer{
-    display: flex;
-    flex-direction: column;
-  }
-  .userInfo{
-    color: var(--color-head, #222);
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
-  }
-  .span{
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  .rightSectionTextContainer{
-    width: 727px;
-  }
+.listItem:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background: #eba37a;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+  margin-left: 10px;
+}
+
+.listItem:hover::before {
+  margin-left: 5px;
+  width: 50%;
+}
+.ul {
+  padding: 0;
+}
+.rightSectionContainer {
+  display: flex;
+  flex-direction: column;
+}
+.userInfo {
+  color: var(--color-head, #222);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.rightSectionTextContainer {
+  width: 727px;
+}
