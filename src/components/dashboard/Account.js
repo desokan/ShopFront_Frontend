@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import classes from './Account.module.css'
-
+import { useTranslation } from 'react-i18next'
 const Account = () => {
+  const {t} = useTranslation()
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -21,7 +22,7 @@ const Account = () => {
         <input
           type="text"
           className={classes.nameInputs}
-          placeholder="First Name"
+          placeholder={t("accountDetails.first")}
           value={formData.firstName}
           name="firstName"
           onChange={(e) => handleChange(e)}
@@ -29,7 +30,7 @@ const Account = () => {
         <input
           type="text"
           className={classes.nameInputs}
-          placeholder="Last Name"
+          placeholder={t("accountDetails.last")}
           value={formData.lastName}
           name="lastName"
           onChange={(e) => handleChange(e)}
@@ -39,7 +40,7 @@ const Account = () => {
         <input
           type="text"
           className={classes.nameInputs}
-          placeholder="Display Name"
+          placeholder={t("accountDetails.display")}
           value={formData.displayName}
           name="displayName"
           onChange={(e) => handleChange(e)}
@@ -47,17 +48,17 @@ const Account = () => {
         <input
           type="text"
           className={classes.nameInputs}
-          placeholder="Email Address"
+          placeholder={t("accountDetails.email")}
           value={formData.emailAddress}
           name="emailAddress"
           onChange={(e) => handleChange(e)}
         />
-        <h4> PASSWORD CHANGE</h4>
+        <h4>{t("accountDetails.change")}</h4>
         <input
         id={classes.noMargin}
           type="text"
           className={classes.nameInputs}
-          placeholder="Current Password"
+          placeholder={t("accountDetails.current")}
           value={formData.currentPassword}
           name="currentPassword"
           onChange={(e) => handleChange(e)}
@@ -65,7 +66,7 @@ const Account = () => {
         <input
           type="text"
           className={classes.nameInputs}
-          placeholder="New Password"
+          placeholder={t("accountDetails.new")}
           value={formData.newPassword}
           name="newPassword"
           onChange={(e) => handleChange(e)}
@@ -73,14 +74,14 @@ const Account = () => {
         <input
           type="text"
           className={classes.nameInputs}
-          placeholder="Confirm Password"
+          placeholder={t("accountDetails.confirm")}
           value={formData.confirmPassword}
           name="confirmPassword"
           onChange={(e) => handleChange(e)}
         />
       </div>
       <button type="submit" className={classes.submit}>
-        SAVE CHANGES
+      {t("accountDetails.button")}
       </button>
     </form>
   )

@@ -256,7 +256,7 @@
         "price": 29,
         "rating": 4,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "CRÈME HYDRATANTE POUR LA PEAU",
@@ -265,7 +265,7 @@
         "price": 35,
         "rating": 5,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "MASCARA AMPLIFICATEUR DE CILS",
@@ -274,7 +274,7 @@
         "price": 15,
         "rating": 3,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "NETTOYANT VISAGE HYDRATANT",
@@ -283,7 +283,7 @@
         "price": 20,
         "rating": 4,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       }
     ]
   },
@@ -314,7 +314,7 @@
         "rating": 4,
         "mainCategory": "VISAGE",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "DÉMAQUILLANT YEUX",
@@ -324,7 +324,7 @@
         "rating": 5,
         "mainCategory": "YEUX",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "ROUGE À LÈVRES MAT",
@@ -334,7 +334,7 @@
         "rating": 4,
         "mainCategory": "LÈVRES",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "SÉRUM HYDRATANT VISAGE",
@@ -344,7 +344,7 @@
         "rating": 4,
         "mainCategory": "VISAGE",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "PALETTE D'OMBRES À PAUPIÈRES",
@@ -354,7 +354,7 @@
         "rating": 4,
         "mainCategory": "YEUX",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "ENSEMBLE DE BAUMES À LÈVRES",
@@ -364,7 +364,7 @@
         "rating": 5,
         "mainCategory": "LÈVRES",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "CRÈME HYDRATANTE DE JOUR",
@@ -374,7 +374,7 @@
         "rating": 4,
         "mainCategory": "VISAGE",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "MASCARA WATERPROOF",
@@ -384,7 +384,7 @@
         "rating": 4,
         "mainCategory": "YEUX",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "ENSEMBLE DE BRILLANTS À LÈVRES",
@@ -394,7 +394,7 @@
         "rating": 5,
         "mainCategory": "LÈVRES",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "NETTOYANT VISAGE",
@@ -404,7 +404,7 @@
         "rating": 4,
         "mainCategory": "VISAGE",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       }
     ]
   },
@@ -438,6 +438,85 @@
     "viewCart": "VOIR LE PANIER",
     "checkout": "PASSER À LA CAISSE",
     "empty": "Votre panier est vide !"
+  },
+  "wishlist": {
+    "wishlist": "LISTE DE SOUHAITS",
+    "category": "Catégorie",
+    "rating": "Évaluation",
+    "viewWishlist": "VOIR LA LISTE DE SOUHAITS",
+    "empty": "Votre liste de souhaits est vide !"
+  },
+  "account": {
+    "welcome": "BIENVENUE DE NOUVEAU",
+    "dashboard": "TABLEAU DE BORD",
+    "orders": "COMMANDES",
+    "accountDetails": "DÉTAILS DU COMPTE",
+    "wishlist": "LISTE DE SOUHAITS",
+    "logout": "DÉCONNEXION"
+  },
+  "dashboard": {
+    "titles": {
+      "dashboard": "TABLEAU DE BORD",
+      "orders": "COMMANDES",
+      "addresses": "ADRESSES",
+      "accountDetails": "DÉTAILS DU COMPTE",
+      "wishlist": "LISTE DE SOUHAITS",
+      "logout": "DÉCONNEXION"
+    },
+    "main": {
+      "hello": "Bonjour",
+      "line1": "À partir du tableau de bord de votre compte, vous pouvez consulter vos ",
+      "line2": "dernières commandes",
+      "line3": ", gérer vos ",
+      "line4": "adresses de livraison et de facturation",
+      "line5": ", et ",
+      "line6": "modifier votre mot de passe et les détails de votre compte."
+    }
+  },
+
+  "orders": {
+    "table": {
+      "order": "COMMANDE",
+      "date": "DATE",
+      "status": "STATUT",
+      "total": "TOTAL",
+      "actions": "ACTIONS"
+    },
+    "actions": {
+      "view": "VOIR"
+    },
+    "total": {
+      "for": "pour",
+      "item": "article",
+      "items": "articles"
+    },
+    "status": {
+      "completed": "Terminée",
+      "canceled": "Annulée",
+      "transit": "En transit",
+      "hold": "En attente"
+    },
+    "date": {
+      "october": "Octobre",
+      "november": "Novembre"
+    }
+  },
+  "addresses": {
+    "text": "Les adresses suivantes seront utilisées par défaut sur la page de paiement.",
+    "billing": "ADRESSE DE FACTURATION",
+    "shipping": "ADRESSE DE LIVRAISON",
+    "edit": "ÉDITER"
+  },
+  "accountDetails": {
+    "first": "Prénom",
+    "last": "Nom",
+    "display": "Nom d'affichage",
+    "email": "Adresse e-mail",
+    "change": "CHANGEMENT DE MOT DE PASSE",
+    "current": "Mot de passe actuel",
+    "new": "Nouveau mot de passe",
+    "confirm": "Confirmer le mot de passe",
+    "button": "ENREGISTRER LES MODIFICATIONS"
   },
 
   "chatbox": {

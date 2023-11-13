@@ -23,8 +23,7 @@
       "Skincare": "Soins de la peau",
       "Hair": "Cheveux",
       "ShopAll": "Tout Voir"
-    }
-    ,
+    },
     "Help": {
       "Help": "AIUTO",
       "CustomerService": "Servizio Clienti",
@@ -257,7 +256,7 @@
         "price": 29,
         "rating": 4,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "CREMA IDRATANTE PER LA PELLE",
@@ -266,7 +265,7 @@
         "price": 35,
         "rating": 5,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "MASCARA VOLUMIZZANTE PER GLI OCCHI",
@@ -275,7 +274,7 @@
         "price": 15,
         "rating": 3,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "DETERGENTE VISO IDRATANTE",
@@ -284,7 +283,7 @@
         "price": 20,
         "rating": 4,
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       }
     ]
   },
@@ -315,7 +314,7 @@
         "rating": 4,
         "mainCategory": "VISO",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "STRUCCANTE OCCHI",
@@ -325,7 +324,7 @@
         "rating": 5,
         "mainCategory": "OCCHI",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "ROSSETTO OPACO",
@@ -335,7 +334,7 @@
         "rating": 4,
         "mainCategory": "LABBRA",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "SIERO IDRATANTE VISO",
@@ -345,7 +344,7 @@
         "rating": 4,
         "mainCategory": "VISO",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "PALETTE OMBERTTI",
@@ -355,7 +354,7 @@
         "rating": 4,
         "mainCategory": "OCCHI",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "SET DI BALSAMI LABBRA",
@@ -365,7 +364,7 @@
         "rating": 5,
         "mainCategory": "LABBRA",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "CREAM IDRATANTE GIORNO",
@@ -375,7 +374,7 @@
         "rating": 4,
         "mainCategory": "VISO",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "MASCARA WATERPROOF",
@@ -385,7 +384,7 @@
         "rating": 4,
         "mainCategory": "OCCHI",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "SET DI LUCODALABBRA",
@@ -395,7 +394,7 @@
         "rating": 5,
         "mainCategory": "LABBRA",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       },
       {
         "name": "DETERGENTE VISO",
@@ -405,7 +404,7 @@
         "rating": 4,
         "mainCategory": "VISO",
         "quantity": 0,
-        "inWishlist":false
+        "inWishlist": false
       }
     ]
   },
@@ -439,6 +438,84 @@
     "viewCart": "VISUALIZZA CARRELLO",
     "checkout": "VAI AL PAGAMENTO",
     "empty": "Il tuo carrello è vuoto!"
+  },
+  "wishlist": {
+    "wishlist": "LISTA DEI DESIDERI",
+    "category": "Categoria",
+    "rating": "Valutazione",
+    "viewWishlist": "VEDI LA LISTA DEI DESIDERI",
+    "empty": "La tua lista dei desideri è vuota!"
+  },
+  "account": {
+    "welcome": "BENTORNATO",
+    "dashboard": "CRUSCOTTO",
+    "orders": "ORDINI",
+    "accountDetails": "DETTAGLI ACCOUNT",
+    "wishlist": "LISTA DEI DESIDERI",
+    "logout": "LOGOUT"
+  },
+  "dashboard": {
+    "titles": {
+      "dashboard": "CRUSCOTTO",
+      "orders": "ORDINI",
+      "addresses": "INDIRIZZI",
+      "accountDetails": "DETTAGLI ACCOUNT",
+      "wishlist": "LISTA DEI DESIDERI",
+      "logout": "LOGOUT"
+    },
+    "main": {
+      "hello": "Ciao",
+      "line1": "Dal cruscotto del tuo account puoi vedere i tuoi",
+      "line2": "ordini recenti",
+      "line3": ", gestire i tuoi",
+      "line4": "indirizzi di spedizione e fatturazione",
+      "line5": ", e",
+      "line6": "modificare la tua password e i dettagli del tuo account."
+    }
+  },
+  "orders": {
+    "table": {
+      "order": "ORDINE",
+      "date": "DATA",
+      "status": "STATO",
+      "total": "TOTALE",
+      "actions": "AZIONI"
+    },
+    "actions": {
+      "view": "VISTA"
+    },
+    "total": {
+      "for": "per",
+      "item": "articolo",
+      "items": "articoli"
+    },
+    "status": {
+      "completed": "Completato",
+      "canceled": "Annullato",
+      "transit": "In transito",
+      "hold": "In attesa"
+    },
+    "date": {
+      "october": "Ottobre",
+      "november": "Novembre"
+    }
+  },
+  "addresses": {
+    "text": "I seguenti indirizzi saranno utilizzati di default sulla pagina di checkout.",
+    "billing": "INDIRIZZO DI FATTURAZIONE",
+    "shipping": "INDIRIZZO DI SPEDIZIONE",
+    "edit": "MODIFICA"
+  },
+  "accountDetails": {
+    "first": "Nome",
+    "last": "Cognome",
+    "display": "Nome visualizzato",
+    "email": "Indirizzo email",
+    "change": "CAMBIO PASSWORD",
+    "current": "Password attuale",
+    "new": "Nuova password",
+    "confirm": "Conferma password",
+    "button": "SALVA MODIFICHE"
   },
 
   "chatbox": {

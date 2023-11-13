@@ -1,477 +1,550 @@
 {
-	"footer": {
-	  "Top": {
-		"DeliveryTitle": "FAST AND FREE DELIVERY",
-		"DeliveryInfo": "Free delivery for all orders over $140",
-		"SupportTitle": "24/7 CUSTOMER SUPPORT",
-		"SupportInfo": "Friendly 24/7 customer support",
-		"ReturnTitle": "MONEY BACK GUARANTEE",
-		"ReturnInfo": "We return money within 30 days"
-	  },
-	  "Company": {
-		"Company": "COMPANY",
-		"About": "About Us",
-		"Home": "Home",
-		"Careers": "Careers",
-		"Shipping": "Delivery & Shipping",
-		"Contact": "Contact Us"
-	  },
-	  "Shop": {
-		"Shop": "SHOP",
-		"Arrivals": "New Arrivals",
-		"Makeup": "Makeup",
-		"Skincare": "Skincare",
-		"Hair": "Hair",
-		"ShopAll": "Shop All"
-	  },
-	  "Help": {
-		"Help": "HELP",
-		"CustomerService": "Customer Service",
-		"Account": "My Account",
-		"TrackOrder": "Track Order",
-		"Return": "Return Portal",
-		"Legal&Privacy": "Legal & Privacy",
-		"GiftCard": "Gift Card"
-	  },
-	  "Subscribe": {
-		"Subscribe": "SUBSCRIBE",
-		"CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
-		"Email": "Your email address",
-		"Join": "JOIN"
-	  },
-	  "Bottom": {
-		"Language": "LANGUAGE",
-		"Currency": "CURRENCY",
-		"LanguageTranslation": "English"
-	  }
-	},
-	"navbar": {
-	  "top": {
-		"Shipping": "SHIPPING",
-		"Contact": "CONTACT"
-	  },
-	  "bottom": {
-		"productMenus": [
-		  {
-			"category": "MAKEUP",
-			"subCategory": [
-			  {
-				"name": "Popular",
-				"link": "/popular"
-			  },
-			  {
-				"name": "Face",
-				"link": "/face"
-			  },
-			  {
-				"name": "Eyes",
-				"link": "/eye"
-			  },
-			  {
-				"name": "Lips",
-				"link": "/lips"
-			  },
-			  {
-				"name": "Cheeks",
-				"link": "/cheeks"
-			  },
-			  {
-				"name": "New",
-				"link": "/new"
-			  }
-			]
-		  },
-		  {
-			"category": "SKINCARE",
-			"subCategory": [
-			  {
-				"name": "All",
-				"link": "/all"
-			  },
-			  {
-				"name": "Moisturizers",
-				"link": "/moisturizers"
-			  },
-			  {
-				"name": "Cleansers",
-				"link": "/cleansers"
-			  },
-			  {
-				"name": "Treatments",
-				"link": "/treatments"
-			  },
-			  {
-				"name": "Masks",
-				"link": "/masks"
-			  },
-			  {
-				"name": "Sunscreen",
-				"link": "/sunscreen"
-			  }
-			]
-		  },
-		  {
-			"category": "HAIR",
-			"subCategory": [
-			  {
-				"name": "Shampoo",
-				"link": "/shampoo"
-			  },
-			  {
-				"name": "Conditioners",
-				"link": "/conditioners"
-			  },
-			  {
-				"name": "Treatments",
-				"link": "/treatments"
-			  },
-			  {
-				"name": "Styling",
-				"link": "/styling"
-			  },
-			  {
-				"name": "Tools",
-				"link": "/tools"
-			  }
-			]
-		  },
-		  {
-			"category": "FRAGRANCE",
-			"subCategory": [
-			  {
-				"name": "Women",
-				"link": "/women"
-			  },
-			  {
-				"name": "Men",
-				"link": "/men"
-			  },
-			  {
-				"name": "Unisex",
-				"link": "/unisex"
-			  },
-			  {
-				"name": "Candles",
-				"link": "/candles"
-			  }
-			]
-		  },
-		  {
-			"category": "SALE",
-			"subCategory": [
-			  {
-				"name": "Makeup",
-				"link": "/sale-makeeup"
-			  },
-			  {
-				"name": "Skincare",
-				"link": "/sale-skincare"
-			  },
-			  {
-				"name": "Hair care",
-				"link": "/sale-haircare"
-			  },
-			  {
-				"name": "Fragrance",
-				"link": "/sale-fragrance"
-			  }
-			]
-		  }
-		]
-	  }
-	},
-	"heroBanner": {
-	  "banners": [
-		{
-		  "glow": "NATURAL",
-		  "bannerText": "Beaux products protect and nourish your skin with a range of lotions, day creams, night creams, tinted moisturizers, and more.",
-		  "more": "VIEW MORE",
-		  "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
-		},
-		{
-		  "glow": "GLOWING SKIN",
-		  "bannerText": "Discover the power of Beaux products to moisturize and revitalize your skin. Our range includes lotions, day creams, night creams, tinted moisturizers, and more.",
-		  "more": "VIEW MORE",
-		  "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
-		},
-		{
-		  "glow": "NATURAL GLOW",
-		  "bannerText": "Experience the magic of Beaux products in moisturizing and rejuvenating your skin. Explore our selection of lotions, day creams, night creams, tinted moisturizers, and more.",
-		  "more": "VIEW MORE",
-		  "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
-		}
-	  ]
-	},
-	"weeklyFeatured": {
-	  "add": "ADD TO CART",
-	  "products": "WEEKLY FEATURED PRODUCTS",
-	  "premiumTitle": "The World's Premium Brands In One Destination."
-	},
-	"weeklySingleCard": {
-	  "add": "ADD TO CART",
-	  "makeup": "Makeup",
-	  "detail": "RADIANT LIFT FOUNDATION"
-	},
-	"preferredSingleCard": {
-	  "add": "ADD TO CART",
-	  "category": "makeup",
-	  "subCategory": [
-		{
-		  "name": "Lipstick",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
-		},
-		{
-		  "name": "Foundation",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
-		},
-		{
-		  "name": "Mascara",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
-		},
-		{
-		  "name": "Skincare",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
-		}
-	  ]
-	},
-	"recentsSingleCard": {
-	  "add": "ADD TO CART",
-	  "makeup": "Makeup",
-	  "detail": "RADIANT LIFT FOUNDATION"
-	},
-	"mostPreferred": {
-	  "add": "ADD TO CART",
-	  "categories": "MOST PREFERRED CATEGORIES",
-	  "premium": "The World's Premium Brands In One Destination."
-	},
-	"recentlyViewed": {
-	  "add": "ADD TO CART",
-	  "recentlyViewed": "RECENTLY VIEWED",
-	  "stillInterested": "Are you still interested in these products?",
-  
-	  "products": [
-		{
-		  "name": "RADIANT LIFT FOUNDATION",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028",
-		  "category": "Makeup",
-		  "price": 29,
-		  "rating": 4,
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "MOISTURIZING SKIN CREAM",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-		  "category": "Skincare",
-		  "price": 35,
-		  "rating": 5,
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "EYE ENHANCING MASCARA",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
-		  "category": "Makeup",
-		  "price": 15,
-		  "rating": 3,
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "HYDRATING FACIAL CLEANSER",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
-		  "category": "Skincare",
-		  "price": 20,
-		  "rating": 4,
-		  "quantity":0,
-		  "inWishlist":false
-		}
-	  ]
-	},
-	"mostPopular": {
-	  "add": "ADD TO CART",
-	  "title": "MOST POPULAR",
-	  "subTitle": "The World's Premium Brands In One Destination.",
-	  "tabs": [
-		{
-		  "tabName": "ALL"
-		},
-		{
-		  "tabName": "FACE"
-		},
-		{
-		  "tabName": "EYES"
-		},
-		{
-		  "tabName": "LIPS"
-		}
-	  ],
-	  "products": [
-		{
-		  "name": "ANTI-AGING FACE CREAM",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
-		  "category": "Skincare",
-		  "price": 30,
-		  "rating": 4,
-		  "mainCategory": "FACE",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "EYE MAKEUP REMOVER",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
-		  "category": "Makeup",
-		  "price": 12,
-		  "rating": 5,
-		  "mainCategory": "EYES",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "MATTE LIPSTICK",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
-		  "category": "Lipstick",
-		  "price": 15,
-		  "rating": 4,
-		  "mainCategory": "LIPS",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "HYDRATING FACE SERUM",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
-		  "category": "Skincare",
-		  "price": 25,
-		  "rating": 4,
-		  "mainCategory": "FACE",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "EYESHADOW PALETTE",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
-		  "category": "Makeup",
-		  "price": 18,
-		  "rating": 4,
-		  "mainCategory": "EYES",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "LIP BALM SET",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
-		  "category": "Lip Care",
-		  "price": 10,
-		  "rating": 5,
-		  "mainCategory": "LIPS",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "MOISTURIZING DAY CREAM",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
-		  "category": "Skincare",
-		  "price": 20,
-		  "rating": 4,
-		  "mainCategory": "FACE",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "WATERPROOF MASCARA",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
-		  "category": "Makeup",
-		  "price": 14,
-		  "rating": 4,
-		  "mainCategory": "EYES",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "LIP GLOSS SET",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
-		  "category": "Lipstick",
-		  "price": 22,
-		  "rating": 5,
-		  "mainCategory": "LIPS",
-		  "quantity":0,
-		  "inWishlist":false
-		},
-		{
-		  "name": "FACIAL CLEANSER",
-		  "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
-		  "category": "Skincare",
-		  "price": 16,
-		  "rating": 4,
-		  "mainCategory": "FACE",
-		  "quantity":0,
-		  "inWishlist":false
-		}
-	  ]
-	},
-	  "productBanner": {
-		  "shopNow": "SHOP NOW",
-		  "title": "BRING OUT THE HIDDEN BEAUTY",
-		  "subTitle": "Get styled with the high-fashion products and transform yourself.",
-		  "products":[
-			  {
-				  "title": "FOUNDATION",
-				  "subTitle": "Soft-matte, long-wearing foundation with climate-adaptive technology to fight heat, sweat, and shine",
-				  "shopNow": "SHOP NOW"
-			  },
-			  {
-				  "title": "POWDER",
-				  "subTitle": "Reduce shine and blur the look of pores, fines lines, and imperfections for a hyper-smooth filter",
-				  "shopNow": "SHOP NOW"
-			  },{
-				  "title": "CREAM",
-				  "subTitle": "Give your face the nourishment and hydration it needs",
-				  "shopNow": "SHOP NOW"
-			  }
-		  ]
-	  },
-	"cart":{
-		"shoppingBag":"SHOPPING BAG",
-		"category":"Category",
-		"rating":"Rating",
-		"total":"TOTAL",
-		"viewCart": "VIEW CART",
-		"checkout": "CHECKOUT",
-		"empty":"Your cart is empty!"
-	},
-	"wishlist":{
-		"wishlist":"WISHLIST",
-		"category":"Category",
-		"rating":"Rating",
-		"viewWishlist": "VIEW WISHLIST",
-		"empty":"Your wishlist is empty!"
-	},
-	"chatbox": {
-	  "messages": {
-		"greet": "Hello, welcome to UOMO!",
-		"name": "Please enter your name",
-		"help": "How can we help you",
-		"helpToday": "How can we help you today?",
-		"orderNum": "What is your order number",
-		"locateOrder": "We couldn't locate the order with the number",
-		"purchaseCode": "What is your purchase code",
-		"locatePurchase": "We couldn't find a purchase with the code",
-		"RepsBusyMessage": "All of our customer representatives are busy with other clients at the moment. Please use our options so we can still support you.",
-		"contactDetails": "You can contact us by email: sale@uomo.com, phone: +1 246-345-0695 or feel free to write us a letter addressed to: 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
-		"additionalHelp": "Please let me know if you need anything else",
-		"byeMessage": "Goodbye, have a nice day",
-		"closeChat": "The chat is closed"
-	  },
-	  "labels": {
-		  "support": "Customer Support",
-		"order": "Track Order",
-		"returns": "Returns & Refunds",
-		"contact": "Contact Details",
-		"Rep": "Talk to a Customer Agent",
-		"helpMore": "Additional Help",
-		"notNow": "Not for now",
-		"startOver": "Start Over",
-		"endChat": "End Chat"
-	  }
-	}
+  "footer": {
+    "Top": {
+      "DeliveryTitle": "FAST AND FREE DELIVERY",
+      "DeliveryInfo": "Free delivery for all orders over $140",
+      "SupportTitle": "24/7 CUSTOMER SUPPORT",
+      "SupportInfo": "Friendly 24/7 customer support",
+      "ReturnTitle": "MONEY BACK GUARANTEE",
+      "ReturnInfo": "We return money within 30 days"
+    },
+    "Company": {
+      "Company": "COMPANY",
+      "About": "About Us",
+      "Home": "Home",
+      "Careers": "Careers",
+      "Shipping": "Delivery & Shipping",
+      "Contact": "Contact Us"
+    },
+    "Shop": {
+      "Shop": "SHOP",
+      "Arrivals": "New Arrivals",
+      "Makeup": "Makeup",
+      "Skincare": "Skincare",
+      "Hair": "Hair",
+      "ShopAll": "Shop All"
+    },
+    "Help": {
+      "Help": "HELP",
+      "CustomerService": "Customer Service",
+      "Account": "My Account",
+      "TrackOrder": "Track Order",
+      "Return": "Return Portal",
+      "Legal&Privacy": "Legal & Privacy",
+      "GiftCard": "Gift Card"
+    },
+    "Subscribe": {
+      "Subscribe": "SUBSCRIBE",
+      "CallToAction": "Be the first to get the latest news about trends, promotions, and much more!",
+      "Email": "Your email address",
+      "Join": "JOIN"
+    },
+    "Bottom": {
+      "Language": "LANGUAGE",
+      "Currency": "CURRENCY",
+      "LanguageTranslation": "English"
+    }
+  },
+  "navbar": {
+    "top": {
+      "Shipping": "SHIPPING",
+      "Contact": "CONTACT"
+    },
+    "bottom": {
+      "productMenus": [
+        {
+          "category": "MAKEUP",
+          "subCategory": [
+            {
+              "name": "Popular",
+              "link": "/popular"
+            },
+            {
+              "name": "Face",
+              "link": "/face"
+            },
+            {
+              "name": "Eyes",
+              "link": "/eye"
+            },
+            {
+              "name": "Lips",
+              "link": "/lips"
+            },
+            {
+              "name": "Cheeks",
+              "link": "/cheeks"
+            },
+            {
+              "name": "New",
+              "link": "/new"
+            }
+          ]
+        },
+        {
+          "category": "SKINCARE",
+          "subCategory": [
+            {
+              "name": "All",
+              "link": "/all"
+            },
+            {
+              "name": "Moisturizers",
+              "link": "/moisturizers"
+            },
+            {
+              "name": "Cleansers",
+              "link": "/cleansers"
+            },
+            {
+              "name": "Treatments",
+              "link": "/treatments"
+            },
+            {
+              "name": "Masks",
+              "link": "/masks"
+            },
+            {
+              "name": "Sunscreen",
+              "link": "/sunscreen"
+            }
+          ]
+        },
+        {
+          "category": "HAIR",
+          "subCategory": [
+            {
+              "name": "Shampoo",
+              "link": "/shampoo"
+            },
+            {
+              "name": "Conditioners",
+              "link": "/conditioners"
+            },
+            {
+              "name": "Treatments",
+              "link": "/treatments"
+            },
+            {
+              "name": "Styling",
+              "link": "/styling"
+            },
+            {
+              "name": "Tools",
+              "link": "/tools"
+            }
+          ]
+        },
+        {
+          "category": "FRAGRANCE",
+          "subCategory": [
+            {
+              "name": "Women",
+              "link": "/women"
+            },
+            {
+              "name": "Men",
+              "link": "/men"
+            },
+            {
+              "name": "Unisex",
+              "link": "/unisex"
+            },
+            {
+              "name": "Candles",
+              "link": "/candles"
+            }
+          ]
+        },
+        {
+          "category": "SALE",
+          "subCategory": [
+            {
+              "name": "Makeup",
+              "link": "/sale-makeeup"
+            },
+            {
+              "name": "Skincare",
+              "link": "/sale-skincare"
+            },
+            {
+              "name": "Hair care",
+              "link": "/sale-haircare"
+            },
+            {
+              "name": "Fragrance",
+              "link": "/sale-fragrance"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "heroBanner": {
+    "banners": [
+      {
+        "glow": "NATURAL",
+        "bannerText": "Beaux products protect and nourish your skin with a range of lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB371100_-_FB_FS_REPLEN_SAVE_REFRESH_012723-1_DESKTOP-2_1_1200x.jpg?v=1675211441"
+      },
+      {
+        "glow": "GLOWING SKIN",
+        "bannerText": "Discover the power of Beaux products to moisturize and revitalize your skin. Our range includes lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_PREP.jpg?v=1691550184&width=1500"
+      },
+      {
+        "glow": "NATURAL GLOW",
+        "bannerText": "Experience the magic of Beaux products in moisturizing and rejuvenating your skin. Explore our selection of lotions, day creams, night creams, tinted moisturizers, and more.",
+        "more": "VIEW MORE",
+        "imageUrl": "https://fentybeauty.com/cdn/shop/files/FB523150_FENTYVERSE_HP_MODULES_HP-ROUTINE-_4_-DESKTOP_CONTOUR.jpg?v=1691550409&width=1500"
+      }
+    ]
+  },
+  "weeklyFeatured": {
+    "add": "ADD TO CART",
+    "products": "WEEKLY FEATURED PRODUCTS",
+    "premiumTitle": "The World's Premium Brands In One Destination."
+  },
+  "weeklySingleCard": {
+    "add": "ADD TO CART",
+    "makeup": "Makeup",
+    "detail": "RADIANT LIFT FOUNDATION"
+  },
+  "preferredSingleCard": {
+    "add": "ADD TO CART",
+    "category": "makeup",
+    "subCategory": [
+      {
+        "name": "Lipstick",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL22_T2PRODUCT_CONCRETE_FENTY_ICON_VELVET_LIQUID_LIP_OPEN_MVP_1200x1500_ea016da9-a316-4f2b-8afd-9d822277a907.jpg?v=1669934439"
+      },
+      {
+        "name": "Foundation",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028"
+      },
+      {
+        "name": "Mascara",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/54548.jpg?v=1674248158"
+      },
+      {
+        "name": "Skincare",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS_SUMR23_T2-PRODUCT_SILO_CHERRYDUB-BODYSCRUB_1200x1500_47ddf686-8f30-48d9-bf46-9b6ed63a8cdd.jpg?v=1687302603"
+      }
+    ]
+  },
+  "recentsSingleCard": {
+    "add": "ADD TO CART",
+    "makeup": "Makeup",
+    "detail": "RADIANT LIFT FOUNDATION"
+  },
+  "mostPreferred": {
+    "add": "ADD TO CART",
+    "categories": "MOST PREFERRED CATEGORIES",
+    "premium": "The World's Premium Brands In One Destination."
+  },
+  "recentlyViewed": {
+    "add": "ADD TO CART",
+    "recentlyViewed": "RECENTLY VIEWED",
+    "stillInterested": "Are you still interested in these products?",
+
+    "products": [
+      {
+        "name": "RADIANT LIFT FOUNDATION",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30031_FB020.jpg?v=1623427028",
+        "category": "Makeup",
+        "price": 29,
+        "rating": 4,
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "MOISTURIZING SKIN CREAM",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Skincare",
+        "price": 35,
+        "rating": 5,
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "EYE ENHANCING MASCARA",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30029_FB3019.jpg?v=1623353290",
+        "category": "Makeup",
+        "price": 15,
+        "rating": 3,
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "HYDRATING FACIAL CLEANSER",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HONEYHAWTIE_1200x1500_9c0beef5-fde6-4059-b50d-162806cc7192.jpg?v=1647985851",
+        "category": "Skincare",
+        "price": 20,
+        "rating": 4,
+        "quantity": 0,
+        "inWishlist": false
+      }
+    ]
+  },
+  "mostPopular": {
+    "add": "ADD TO CART",
+    "title": "MOST POPULAR",
+    "subTitle": "The World's Premium Brands In One Destination.",
+    "tabs": [
+      {
+        "tabName": "ALL"
+      },
+      {
+        "tabName": "FACE"
+      },
+      {
+        "tabName": "EYES"
+      },
+      {
+        "tabName": "LIPS"
+      }
+    ],
+    "products": [
+      {
+        "name": "ANTI-AGING FACE CREAM",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137.jpg?v=1614390686",
+        "category": "Skincare",
+        "price": 30,
+        "rating": 4,
+        "mainCategory": "FACE",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "EYE MAKEUP REMOVER",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618.jpg?v=1614390662",
+        "category": "Makeup",
+        "price": 12,
+        "rating": 5,
+        "mainCategory": "EYES",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "MATTE LIPSTICK",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_I_T2PRODUCT_CONCRETE_GLOSS_BOMB_HEAT_CLOSED_HOT_CHOCOLIT_1200x1500_05088d28-0ac6-45a0-b585-1bd09b0bbcd8.jpg?v=1632785137",
+        "category": "Lipstick",
+        "price": 15,
+        "rating": 4,
+        "mainCategory": "LIPS",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "HYDRATING FACE SERUM",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_FALL22_T2PRODUCT_ECOMM_WATCH_YA_TONE_FINISHED_GOOD_OPEN_1200x1500_10c52729-4832-4fc3-9308-4a35cf2b9a7d.jpg?v=1666649474",
+        "category": "Skincare",
+        "price": 25,
+        "rating": 4,
+        "mainCategory": "FACE",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "EYESHADOW PALETTE",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB9034.jpg?v=1614391721",
+        "category": "Makeup",
+        "price": 18,
+        "rating": 4,
+        "mainCategory": "EYES",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "LIP BALM SET",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSVAULT_LUCITE_1200x1500_72DPI.jpg?v=1695853153",
+        "category": "Lip Care",
+        "price": 10,
+        "rating": 5,
+        "mainCategory": "LIPS",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "MOISTURIZING DAY CREAM",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/PDP-1_1.jpg?v=1681149441",
+        "category": "Skincare",
+        "price": 20,
+        "rating": 4,
+        "mainCategory": "FACE",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "WATERPROOF MASCARA",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_S23_T2PRODUCT_HELLATHICC_FLYLINER_1200x1500_72DPI-min.jpg?v=1680569918",
+        "category": "Makeup",
+        "price": 14,
+        "rating": 4,
+        "mainCategory": "EYES",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "LIP GLOSS SET",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_HOL23_T2PRODUCT_ECOMM_GLOSSYPOSSE_CLOSED_WITH_BOX1200x1500_72DPI.jpg?v=1695885280",
+        "category": "Lipstick",
+        "price": 22,
+        "rating": 5,
+        "mainCategory": "LIPS",
+        "quantity": 0,
+        "inWishlist": false
+      },
+      {
+        "name": "FACIAL CLEANSER",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS_SUMMER_2021_ECom_DeluxeCleansr_2883_R3_RGB_1200X1500_72DPI.jpg?v=1619139355",
+        "category": "Skincare",
+        "price": 16,
+        "rating": 4,
+        "mainCategory": "FACE",
+        "quantity": 0,
+        "inWishlist": false
+      }
+    ]
+  },
+  "productBanner": {
+    "shopNow": "SHOP NOW",
+    "title": "BRING OUT THE HIDDEN BEAUTY",
+    "subTitle": "Get styled with the high-fashion products and transform yourself.",
+    "products": [
+      {
+        "title": "FOUNDATION",
+        "subTitle": "Soft-matte, long-wearing foundation with climate-adaptive technology to fight heat, sweat, and shine",
+        "shopNow": "SHOP NOW"
+      },
+      {
+        "title": "POWDER",
+        "subTitle": "Reduce shine and blur the look of pores, fines lines, and imperfections for a hyper-smooth filter",
+        "shopNow": "SHOP NOW"
+      },
+      {
+        "title": "CREAM",
+        "subTitle": "Give your face the nourishment and hydration it needs",
+        "shopNow": "SHOP NOW"
+      }
+    ]
+  },
+  "cart": {
+    "shoppingBag": "SHOPPING BAG",
+    "category": "Category",
+    "rating": "Rating",
+    "total": "TOTAL",
+    "viewCart": "VIEW CART",
+    "checkout": "CHECKOUT",
+    "empty": "Your cart is empty!"
+  },
+  "wishlist": {
+    "wishlist": "WISHLIST",
+    "category": "Category",
+    "rating": "Rating",
+    "viewWishlist": "VIEW WISHLIST",
+    "empty": "Your wishlist is empty!"
+  },
+  "account": {
+    "welcome": "WELCOME BACK",
+    "dashboard": "DASHBOARD",
+    "orders": "ORDERS",
+    "accountDetails": "ACCOUNT DETAILS",
+    "wishlist": "WISHLIST",
+    "logout": "LOGOUT"
+  },
+  "dashboard": {
+    "titles": {
+      "dashboard": "DASHBOARD",
+      "orders": "ORDERS",
+      "addresses": "ADDRESSES",
+      "accountDetails": "ACCOUNT DETAILS",
+      "wishlist": "WISHLIST",
+      "logout": "LOGOUT"
+    },
+    "main": {
+      "hello": "Hello",
+      "line1": "From your account dashboard you can view your",
+      "line2": "recent orders",
+      "line3": ", manage your",
+      "line4": "shipping and billing addresses",
+      "line5": ", and",
+      "line6": "edit your password and account details."
+    }
+  },
+  "orders": {
+    "table": {
+      "order": "ORDER",
+      "date": "DATE",
+      "status": "STATUS",
+      "total": "TOTAL",
+      "actions": "ACTIONS"
+    },
+    "actions": {
+      "view": "VIEW"
+    },
+    "total": {
+      "for": "for",
+      "item": "item",
+      "items": "items"
+    },
+    "status": {
+      "completed": "Completed",
+      "canceled": "Canceled",
+      "transit": "In Transit",
+      "hold": "On Hold"
+    },
+    "date": {
+      "october": "October",
+      "november": "November"
+    }
+  },
+
+  "addresses": {
+    "text": "The following addresses will be used on the checkout page by default.",
+    "billing": "BILLING ADDRESS",
+    "shipping": "SHIPPING ADDRESS",
+    "edit": "EDIT"
+  },
+  "accountDetails": {
+    "first": "First Name",
+    "last": "Last Name",
+    "display": "Display Name",
+    "email": "Email Address",
+    "change": "PASSWORD CHANGE",
+    "current": "Current Password",
+    "new": "New Password",
+    "confirm": "Confirm Password",
+    "button": "SAVE CHANGES"
+  },
+  "chatbox": {
+    "messages": {
+      "greet": "Hello, welcome to UOMO!",
+      "name": "Please enter your name",
+      "help": "How can we help you",
+      "helpToday": "How can we help you today?",
+      "orderNum": "What is your order number",
+      "locateOrder": "We couldn't locate the order with the number",
+      "purchaseCode": "What is your purchase code",
+      "locatePurchase": "We couldn't find a purchase with the code",
+      "RepsBusyMessage": "All of our customer representatives are busy with other clients at the moment. Please use our options so we can still support you.",
+      "contactDetails": "You can contact us by email: sale@uomo.com, phone: +1 246-345-0695 or feel free to write us a letter addressed to: 1418 River Drive, Suite 35 Cottonhall, CA 9622 United States",
+      "additionalHelp": "Please let me know if you need anything else",
+      "byeMessage": "Goodbye, have a nice day",
+      "closeChat": "The chat is closed"
+    },
+    "labels": {
+      "support": "Customer Support",
+      "order": "Track Order",
+      "returns": "Returns & Refunds",
+      "contact": "Contact Details",
+      "Rep": "Talk to a Customer Agent",
+      "helpMore": "Additional Help",
+      "notNow": "Not for now",
+      "startOver": "Start Over",
+      "endChat": "End Chat"
+    }
   }
+}

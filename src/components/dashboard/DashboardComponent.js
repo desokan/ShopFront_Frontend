@@ -5,9 +5,11 @@ import Orders from "./Orders";
 import { DashbordNavigation } from "../../App";
 import Addresses from "./Addresses";
 import Account from "./Account";
+import { useTranslation } from "react-i18next";
 import Wishlist from "./Wishlist";
 
 const DashboardComponent = () => {
+  const { t } = useTranslation();
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("user") || {})
   );
@@ -25,45 +27,41 @@ const DashboardComponent = () => {
     localStorage.removeItem("user");
     navigate("/");
   };
-
+console.log(dashbordNavigation)
   const rightContent = () => {
-    if (title === "ORDERS") {
+    if (title === t('dashboard.titles.orders')) {
       return <Orders />;
-    } else if (title === "ADDRESSES") {
+    } else if (title === t('dashboard.titles.addresses')) {
       return <Addresses />;
-    } else if (title === "ACCOUNT DETAILS") {
+    } else if (title === t('dashboard.titles.accountDetails')) {
       return <Account />;
-    } else if (title === "WISHLIST") {
+    } else if (title === t('dashboard.titles.wishlist')) {
       return <Wishlist />;
     } else {
       return (
         <div className={classes.rightSectionContainer}>
           <div className={classes.rightSectionTextContainer}>
             <p className={classes.userInfo}>
-              Hello <b>{user.username}</b> (not <b>{user.username}</b>?{" "}
-              <span className={classes.span} onClick={handleLogout}>
-                Log out
-              </span>
-              )
+             {t('dashboard.main.hello')} <b>{user.username}</b> 
             </p>
             <p>
-              From your account dashboard you can view your{" "}
-              <span className={classes.span} onClick={() => setTitle("ORDERS")}>
-                recent orders
+            {t('dashboard.main.line1')}
+              <span className={classes.span} onClick={() => setTitle(t('dashboard.titles.orders'))}>
+              {t('dashboard.main.line2')}
               </span>
-              , manage your{" "}
+              {t('dashboard.main.line3')}
               <span
                 className={classes.span}
-                onClick={() => setTitle("ADDRESSES")}
+                onClick={() => setTitle(t('dashboard.titles.addresses'))}
               >
-                shipping and billing addresses
+                 {t('dashboard.main.line4')}
               </span>
-              , and{" "}
+              {t('dashboard.main.line5')}
               <span
                 className={classes.span}
-                onClick={() => setTitle("ACCOUNT DETAILS")}
+                onClick={() => setTitle(t('dashboard.titles.accountDetails'))}
               >
-                edit your password and account details
+               {t('dashboard.main.line6')}
               </span>
               .
             </p>
@@ -79,36 +77,36 @@ const DashboardComponent = () => {
         <ul className={classes.ul}>
           <li
             className={classes.listItem}
-            onClick={() => handleTitle("DASHBOARD")}
+            onClick={() => handleTitle(t('dashboard.titles.dashboard'))}
           >
-            DASHBOARD
+            {t('dashboard.titles.dashboard')}
           </li>
           <li
             className={classes.listItem}
-            onClick={() => handleTitle("ORDERS")}
+            onClick={() => handleTitle(t('dashboard.titles.orders'))}
           >
-            ORDERS
+                {t('dashboard.titles.orders')}
           </li>
           <li
             className={classes.listItem}
-            onClick={() => handleTitle("ADDRESSES")}
+            onClick={() => handleTitle(t('dashboard.titles.addresses'))}
           >
-            ADDRESSES
+            {t('dashboard.titles.addresses')}
           </li>
           <li
             className={classes.listItem}
-            onClick={() => handleTitle("ACCOUNT DETAILS")}
+            onClick={() => handleTitle(t('dashboard.titles.accountDetails'))}
           >
-            ACCOUNT DETAILS
+             {t('dashboard.titles.accountDetails')}
           </li>
           <li
             className={classes.listItem}
-            onClick={() => handleTitle("WISHLIST")}
+            onClick={() => handleTitle(t('dashboard.titles.wishlist'))}
           >
-            WISHLIST
+               {t('dashboard.titles.wishlist')}
           </li>
           <li className={classes.listItem} onClick={handleLogout}>
-            LOGOUT
+          {t('dashboard.titles.logout')}
           </li>
         </ul>
       </div>
