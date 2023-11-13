@@ -431,7 +431,7 @@
     ]
   },
   "cart": {
-    "shoppingBag": "SACCA DELLA SPESA",
+    "shoppingBag": "CARRELLO",
     "category": "Categoria",
     "rating": "Valutazione",
     "total": "TOTALE",
@@ -467,9 +467,9 @@
       "hello": "Ciao",
       "line1": "Dal cruscotto del tuo account puoi vedere i tuoi",
       "line2": "ordini recenti",
-      "line3": ", gestire i tuoi",
+      "line3": ", gestire i tuoi ",
       "line4": "indirizzi di spedizione e fatturazione",
-      "line5": ", e",
+      "line5": ", e ",
       "line6": "modificare la tua password e i dettagli del tuo account."
     }
   },
@@ -482,7 +482,7 @@
       "actions": "AZIONI"
     },
     "actions": {
-      "view": "VISTA"
+      "view": "VEDI"
     },
     "total": {
       "for": "per",

@@ -6,28 +6,28 @@ const Orders = () => {
   const orderListData = [
     {
       orderId: 2418,
-      orderDate: "October 27, 2023",
+      orderDate: `${t('orders.date.october')} 27, 2023`,
       orderStatus: `${t("orders.status.completed")}`,
       orderTotal: 100.65,
       orderItemsCount: 3,
     },
     {
       orderId: 2419,
-      orderDate: "November 2, 2023",
+      orderDate: `${t('orders.date.november')} 2, 2023`,
       orderStatus: `${t("orders.status.canceled")}`,
       orderTotal: 20.65,
       orderItemsCount: 1,
     },
     {
       orderId: 2420,
-      orderDate: "November 3, 2023",
+      orderDate: `${t('orders.date.november')} 3, 2023`,
       orderStatus: `${t("orders.status.transit")}`,
       orderTotal: 30.65,
       orderItemsCount: 2,
     },
     {
       orderId: 2421,
-      orderDate: "November 8, 2023",
+      orderDate: `${t('orders.date.november')} 8, 2023`,
       orderStatus: `${t("orders.status.hold")}`,
       orderTotal: 120.65,
       orderItemsCount: 5,
