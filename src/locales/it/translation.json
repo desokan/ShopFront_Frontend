@@ -1,4 +1,20 @@
 {
+  "login":{
+    "Login":"ACCEDI",
+    "Email":"Indirizzo email",
+    "Password":"Password",
+    "Remember":"Ricordami",
+    "Lost": "Password dimenticata?",
+    "NoAccount": "Ancora non hai un account?",
+    "Create": "Crea account"
+},
+"register":{
+  "Register":"CREA UN ACCOUNT",
+  "Username": "Nome utente",
+  "Email":"Indirizzo email",
+  "Password":"Password",
+  "Text":"I tuoi dati personali saranno utilizzati per supportare la tua esperienza su questo sito, per gestire l'accesso al tuo account e per altri scopi descritti nella nostra informativa sulla privacy."
+},
   "footer": {
     "Top": {
       "DeliveryTitle": "CONSEGNA VELOCE E GRATUITA",

@@ -1,4 +1,20 @@
 {
+  "login":{
+    "Login":"CONNEXION",
+    "Email":"Adresse e-mail",
+    "Password":"Mot de passe",
+    "Remember":"Se souvenir de moi",
+    "Lost": "Mot de passe oublié?",
+    "NoAccount": "Pas encore de compte?",
+    "Create": "Créer un compte"
+  },
+  "register":{
+    "Register":"CRÉER UN COMPTE",
+    "Username": "Nom d'utilisateur",
+    "Email":"Adresse e-mail",
+    "Password":"Mot de passe",
+    "Text":"Vos données personnelles seront utilisées pour soutenir votre expérience sur ce site, pour gérer l'accès à votre compte et à d'autres fins décrites dans notre politique de confidentialité."
+  },
   "footer": {
     "Top": {
       "DeliveryTitle": "LIVRAISON RAPIDE ET GRATUITE",
@@ -431,7 +447,7 @@
     ]
   },
   "cart": {
-    "shoppingBag": "SAC DE MAGASINAGE",
+    "shoppingBag": "PANIER DE PAIEMENT",
     "category": "Catégorie",
     "rating": "Évaluation",
     "total": "TOTAL",

@@ -2,12 +2,14 @@ import { useState } from "react";
 import classes from "./Login.module.css";
 import { Link } from "react-router-dom";
 import CloseIcon from "../svgs/CloseIcon";
+import { useTranslation } from "react-i18next";
 
 const Login = ({ closeLogin, openRegister }) => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+  const {t} = useTranslation();
   const [errorMessage, setErrorMessage] = useState("");
   const [failed, setFailed] = useState(false);
   const [red, setRed] = useState("");
@@ -61,7 +63,7 @@ login()
     <>
       <div className={classes.closeLoginForm}>
         <p className={classes.loginText}>
-          <b>LOGIN</b>
+          <b>{t("login.Login")}</b>
         </p>
         <button className={classes.closeLogin} onClick={handleCloseLogin}>
           <CloseIcon />
@@ -75,7 +77,7 @@ login()
           }}
           className={classes.textBox}
           type="text"
-          placeholder="Email address *"
+          placeholder={t("login.Email")}
           value={formData.email}
           name="email"
           onChange={(e) => handleChange(e)}
@@ -88,7 +90,7 @@ login()
           }}
           className={classes.textBox}
           type="password"
-          placeholder="Password *"
+          placeholder={t("login.Password")}
           name="password"
           value={formData.password}
           onChange={(e) => handleChange(e)}
@@ -104,11 +106,11 @@ login()
               onChange={handleChange}
               name="rememberMe"
             />{" "}
-            <label className={classes.checkboxLabel}>Remember Me</label>
+            <label className={classes.checkboxLabel}>{t("login.Remember")}</label>
           </div>
           <div>
             <p className={classes.underline}>
-              <Link>Lost password?</Link>
+              <Link>{t("login.Lost")}</Link>
             </p>
           </div>
         </div>
@@ -117,12 +119,12 @@ login()
         {!failed && <div className={classes.error}> </div>}
           {failed && <div className={classes.error}>{errorMessage}</div>}
         <button className={classes.loginButton} type="submit">
-          LOG IN
+        {t("login.Login")}
         </button>
         <p className={classes.newAccount}>
-          No account yet?{" "}
+        {t("login.NoAccount")} {" "}
           <span>
-            <Link onClick={handleRegister}>Create Account</Link>
+            <Link onClick={handleRegister}>{t("login.Create")}</Link>
           </span>
         </p>
       </form>
