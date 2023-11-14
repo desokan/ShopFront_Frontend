@@ -6,7 +6,6 @@ import i18n from "../../i18n";
 
 const DropDownLanguage = ({ className }) => {
   const [selectedLanguage, setSelectedLanguage] = useContext(Language);
-  const { t } = useTranslation();
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("savedLanguage");
