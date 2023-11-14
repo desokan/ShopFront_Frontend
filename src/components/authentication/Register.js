@@ -4,6 +4,7 @@ import classes from "./Register.module.css";
 import BackDrop from "../util/Backdrop";
 import { motion } from "framer-motion";
 import CloseIcon from "../svgs/CloseIcon";
+import { useTranslation } from "react-i18next";
 
 const Register = ({ closeRegister }) => {
   const [formData, setFormData] = useState({
@@ -11,7 +12,7 @@ const Register = ({ closeRegister }) => {
     password: "",
     username: "",
   });
-
+  const {t} = useTranslation();
   const [errorMessage, setErrorMessage] = useState("");
   const [failed, setFailed] = useState(false);
   const [red, setRed] = useState("");
@@ -67,7 +68,7 @@ const Register = ({ closeRegister }) => {
         transition={{ duration: 0.8 }}
       >
         <div className={classes.closeRegisterForm}>
-          <p className={classes.registerText}>CREATE AN ACCOUNT</p>
+          <p className={classes.registerText}> {t("register.Register")}</p>
           <button
             className={classes.closeRegister}
             onClick={handleCloseRegister}
@@ -83,7 +84,7 @@ const Register = ({ closeRegister }) => {
             }}
             className={classes.textBox}
             type="text"
-            placeholder="Username"
+            placeholder={t("register.Username")}
             onChange={(e) => handleChange(e)}
             value={formData.username}
             name="username"
@@ -95,7 +96,7 @@ const Register = ({ closeRegister }) => {
             }}
             className={classes.textBox}
             type="text"
-            placeholder="Email address *"
+            placeholder={t("register.Email")}
             onChange={(e) => handleChange(e)}
             value={formData.email}
             name="email"
@@ -107,7 +108,7 @@ const Register = ({ closeRegister }) => {
             }}
             className={classes.textBox}
             type="password"
-            placeholder="Password *"
+            placeholder={t("register.Password")}
             onChange={(e) => handleChange(e)}
             value={formData.password}
             name="password"
@@ -117,13 +118,11 @@ const Register = ({ closeRegister }) => {
           {failed && <div className={classes.error}>{errorMessage}</div>}
           <br />
           <p className={classes.personalData}>
-            Your personal data will be used to support your experience
-            throughout this website, to manage access to your account, and for
-            other purposes described in our privacy policy.
+          {t("register.Text")}
           </p>
 
           <button className={classes.registerButton} type="submit">
-            REGISTER
+          {t("register.Register")}
           </button>
         </form>
       </motion.div>

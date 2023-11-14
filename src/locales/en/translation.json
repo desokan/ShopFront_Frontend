@@ -1,4 +1,20 @@
 {
+  "login":{
+    "Login":"LOGIN",
+    "Email":"Email address",
+    "Password":"Password",
+    "Remember":"Remember me",
+    "Lost": "Lost password?",
+    "NoAccount": "No account yet?",
+    "Create": "Create account"
+  },
+  "register":{
+    "Register":"CREATE AN ACCOUNT",
+    "Username": "Username",
+    "Email":"Email address",
+    "Password":"Password",
+    "Text":"Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy."
+},
   "footer": {
     "Top": {
       "DeliveryTitle": "FAST AND FREE DELIVERY",
