@@ -53,7 +53,7 @@ The JSON file "db.json" contains subscription data and registered users, and it 
 
 ## Dashboard features
 
-1. Dasboard displaying logged-in user options
+1. Dashboard displaying logged-in user options
 2. User can browse through orders, personal information, wishlist and also logout from the website
 
 <img src="screenshots/dashboard.png" alt="product_carousel" height="auto" width="800" />
