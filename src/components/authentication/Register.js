@@ -47,7 +47,7 @@ const Register = ({ closeRegister }) => {
           setShake(sk);
         } else {
           handleCloseRegister();
-          localStorage.setItem("token", data.accessToken);
+          localStorage.setItem("token", data.token);
           const user = data.user;
           const stringifyUser = JSON.stringify(user);
           localStorage.setItem("user", stringifyUser);
