@@ -39,7 +39,7 @@ const Login = ({ closeLogin, openRegister }) => {
     };
     async function login() {
       try {
-        const registerRes = await fetch("http://localhost:4000/login", opts);
+        const registerRes = await fetch("https://determined-trench-coat-mite.cyclic.app/login", opts);
 
         const data = await registerRes.json();
         if (registerRes.status === 400) {
@@ -49,8 +49,9 @@ const Login = ({ closeLogin, openRegister }) => {
           setShake(sk);
         } else {
           handleCloseLogin();
-          localStorage.setItem("token", data.accessToken);
+          localStorage.setItem("token", data.token);
           const user = data.user;
+          console.log(user)
           const stringifyUser = JSON.stringify(user);
           localStorage.setItem("user", stringifyUser);
         }
