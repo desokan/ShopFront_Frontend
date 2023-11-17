@@ -48,6 +48,7 @@ const Login = ({ closeLogin, openRegister }) => {
           setRed("red");
           setShake(sk);
         } else {
+          console.log(data)
           handleCloseLogin();
           localStorage.setItem("token", data.token);
           const user = data.user;
