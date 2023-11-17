@@ -60,36 +60,6 @@ const Login = ({ closeLogin, openRegister }) => {
 login()
     
   };
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault()
-  //   try {
-  //     const response = await fetch(
-  //       'https://long-jade-squirrel-wear.cyclic.app/login',
-  //       {
-  //         method: 'POST',
-  //         headers: {
-  //           'Content-Type': 'application/json'
-  //         },
-  //         body: JSON.stringify(formData)
-  //       }
-  //     )
-
-  //     if (response.ok) {
-  //       const data = await response.json()
-  //       setToken(data)
-  //       localStorage.setItem('token', data)
-  //       navigate('/')
-  //     } else {
-  //       const loginResponse = await response.json()
-  //       console.log('res', loginResponse)
-  //       setLoginError(loginResponse.error)
-  //       console.log(loginError)
-  //       console.error('Login failed')
-  //     }
-  //   } catch (error) {
-  //     console.error('An error occurred during login:', error)
-  //   }
-  // }
   return (
     <>
       <div className={classes.closeLoginForm}>
