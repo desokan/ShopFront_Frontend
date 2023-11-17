@@ -15,7 +15,7 @@ const FooterMid = ({ t }) => {
   const navigate = useNavigate();
   const [subscriber, setSubscriber] = useState();
 
-  const baseUrl = "http://localhost:4000";
+  const baseUrl = "https://determined-trench-coat-mite.cyclic.app";
 
   const handleClick = () => {
     if ("/") {
@@ -38,7 +38,7 @@ const FooterMid = ({ t }) => {
       body: JSON.stringify(newSubscriber),
     };
 
-    fetch(`${baseUrl}/subscribers`, options).then((res) => res.json());
+    fetch(`${baseUrl}/subscriber`, options).then((res) => res.json());
     setSubscriber("");
   };
 

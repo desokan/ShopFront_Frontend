@@ -39,7 +39,7 @@ const Login = ({ closeLogin, openRegister }) => {
     };
     async function login() {
       try {
-        const registerRes = await fetch("http://localhost:4000/login", opts);
+        const registerRes = await fetch("https://determined-trench-coat-mite.cyclic.app/login", opts);
 
         const data = await registerRes.json();
         if (registerRes.status === 400) {
@@ -49,8 +49,9 @@ const Login = ({ closeLogin, openRegister }) => {
           setShake(sk);
         } else {
           handleCloseLogin();
-          localStorage.setItem("token", data.accessToken);
+          localStorage.setItem("token", data.token);
           const user = data.user;
+          console.log(user)
           const stringifyUser = JSON.stringify(user);
           localStorage.setItem("user", stringifyUser);
         }
@@ -59,6 +60,36 @@ const Login = ({ closeLogin, openRegister }) => {
 login()
     
   };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault()
+  //   try {
+  //     const response = await fetch(
+  //       'https://long-jade-squirrel-wear.cyclic.app/login',
+  //       {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json'
+  //         },
+  //         body: JSON.stringify(formData)
+  //       }
+  //     )
+
+  //     if (response.ok) {
+  //       const data = await response.json()
+  //       setToken(data)
+  //       localStorage.setItem('token', data)
+  //       navigate('/')
+  //     } else {
+  //       const loginResponse = await response.json()
+  //       console.log('res', loginResponse)
+  //       setLoginError(loginResponse.error)
+  //       console.log(loginError)
+  //       console.error('Login failed')
+  //     }
+  //   } catch (error) {
+  //     console.error('An error occurred during login:', error)
+  //   }
+  // }
   return (
     <>
       <div className={classes.closeLoginForm}>

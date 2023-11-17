@@ -37,7 +37,7 @@ const Register = ({ closeRegister }) => {
 
     async function register() {
       try {
-        const registerRes = await fetch("http://localhost:4000/users", opts);
+        const registerRes = await fetch("https://determined-trench-coat-mite.cyclic.app/register", opts);
 
         const data = await registerRes.json();
         if (registerRes.status === 400) {
