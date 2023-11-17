@@ -51,7 +51,6 @@ const Login = ({ closeLogin, openRegister }) => {
           handleCloseLogin();
           localStorage.setItem("token", data.token);
           const user = data.user;
-          console.log(user)
           const stringifyUser = JSON.stringify(user);
           localStorage.setItem("user", stringifyUser);
         }
