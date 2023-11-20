@@ -46,9 +46,7 @@ const Register = ({ closeRegister }) => {
         if (registerRes.status === 200 || registerRes.status === 201) {
           handleCloseRegister()
           localStorage.setItem('token', data.token)
-          const user = data.user
-          const stringifyUser = JSON.stringify(user)
-          localStorage.setItem('user', stringifyUser)
+
         } else {
           setErrorMessage(data.errors)
           setFailed(true)

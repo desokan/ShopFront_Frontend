@@ -45,9 +45,6 @@ const Login = ({ closeLogin, openRegister }) => {
         if (registerRes.status === 200) {
           handleCloseLogin();
           localStorage.setItem("token", data.token);
-          const user = data.user;
-          const stringifyUser = JSON.stringify(user);
-          localStorage.setItem("user", stringifyUser);
         } else {  
           setErrorMessage(data.error);
           setFailed(true);
