@@ -25,7 +25,7 @@ const DropDownLanguage = ({ className }) => {
 
   return (
     <select
-      value={selectedLanguage}
+      value={selectedLanguage || ''}
       onChange={chooseLanguage}
       className={className === "footer" ? classes.footerDropDown : classes.dropDownSelect}
       name="Language"
