@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import classes from "./Dashbord.module.css";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import Orders from "./Orders";
-import { DashbordNavigation } from "../../App";
+import { DashbordNavigation, User } from "../../App";
 import Addresses from "./Addresses";
 import Account from "./Account";
 import { useTranslation } from "react-i18next";
@@ -10,13 +10,12 @@ import Wishlist from "./Wishlist";
 
 const DashboardComponent = () => {
   const { t } = useTranslation();
-  const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("user") || {})
-  );
+
   const navigate = useNavigate();
   const [dashbordNavigation, setDashbordNavigation] = useContext(
     DashbordNavigation
   );
+const [loggedUser, setLoggedUser] =useContext(User)
 
   const [title, setTitle] = useState(dashbordNavigation);
   const handleTitle = (newTitle) => {
@@ -41,7 +40,7 @@ const DashboardComponent = () => {
         <div className={classes.rightSectionContainer}>
           <div className={classes.rightSectionTextContainer}>
             <p className={classes.userInfo}>
-             {t('dashboard.main.hello')} <b>{user.username}</b> 
+             {t('dashboard.main.hello')} <b>{loggedUser.username}</b> 
             </p>
             <p>
             {t('dashboard.main.line1')}
