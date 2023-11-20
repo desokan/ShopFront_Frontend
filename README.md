@@ -1,6 +1,6 @@
 <h1> ShopFront </h1>
 
-A front end website built using React, CSS and with a JSON server.
+A full stack website built using React, CSS and with a Node.js, Express.js and MongoDB.
 
 # General Info
 
