@@ -5,7 +5,7 @@ import classes from "./Account.module.css";
 import { DashbordNavigation, User } from "../../App";
 import { useTranslation } from "react-i18next";
 
-const AccountMenu = ({ closeLogin, openRegister, user }) => {
+const AccountMenu = ({ closeLogin }) => {
   const { t } = useTranslation();
   const [dashbordNavigation, setDashbordNavigation] = useContext(
     DashbordNavigation
@@ -24,7 +24,6 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
 
   const handleLogout = () => {
     handleCloseAccount();
-    localStorage.removeItem("user");
     localStorage.removeItem("token");
   };
 
@@ -38,7 +37,7 @@ const AccountMenu = ({ closeLogin, openRegister, user }) => {
       <div className={classes.closeAccountForm}>
         <p className={classes.accountText}>
           <b>
-            {t("account.welcome")}, {loggedUser.username.toUpperCase()}
+            {t("account.welcome")}, {loggedUser.username.toUpperCase() || ''}
           </b>
         </p>
         <button className={classes.closeAccount} onClick={handleCloseAccount}>
