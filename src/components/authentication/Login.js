@@ -10,7 +10,7 @@ const Login = ({ closeLogin, openRegister }) => {
     password: "",
   });
   const {t} = useTranslation();
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState('');
   const [failed, setFailed] = useState(false);
   const [red, setRed] = useState("");
   const [shake, setShake] = useState("");
@@ -42,24 +42,26 @@ const Login = ({ closeLogin, openRegister }) => {
         const registerRes = await fetch("https://determined-trench-coat-mite.cyclic.app/login", opts);
 
         const data = await registerRes.json();
-        if (registerRes.status === 400) {
-          setErrorMessage(data);
-          setFailed(true);
-          setRed("red");
-          setShake(sk);
-        } else {
-          console.log(data)
+        if (registerRes.status === 200) {
           handleCloseLogin();
           localStorage.setItem("token", data.token);
           const user = data.user;
           const stringifyUser = JSON.stringify(user);
           localStorage.setItem("user", stringifyUser);
+        } else {  
+          setErrorMessage(data.error);
+          setFailed(true);
+          setRed("red");
+          setShake(sk);
+         
         }
-      } catch (error) {}
+      } catch (error) {
+        console.error("Error during login:", error)
+      }
     }
 login()
     
-  };
+  }
   return (
     <>
       <div className={classes.closeLoginForm}>
