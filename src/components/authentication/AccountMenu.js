@@ -37,7 +37,7 @@ const AccountMenu = ({ closeLogin }) => {
       <div className={classes.closeAccountForm}>
         <p className={classes.accountText}>
           <b>
-            {t("account.welcome")}, {loggedUser.username.toUpperCase() || ''}
+            {t("account.welcome")}, {loggedUser.username}
           </b>
         </p>
         <button className={classes.closeAccount} onClick={handleCloseAccount}>

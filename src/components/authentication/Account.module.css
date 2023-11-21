@@ -16,6 +16,7 @@
     background-color: #faf9f8;
     font-size: medium;
     cursor: pointer;
+    text-transform: uppercase;
   }
   .accountH1 {
     color: #222;
