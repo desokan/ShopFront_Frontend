@@ -10,13 +10,14 @@
   .accountText {
     color: #222;
     font-weight: 500;
+    text-transform: uppercase;
   }
   .closeAccount {
     border: none;
     background-color: #faf9f8;
     font-size: medium;
     cursor: pointer;
-    text-transform: uppercase;
+
   }
   .accountH1 {
     color: #222;
