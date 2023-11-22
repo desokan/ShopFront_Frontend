@@ -13,16 +13,15 @@
 }
 
 .wrapper {
-   max-width: 1280px;
-  display: flex;
-justify-content: space-between;
+  /* max-width: 1280px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .lefty {
   justify-content: left;
   display: grid;
-  grid-auto-flow: column;
-  gap: 20px;
+  grid-template-columns: 100px 100px;
   align-content: end;
 }
 
@@ -34,8 +33,8 @@ justify-content: space-between;
 .righty {
   justify-content: right;
   display: grid;
-  grid-auto-flow: column;
-  gap: 20px;
+  grid-template-columns: 100px 100px;
+  grid-gap: 25px;
 }
 
 .arrow {
