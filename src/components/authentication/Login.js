@@ -9,8 +9,8 @@ const Login = ({ closeLogin, openRegister }) => {
     email: "",
     password: "",
   });
-  const {t} = useTranslation();
-  const [errorMessage, setErrorMessage] = useState('');
+  const { t } = useTranslation();
+  const [errorMessage, setErrorMessage] = useState("");
   const [failed, setFailed] = useState(false);
   const [red, setRed] = useState("");
   const [shake, setShake] = useState("");
@@ -32,33 +32,37 @@ const Login = ({ closeLogin, openRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
- const opts = {
+    const opts = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     };
     async function login() {
       try {
-        const registerRes = await fetch("https://determined-trench-coat-mite.cyclic.app/login", opts);
+        const registerRes = await fetch(
+          "https://determined-trench-coat-mite.cyclic.app/login",
+          opts
+        );
 
         const data = await registerRes.json();
         if (registerRes.status === 200) {
           handleCloseLogin();
           localStorage.setItem("token", data.token);
-        } else {  
+          const user = data.user;
+          const stringifyUser = JSON.stringify(user);
+          localStorage.setItem("user", stringifyUser);
+        } else {
           setErrorMessage(data.error);
           setFailed(true);
           setRed("red");
           setShake(sk);
-         
         }
       } catch (error) {
-        console.error("Error during login:", error)
+        console.error("Error during login:", error);
       }
     }
-login()
-    
-  }
+    login();
+  };
   return (
     <>
       <div className={classes.closeLoginForm}>
@@ -96,7 +100,7 @@ login()
           onChange={(e) => handleChange(e)}
         />
 
-          <br/>
+        <br />
         <div className={classes.inputInfo}>
           <div className={classes.checkboxLabel}>
             <input
@@ -106,7 +110,9 @@ login()
               onChange={handleChange}
               name="rememberMe"
             />{" "}
-            <label className={classes.checkboxLabel}>{t("login.Remember")}</label>
+            <label className={classes.checkboxLabel}>
+              {t("login.Remember")}
+            </label>
           </div>
           <div>
             <p className={classes.underline}>
@@ -114,15 +120,15 @@ login()
             </p>
           </div>
         </div>
-        <br/>
+        <br />
 
         {!failed && <div className={classes.error}> </div>}
-          {failed && <div className={classes.error}>{errorMessage}</div>}
+        {failed && <div className={classes.error}>{errorMessage}</div>}
         <button className={classes.loginButton} type="submit">
-        {t("login.Login")}
+          {t("login.Login")}
         </button>
         <p className={classes.newAccount}>
-        {t("login.NoAccount")} {" "}
+          {t("login.NoAccount")}{" "}
           <span>
             <Link onClick={handleRegister}>{t("login.Create")}</Link>
           </span>

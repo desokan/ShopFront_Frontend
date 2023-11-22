@@ -1,66 +1,64 @@
 .closeAccountForm {
-    background: #faf9f8;
-    display: flex;
-    height: 82px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-  .accountText {
-    color: #222;
-    font-weight: 500;
-  }
-  .closeAccount {
-    border: none;
-    background-color: #faf9f8;
-    font-size: medium;
-    cursor: pointer;
-  }
-  .accountH1 {
-    color: #222;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-left: 40px;
-    margin-bottom: 30px;
-  }
-  .accountLi {
-      margin-bottom: 35px;
-      position: relative;
-      color: #222;
-      text-decoration: none;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 5px;
-      list-style: none;
-      font-size: 18px;
-      width: 200px;
-  
-  
-  }
-  .accountLi:hover{
-      color: #eba37a;
+  background: #faf9f8;
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.accountText {
+  color: #222;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.closeAccount {
+  border: none;
+  background-color: #faf9f8;
+  font-size: medium;
+  cursor: pointer;
+}
+.accountH1 {
+  color: #222;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.accountLi {
+  margin-bottom: 35px;
+  position: relative;
+  color: #222;
+  text-decoration: none;
+  font-style: normal;
+  line-height: normal;
+  padding-bottom: 5px;
+  list-style: none;
+  font-size: 18px;
+  width: 200px;
+}
+.accountLi:hover {
+  color: #eba37a;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  
-  }
-    .accountLi:before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2.5px;
-      background: #eba37a;
-      bottom: 0;
-      left: 0;
-      transition: width 0.3s;
-      margin-left: 10px;
-    }
-    
-    .accountLi:hover::before {
-      margin-left: 5px;
-      width: 50%;
-    }
+}
+.accountLi:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.5px;
+  background: #eba37a;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+  margin-left: 10px;
+}
+
+.accountLi:hover::before {
+  margin-left: 5px;
+  width: 50%;
+}
