@@ -1,22 +1,23 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import CloseIcon from "../svgs/CloseIcon";
 import classes from "./Account.module.css";
-import { DashbordNavigation, User } from "../../App";
+import { DashbordNavigation } from "../../App";
 import { useTranslation } from "react-i18next";
 
-const AccountMenu = ({ closeLogin }) => {
+const AccountMenu = ({ closeLogin, user }) => {
   const { t } = useTranslation();
   const [dashbordNavigation, setDashbordNavigation] = useContext(
     DashbordNavigation
   );
-  const [loggedUser, setLoggedUser] = useContext(User);
+
   const [title, setTitle] = useState(dashbordNavigation);
   const navigate = useNavigate();
 
   useEffect(() => {
     setDashbordNavigation(title);
-  }, [title, dashbordNavigation]);
+  }, [title, dashbordNavigation, setDashbordNavigation]);
 
   const handleCloseAccount = () => {
     closeLogin(false);
@@ -24,6 +25,7 @@ const AccountMenu = ({ closeLogin }) => {
 
   const handleLogout = () => {
     handleCloseAccount();
+    localStorage.removeItem('user')
     localStorage.removeItem("token");
   };
 
@@ -37,7 +39,7 @@ const AccountMenu = ({ closeLogin }) => {
       <div className={classes.closeAccountForm}>
         <p className={classes.accountText}>
           <b>
-            {t("account.welcome")}, {loggedUser.username}
+            {t("account.welcome")}, {user.username}
           </b>
         </p>
         <button className={classes.closeAccount} onClick={handleCloseAccount}>
