@@ -9,7 +9,7 @@
 
 .cardContainer {
   gap: 30px;
-  min-width: 900px;
+
   display: flex;
 }
 

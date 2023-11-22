@@ -1,5 +1,5 @@
 .container {
-  padding: 0 255px 0 255px;
+  padding: 0px 15%;
   height: 100px;
   /* margin-bottom: 15px; */
 }
@@ -14,7 +14,6 @@
 }
 
 .searchBar {
-
   height: 48px;
   margin: 0 75px;
   display: flex;
@@ -49,7 +48,7 @@
   right: 71px;
   top: 13px;
 }
-.noCartItemNumber{
+.noCartItemNumber {
   display: flex;
   background-color: transparent;
   height: 16px;
@@ -84,7 +83,7 @@
   right: 118px;
   top: 13px;
 }
-.noWishlistNumber{
+.noWishlistNumber {
   display: flex;
   background-color: transparent;
   height: 16px;

@@ -1,6 +1,6 @@
 .container {
-  padding: 0 255px 0 255px;
-  display: grid;
+  padding: 0px 15%;
+    display: grid;
   grid-template-columns: 330px 1fr;
 }
 .right {

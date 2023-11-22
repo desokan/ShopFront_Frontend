@@ -5,19 +5,24 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
-  padding: 0 255px 0 255px;
+  padding: 0px 15%;
+
+  @media only screen and (max-width: 1536px) {
+    padding: 0px 5%;
+  }
 }
 
 .wrapper {
-  /* max-width: 1280px; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+   max-width: 1280px;
+  display: flex;
+justify-content: space-between;
 }
 
 .lefty {
   justify-content: left;
   display: grid;
-  grid-template-columns: 100px 100px;
+  grid-auto-flow: column;
+  gap: 20px;
   align-content: end;
 }
 
@@ -29,8 +34,8 @@
 .righty {
   justify-content: right;
   display: grid;
-  grid-template-columns: 100px 100px;
-  grid-gap: 25px;
+  grid-auto-flow: column;
+  gap: 20px;
 }
 
 .arrow {

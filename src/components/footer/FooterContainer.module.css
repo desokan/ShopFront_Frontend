@@ -2,6 +2,13 @@
     padding: 0px 15%;
     background-color: rgb(34, 34, 34);
     align-self: end;
+
+    
+
+
+    @media only screen and (max-width: 1536px) {
+      padding: 0px 5%;
+    }
 }
 
 

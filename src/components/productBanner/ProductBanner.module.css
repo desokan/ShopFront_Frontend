@@ -1,6 +1,12 @@
 .ProductBannerContainer {
   height: 500px;
-  margin: 0px 255px 50px 255px;
+  padding: 50px 15% 0 15%;
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 1536px) {
+    padding: 50px 5% 0px 5%;
+    margin-bottom: 50px;
+  }
   display: flex;
   flex-direction: row;
   position: relative;
@@ -292,9 +298,9 @@
   z-index: 1;
 }
 .ProductBannerProduct3 {
-  position: absolute;
+  position: relative;
   left: 280px;
-  bottom: 0px;
+  bottom: 80px;
 }
 .ProductBannerImage3 {
   width: 180px;
