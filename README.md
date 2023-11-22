@@ -26,9 +26,10 @@ With this library, we defined chatbot conversations using a straightforward conf
 
 # Additional Features
 
-## Login/Register & Newsletter Subscription using 'db.json'
 
-The JSON file "db.json" contains subscription data and registered users, and it serves as an API using the "json-server". To test this feature and the Dashboard you can use the email for testing '<strong>test@test.com</strong>' and the password '<strong>1234</strong>'. 
+### User Authentication & Newsletter Subscription via MongoDB
+
+MongoDB manages user data and subscriptions. Test credentials for login: Email - test@test.com and Password - 1234.
 
 <img src="screenshots/login.png" alt="login" height="auto" width="800" />
 
