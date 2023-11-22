@@ -1,6 +1,9 @@
 .MostPreferredContainer {
-    padding: 0px 255px 0 255px;
-  }
+  padding: 50px 15% 0 15%;
+
+  @media only screen and (max-width: 1536px) {
+    padding: 50px 10% 0 10%;
+  }  }
   
   .MostPreferredTitleH2 {
     color: var(--color-head, #222);
