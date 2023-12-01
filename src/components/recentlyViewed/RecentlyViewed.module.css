@@ -151,3 +151,8 @@
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width:768px){
+  .RecentlyViewedContainer {
+    padding: 0px 15% 0 15%;
+  }
+}

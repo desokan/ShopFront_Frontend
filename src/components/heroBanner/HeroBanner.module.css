@@ -1,7 +1,6 @@
 .heroBannerContainer {
   background-size: 100%;
   height: 757px;
-  width: 100%;
   display: flex;
   align-content: center;
   background-repeat: no-repeat;
@@ -9,7 +8,6 @@
 
 .heroBannerTextContainer {
   width: 100vw;
-  min-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,4 +55,30 @@
 .heroBannerArrowRight {
   position: relative;
   right: -50%;
+}
+@media (max-width:768px){
+  .heroBannerContainer{
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+  }
+  .heroBannerTextContainer{
+    padding: 0 50px 0 50px;
+  }
+  .heroBannerTextContainerH1{
+    font-size: 35px;
+    width: 100%;
+
+  }
+  .heroBannerTextContainerP {
+    width: 100%;
+    font-size: 13px;
+
+}
+.heroBannerTextContainerButton {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+}
 }

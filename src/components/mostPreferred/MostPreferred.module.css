@@ -66,3 +66,24 @@
     width: 210px;
     height: 350px;
   }
+@media (max-width:768px){
+  .MostPreferredContainer {
+    padding: 0px 5% 0 5%;
+ }
+ .MostPreferredSingleCardImage {
+  width: 150px;
+  height: 210px;
+  transition: transform 0.6s;
+}
+.MostPreferredCards {
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+
+
+}
+.MostPreferredSingleCard {
+  width: 150px;
+  height: 250px;
+}
+}

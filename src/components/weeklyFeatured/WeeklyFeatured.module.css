@@ -153,3 +153,9 @@
   opacity: 0;
   cursor: pointer;
 }
+@media (max-width:768px){
+  .WeeklyFeaturedSingleCard {
+    padding-bottom: 0;
+
+  }
+}

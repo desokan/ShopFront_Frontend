@@ -27,3 +27,20 @@
   left: 50px;
   top: 562px;
 }
+@media (max-width:768px){
+  .carousel{
+    height: 380px;
+  }
+  .arrowRight {
+    width: 50px;
+    position: relative;
+    bottom: 214px;
+    right: -88%;
+  }
+  
+  .arrowLeft {
+    position: absolute;
+    left: 0px;
+    top: 248px;
+  }
+}
