@@ -26,3 +26,8 @@
 .dropDownHover:hover .dropbtn {
   font-weight: bold;
 }
+@media (max-width: 768px){
+  .wrapper{
+    display: none;
+  }
+}

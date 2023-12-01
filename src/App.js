@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Privacy from "./pages/Privacy";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Dashboard from "./pages/Dashboard";
 
 const App = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const language = localStorage.getItem("savedLanguage");
   const [selectedLanguage, setSelectedLanguage] = useState(language);
   const cartForParse = localStorage.getItem("cart");
@@ -26,8 +27,18 @@ const App = () => {
   const [dashbordNavigation, setDashbordNavigation] = useState(
     getDefaultTitle()
   );
+  useEffect(() => {
+    console.log(windowWidth);
+  }, [windowWidth]);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
 
+  }, []);
   return (
     <>
 

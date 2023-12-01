@@ -58,30 +58,12 @@ const NavBarMid = ({ isVisible }) => {
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        <div onClick={handleClick}>
+        <div onClick={handleClick} className={classes.logoContainer}>
           <LogoSvg fontColor={"#222222"} />
         </div>
 
-        <div className={classes.searchBar}>
 
-        </div>
         <div className={classes.icons}>
-
-          <HeartIcon onClick={handleWishlist} />
-          <UserIcon onClick={handleLogin} />
-          <CartIcon onClick={handleCart} />
-          {openLoginModal && (
-            <Container
-              closeLogin={setOpenLoginModal}
-              openRegister={setOpenRegisterModal}
-            />
-          )}
-          {openRegisterModal && (
-            <Register closeRegister={setOpenRegisterModal} />
-          )}
-          {openWishlistModal && (
-            <WishList closeWishlist={setOpenWishlistModal} />
-          )}
           <div
             onClick={setOpenWishlistModal}
             className={
@@ -99,6 +81,22 @@ const NavBarMid = ({ isVisible }) => {
           >
             {bagContext.length}
           </div>
+
+          <HeartIcon onClick={handleWishlist} />
+          <UserIcon onClick={handleLogin} />
+          <CartIcon onClick={handleCart} />
+          {openLoginModal && (
+            <Container
+              closeLogin={setOpenLoginModal}
+              openRegister={setOpenRegisterModal}
+            />
+          )}
+          {openRegisterModal && (
+            <Register closeRegister={setOpenRegisterModal} />
+          )}
+          {openWishlistModal && (
+            <WishList closeWishlist={setOpenWishlistModal} />
+          )}
         </div>
       </div>
     </div>

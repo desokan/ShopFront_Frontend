@@ -5,7 +5,10 @@
     padding: 50px 5% 0 5%;
   }
 }
-
+.WeeklyFeaturedCards{
+  display: flex;
+  justify-content: center;
+}
 .WeeklyFeaturedTitle {
   display: flex;
   flex-direction: column;

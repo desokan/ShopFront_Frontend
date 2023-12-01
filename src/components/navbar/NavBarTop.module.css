@@ -44,3 +44,8 @@
 .dropdown {
   margin-right: 10px;
 }
+@media (max-width: 768px){
+  .topNav{
+    display: none;
+  }
+}

@@ -1,28 +1,40 @@
-import React, { useState } from 'react';
-import SingleCard from './SingleCard';
+import React, { useState } from 'react'
+import SingleCard from './SingleCard'
 import classes from './Carousel.module.css'
-import ArrowLeft from '../heroBanner/svgs/ArrowLeft';
-import ArrowRight from '../heroBanner/svgs/ArrowRight';
+import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
+import ArrowRight from '../heroBanner/svgs/ArrowRight'
 
 const Carousel = ({ products }) => {
-  const [startIndex, setStartIndex] = useState(0);
-  const cardsPerPage = 4;
-  const totalProducts = products.length;
+  const [startIndex, setStartIndex] = useState(0)
+  let cardsPerPage = 0
+
+  if (window.innerWidth > 1900) {
+    cardsPerPage = 5
+  } else if (window.innerWidth > 1192) {
+    cardsPerPage = 4
+  } else if (window.innerWidth > 768) {
+    cardsPerPage = 3
+  } else if (window.innerWidth > 576) {
+    cardsPerPage = 2
+  } else {
+    cardsPerPage = 1
+  }
+
+  const totalProducts = products.length
 
   const nextSlide = () => {
-    setStartIndex((startIndex + 1) % totalProducts);
-  };
+    setStartIndex((startIndex + 1) % totalProducts)
+  }
 
   const prevSlide = () => {
-    setStartIndex((startIndex - 1 + totalProducts) % totalProducts);
-  };
+    setStartIndex((startIndex - 1 + totalProducts) % totalProducts)
+  }
 
-  const visibleProducts = products.slice(startIndex, startIndex + cardsPerPage);
+  const visibleProducts = products.slice(startIndex, startIndex + cardsPerPage)
 
-  // Duplicate the first few products to the end to create the illusion of an infinite carousel.
   if (visibleProducts.length < cardsPerPage) {
-    const remaining = cardsPerPage - visibleProducts.length;
-    visibleProducts.push(...products.slice(0, remaining));
+    const remaining = cardsPerPage - visibleProducts.length
+    visibleProducts.push(...products.slice(0, remaining))
   }
 
   return (
@@ -39,7 +51,7 @@ const Carousel = ({ products }) => {
         <ArrowRight width="80px" height="80px" fill="none" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel
