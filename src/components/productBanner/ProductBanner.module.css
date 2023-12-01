@@ -378,3 +378,8 @@
   align-items: center;
   z-index: 1;
 }
+@media (max-width:768px){
+  .ProductBannerContainer {
+display: none;
+  }
+}

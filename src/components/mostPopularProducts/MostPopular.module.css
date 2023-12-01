@@ -193,3 +193,11 @@ opacity: 0;
   cursor: pointer;
 
 }
+@media (max-width:768px){
+  .MostPopularContainer{
+    padding: 0px 15% 0 15%;
+  }
+  .MostPopularSingleCard{
+    padding-bottom: 0;
+  }
+}
