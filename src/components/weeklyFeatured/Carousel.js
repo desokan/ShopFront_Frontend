@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import SingleCard from './SingleCard'
 import classes from './Carousel.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
@@ -6,19 +6,30 @@ import ArrowRight from '../heroBanner/svgs/ArrowRight'
 
 const Carousel = ({ products }) => {
   const [startIndex, setStartIndex] = useState(0)
-  let cardsPerPage = 0
+  const [cardsPerPage, setCardsPerPage] = useState(0);
 
-  if (window.innerWidth > 1900) {
-    cardsPerPage = 5
-  } else if (window.innerWidth > 1192) {
-    cardsPerPage = 4
-  } else if (window.innerWidth > 768) {
-    cardsPerPage = 3
-  } else if (window.innerWidth > 576) {
-    cardsPerPage = 2
-  } else {
-    cardsPerPage = 1
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1900) {
+        setCardsPerPage(5);
+      } else if (window.innerWidth > 1192) {
+        setCardsPerPage(4);
+      } else if (window.innerWidth > 768) {
+        setCardsPerPage(3);
+      } else if (window.innerWidth > 576) {
+        setCardsPerPage(2);
+      } else {
+        setCardsPerPage(1);
+      }
+    };
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [window.innerWidth]);
 
   const totalProducts = products.length
 
