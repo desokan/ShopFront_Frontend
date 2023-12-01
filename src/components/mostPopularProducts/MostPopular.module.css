@@ -6,7 +6,10 @@
   }
 
 }
-
+.MostPopularCards{
+  display: flex;
+  justify-content: center;
+}
 .MostPopularTitle {
   display: flex;
   flex-direction: column;
@@ -137,7 +140,7 @@
 .MostPopularUl {
   list-style: none;
   display: flex;
-  gap: 30px;
+padding: 0;
   justify-content: center;
   margin: 0;
 }

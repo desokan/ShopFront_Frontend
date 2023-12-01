@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MostPopularSingleCard from './SingleCardMostPopular'
 import classes from './Carousel.module.css'
 import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
@@ -6,7 +6,31 @@ import ArrowRight from '../heroBanner/svgs/ArrowRight'
 
 const Carousel = ({ products }) => {
   const [startIndex, setStartIndex] = useState(0)
-  const cardsPerPage = 4
+  const [cardsPerPage, setCardsPerPage] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1900) {
+        setCardsPerPage(5);
+      } else if (window.innerWidth > 1192) {
+        setCardsPerPage(4);
+      } else if (window.innerWidth > 768) {
+        setCardsPerPage(3);
+      } else if (window.innerWidth > 576) {
+        setCardsPerPage(2);
+      } else {
+        setCardsPerPage(1);
+      }
+    };
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   const totalProducts = products.length
 
   const nextSlide = () => {

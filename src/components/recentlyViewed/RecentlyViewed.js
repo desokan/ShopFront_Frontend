@@ -15,10 +15,12 @@ const RecentlyViewed = () => {
 					{t("recentlyViewed.stillInterested")}
 				</p>
 			</div>
-		
-        <Carousel
+		<div className={classes.cardsContainer}>
+			 <Carousel
           products={products}
         />
+		</div>
+       
 
 		</div>
 	)
