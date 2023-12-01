@@ -9,10 +9,14 @@ const FooterBot = ({t}) => {
         <p>©{new Date().getFullYear()} Uomo</p>
       </div>
       <div className={classes.optionsContainer}>
+        <div className={classes.wrapper}>
         <p>{t("footer.Bottom.Language")}</p>
         <DropDownLanguage className="footer" />
+        </div>
+        <div className={classes.wrapper}>
         <p>{t("footer.Bottom.Currency")}</p>
         <DropDownCurrency className="footer" />
+      </div>
       </div>
     </section>
   );

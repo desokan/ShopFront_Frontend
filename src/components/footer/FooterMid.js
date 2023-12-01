@@ -75,6 +75,7 @@ const FooterMid = ({ t }) => {
             </Link>
           </div>
         </div>
+        <div className={classes.titlesContainer}>
         <div className={classes.titles}>
           <h4>{t("footer.Company.Company")}</h4>
           <div>
@@ -116,11 +117,12 @@ const FooterMid = ({ t }) => {
             </ul>
           </div>
         </div>
-        <div className={classes.titles}>
+        </div>
+        <div className={classes.subscribeTitleContainer}>
           <h4> {t("footer.Subscribe.Subscribe")}</h4>
           <div className={classes.subscribe}>
             <p>{t("footer.Subscribe.CallToAction")}</p>
-            <form onSubmit={postSubscriber}>
+            <form className={classes.subscribeForm} onSubmit={postSubscriber}>
               <div className={classes.subscribeContainer}>
                 <input
                   value={subscriber}

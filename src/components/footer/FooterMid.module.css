@@ -26,14 +26,23 @@
   padding-top: 47px;
   font-family: "Prompt", sans-serif;
   align-items: center;
+  column-gap: 10px;
+}
+
+.titles {
+  width: 150px;
 }
 
 .titles > h4 {
+  margin: 0;
   color: white;
   font-size: 18px;
   word-wrap: break-word;
   font-family: "Prompt", sans-serif;
   font-weight: 300;
+}
+.titlesContainer{
+  display: flex;
 }
 
 .company {
@@ -79,4 +88,34 @@
   min-width: 50px;
   padding-right: 15px;
   font-size: 14px;
+}
+
+.subscribeTitleContainer > h4{
+  color: white;
+  font-size: 18px;
+  word-wrap: break-word;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (max-width:768px){
+  .footerMidContainer{
+    grid-template-columns: auto;
+    padding: 30px 0 30px;
+}
+.titlesContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.subscribeForm{
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.socialIconContainer{
+  margin-bottom: 40px;
+  
+}
 }

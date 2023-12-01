@@ -5,7 +5,6 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .badges {
@@ -40,4 +39,19 @@
 }
 .badgesCenter {
     justify-self: center;
+}
+
+@media (max-width : 768px){
+  .footerTopContainer {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .badges {
+    grid-template-columns: auto;
+    justify-self: center;
+    margin-top: 50px;
+    row-gap: 20px;
+    text-align: center;
+  }
+ 
 }

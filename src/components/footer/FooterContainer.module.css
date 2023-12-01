@@ -3,11 +3,9 @@
     background-color: rgb(34, 34, 34);
     align-self: end;
 
-    
-
 
     @media only screen and (max-width: 1536px) {
-      padding: 0px 5%;
+        padding: 0px 5%;
     }
 }
 
@@ -21,3 +19,9 @@ a {
 a:hover {
     color: #eba37a;
 }
+
+/* @media (max-width:768px){
+    .container {
+        padding: 25px;
+    }
+} */
