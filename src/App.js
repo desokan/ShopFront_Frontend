@@ -28,9 +28,6 @@ const App = () => {
     getDefaultTitle()
   );
   useEffect(() => {
-    console.log(windowWidth);
-  }, [windowWidth]);
-  useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };

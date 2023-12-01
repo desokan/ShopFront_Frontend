@@ -3,18 +3,19 @@
   padding: 50px 15% 0 15%;
   margin-bottom: 50px;
 
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
   @media only screen and (max-width: 1536px) {
     padding: 50px 5% 0px 5%;
     margin-bottom: 50px;
   }
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: 940px;
 }
 .ProductBannerMain {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .ProductBannerRight {
   background-image: url('https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS2022_FALL_COCOACLEANSR_BARSOAP_ERICK_066_X_1200X1500_72DPI_5fae332b-ab46-4431-b432-921af1f42be7.jpg?v=1658960881');
