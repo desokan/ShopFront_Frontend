@@ -6,6 +6,9 @@
   width: 450px;
   background-color: white;
   z-index: 101;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }
 
 .closeShoppingBag {
