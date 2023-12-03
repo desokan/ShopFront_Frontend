@@ -6,6 +6,9 @@
   width: 450px;
   background-color: white;
   z-index: 101;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }
 
 .closeRegisterForm {
@@ -43,15 +46,12 @@
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 350px;
 }
 
 .inputInfo {
   display: flex;
   justify-content: space-between;
-  /* Add space between the items */
   align-items: center;
-  /* Vertically center items */
   margin-bottom: 10px;
 }
 

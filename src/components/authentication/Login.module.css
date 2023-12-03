@@ -1,91 +1,90 @@
-
-.loginBox{
-    height: 100vh;
-    position:fixed;
-    top: 0;
-    right: 0;
-    width: 450px;
-    background-color: white;
-    z-index: 101;
+.loginBox {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  background-color: white;
+  z-index: 101;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }
 
-.closeLoginForm{
-    background: #FAF9F8;
-    display: flex;
-    height:82px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
-   
+.closeLoginForm {
+  background: #faf9f8;
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
-.closeLogin{
+.closeLogin {
   border: none;
-  background-color: #FAF9F8;
+  background-color: #faf9f8;
   font-size: medium;
   cursor: pointer;
 }
 
-.loginText{
-    color: #222;
-    font-weight: 500;
+.loginText {
+  color: #222;
+  font-weight: 500;
 }
 
 .loginForm {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    margin-top: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .textBox {
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 350px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 
 .inputInfo {
-    display: flex; 
-    justify-content: space-between; /* Add space between the items */
-    align-items: center; /* Vertically center items */
-    margin-bottom: 10px;
-  }
-  
-  .checkboxLabel {
-    display: flex; 
-    justify-content: space-between;
-   
-  }
-  
-.checkboxInput{
-    margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-  .loginButton {
-    width: 100%;
-    background: #222222;
-    color: white;
-    padding: 15px;
-    margin-bottom: 10px;
-  }
+.checkboxLabel {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .newAccount{
-   text-align: center;
-  }
+.checkboxInput {
+  margin-right: 10px;
+}
 
- .newAccount > span{
-    text-decoration: underline; 
- }
+.loginButton {
+  width: 100%;
+  background: #222222;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+}
 
- .underline {
-    text-decoration: underline;
- }
- .error {
+.newAccount {
+  text-align: center;
+}
+
+.newAccount > span {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline;
+}
+.error {
   font-size: 13px;
   color: red;
   position: absolute;

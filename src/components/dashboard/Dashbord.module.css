@@ -2,6 +2,10 @@
   padding: 0px 15%;
     display: grid;
   grid-template-columns: 330px 1fr;
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+    padding: 0px 5%; ;
+  }
 }
 .right {
   display: grid;
@@ -88,4 +92,7 @@
 }
 .rightSectionTextContainer {
   width: 727px;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }
