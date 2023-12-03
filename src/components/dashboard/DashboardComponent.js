@@ -47,21 +47,21 @@ const DashboardComponent = () => {
               {t("dashboard.main.hello")} <b>{user.username}</b>
             </p>
             <p>
-              {t("dashboard.main.line1")}
+              {t("dashboard.main.line1")}{" "}
               <span
                 className={classes.span}
                 onClick={() => setTitle(t("dashboard.titles.orders"))}
               >
                 {t("dashboard.main.line2")}
               </span>
-              {t("dashboard.main.line3")}
+              {t("dashboard.main.line3")}{" "}
               <span
                 className={classes.span}
                 onClick={() => setTitle(t("dashboard.titles.addresses"))}
               >
                 {t("dashboard.main.line4")}
               </span>
-              {t("dashboard.main.line5")}
+              {t("dashboard.main.line5")}{" "}
               <span
                 className={classes.span}
                 onClick={() => setTitle(t("dashboard.titles.accountDetails"))}

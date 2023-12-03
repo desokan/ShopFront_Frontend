@@ -1,11 +1,11 @@
 import Footer from "../components/footer/FooterContainer";
-import NavBarMid from "../components/navbar/NavBarMid";
+import NavBar from "../components/navbar/NavBarContainer";
 import DashboardComponent from "../components/dashboard/DashboardComponent";
 
 const Dashboard = () => {
   return (
     <>
-      <NavBarMid />
+      <NavBar />
       <DashboardComponent />
       <Footer />
     </>
