@@ -12,23 +12,17 @@ const Carousel = ({ products }) => {
     const handleResize = () => {
       if (window.innerWidth > 1900) {
         setCardsPerPage(5);
-      } else if (window.innerWidth > 1192) {
+      } else if (window.innerWidth > 1400) {
         setCardsPerPage(4);
-      } else if (window.innerWidth > 768) {
+      } else if (window.innerWidth > 1100) {
         setCardsPerPage(3);
-      } else if (window.innerWidth > 576) {
+      } else if (window.innerWidth > 650) {
         setCardsPerPage(2);
       } else {
         setCardsPerPage(1);
       }
     };
     handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
   }, [window.innerWidth]);
 
   const totalProducts = products.length
