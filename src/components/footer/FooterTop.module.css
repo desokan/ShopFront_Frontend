@@ -3,8 +3,8 @@
 .footerTopContainer {
   padding: 48px 0px;
   color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+display: flex;
+flex-direction: row;
 }
 
 .badges {
@@ -43,8 +43,8 @@
 
 @media (max-width : 768px){
   .footerTopContainer {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .badges {
     grid-template-columns: auto;
@@ -53,5 +53,25 @@
     row-gap: 20px;
     text-align: center;
   }
+ 
+}
+@media (min-width : 768px){
+  .footerTopContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+
+ 
+}
+@media (max-width : 950px){
+  .badges {
+display: flex;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footerTopContainer {
+  padding:  0;
+   }
  
 }

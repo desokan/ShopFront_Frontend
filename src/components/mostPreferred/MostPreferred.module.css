@@ -3,87 +3,99 @@
 
   @media only screen and (max-width: 1536px) {
     padding: 50px 10% 0 10%;
-  }  }
-  
-  .MostPreferredTitleH2 {
-    color: var(--color-head, #222);
-    text-align: center;
-    font-family: Avenir;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 0;
-    padding: 10px;
   }
-  
-  .MostPreferredTitleP {
-    color: #5a5a5a;
-    text-align: center;
-    font-family: Avenir;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  
-  .MostPreferredCards {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(210px, 210px));
-    justify-content: center;
-    padding-top: 20px;
-    grid-gap: 30px;
-  }
-  
-  
-  .MostPreferredSingleCardP {
-    color: var(--color-head, #222);
-    text-align: center;
-    font-family: Avenir;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 10px;
-  }
-  
-  .MostPreferredSingleCardImage {
-    width: 210px;
-    height: 350px;
-    transition: transform 0.6s;
-  }
-  .MostPreferredSingleCardImage:hover{
-    transform: scale(1.1);
-  }
-  
-  .MostPreferredSingleCard {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    width: 210px;
-    height: 350px;
-  }
-@media (max-width:768px){
-  .MostPreferredContainer {
-    padding: 0px 5% 0 5%;
- }
- .MostPreferredSingleCardImage {
-  width: 150px;
-  height: 210px;
+}
+
+.MostPreferredTitleH2 {
+  color: var(--color-head, #222);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  padding: 10px;
+}
+
+.MostPreferredTitleP {
+  color: #5a5a5a;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.MostPreferredCards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(210px, 210px));
+  justify-content: center;
+  padding-top: 20px;
+  grid-gap: 30px;
+}
+
+.MostPreferredSingleCardP {
+  color: var(--color-head, #222);
+  text-align: center;
+  font-family: Avenir;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.MostPreferredSingleCardImage {
+  width: 210px;
+  height: 350px;
   transition: transform 0.6s;
 }
-.MostPreferredCards {
-  display: flex;
-  flex-direction: row;
-flex-wrap: wrap;
-
-
+.MostPreferredSingleCardImage:hover {
+  transform: scale(1.1);
 }
+
 .MostPreferredSingleCard {
-  width: 150px;
-  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 210px;
+  height: 350px;
 }
+@media (max-width: 768px) {
+  .MostPreferredContainer {
+    padding: 0px 5% 0 5%;
+  }
+  .MostPreferredSingleCardImage {
+    width: 120px;
+    height: 230px;
+    transition: transform 0.6s;
+  }
+  .MostPreferredCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .MostPreferredSingleCard {
+    width: 120px;
+    height: 230px;
+  }
+}
+@media (min-width:  768px) {
+  .MostPreferredContainer {
+    padding: 50px 5% 0 5%;
+  }
+  .MostPreferredCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .MostPreferredSingleCard {
+    width: 200px;
+    height: 350px;
+  }
 }
