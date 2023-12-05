@@ -1,8 +1,8 @@
 .RecentlyViewedContainer {
   padding: 50px 15% 0 15%;
 
-  @media only screen and (max-width: 1536px) {
-    padding: 50px 5% 0 5%;
+  @media (max-width: 450px) {
+    padding: 0px 0% 0 0%;
   }
 }
 .cardsContainer{
@@ -150,9 +150,4 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-@media (max-width:768px){
-  .RecentlyViewedContainer {
-    padding: 0px 15% 0 15%;
-  }
 }

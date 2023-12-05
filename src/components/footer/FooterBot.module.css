@@ -1,46 +1,49 @@
 .footerBotContainer {
-    display: grid;
-    grid-auto-flow: column;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
+  display: grid;
+  grid-auto-flow: column;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
 }
 
 .optionsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    column-gap: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  column-gap: 23px;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .arrowUp {
-    margin-left: 10px;
-    position: relative;
-    top: 3px;
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
 }
 
-@media (max-width:768px) {
-    .footerBotContainer {
-        grid-auto-flow: row;
-    }
+@media (max-width: 768px) {
+  .footerBotContainer {
+    grid-auto-flow: row;
+  }
 
-    .optionsContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
+  .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
 
-    .wrapper{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .currency {
+    display: none;
+  }
 }
