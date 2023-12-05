@@ -54,7 +54,7 @@ const FooterMid = ({ t }) => {
             <div className={classes.logoDiv} onClick={handleClick}>
             <LogoSvg fontColor={'#FFFFFF'} />
           </div>
-          <p>
+          <p className={classes.address}>
             1418 River Drive, Suite 35 Cottonhall, CA 9622 <br /> United States{' '}
             <br /> <br /> sale@uomo.com <br /> +1 246-345-0695
           </p>

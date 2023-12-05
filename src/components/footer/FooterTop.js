@@ -4,7 +4,7 @@ import Headphones from "../svgs/Headphones";
 
 import Shield from "../svgs/Shield";
 
-const FooterTop = ({t}) => {
+const FooterTop = ({ t }) => {
   return (
     <>
       <section className={classes.footerTopContainer}>

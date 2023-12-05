@@ -1,11 +1,10 @@
 .WeeklyFeaturedContainer {
   padding: 50px 15% 0 15%;
-
-  @media only screen and (max-width: 1536px) {
-    padding: 50px 5% 0 5%;
+  @media (max-width: 450px) {
+    padding: 50px 0% 0 0%;
   }
 }
-.WeeklyFeaturedCards{
+.WeeklyFeaturedCards {
   display: flex;
   justify-content: center;
 }
@@ -153,9 +152,8 @@
   opacity: 0;
   cursor: pointer;
 }
-@media (max-width:768px){
+@media (max-width: 768px) {
   .WeeklyFeaturedSingleCard {
     padding-bottom: 0;
-
   }
 }

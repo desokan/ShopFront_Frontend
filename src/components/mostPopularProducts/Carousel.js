@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import MostPopularSingleCard from './SingleCardMostPopular'
-import classes from './Carousel.module.css'
-import ArrowLeft from '../heroBanner/svgs/ArrowLeft'
-import ArrowRight from '../heroBanner/svgs/ArrowRight'
+import React, { useEffect, useState } from "react";
+import MostPopularSingleCard from "./SingleCardMostPopular";
+import classes from "./Carousel.module.css";
+import ArrowLeft from "../heroBanner/svgs/ArrowLeft";
+import ArrowRight from "../heroBanner/svgs/ArrowRight";
+import { motion } from "framer-motion";
 
 const Carousel = ({ products }) => {
-  const [startIndex, setStartIndex] = useState(0)
+  const [startIndex, setStartIndex] = useState(0);
   const [cardsPerPage, setCardsPerPage] = useState(0);
 
   useEffect(() => {
@@ -24,23 +25,22 @@ const Carousel = ({ products }) => {
     };
     handleResize();
   }, [window.innerWidth]);
-  
-  const totalProducts = products.length
+
+  const totalProducts = products.length;
 
   const nextSlide = () => {
-    setStartIndex((startIndex + 1) % totalProducts)
-  }
+    setStartIndex((startIndex + 1) % totalProducts);
+  };
 
   const prevSlide = () => {
-    setStartIndex((startIndex - 1 + totalProducts) % totalProducts)
-  }
+    setStartIndex((startIndex - 1 + totalProducts) % totalProducts);
+  };
 
-  const visibleProducts = products.slice(startIndex, startIndex + cardsPerPage)
-
+  const visibleProducts = products.slice(startIndex, startIndex + cardsPerPage);
 
   if (visibleProducts.length < cardsPerPage) {
-    const remaining = cardsPerPage - visibleProducts.length
-    visibleProducts.push(...products.slice(0, remaining))
+    const remaining = cardsPerPage - visibleProducts.length;
+    visibleProducts.push(...products.slice(0, remaining));
   }
 
   return (
@@ -57,7 +57,7 @@ const Carousel = ({ products }) => {
         <ArrowRight width="80px" height="80px" fill="none" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

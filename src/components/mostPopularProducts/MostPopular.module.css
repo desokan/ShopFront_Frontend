@@ -1,12 +1,11 @@
 .MostPopularContainer {
   padding: 50px 15% 0 15%;
 
-  @media only screen and (max-width: 1536px) {
-    padding: 50px 5% 0 5%;
+  @media (max-width: 450px) {
+    padding: 50px 0% 0 0%;
   }
-
 }
-.MostPopularCards{
+.MostPopularCards {
   display: flex;
   justify-content: center;
 }
@@ -44,6 +43,10 @@
   flex-direction: column;
   justify-self: center;
   height: 500px;
+  @media (max-width: 450px) {
+    padding-bottom: 0px;
+  }
+
 }
 
 .MostPopularImageContainer {
@@ -140,7 +143,7 @@
 .MostPopularUl {
   list-style: none;
   display: flex;
-padding: 0;
+  padding: 0;
   justify-content: center;
   margin: 0;
 }
@@ -174,12 +177,12 @@ padding: 0;
   text-decoration: underline 2.5px solid;
   text-underline-offset: 0.5em;
 }
-.span{
+.span {
   margin-left: 15px;
   padding-top: 5px;
   text-transform: uppercase;
 }
-.wishListButton{
+.wishListButton {
   width: 25px;
   height: 25px;
   background-color: white;
@@ -189,15 +192,6 @@ padding: 0;
   position: relative;
   top: 30px;
   left: 170px;
-opacity: 0;
+  opacity: 0;
   cursor: pointer;
-
-}
-@media (max-width:768px){
-  .MostPopularContainer{
-    padding: 0px 15% 0 15%;
-  }
-  .MostPopularSingleCard{
-    padding-bottom: 0;
-  }
 }

@@ -3,8 +3,8 @@
 .footerTopContainer {
   padding: 48px 0px;
   color: white;
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .badges {
@@ -20,6 +20,9 @@ flex-direction: row;
   font-weight: 300;
   word-wrap: break-word;
   color: white;
+  @media (max-width: 450px) {
+    display: none;
+  }
 }
 
 .badgeTitle > h5 {
@@ -30,18 +33,18 @@ flex-direction: row;
 }
 
 .delivery {
-    display: grid;
-    place-self: center;
+  display: grid;
+  place-self: center;
 }
 
-.badgesRight  {
-    justify-self: end;
+.badgesRight {
+  justify-self: end;
 }
 .badgesCenter {
-    justify-self: center;
+  justify-self: center;
 }
 
-@media (max-width : 768px){
+@media (max-width: 768px) {
   .footerTopContainer {
     display: flex;
     flex-direction: column;
@@ -53,25 +56,31 @@ flex-direction: row;
     row-gap: 20px;
     text-align: center;
   }
- 
 }
-@media (min-width : 768px){
+@media (min-width: 768px) {
   .footerTopContainer {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-
- 
 }
-@media (max-width : 950px){
+@media (max-width: 950px) {
   .badges {
-display: flex;
+    display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
   }
   .footerTopContainer {
-  padding:  0;
-   }
- 
+    padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .footerTopContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
 }
