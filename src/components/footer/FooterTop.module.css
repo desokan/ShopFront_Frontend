@@ -66,13 +66,14 @@
 }
 @media (max-width: 950px) {
   .badges {
-    display: flex;
+
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
   }
   .footerTopContainer {
     padding: 0;
+    justify-content: center;
   }
 }
 

@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
   .footerBotContainer {
-    grid-auto-flow: row;
+    grid-auto-flow: column;
   }
 
   .optionsContainer {
@@ -41,8 +41,9 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: right;
   }
+  
   .currency {
     display: none;
   }
