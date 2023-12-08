@@ -133,7 +133,7 @@ const DashboardComponent = () => {
             {t("dashboard.titles.logout")}
           </li>
         </ul>
-        {/* <motion.div
+        <motion.div
           className={`${classes.backDrop} ${classes.visibilityForMobile}  ${
             isOpen ? "active" : ""
           }`}
@@ -180,13 +180,11 @@ const DashboardComponent = () => {
               {t("dashboard.titles.logout")}
             </li>
           </ul>
-        </motion.div> */}
+        </motion.div>
       </div>
       <div
         className={
-          title === "WISHLIST"
-            ? `${classes.overflowX}`
-            : `${classes.right} ${classes.visibilityForMobile}`
+          title === "WISHLIST" ? `${classes.overflowX}` : `${classes.right}`
         }
       >
         {rightContent()}
