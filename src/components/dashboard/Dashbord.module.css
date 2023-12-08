@@ -1,10 +1,10 @@
 .container {
   padding: 0px 15%;
-    display: grid;
+  display: grid;
   grid-template-columns: 330px 1fr;
   @media (max-width: 450px) {
     grid-template-columns: 1fr;
-    padding: 0px 5%; ;
+    padding: 0px 5%;
   }
 }
 .right {
@@ -13,7 +13,10 @@
   justify-items: center;
   align-items: center;
   flex-direction: column;
-
+  @media (max-width: 450px) {
+    min-height: 400px;
+    margin-bottom: 20px;
+  }
 }
 
 .overflowX {
@@ -23,7 +26,6 @@
   align-items: center;
   flex-direction: column;
   overflow-x: scroll;
-
 }
 .left {
   width: 330px;
@@ -35,6 +37,7 @@
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+ 
 }
 .listItem {
   margin-bottom: 35px;
@@ -91,8 +94,114 @@
   cursor: pointer;
 }
 .rightSectionTextContainer {
-  width: 727px;
   @media (max-width: 450px) {
     width: 100%;
   }
+}
+
+.hamburger,
+.bar {
+  position: absolute;
+}
+
+.hamburger:hover .bar {
+  color: var(--color-head, #222);
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  top: 140px;
+  right: 1.4rem;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  border: 0;
+  background: 0 0;
+  z-index: 111;
+}
+
+.bar {
+  top: 27px;
+  left: 10px;
+  background: #373737;
+  width: 30px;
+  height: 4px;
+  transition: all 0.6s ease-in;
+  justify-self: right;
+}
+
+#bar2 {
+  top: 35px;
+}
+
+#bar3 {
+  top: 43px;
+}
+
+.navigation.active {
+  right: 0;
+}
+
+.hamburger.open #bar1 {
+  color: var(--color-head, #222);
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2 {
+  background-color: transparent;
+}
+
+.hamburger.open #bar3 {
+  color: var(--color-head, #222);
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.visibilityForMobile {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .visibilityForMobile {
+    display: contents;
+  }
+  .visibilityForDeskTop {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  margin-top: 200px;
+  margin-left: 0%;
+  z-index: 10;
+}
+
+.backDrop {
+  @media (max-width: 450px){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 110;
+    height: 100%;
+    padding: 0rem 1.2rem;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+}
+
+.backDrop.active {
+  @media (max-width: 450px){
+    display: flex;
+    z-index: 110;
+  }
+
 }

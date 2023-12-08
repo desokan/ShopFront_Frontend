@@ -104,6 +104,7 @@ grid-auto-flow: column;
 @media (max-width: 768px){
   .container{
     padding: 0;
+    z-index: 120;
   }
   .icons{
     padding-right: 30px;
