@@ -135,10 +135,10 @@ const DashboardComponent = () => {
         </ul>
         <motion.div
           className={`${classes.backDrop} ${classes.visibilityForMobile}  ${
-            isOpen ? "active" : ""
+            isOpen ? "" : ""
           }`}
-          initial={{ x: 500 }}
-          animate={isOpen ? { x: 0 } : { x: 500 }}
+          initial={{ x: -500 }}
+          animate={isOpen ? { x: 0 } : { x: -500 }}
           transition={{ duration: 0.8 }}
           onClick={() => {
             setisOpen(false);

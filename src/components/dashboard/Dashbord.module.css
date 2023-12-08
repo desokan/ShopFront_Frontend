@@ -199,6 +199,9 @@
 }
 
 .backDrop.active {
-  display: flex;
-  z-index: 110;
+  @media (max-width: 450px){
+    display: flex;
+    z-index: 110;
+  }
+
 }
