@@ -1,16 +1,18 @@
 /* eslint-disable no-unused-vars */
 import { useNavigate } from "react-router-dom";
 import classes from "./Dashbord.module.css";
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Orders from "./Orders";
 import { DashbordNavigation } from "../../App";
 import Addresses from "./Addresses";
 import Account from "./Account";
 import { useTranslation } from "react-i18next";
 import Wishlist from "./Wishlist";
+import { motion } from "framer-motion";
 
 const DashboardComponent = () => {
   const { t } = useTranslation();
+  let [isOpen, setisOpen] = useState(false);
 
   const navigate = useNavigate();
   const [dashbordNavigation, setDashbordNavigation] = useContext(
@@ -79,7 +81,24 @@ const DashboardComponent = () => {
     <div className={classes.container}>
       <div className={classes.left}>
         <h1 className={classes.title}>{title}</h1>
-        <ul className={classes.ul}>
+        <div className={`${classes.container} ${classes.visibilityForMobile}`}>
+          <button
+            type="button"
+            onClick={() => {
+              setisOpen((prevState) => !prevState);
+            }}
+            className={
+              isOpen
+                ? `${classes.hamburger} ${classes.open}`
+                : `${classes.hamburger}`
+            }
+          >
+            <div id={classes.bar1} className={classes.bar}></div>
+            <div id={classes.bar2} className={classes.bar}></div>
+            <div id={classes.bar3} className={classes.bar}></div>
+          </button>
+        </div>
+        <ul className={`${classes.ul} ${classes.visibilityForDeskTop}`}>
           <li
             className={classes.listItem}
             onClick={() => handleTitle(t("dashboard.titles.dashboard"))}
@@ -114,10 +133,60 @@ const DashboardComponent = () => {
             {t("dashboard.titles.logout")}
           </li>
         </ul>
+        {/* <motion.div
+          className={`${classes.backDrop} ${classes.visibilityForMobile}  ${
+            isOpen ? "active" : ""
+          }`}
+          initial={{ x: 500 }}
+          animate={isOpen ? { x: 0 } : { x: 500 }}
+          transition={{ duration: 0.8 }}
+          onClick={() => {
+            setisOpen(false);
+          }}
+        >
+          {" "}
+          <ul className={`${classes.ul} ${classes.mobileMenu}`}>
+            <li
+              className={classes.listItem}
+              onClick={() => handleTitle(t("dashboard.titles.dashboard"))}
+            >
+              {t("dashboard.titles.dashboard")}
+            </li>
+            <li
+              className={classes.listItem}
+              onClick={() => handleTitle(t("dashboard.titles.orders"))}
+            >
+              {t("dashboard.titles.orders")}
+            </li>
+            <li
+              className={classes.listItem}
+              onClick={() => handleTitle(t("dashboard.titles.addresses"))}
+            >
+              {t("dashboard.titles.addresses")}
+            </li>
+            <li
+              className={classes.listItem}
+              onClick={() => handleTitle(t("dashboard.titles.accountDetails"))}
+            >
+              {t("dashboard.titles.accountDetails")}
+            </li>
+            <li
+              className={classes.listItem}
+              onClick={() => handleTitle(t("dashboard.titles.wishlist"))}
+            >
+              {t("dashboard.titles.wishlist")}
+            </li>
+            <li className={classes.listItem} onClick={handleLogout}>
+              {t("dashboard.titles.logout")}
+            </li>
+          </ul>
+        </motion.div> */}
       </div>
       <div
         className={
-          title === "WISHLIST" ? `${classes.overflowX}` : `${classes.right}`
+          title === "WISHLIST"
+            ? `${classes.overflowX}`
+            : `${classes.right} ${classes.visibilityForMobile}`
         }
       >
         {rightContent()}
