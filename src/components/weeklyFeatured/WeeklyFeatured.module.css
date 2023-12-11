@@ -156,4 +156,12 @@
   .WeeklyFeaturedSingleCard {
     padding-bottom: 0;
   }
+  .wishListButton{
+    opacity: 1;
+  }
+  .WeeklyFeaturedSingleCard .WeeklyFeaturedAddToCartButton {
+    opacity: 1;
+  }
+
+  
 }

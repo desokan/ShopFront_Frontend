@@ -195,3 +195,13 @@
   opacity: 0;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .wishListButton{
+    opacity: 1;
+  }
+  .MostPopularSingleCard .MostPopularAddToCartButton{
+    opacity: 1;
+  }
+
+  
+}

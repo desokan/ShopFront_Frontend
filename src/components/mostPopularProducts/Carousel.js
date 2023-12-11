@@ -33,7 +33,7 @@ const Carousel = ({ products }) => {
   };
 
   const prevSlide = () => {
-    setStartIndex((startIndex - 1 + totalProducts) % totalProducts);
+    setStartIndex((startIndex - 1 + totalProducts));
   };
 
   const visibleProducts = products.slice(startIndex, startIndex + cardsPerPage);

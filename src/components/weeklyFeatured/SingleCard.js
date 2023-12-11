@@ -2,14 +2,17 @@ import React from 'react'
 import classes from './WeeklyFeatured.module.css'
 import BagIcon from '../svgs/BagIcon'
 import { useTranslation } from 'react-i18next'
-import { ShoppingBag, Wishlist } from '../../App'
+import { ShoppingBag, Wishlist} from '../../App'
 import { useContext, useState, useEffect } from 'react'
 import Heart from '../svgs/Heart'
+
 
 const SingleCard = ({ product }) => {
   const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag)
   const [myWishlist, setMyWishlist] = useContext(Wishlist)
-  const [isHeartFilled, setIsHeartFilled] = useState(product.inWishlist)
+  const [isHeartFilled, setIsHeartFilled] = useState(()=>{
+    return myWishlist.some((item) => item.name === product.name);
+  })
   const { name, category, price, rating, imageUrl } = product
 
   const { t } = useTranslation()
@@ -22,7 +25,7 @@ const SingleCard = ({ product }) => {
       (item) => item.name === product.name
     )
     setIsHeartFilled(isInWishlist)
-  }, [])
+  }, [product])
 
   const renderStars = () => {
     const stars = []
@@ -63,18 +66,17 @@ const SingleCard = ({ product }) => {
 
   const handleAddToWishlist = () => {
     const list = [...myWishlist]
-    const findItem = list.find((item) => item.name === product.name)
-
+    const findItem = list.some((item) => item.name === product.name)
     if (!findItem) {
       product.inWishlist = true
       list.push(product)
-      setIsHeartFilled(true)
+      setIsHeartFilled(!isHeartFilled)
     } else {
       const indexToRemove = list.findIndex((item) => item.name === product.name)
 
       product.inWishlist = false
       list.splice(indexToRemove, 1)
-      setIsHeartFilled(false)
+      setIsHeartFilled(!isHeartFilled)
     }
     setMyWishlist(list)
     localStorage.setItem('wishlist', JSON.stringify(list))

@@ -9,18 +9,20 @@ import Heart from '../svgs/Heart'
 const MostPopularSingleCard = ({ product }) => {
   const { name, category, price, rating, imageUrl } = product
   const [myShoppingBag, setMyShoppingBag] = useContext(ShoppingBag)
+
   const [myWishlist, setMyWishlist] = useContext(Wishlist)
-  const [isHeartFilled, setIsHeartFilled] = useState(product.inWishlist);
+  const [isHeartFilled, setIsHeartFilled] = useState(()=>{
+    return myWishlist.some((item) => item.name === product.name);
+  })
   const { t } = useTranslation();
 
   useEffect(() => {
     const storedWishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     setMyWishlist(storedWishlist);
 
-    // Check if the product is in the wishlist and set isHeartFilled accordingly
     const isInWishlist = storedWishlist.some(item => item.name === product.name);
     setIsHeartFilled(isInWishlist);
-  }, []);
+  }, [product]);
   const renderStars = () => {
     const stars = []
     for (let i = 1; i <= 5; i++) {
@@ -58,18 +60,18 @@ const MostPopularSingleCard = ({ product }) => {
   }
   const handleAddToWishlist = () => {
     const list = [...myWishlist];
-    const findItem = list.find((item) => item.name === product.name);
+    const findItem = list.some((item) => item.name === product.name);
   
     if (!findItem) {
       product.inWishlist = true;
       list.push(product);
-      setIsHeartFilled(true)
+      setIsHeartFilled(!isHeartFilled)
     } else {
       const indexToRemove = list.findIndex((item) => item.name === product.name);
      
       product.inWishlist = false;
         list.splice(indexToRemove, 1);
-        setIsHeartFilled(false)
+        setIsHeartFilled(!isHeartFilled)
       
     }
     setMyWishlist(list);
