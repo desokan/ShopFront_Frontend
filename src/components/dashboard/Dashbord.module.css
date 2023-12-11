@@ -203,8 +203,18 @@
 
 .active {
   @media (max-width: 450px){
-    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: 110;
+    height: 100%;
+    padding: 0rem 1.2rem;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    overflow: hidden;
   }
 
 }
