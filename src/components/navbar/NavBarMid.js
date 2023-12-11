@@ -26,6 +26,9 @@ const NavBarMid = ({ isVisible }) => {
 
   const navigate = useNavigate();
   const handleLogin = () => {
+    if (window.location.pathname.includes("dashboard")) {
+      return;
+    }
     setOpenLoginModal(true);
   };
   const handleCart = () => {
@@ -52,7 +55,7 @@ const NavBarMid = ({ isVisible }) => {
   const handleClick = () => {
     if ("/dashboard") {
       navigate("/");
-    } 
+    }
   };
 
   return (
@@ -61,7 +64,6 @@ const NavBarMid = ({ isVisible }) => {
         <div onClick={handleClick} className={classes.logoContainer}>
           <LogoSvg fontColor={"#222222"} />
         </div>
-
 
         <div className={classes.icons}>
           <div

@@ -5,7 +5,7 @@ import NavBarMid from "../components/navbar/NavBarMid";
 const Dashboard = () => {
   return (
     <>
-      <NavBarMid/>
+      <NavBarMid disabled={true}/>
       <DashboardComponent />
       <Footer />
     </>
