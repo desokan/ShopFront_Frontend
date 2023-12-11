@@ -10,13 +10,14 @@
 .right {
   display: grid;
   grid-auto-flow: row;
-  justify-items: center;
+
   align-items: center;
   flex-direction: column;
   @media (max-width: 450px) {
     min-height: 400px;
     margin-bottom: 20px;
     margin-top: 40px;
+    overflow: scroll;
   }
 }
 
@@ -38,7 +39,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   color: #222;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
  
