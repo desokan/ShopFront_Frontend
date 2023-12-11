@@ -98,7 +98,7 @@ const DashboardComponent = () => {
             <div id={classes.bar3} className={classes.bar}></div>
           </button>
         </div>
-        <ul className={`${classes.ul} ${classes.visibilityForDeskTop}`}>
+        {!isOpen &&    <ul className={`${classes.ul} ${classes.visibilityForDeskTop}`}>
           <li
             className={classes.listItem}
             onClick={() => handleTitle(t("dashboard.titles.dashboard"))}
@@ -132,7 +132,8 @@ const DashboardComponent = () => {
           <li className={classes.listItem} onClick={handleLogout}>
             {t("dashboard.titles.logout")}
           </li>
-        </ul>
+        </ul>}
+     
         <motion.div
           className={`${classes.backDrop} ${classes.visibilityForMobile}  ${
             isOpen ? "" : ""
