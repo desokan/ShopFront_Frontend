@@ -4,7 +4,7 @@
   grid-template-columns: 330px 1fr;
   @media (max-width: 450px) {
     grid-template-columns: 1fr;
-    padding: 0px 5%;
+    padding: 0px 20px;
   }
 }
 .right {
@@ -16,6 +16,7 @@
   @media (max-width: 450px) {
     min-height: 400px;
     margin-bottom: 20px;
+    margin-top: 40px;
   }
 }
 
@@ -29,6 +30,9 @@
 }
 .left {
   width: 330px;
+  @media (max-width: 450px) {
+    height: 100px;
+  }
 }
 .title {
   margin-top: 50px;
